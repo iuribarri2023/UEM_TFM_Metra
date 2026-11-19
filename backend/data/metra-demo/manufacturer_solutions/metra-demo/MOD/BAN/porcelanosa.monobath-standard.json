@@ -1,0 +1,925 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-PORCELANOSA",
+    "name": "PORCELANOSA Grupo",
+    "website": "https://www.porcelanosa.com/",
+    "description": "Grupo industrial con soluciones offsite e industrializadas para edificación, incluidos módulos de baño.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5QT1JDRUxBTk9TQSBHcnVwbzwvdGV4dD48L3N2Zz4=",
+    "address": null,
+    "contact_name": null,
+    "contact_email": "monobath@butech.es",
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "brand": "PORCELANOSA Offsite · Monobath",
+      "technical_company": "Butech building technology"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "MOD.BAN.POD.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "MOD.BAN",
+      "code": "MFR.PORCELANOSA.MONOBATH.STD",
+      "commercial_reference": "MONOBATH-STD",
+      "name_es": "PORCELANOSA · Monobath · base estándar",
+      "description": "Baño industrializado PORCELANOSA Monobath con base estándar de 70 mm: losa de hormigón de 50 mm más adhesivo y acabado cerámico de 20 mm.",
+      "functional_unit": "ud",
+      "technical_data": {
+        "template_code": "MOD.BAN",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcElementAssembly",
+          "ifc_export_type": "USERDEFINED",
+          "ecob_bim_class": "Sistemas de elementos",
+          "gubimclass_code": "90.10.10.10",
+          "gubimclass_description": "Módulos de baño",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "product_url": "https://www.porcelanosa.com/",
+          "environmental_claim": null,
+          "compliance_certificate": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "PORCELANOSA Monobath",
+          "custom_made": true,
+          "catalog_variant_basis": "BASE_BUILD_UP",
+          "reference_geometry": {
+            "internal_length_mm": 3070,
+            "internal_width_mm": 1960,
+            "internal_height_modeled_mm": 2400,
+            "external_length_modeled_mm": 3265,
+            "external_width_modeled_mm": 2155,
+            "geometry_status": "REFERENCE_GEOMETRY_FROM_USER_SUPPLIED_IFC_NOT_COMMERCIAL_FIXED_SIZE"
+          },
+          "supported_internal_heights_mm": [
+            2200,
+            2300,
+            2400,
+            2500
+          ],
+          "corresponding_minimum_slab_to_slab_heights_mm": [
+            2550,
+            2650,
+            2750,
+            2850
+          ],
+          "wall_system": {
+            "structure_material": "Aluminum framing",
+            "structure_depth_declared_mm": [
+              60,
+              75
+            ],
+            "structure_depth_modeled_mm": 67.5,
+            "gypsum_board_mm": 15,
+            "interior_ceramic_finish_mm": 15,
+            "modeled_total_wall_mm": 97.5,
+            "modeled_structure_status": "REFERENCE_VALUE_WITHIN_DECLARED_RANGE"
+          },
+          "base_system": {
+            "total_mm": 70,
+            "concrete_mm": 50,
+            "underfloor_heating_build_up_mm": 0,
+            "adhesive_plus_ceramic_mm": 20,
+            "neoprene_declared_mm": [
+              5,
+              20
+            ],
+            "neoprene_modeled_mm": 10,
+            "underfloor_heating_pipe_geometry_in_ifc": false
+          },
+          "ceiling_system": {
+            "gypsum_board_mm": 12.5,
+            "structure_declared_mm": [
+              70,
+              100
+            ],
+            "structure_modeled_mm": 75,
+            "free_false_ceiling_space_declared_mm": [
+              100,
+              350
+            ]
+          },
+          "project_options": {
+            "suspended_wc_with_cistern_frame": true,
+            "suspended_wc_outlet_mm": 120,
+            "sliding_door_frame": true,
+            "finishes": "Customizable from PORCELANOSA Group range"
+          },
+          "design_guidance": {
+            "adjacent_technical_shaft_recommended": true,
+            "sanitary_connections": "Horizontal direct connections to shafts",
+            "plan_geometry": "Parallel walls; no more than 6 segments per Monobath"
+          },
+          "mep_product_scope": "Real Monobath is supplied fully finished and project-coordinated; brochure shows installation allowances.",
+          "mep_ifc_scope": "EXCLUDED by established VIVA bathroom modeling requirement: no pipes, drains, ducts, electrical wiring, valves, luminaires or underfloor-heating pipe circuits are geometrically modeled.",
+          "sanitary_and_furniture_scope": "Reference-geometry sanitaryware, shower screen, vanity and mirror are retained to match the supplied IFC level of detail; exact commercial selections are project-dependent.",
+          "nominal_dimensions_mm": [
+            3265,
+            2155,
+            2400
+          ],
+          "module_length_mm": 3265,
+          "module_width_mm": 2155,
+          "module_height_mm": 2400,
+          "mass_kg": 1800,
+          "structure_material": "lightweight steel-framed 3D bathroom module",
+          "floor_system": "factory-finished wet-room floor build-up; project-specific finish selection",
+          "wall_finish": "factory-finished wet-room wall lining; project-specific finish selection",
+          "ceiling_finish": "factory-finished bathroom ceiling; project-specific finish selection",
+          "waterproofing": "factory wet-area waterproofing/tanking with site-sealed building interfaces (VIVA PoC assumption)",
+          "sanitary_scope": "Reference-geometry sanitaryware, shower screen, vanity and mirror are retained to match the supplied IFC level of detail; exact commercial selections are project-dependent.",
+          "mep_scope": "project-specific factory MEP rough-ins and terminal connection points; detailed distribution-network geometry excluded from the representative IFC",
+          "factory_scope": "Baño completamente acabado producido en línea de montaje y suministrado listo para instalación en obra.",
+          "delivery_state": "3D finished bathroom pod ready for placement and project connections",
+          "mounting_system": "Transport, crane lifting, leveling and final finishing/connection per project"
+        },
+        "key_features": [
+          "Baño 3D industrializado completamente acabado",
+          "Personalización con gama PORCELANOSA Grupo",
+          "Estructura de aluminio",
+          "Base de hormigón",
+          "Transporte e izado como módulo terminado",
+          "MEP excluido de la geometría IFC VIVA"
+        ]
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "MOD.BAN",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA",
+          "code": "MOD.BAN.POD.GS001",
+          "relation": "generic_solution"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcElementAssembly",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "90.10.10.10",
+          "description": "Módulos de baño",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "3D",
+          "label": "Tridimensional (3D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_document",
+          "title": "MONOBATH_ES.pdf",
+          "pages": "2-5",
+          "scope": "Concepto Monobath, criterios de diseño, capas de pared, bases estándar/suelo radiante, alturas, transporte e instalación"
+        },
+        {
+          "type": "reference_ifc",
+          "title": "Monobath_Unifamiliar_Detailed_PoC(1).ifc",
+          "scope": "Benchmark de nivel de detalle geométrico e informativo y distribución de referencia; no se usa como fuente para generalizar dimensiones comerciales"
+        },
+        {
+          "type": "manufacturer_web",
+          "url": "https://store.porcelanosa.com/uk/bathrooms/prefabricated-bathrooms",
+          "scope": "Confirmación pública de que Monobath es una solución de baños prefabricados personalizable"
+        }
+      ],
+      "attributes": {
+        "product_family": "Monobath",
+        "custom_product": true,
+        "reference_configuration": true,
+        "base_variant": "STANDARD",
+        "mep_geometry_in_ifc": false
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PROJECT_DEPENDENT",
+        "notes": "Prestaciones acústicas, fuego, accesibilidad y otras exigencias dependen de la configuración y del proyecto; el folleto aportado no declara valores de prestación cerrados."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_IDENTIFIED_IN_PROVIDED_DOCUMENTATION"
+        },
+        "indicators": {},
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./ud",
+              "value": 42.222
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 4.119
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./ud",
+              "value": 2.06
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 3.089
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 51.49,
+          "unit": "kg CO₂ eq./ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 1161.0
+            },
+            {
+              "module": "A4",
+              "value": 13.5
+            }
+          ],
+          "total": 1174.5,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 18900
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "ud",
+        "price_basis": "NOT_AVAILABLE_IN_PROVIDED_DOCUMENTATION",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 3622.99
+            },
+            {
+              "label": "Mano de obra",
+              "value": 1477.77
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 743.47
+            },
+            {
+              "label": "Transporte",
+              "value": 481.38
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 65.11
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 6390.72,
+          "unit": "ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 1350,
+              "unit": "kg",
+              "rate": 1.45,
+              "subtotal": 1957.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 14.0,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 448.0
+            },
+            {
+              "label": "Montaje",
+              "quantity": 3.92,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 145.04
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 2.8,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 137.2
+            },
+            {
+              "label": "Transporte",
+              "quantity": 135.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 18.9
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 135.33,
+              "subtotal": 135.33
+            }
+          ],
+          "total": 2841.97
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "factory_scope": "Baño completamente acabado producido en línea de montaje y suministrado listo para instalación en obra.",
+        "delivery_state": "3D finished bathroom pod ready for placement and project connections",
+        "mounting_interface": "Transport, crane lifting, leveling and final finishing/connection per project",
+        "traceability": "PORCELANOSA Offsite / Monobath + base build-up variant + VIVA BIM version",
+        "une_41610": {
+          "function_classes": [
+            {
+              "code": "UNIDADES_FUNCIONALES_INTEGRADAS",
+              "label": "Unidades funcionales integradas"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "3D",
+            "label": "Tridimensional (3D)"
+          },
+          "classification_applicable": true
+        }
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcElementAssembly"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "USERDEFINED"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Sistemas de elementos"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "90.10.10.10"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Módulos de baño"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcText",
+              "value": "Baño industrializado PORCELANOSA Monobath con base estándar de 70 mm: losa de hormigón de 50 mm más adhesivo y acabado cerámico de 20 mm."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021 · VIVA"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcDate",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "PORCELANOSA Grupo / Butech"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ManufacturerSolution",
+          "applies_to": "IfcElementAssembly",
+          "properties": [
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "PORCELANOSA Grupo"
+            },
+            {
+              "name": "Marca",
+              "ifc_type": "IfcLabel",
+              "value": "PORCELANOSA Offsite · Monobath"
+            },
+            {
+              "name": "FamiliaProducto",
+              "ifc_type": "IfcLabel",
+              "value": "Monobath"
+            },
+            {
+              "name": "ReferenciaComercial",
+              "ifc_type": "IfcIdentifier",
+              "value": "MONOBATH-STD"
+            },
+            {
+              "name": "PersonalizablePorProyecto",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "InstalacionesModeladas",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_BathroomPod",
+          "applies_to": "IfcElementAssembly",
+          "properties": [
+            {
+              "name": "BaseTotalThickness",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.07
+            },
+            {
+              "name": "ConcreteBaseThickness",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.05
+            },
+            {
+              "name": "UnderfloorHeatingBuildUp",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.0
+            },
+            {
+              "name": "AdhesiveCeramicBuildUp",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.02
+            },
+            {
+              "name": "AluminiumStructureModeled",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.0675
+            },
+            {
+              "name": "GypsumBoardThickness",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.015
+            },
+            {
+              "name": "CeramicWallFinishThickness",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.015
+            },
+            {
+              "name": "MEPGeometryIncludedInThisIFC",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_GeometricConstraints",
+          "applies_to": "IfcElementAssembly",
+          "properties": [
+            {
+              "name": "LargoInteriorReferencia",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 3.07
+            },
+            {
+              "name": "AnchoInteriorReferencia",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 1.96
+            },
+            {
+              "name": "AlturaInteriorModelada",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 2.4
+            },
+            {
+              "name": "LargoExteriorModelado",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 3.2649999999999997
+            },
+            {
+              "name": "AnchoExteriorModelado",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 2.155
+            },
+            {
+              "name": "AlturasInterioresCatalogo",
+              "ifc_type": "IfcLabel",
+              "value": "2200;2300;2400;2500 mm"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.PORCELANOSA.MONOBATH.STD"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-PORCELANOSA"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "PORCELANOSA Grupo"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "MONOBATH-STD"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MOD.BAN"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "catalog_variant_basis",
+              "ifc_type": "IfcLabel",
+              "value": "BASE_BUILD_UP"
+            },
+            {
+              "name": "ceiling_finish",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished bathroom ceiling; project-specific finish selection"
+            },
+            {
+              "name": "custom_made",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "3D finished bathroom pod ready for placement and project connections"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Baño completamente acabado producido en línea de montaje y suministrado listo para instalación en obra."
+            },
+            {
+              "name": "floor_system",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished wet-room floor build-up; project-specific finish selection"
+            },
+            {
+              "name": "mass_kg",
+              "ifc_type": "IfcInteger",
+              "value": 1800
+            },
+            {
+              "name": "mep_ifc_scope",
+              "ifc_type": "IfcLabel",
+              "value": "EXCLUDED by established VIVA bathroom modeling requirement: no pipes, drains, ducts, electrical wiring, valves, luminaires or underfloor-heating pipe circuits are geometrically modeled."
+            },
+            {
+              "name": "mep_product_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Real Monobath is supplied fully finished and project-coordinated; brochure shows installation allowances."
+            },
+            {
+              "name": "mep_scope",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific factory MEP rough-ins and terminal connection points; detailed distribution-network geometry excluded from the representative IFC"
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2400
+            },
+            {
+              "name": "module_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3265
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2155
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Transport, crane lifting, leveling and final finishing/connection per project"
+            },
+            {
+              "name": "sanitary_and_furniture_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Reference-geometry sanitaryware, shower screen, vanity and mirror are retained to match the supplied IFC level of detail; exact commercial selections are project-dependent."
+            },
+            {
+              "name": "sanitary_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Reference-geometry sanitaryware, shower screen, vanity and mirror are retained to match the supplied IFC level of detail; exact commercial selections are project-dependent."
+            },
+            {
+              "name": "structure_material",
+              "ifc_type": "IfcLabel",
+              "value": "lightweight steel-framed 3D bathroom module"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "PORCELANOSA Monobath"
+            },
+            {
+              "name": "wall_finish",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished wet-room wall lining; project-specific finish selection"
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "factory wet-area waterproofing/tanking with site-sealed building interfaces (VIVA PoC assumption)"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "component": "Neoprene supports",
+          "material": "Neoprene",
+          "thickness_mm": "5-20 declared; 10 modeled",
+          "source_status": "MANUFACTURER_RANGE_REFERENCE_VALUE_MODELED"
+        },
+        {
+          "sequence": 2,
+          "component": "Concrete base",
+          "material": "Concrete",
+          "thickness_mm": 50,
+          "source_status": "MANUFACTURER_DECLARED"
+        },
+        {
+          "sequence": 3,
+          "component": "Adhesive + ceramic floor finish",
+          "material": "Ceramic system",
+          "thickness_mm": 20,
+          "source_status": "MANUFACTURER_DECLARED"
+        },
+        {
+          "sequence": 4,
+          "component": "Wall structure",
+          "material": "Aluminum frame",
+          "thickness_mm": "60-75 declared; 67.5 modeled",
+          "source_status": "MANUFACTURER_RANGE_REFERENCE_VALUE_MODELED"
+        },
+        {
+          "sequence": 5,
+          "component": "Hydrophobic gypsum board",
+          "material": "Gypsum board",
+          "thickness_mm": 15,
+          "source_status": "MANUFACTURER_DECLARED"
+        },
+        {
+          "sequence": 6,
+          "component": "Interior ceramic wall finish",
+          "material": "PORCELANOSA Group ceramic finish",
+          "thickness_mm": 15,
+          "source_status": "MANUFACTURER_DECLARED_THICKNESS_PROJECT_SELECTION"
+        },
+        {
+          "sequence": 7,
+          "component": "Ceiling",
+          "material": "Gypsum board + aluminum framing",
+          "thickness_mm": "12.5 board; 70-100 structure",
+          "source_status": "MANUFACTURER_DECLARED_RANGE"
+        },
+        {
+          "sequence": 8,
+          "component": "Sanitary equipment and furniture",
+          "material": "Reference placeholders",
+          "source_status": "REFERENCE_IFC_DETAIL_LEVEL_PROJECT_DEPENDENT_SELECTION"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "source": "MONOBATH_ES.pdf",
+          "status": "PRIMARY"
+        },
+        {
+          "id": "E2",
+          "source": "Monobath_Unifamiliar_Detailed_PoC(1).ifc",
+          "status": "REFERENCE_LOD_LOI"
+        },
+        {
+          "id": "E3",
+          "source": "PORCELANOSA official website",
+          "status": "SUPPLEMENTARY"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "POC_FAKE"
+      },
+      "data_quality_notes": [
+        "The supplied brochure describes Monobath as a customizable industrialized bathroom rather than a catalogue of fixed plan-size SKUs.",
+        "Only the two explicitly different base build-ups are emitted as separate VIVA variants: 70 mm standard and 110 mm with hydronic underfloor heating.",
+        "Interior heights 2200/2300/2400/2500 mm, suspended WC and sliding-door frame are treated as configurable options, not separate products.",
+        "The 3070 x 1960 mm plan and sanitary layout are reference geometry derived from the user-supplied IFC to match its LOD/LOI, not dimensions declared as standard by PORCELANOSA.",
+        "The aluminum frame is modeled at 67.5 mm, the midpoint of the documented 60-75 mm range. This is a VIVA reference geometry choice, not a manufacturer standard size.",
+        "No MEP geometry is included. In the hydronic-floor variant, only the documented 40 mm construction allowance is represented; no pipe circuits are modeled.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.une_41610.classification_applicable",
+            "industrialization_data.une_41610.function_classes",
+            "industrialization_data.une_41610.predominant_geometry",
+            "subsystem_code",
+            "technical_data.properties.ceiling_finish",
+            "technical_data.properties.delivery_state",
+            "technical_data.properties.factory_scope",
+            "technical_data.properties.floor_system",
+            "technical_data.properties.mass_kg",
+            "technical_data.properties.mep_scope",
+            "technical_data.properties.module_height_mm",
+            "technical_data.properties.module_length_mm",
+            "technical_data.properties.module_width_mm",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.nominal_dimensions_mm",
+            "technical_data.properties.sanitary_scope",
+            "technical_data.properties.structure_material",
+            "technical_data.properties.wall_finish",
+            "technical_data.properties.waterproofing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.PORCELANOSA.MONOBATH.STD.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-STD.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "PORCELANOSA Monobath",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "lightweight steel-framed 3D bathroom module",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "3D finished bathroom pod ready for placement and project connections",
+          "unit": "unit"
+        },
+        "module_width_mm": {
+          "value": 2155,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2400,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 2772.35,
+          "unit": "mm"
+        },
+        "module_area_m2": {
+          "value": 8.1,
+          "unit": "m²"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/ud",
+            "value": 274.36
+          },
+          "module_area_m2": {
+            "unit": "m²",
+            "value": 8.1
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en MOD.BAN. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de módulo industrializado; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia módulo industrializado.",
+        "functional_unit": "ud",
+        "short": "PORCELANOSA · Monobath · base estándar. Esquema de demostración para la familia «Módulo industrializado»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Estructura portante",
+            "name": "Estructura portante",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Cerramiento",
+            "material": "Envolvente",
+            "name": "Envolvente",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Equipo",
+            "material": "Instalaciones",
+            "name": "Instalaciones",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabados",
+            "name": "Acabados",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

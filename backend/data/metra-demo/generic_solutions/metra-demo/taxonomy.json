@@ -1,0 +1,1546 @@
+{
+  "scheme": "VIVA-RES",
+  "taxonomy_version": "1.0.0",
+  "date": "2026-09-14",
+  "status": "proposed_release",
+  "archetype_code_pattern": "^(EST|ENV|INT|INS)\\.[A-Z]{3}\\.[A-Z0-9]+(?:-[A-Z0-9]+)*$",
+  "generic_solution_code_pattern": "^(EST|ENV|INT|INS)\\.[A-Z]{3}\\.[A-Z0-9]+(?:-[A-Z0-9]+)*\\.GS[0-9]{3,}$",
+  "rules": [
+    "La clasificación es propia de VIVA; las abreviaturas no son códigos oficiales CTE o GuBIMClass.",
+    "Exactamente tres niveles en el código de arquetipo: SISTEMA.SUBSISTEMA.ARQUETIPO. El guion une descriptores dentro del tercer nivel.",
+    "El identificador completo se interpreta dentro del esquema VIVA-RES. En intercambio externo usar scheme=VIVA-RES y code por separado.",
+    "Códigos congelados al publicar: no modificar al cambiar nombre, orden, datos técnicos o referencias normativas; no reutilizar códigos retirados.",
+    "El UUID del registro es persistente e independiente de la ruta; no recalcularlo al editar o volver a exportar.",
+    "Un traslado de rama exige nuevo código y conservar el anterior como alias histórico del mismo concepto; una división o fusión semántica exige nuevos UUID y relaciones de sustitución, no alias de equivalencia.",
+    "schema_version pertenece al esquema de soluciones; taxonomy_version pertenece al registro. No son intercambiables.",
+    "Cada JSON de arquetipo contiene generic_solutions. Los códigos de solución siguen ARQUETIPO.GS001; el número es un identificador local inmutable, no otra clase taxonómica.",
+    "No codificar fabricantes, espesores, prestaciones, precios, nivel de calidad ni revisión en el código del arquetipo.",
+    "GuBIMClass se mantiene en mappings externos. Verificación de código y etiqueta no implica equivalencia semántica completa del conjunto.",
+    "No inferir autorización de una compatibilidad desconocida. No duplicar cantidades de estructura en soluciones de envolvente.",
+    "El registro conserva el alcance pasivo acordado y añade únicamente los subsistemas INS respaldados por la fuente experta."
+  ],
+  "descriptor_glossary_es": {
+    "HA": "Hormigón armado",
+    "H": "Hormigón",
+    "IS": "In situ",
+    "PRE": "Prefabricado",
+    "AC": "Acero",
+    "PU": "Perfil único",
+    "MM": "Madera maciza",
+    "MLE": "Madera laminada encolada",
+    "FAB": "Fábrica",
+    "ARM": "Armada",
+    "CLT": "Madera contralaminada (cross-laminated timber)",
+    "EL": "Entramado ligero",
+    "MAD": "Madera; incluye derivados en INT.PUE.MAD",
+    "VH": "Viguetas de hormigón",
+    "EH": "Entrevigado de hormigón",
+    "ALV": "Placas alveolares",
+    "LC": "Losa superior colaborante",
+    "LM": "Losa maciza",
+    "2D": "Comportamiento bidireccional",
+    "CC": "Chapa colaborante",
+    "VM": "Viguetas de madera",
+    "TE": "Tablero estructural",
+    "AL": "Alma llena",
+    "2H": "Dos hojas",
+    "FV": "Fachada ventilada",
+    "RC": "Revestimiento continuo",
+    "PH": "Panel prefabricado de hormigón",
+    "AIS": "Con aislamiento",
+    "PSM": "Panel sándwich metálico aislante",
+    "SATE": "Sistema de aislamiento térmico por el exterior; acabado revestido en este catálogo",
+    "ME": "Muro estructural referenciado",
+    "PL": "Plana",
+    "CON": "Convencional",
+    "INV": "Invertida",
+    "PVC": "Policloruro de vinilo",
+    "ALU": "Aluminio",
+    "1H": "Una hoja",
+    "2HD": "Dos hojas desacopladas",
+    "ES": "Entramado sencillo",
+    "PLC": "Placas",
+    "EDI": "Entramado doble independiente",
+    "PMI": "Paneles modulares industrializados",
+    "DIR": "Directo adherido",
+    "ANC": "Perfilería anclada",
+    "AUT": "Autoportante de una cara",
+    "VID": "Vidrio",
+    "RA": "Recrecido adherido",
+    "PA": "Pavimento adherido",
+    "RFH": "Recrecido flotante húmedo",
+    "RFS": "Recrecido flotante seco",
+    "BN": "Base nivelada",
+    "PF": "Pavimento flotante",
+    "SC": "Suspendido continuo de placas"
+  },
+  "systems": [
+    {
+      "id": "dd9d1b51-8146-4151-89a1-5bacf468312a",
+      "code": "EST",
+      "name_es": "Estructura",
+      "subsystems": [
+        {
+          "id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+          "code": "EST.PIL",
+          "parent_id": "dd9d1b51-8146-4151-89a1-5bacf468312a",
+          "name_es": "Pilares",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "20.20.10.10",
+              "name_es": "Pilares",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "d7ff2c36-8b7f-4c2a-b269-2ae6bca3de27",
+              "code": "EST.PIL.HA-IS",
+              "parent_id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+              "name_es": "Pilar de hormigón armado in situ",
+              "description": "Pilar de hormigón armado in situ. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/PIL/EST.PIL.HA-IS.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.10",
+                  "name_es": "Pilares",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "ab1cde62-3fae-42eb-af91-7cc2c6fe6a78",
+              "code": "EST.PIL.HA-PRE",
+              "parent_id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+              "name_es": "Pilar prefabricado de hormigón armado",
+              "description": "Pilar prefabricado de hormigón armado. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/PIL/EST.PIL.HA-PRE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.10",
+                  "name_es": "Pilares",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "241366aa-0146-4d79-aa3b-ead4ae5e55a8",
+              "code": "EST.PIL.AC-PU",
+              "parent_id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+              "name_es": "Pilar de acero de perfil único",
+              "description": "Perfil único abierto o hueco; sin relleno colaborante de hormigón.",
+              "status": "active",
+              "file": "archetypes/EST/PIL/EST.PIL.AC-PU.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.10",
+                  "name_es": "Pilares",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "5f213237-8f4f-409a-ad39-e361d4885183",
+              "code": "EST.PIL.MM",
+              "parent_id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+              "name_es": "Pilar de madera maciza",
+              "description": "Madera maciza; excluye laminada encolada y microlaminada. La antigua familia AVRA-A005 era más amplia: no es un alias equivalente.",
+              "status": "active",
+              "file": "archetypes/EST/PIL/EST.PIL.MM.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.10",
+                  "name_es": "Pilares",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "119b8cd4-4b3e-4c2c-950b-da2de9327eb9",
+              "code": "EST.PIL.MLE",
+              "parent_id": "81d6fd74-953d-4633-bca8-d8591ff9f9a5",
+              "name_es": "Pilar de madera laminada encolada",
+              "description": "Madera laminada encolada; familia separada aceptada en la propuesta anterior.",
+              "status": "active",
+              "file": "archetypes/EST/PIL/EST.PIL.MLE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.10",
+                  "name_es": "Pilares",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+          "code": "EST.MUR",
+          "parent_id": "dd9d1b51-8146-4151-89a1-5bacf468312a",
+          "name_es": "Muros estructurales",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "20.20.10.30",
+              "name_es": "Muros estructurales",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "edcb51a1-e3ec-407d-a27e-27898213d0f2",
+              "code": "EST.MUR.FAB-ARM",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro estructural de fábrica armada",
+              "description": "Muro estructural de fábrica armada. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.FAB-ARM.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "9e89a6fd-ef22-47bc-ba34-6d80938233ac",
+              "code": "EST.MUR.HA-IS",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro de hormigón armado in situ",
+              "description": "Muro de hormigón armado in situ. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.HA-IS.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "0fd649bf-cbf9-4706-942a-b6710fe37f5b",
+              "code": "EST.MUR.H-PRE",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro de paneles prefabricados de hormigón",
+              "description": "Muro de paneles prefabricados de hormigón. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.H-PRE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "9124b7c2-535b-4a2d-bced-e80dc363db4a",
+              "code": "EST.MUR.CLT",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro de paneles de madera contralaminada",
+              "description": "Muro de paneles de madera contralaminada. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.CLT.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "9dd9839b-c3c2-49bf-9569-9100fe2331cf",
+              "code": "EST.MUR.EL-MAD",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro estructural de entramado ligero de madera",
+              "description": "La entrega panelizada se especifica en la solución. No convertir el método de suministro en otro nivel taxonómico.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.EL-MAD.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "96940bf0-b4ab-43e6-a443-2c4b97b32fe4",
+              "code": "EST.MUR.EL-AC",
+              "parent_id": "be2cd863-85ca-4a61-aaab-2742e8332f3b",
+              "name_es": "Muro estructural de entramado ligero de acero",
+              "description": "Montaje en obra y panelización se especifican en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/MUR/EST.MUR.EL-AC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.10.30",
+                  "name_es": "Muros estructurales",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+          "code": "EST.FOR",
+          "parent_id": "dd9d1b51-8146-4151-89a1-5bacf468312a",
+          "name_es": "Forjados estructurales",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "20.20.20.10",
+              "name_es": "Forjados",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "baa45428-4580-4a97-bd14-dcb39e63a755",
+              "code": "EST.FOR.VH-EH",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Forjado unidireccional de viguetas de hormigón y entrevigado de hormigón",
+              "description": "Forjado unidireccional de viguetas de hormigón y entrevigado de hormigón. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.VH-EH.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "2cb76bc2-14c6-4564-80eb-7b7fb3720fee",
+              "code": "EST.FOR.ALV-LC",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Forjado de placas alveolares con losa superior colaborante",
+              "description": "Forjado de placas alveolares con losa superior colaborante. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.ALV-LC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "50712b6c-a5b6-4a8f-bdac-c6da50289f6f",
+              "code": "EST.FOR.LM-HA-2D",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Losa maciza bidireccional de hormigón armado in situ",
+              "description": "La configuración de apoyos BIM debe ser compatible con comportamiento bidireccional.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.LM-HA-2D.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "7cc1ba15-3d94-4c5a-9bc4-bcf3d1d378cd",
+              "code": "EST.FOR.CC-H",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Forjado mixto de chapa colaborante y hormigón",
+              "description": "Forjado mixto de chapa colaborante y hormigón. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.CC-H.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "e4f03596-147e-40d0-b284-d753a23b83ac",
+              "code": "EST.FOR.VM-TE",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Forjado de viguetas de madera y tablero estructural",
+              "description": "Forjado de viguetas de madera y tablero estructural. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.VM-TE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "90ba3824-9415-4e4d-afc4-d48cb163ed1b",
+              "code": "EST.FOR.CLT",
+              "parent_id": "079f443b-5f82-4e6a-ab90-92398a44da68",
+              "name_es": "Forjado de paneles de madera contralaminada",
+              "description": "Forjado de paneles de madera contralaminada. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/FOR/EST.FOR.CLT.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.10",
+                  "name_es": "Forjados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+          "code": "EST.VIG",
+          "parent_id": "dd9d1b51-8146-4151-89a1-5bacf468312a",
+          "name_es": "Vigas",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "20.20.20.20",
+              "name_es": "Jácenas",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "4eef623a-ae7e-4c3e-b67b-667723201b5d",
+              "code": "EST.VIG.HA-IS",
+              "parent_id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+              "name_es": "Viga de hormigón armado in situ",
+              "description": "Viga de hormigón armado in situ. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/VIG/EST.VIG.HA-IS.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.20",
+                  "name_es": "Jácenas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "86efc036-b9c6-4fb9-9358-fd4d060e762f",
+              "code": "EST.VIG.HA-PRE",
+              "parent_id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+              "name_es": "Viga prefabricada de hormigón armado",
+              "description": "Viga prefabricada de hormigón armado. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/VIG/EST.VIG.HA-PRE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.20",
+                  "name_es": "Jácenas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "896e8215-3bce-4120-b821-7b9ff10659ad",
+              "code": "EST.VIG.AC-AL",
+              "parent_id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+              "name_es": "Viga de acero de alma llena",
+              "description": "Viga de acero de alma llena. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/VIG/EST.VIG.AC-AL.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.20",
+                  "name_es": "Jácenas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "e566c59c-3d3a-4129-8c8e-3d665f38e75b",
+              "code": "EST.VIG.MM",
+              "parent_id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+              "name_es": "Viga de madera maciza",
+              "description": "Madera maciza; excluye laminada encolada y microlaminada. La antigua familia AVRA-A033 era más amplia: no es un alias equivalente.",
+              "status": "active",
+              "file": "archetypes/EST/VIG/EST.VIG.MM.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.20",
+                  "name_es": "Jácenas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "3e2daafb-094d-45c6-97c3-b255be0981c8",
+              "code": "EST.VIG.MLE",
+              "parent_id": "6d158646-47ca-4c5c-a3d9-8625083bb9ac",
+              "name_es": "Viga de madera laminada encolada",
+              "description": "Viga de madera laminada encolada. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/EST/VIG/EST.VIG.MLE.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "20.20.20.20",
+                  "name_es": "Jácenas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2076e191-05f9-4963-b963-6b7fdd36c9b1",
+      "code": "ENV",
+      "name_es": "Envolvente",
+      "subsystems": [
+        {
+          "id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+          "code": "ENV.FAC",
+          "parent_id": "2076e191-05f9-4963-b963-6b7fdd36c9b1",
+          "name_es": "Fachadas",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "30.10.10",
+              "name_es": "Fachadas",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "bd3517df-6893-4b5d-8079-12adb5242448",
+              "code": "ENV.FAC.FAB-2H",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada de fábrica de dos hojas con aislamiento intermedio",
+              "description": "Fachada de fábrica de dos hojas con aislamiento intermedio. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.FAB-2H.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "63dd214f-7c20-46de-8864-92b12eb02ffb",
+              "code": "ENV.FAC.FV-FAB",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada ventilada sobre hoja de fábrica",
+              "description": "Incluye hoja de fábrica no portante propia; no duplica un muro estructural.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.FV-FAB.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "3ae225c6-8991-4502-9a8d-2a55ee0b5b32",
+              "code": "ENV.FAC.FV-EL",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada ventilada sobre entramado ligero no portante",
+              "description": "Entramado no portante. Material y panelización en la solución.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.FV-EL.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "52e6e7b7-c74f-44e7-95f7-c9a418f1e570",
+              "code": "ENV.FAC.RC-EL",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada de entramado ligero no portante con revestimiento continuo",
+              "description": "Entramado no portante. Material y panelización en la solución.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.RC-EL.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "00e24299-796e-49a2-a8d0-c50551c3e80d",
+              "code": "ENV.FAC.PH-AIS",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada de paneles prefabricados de hormigón con aislamiento",
+              "description": "Fachada de paneles prefabricados de hormigón con aislamiento. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.PH-AIS.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "57189a58-e6cd-45d0-b8cb-228ccf50aa0b",
+              "code": "ENV.FAC.PSM",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada de panel sándwich metálico aislante",
+              "description": "Fachada de panel sándwich metálico aislante. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.PSM.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "8e79997c-acea-4fb0-a116-c6c004307986",
+              "code": "ENV.FAC.SATE-ME",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada con SATE sobre muro estructural",
+              "description": "Incluye paquete de envolvente necesario; referencia el muro estructural seleccionado por separado y no duplica sus cantidades.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.SATE-ME.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "13bada24-2a90-45db-ab0d-8765bcc190d4",
+              "code": "ENV.FAC.FV-ME",
+              "parent_id": "1cfdecac-081c-4d5d-bba4-5f7a8cee1715",
+              "name_es": "Fachada ventilada sobre muro estructural",
+              "description": "Incluye paquete de envolvente necesario; referencia el muro estructural seleccionado por separado y no duplica sus cantidades.",
+              "status": "active",
+              "file": "archetypes/ENV/FAC/ENV.FAC.FV-ME.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.10",
+                  "name_es": "Fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1fc7dd2-6b89-4eef-99c0-8158f0d66bc5",
+          "code": "ENV.CUB",
+          "parent_id": "2076e191-05f9-4963-b963-6b7fdd36c9b1",
+          "name_es": "Cubiertas",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "30.20.10",
+              "name_es": "Cubiertas",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "4afb9ecb-8285-479e-9db5-d56909c75907",
+              "code": "ENV.CUB.PL-CON",
+              "parent_id": "a1fc7dd2-6b89-4eef-99c0-8158f0d66bc5",
+              "name_es": "Cubierta plana convencional",
+              "description": "Cubierta plana convencional. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/ENV/CUB/ENV.CUB.PL-CON.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.20.10",
+                  "name_es": "Cubiertas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ],
+              "generic_solution_families_es": [
+                "Membrana expuesta",
+                "Protección pesada suelta",
+                "Pavimento sobre capa de reparto",
+                "Ajardinada convencional"
+              ]
+            },
+            {
+              "id": "7181ce59-0f62-4e51-bc43-a8e84748933e",
+              "code": "ENV.CUB.PL-INV",
+              "parent_id": "a1fc7dd2-6b89-4eef-99c0-8158f0d66bc5",
+              "name_es": "Cubierta plana invertida",
+              "description": "Cubierta plana invertida. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/ENV/CUB/ENV.CUB.PL-INV.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.20.10",
+                  "name_es": "Cubiertas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ],
+              "generic_solution_families_es": [
+                "Protección pesada suelta",
+                "Pavimento sobre capa de reparto",
+                "Pavimento elevado",
+                "Ajardinada invertida"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "92d58594-e329-4f75-9fe3-8081b29ca630",
+          "code": "ENV.VEN",
+          "parent_id": "2076e191-05f9-4963-b963-6b7fdd36c9b1",
+          "name_es": "Ventanas exteriores",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "30.10.20.10",
+              "name_es": "Ventanas de fachadas",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "383e86c8-289f-4537-a470-6765fa4a5905",
+              "code": "ENV.VEN.MAD",
+              "parent_id": "92d58594-e329-4f75-9fe3-8081b29ca630",
+              "name_es": "Ventana con marco de madera",
+              "description": "Ventana con marco de madera. Los detalles de composición y prestaciones se definen en generic_solutions. Geometría y apertura proceden del BIM; la solución declara compatibilidad.",
+              "status": "active",
+              "file": "archetypes/ENV/VEN/ENV.VEN.MAD.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.20.10",
+                  "name_es": "Ventanas de fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "642aaf24-a4ea-4f5e-928a-84c1363c44a7",
+              "code": "ENV.VEN.PVC",
+              "parent_id": "92d58594-e329-4f75-9fe3-8081b29ca630",
+              "name_es": "Ventana con marco de PVC",
+              "description": "Ventana con marco de PVC. Los detalles de composición y prestaciones se definen en generic_solutions. Geometría y apertura proceden del BIM; la solución declara compatibilidad.",
+              "status": "active",
+              "file": "archetypes/ENV/VEN/ENV.VEN.PVC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.20.10",
+                  "name_es": "Ventanas de fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "522fa8df-07e3-4e44-a336-062d735aac09",
+              "code": "ENV.VEN.ALU",
+              "parent_id": "92d58594-e329-4f75-9fe3-8081b29ca630",
+              "name_es": "Ventana con marco de aluminio",
+              "description": "Ventana con marco de aluminio. Los detalles de composición y prestaciones se definen en generic_solutions. Geometría y apertura proceden del BIM; la solución declara compatibilidad.",
+              "status": "active",
+              "file": "archetypes/ENV/VEN/ENV.VEN.ALU.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "30.10.20.10",
+                  "name_es": "Ventanas de fachadas",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados",
+      "subsystems": [
+        {
+          "id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+          "code": "INT.PAR",
+          "parent_id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+          "name_es": "Particiones interiores verticales",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.10.10.10",
+              "name_es": "Tabiques",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "98ce63ce-bea7-4d7d-bb8d-bf2abdbcd740",
+              "code": "INT.PAR.FAB-1H",
+              "parent_id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+              "name_es": "Partición de fábrica de una hoja",
+              "description": "Partición de fábrica de una hoja. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/PAR/INT.PAR.FAB-1H.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.10",
+                  "name_es": "Tabiques",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "3d561e18-ea76-4816-b94c-9302e61e345b",
+              "code": "INT.PAR.FAB-2HD",
+              "parent_id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+              "name_es": "Partición de fábrica de dos hojas desacopladas",
+              "description": "Dos hojas de fábrica desacopladas, tal como confirma AVRA-A061 en el JSON original.",
+              "status": "active",
+              "file": "archetypes/INT/PAR/INT.PAR.FAB-2HD.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.10",
+                  "name_es": "Tabiques",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "d7afc55c-bb9f-455f-9162-1f3adb55b581",
+              "code": "INT.PAR.ES-PLC",
+              "parent_id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+              "name_es": "Partición de entramado sencillo y placas",
+              "description": "Partición de entramado sencillo y placas. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/PAR/INT.PAR.ES-PLC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.10",
+                  "name_es": "Tabiques",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "72ce27bb-a330-43c7-ba23-d32f6fc4b087",
+              "code": "INT.PAR.EDI-PLC",
+              "parent_id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+              "name_es": "Partición de doble entramado independiente y placas",
+              "description": "Partición de doble entramado independiente y placas. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/PAR/INT.PAR.EDI-PLC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.10",
+                  "name_es": "Tabiques",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "37a8c621-221c-452c-b7f9-ba5ac7b1417e",
+              "code": "INT.PAR.PMI",
+              "parent_id": "d9a4e0ad-f396-48c1-a2c3-119521e326fe",
+              "name_es": "Partición de paneles modulares industrializados",
+              "description": "Sistema modular de paneles y juntas distinto del simple suministro panelizado de una partición de entramado. La correspondencia más específica Tabiques/Mamparas depende de la solución.",
+              "status": "active",
+              "file": "archetypes/INT/PAR/INT.PAR.PMI.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10",
+                  "name_es": "Compartimentación interior vertical",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2ac00374-5e21-4662-a41d-b119df7ca5b8",
+          "code": "INT.TRA",
+          "parent_id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+          "name_es": "Trasdosados interiores",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.10.10.30",
+              "name_es": "Trasdosados",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "a0a39038-34be-496d-82dc-83baa8f941a3",
+              "code": "INT.TRA.DIR",
+              "parent_id": "2ac00374-5e21-4662-a41d-b119df7ca5b8",
+              "name_es": "Trasdosado directo adherido",
+              "description": "Trasdosado directo adherido. Los detalles de composición y prestaciones se definen en generic_solutions. Sólo acabado interior; los trasdosados necesarios para completar fachadas pertenecen a esas soluciones.",
+              "status": "active",
+              "file": "archetypes/INT/TRA/INT.TRA.DIR.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.30",
+                  "name_es": "Trasdosados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "a41425b3-2146-4d72-8f76-745a11be36d1",
+              "code": "INT.TRA.ANC",
+              "parent_id": "2ac00374-5e21-4662-a41d-b119df7ca5b8",
+              "name_es": "Trasdosado sobre perfilería anclada al soporte",
+              "description": "Trasdosado sobre perfilería anclada al soporte. Los detalles de composición y prestaciones se definen en generic_solutions. Sólo acabado interior; los trasdosados necesarios para completar fachadas pertenecen a esas soluciones.",
+              "status": "active",
+              "file": "archetypes/INT/TRA/INT.TRA.ANC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.30",
+                  "name_es": "Trasdosados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "8488ebe5-f62e-4dfb-9b41-89e2f4239ff2",
+              "code": "INT.TRA.AUT",
+              "parent_id": "2ac00374-5e21-4662-a41d-b119df7ca5b8",
+              "name_es": "Trasdosado autoportante de una cara",
+              "description": "Trasdosado autoportante de una cara. Los detalles de composición y prestaciones se definen en generic_solutions. Sólo acabado interior; los trasdosados necesarios para completar fachadas pertenecen a esas soluciones.",
+              "status": "active",
+              "file": "archetypes/INT/TRA/INT.TRA.AUT.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.30",
+                  "name_es": "Trasdosados",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0f94f687-3bbb-440d-b736-c5666100a3af",
+          "code": "INT.PUE",
+          "parent_id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+          "name_es": "Puertas interiores",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.10.10.40",
+              "name_es": "Carpintería interior",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "76b23411-d97c-4ca3-8d53-63c334110c83",
+              "code": "INT.PUE.MAD",
+              "parent_id": "0f94f687-3bbb-440d-b736-c5666100a3af",
+              "name_es": "Puerta interior de madera o derivados",
+              "description": "Incluye madera y derivados; núcleo y acabados son variantes. Un inserto acristalado no cambia por sí solo la familia a VID. Geometría y apertura proceden del BIM; la solución declara compatibilidad.",
+              "status": "active",
+              "file": "archetypes/INT/PUE/INT.PUE.MAD.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.40",
+                  "name_es": "Carpintería interior",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "a3ba4078-8976-4b53-bf56-b5f62cbf7dec",
+              "code": "INT.PUE.VID",
+              "parent_id": "0f94f687-3bbb-440d-b736-c5666100a3af",
+              "name_es": "Puerta interior de vidrio",
+              "description": "Puerta interior de vidrio. Los detalles de composición y prestaciones se definen en generic_solutions. Geometría y apertura proceden del BIM; la solución declara compatibilidad.",
+              "status": "active",
+              "file": "archetypes/INT/PUE/INT.PUE.VID.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.10.10.40",
+                  "name_es": "Carpintería interior",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8c938912-0993-4db9-a036-e046203b2edd",
+          "code": "INT.SUE",
+          "parent_id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+          "name_es": "Suelos interiores",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.20.10.30",
+              "name_es": "Recrecidos",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            },
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.20.20.20",
+              "name_es": "Pavimentos",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "87005fed-bf57-4801-998e-da4efda9f561",
+              "code": "INT.SUE.RA-PA",
+              "parent_id": "8c938912-0993-4db9-a036-e046203b2edd",
+              "name_es": "Suelo con recrecido adherido y pavimento adherido",
+              "description": "Suelo con recrecido adherido y pavimento adherido. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/SUE/INT.SUE.RA-PA.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.10.30",
+                  "name_es": "Recrecidos",
+                  "relation": "component_reference",
+                  "component": "recrecido",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                },
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.20.20",
+                  "name_es": "Pavimentos",
+                  "relation": "component_reference",
+                  "component": "pavimento",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "95386030-10b4-4403-a70c-7b011eacd792",
+              "code": "INT.SUE.RFH-PA",
+              "parent_id": "8c938912-0993-4db9-a036-e046203b2edd",
+              "name_es": "Suelo con recrecido flotante húmedo y pavimento adherido",
+              "description": "Suelo con recrecido flotante húmedo y pavimento adherido. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/SUE/INT.SUE.RFH-PA.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.10.30",
+                  "name_es": "Recrecidos",
+                  "relation": "component_reference",
+                  "component": "recrecido",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                },
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.20.20",
+                  "name_es": "Pavimentos",
+                  "relation": "component_reference",
+                  "component": "pavimento",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "20a0851c-0f27-4980-8d7d-943523cd2817",
+              "code": "INT.SUE.RFS-PA",
+              "parent_id": "8c938912-0993-4db9-a036-e046203b2edd",
+              "name_es": "Suelo con recrecido flotante seco y pavimento adherido",
+              "description": "Suelo con recrecido flotante seco y pavimento adherido. Los detalles de composición y prestaciones se definen en generic_solutions.",
+              "status": "active",
+              "file": "archetypes/INT/SUE/INT.SUE.RFS-PA.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.10.30",
+                  "name_es": "Recrecidos",
+                  "relation": "component_reference",
+                  "component": "recrecido",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                },
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.20.20",
+                  "name_es": "Pavimentos",
+                  "relation": "component_reference",
+                  "component": "pavimento",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "c5dc5de7-a8de-4537-8e7f-66853079ccf6",
+              "code": "INT.SUE.BN-PF",
+              "parent_id": "8c938912-0993-4db9-a036-e046203b2edd",
+              "name_es": "Suelo sobre base nivelada con pavimento flotante",
+              "description": "Base nivelada; excluye el recrecido flotante con pavimento flotante retirado del catálogo.",
+              "status": "active",
+              "file": "archetypes/INT/SUE/INT.SUE.BN-PF.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.20.20",
+                  "name_es": "Pavimentos",
+                  "relation": "component_reference",
+                  "component": "pavimento",
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "629b8228-3152-4c46-b8a8-dbd3dda11a47",
+          "code": "INT.TEC",
+          "parent_id": "8e2d9a4a-8fdc-4cf1-be22-317766d40011",
+          "name_es": "Techos interiores",
+          "gubimclass_references": [
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.20.10.10",
+              "name_es": "Falsos techos interiores",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            },
+            {
+              "scheme": "GuBIMClass",
+              "version": "1.2",
+              "code": "40.20.20.10",
+              "name_es": "Revestimientos techos",
+              "relation": "functional_reference",
+              "component": null,
+              "review_status": "code_and_label_verified_against_attachment",
+              "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+            }
+          ],
+          "archetypes": [
+            {
+              "id": "95f5b2c4-2782-460b-ac26-d427d11f2421",
+              "code": "INT.TEC.RC",
+              "parent_id": "629b8228-3152-4c46-b8a8-dbd3dda11a47",
+              "name_es": "Techo con revestimiento continuo aplicado",
+              "description": "Acabado aplicado al soporte; no es un falso techo suspendido.",
+              "status": "active",
+              "file": "archetypes/INT/TEC/INT.TEC.RC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.20.10",
+                  "name_es": "Revestimientos techos",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            },
+            {
+              "id": "b88a1659-fbe1-44e7-ba7b-762df0ee097f",
+              "code": "INT.TEC.SC",
+              "parent_id": "629b8228-3152-4c46-b8a8-dbd3dda11a47",
+              "name_es": "Techo suspendido continuo de placas",
+              "description": "Incluye cuelgues, perfilería y placas; registros puntuales no lo convierten en techo modular.",
+              "status": "active",
+              "file": "archetypes/INT/TEC/INT.TEC.SC.json",
+              "aliases": [],
+              "gubimclass_references": [
+                {
+                  "scheme": "GuBIMClass",
+                  "version": "1.2",
+                  "code": "40.20.10.10",
+                  "name_es": "Falsos techos interiores",
+                  "relation": "functional_reference",
+                  "component": null,
+                  "review_status": "code_and_label_verified_against_attachment",
+                  "scope_note": "Referencia funcional; no afirmar equivalencia exacta entre una solución completa y esta clase."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "type": "attachment",
+      "name": "AVRA_taxonomy_draft_v0_1(1).json"
+    },
+    {
+      "type": "attachment",
+      "name": "generic-solutions-v2.schema.json"
+    },
+    {
+      "type": "attachment",
+      "name": "GuBIMclass v.1.2_ES-AssemblyCode.txt"
+    },
+    {
+      "title": "Estructura y contenidos del CTE",
+      "url": "https://www.codigotecnico.org/QueEsCTE/EstructuraYContenidos.html"
+    },
+    {
+      "title": "Catálogo de Elementos Constructivos CTE, versión preliminar marzo 2010; referencia terminológica histórica, no equivalencia de códigos",
+      "url": "https://www.codigotecnico.org/pdf/Programas/CEC/CAT-EC-v06.3_marzo_10.pdf"
+    }
+  ]
+}

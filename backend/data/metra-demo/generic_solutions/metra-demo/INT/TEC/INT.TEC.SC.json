@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.TEC",
+      "name_es": "Techos interiores"
+    },
+    "archetype": {
+      "code": "INT.TEC.SC",
+      "name_es": "Techo suspendido continuo de placas",
+      "description": "Incluye cuelgues, perfilería y placas; registros puntuales no lo convierten en techo modular."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

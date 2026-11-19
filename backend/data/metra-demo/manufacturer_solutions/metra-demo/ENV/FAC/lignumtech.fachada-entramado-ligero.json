@@ -1,0 +1,893 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-LIGNUMTECH",
+    "name": "Lignum Tech",
+    "website": "https://lignumtech.es/",
+    "description": "Fabricante español de sistemas constructivos industrializados en madera y módulos tridimensionales para edificación.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5MaWdudW0gVGVjaDwvdGV4dD48L3N2Zz4=",
+    "address": "Madrid / planta de producción en Cuenca",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "country": "ES"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "ENV.FAC.RC-EL.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "ENV.FAC",
+      "code": "MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO",
+      "commercial_reference": "FACHADA-ENTRAMADO-LIGERO",
+      "name_es": "Soporte fachada de entramado ligero Lignum Tech",
+      "description": "Soporte de fachada no portante con entramado ligero de madera, aislamiento y OSB-3, con PYL interior y barrera de vapor; revestimiento continuo/SATE exterior a definir por el proyecto, no incluido como material definitivo en el BIM.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "ENV.FAC",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "USERDEFINED",
+          "ecob_bim_class": "Muros de fachada",
+          "gubimclass_code": "30.10.10.20",
+          "gubimclass_description": "Fachadas prefabricadas",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 - VIVA"
+        },
+        "properties": {
+          "structural_role": "non_load_bearing",
+          "system_type": "non_load_bearing_light_timber_frame_support",
+          "is_external": true,
+          "primary_material": "Timber framework, mineral wool, OSB-3, gypsum board and membranes",
+          "reference_panel_width_mm": 3000,
+          "reference_panel_height_mm": 3000,
+          "reference_panel_geometry_status": "illustrative; within manufacturer optimum envelope, NOT a shop drawing",
+          "approx_mass_kg_m2": 50,
+          "documented_gypsum_board_thickness_mm": 15,
+          "documented_mineral_wool_thickness_mm": 140,
+          "documented_mineral_wool_density_kg_m3": 70,
+          "finish_by_project": true,
+          "external_finish": "Unfinished exterior: continuous finish/SATE designed and installed to project",
+          "window_integration": "Optional; omitted from representative IFC because dimensions/specification not supplied",
+          "u_value_w_m2k": 0.24,
+          "rw_db": 45,
+          "fire_rating": "project_specific",
+          "nominal_total_thickness_mm": null,
+          "geometry_detail": {
+            "frame_depth_modelled_mm": 90,
+            "modelled_total_depth_mm": 124,
+            "osb_modelled_mm": 18,
+            "status": "illustrative/reference geometry",
+            "variant": "Esquema 90 mm entramado / OSB-3 18 mm de seccion p.21; espesor de lana 140 mm de p.20 queda PENDIENTE de aclaracion",
+            "representation": "Decomposed IfcWall with typed VIVA/eCOB psets; independently selectable IfcMember/IfcPlate/IfcCovering constituent solids and LT_Component per-element metadata."
+          },
+          "documented_optimum_panel_dimensions_mm": [
+            6000,
+            3000
+          ],
+          "reported_system_depth_mm": 90,
+          "reported_total_diagram_depth_m": 0.13,
+          "unresolved_conflict": "Dossier page 20 describes 140 mm mineral wool but calls the industrialized system 90 mm deep; page 21 depicts 90 mm frame + 18 mm board; do not treat modelling cavity depth as confirmed",
+          "SATE_outside_factory_scope": "Project-defined and NOT included in schematic geometry",
+          "reference_alignment": {
+            "source_file": "ENV_FAC_LIGNUMTECH.ifc",
+            "sha256": "62a9b40d75908dbbdc76a5af279d6d6bdecfc4fcd9f385118f14dccfc41bf02c",
+            "authority": "user-provided independent study; not manufacturer-approved",
+            "strategy": "reference semantic component structure adapted; dossier-derived schematic geometry"
+          },
+          "thickness_mm": 220,
+          "mass_kg_m2": 50,
+          "module_width_mm": 3000,
+          "module_height_mm": 3000,
+          "integrated_window": false,
+          "exterior_finish": "project_specific",
+          "insulation": "project_specific thermal insulation layer",
+          "waterproofing": "project_specific weather/water control layer",
+          "factory_scope": "Prefabricated support; exterior SATE/finish is project-specific",
+          "delivery_state": "factory-prepared facade system for site installation",
+          "mounting_system": "project-specific mechanical connection to primary structure"
+        },
+        "source_trace": {
+          "surface_mass": "Dossier pp. 20-21",
+          "composition": "Dossier pp. 20-21",
+          "geometry": "Dossier pp. 20-21",
+          "reference_ifc": "User-provided ENV_FAC_LIGNUMTECH.ifc; provenance and model assumptions documented in comparison report."
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "ENV.FAC",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "30.10.10.20",
+          "description": "Fachadas prefabricadas",
+          "relation": "primary"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_dossier",
+          "title": "Dossier comercial Sistemas Constructivos Industrializados - Lignum Tech",
+          "document": "DossierCom_SistemasConstructivosIndustrializados.pdf",
+          "pages": "20-21",
+          "status": "PROVIDED"
+        },
+        {
+          "type": "user_supplied_reference_ifc",
+          "title": "ENV_FAC_LIGNUMTECH.ifc (independent self-supporting facade study)",
+          "document": "ENV_FAC_LIGNUMTECH.ifc",
+          "status": "REFERENCE_MODEL_NOT_MANUFACTURER_APPROVAL",
+          "scope": "Exact geometric source for autoportante; semantic component structure only for estructural and entramado ligero"
+        }
+      ],
+      "attributes": {
+        "provenance_status": "DOCUMENTED_WITH_MODELLING_ASSUMPTIONS",
+        "model_geometry": "representative panel; not design-for-construction"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "status": "PROJECT_DEPENDENT",
+        "note": "No blanket system approval or fire/acoustic/thermal value transferred across 3 distinct solutions."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_DOCUMENTED_FOR_THIS_SPECIFIC_SYSTEM",
+          "gwp_a1_a3_kgco2e_per_fu": null
+        },
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 39.13
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.818
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.909
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.863
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 47.72,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 35.5
+            },
+            {
+              "module": "A4",
+              "value": 0.5
+            }
+          ],
+          "total": 36.0,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 450
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "unit": "m2",
+        "unit_cost": null,
+        "price_status": "NOT_PROVIDED",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 122.73
+            },
+            {
+              "label": "Mano de obra",
+              "value": 43.81
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 30.73
+            },
+            {
+              "label": "Transporte",
+              "value": 12.9
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 210.17,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 50,
+              "unit": "kg",
+              "rate": 0.83,
+              "subtotal": 41.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.07,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 34.24
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.3,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.1
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.2,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 9.8
+            },
+            {
+              "label": "Transporte",
+              "quantity": 5.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.7
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 4.87,
+              "subtotal": 4.87
+            }
+          ],
+          "total": 102.21
+        }
+      },
+      "industrialization_data": {
+        "predominant_geometry": "2D",
+        "production_location": "factory",
+        "delivery_form": "prefabricated timber panel",
+        "factory_scope": "Prefabricated support; exterior SATE/finish is project-specific",
+        "basis": "Dossier product sections",
+        "is_industrialized": true,
+        "une_41610": {
+          "function_classes": [
+            {
+              "code": "ENVOLVENTE",
+              "label": "Elementos de envolvente"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          },
+          "classification_applicable": true
+        }
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Identity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SystemCode",
+              "ifc_type": "IfcLabel",
+              "value": "ENV"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcLabel",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "Manufacturer",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            },
+            {
+              "name": "Model",
+              "ifc_type": "IfcLabel",
+              "value": "FACHADA-ENTRAMADO-LIGERO"
+            },
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO"
+            },
+            {
+              "name": "ModelStatus",
+              "ifc_type": "IfcLabel",
+              "value": "DRAFT_SCHEMATIC"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcIdentifier",
+              "value": "30.10.10.20"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Fachadas prefabricadas"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "FACHADA-ENTRAMADO-LIGERO"
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Soporte fachada de entramado ligero Lignum Tech"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcText",
+              "value": "Soporte de fachada no portante con entramado ligero de madera, aislamiento y OSB-3, con PYL interior y barrera de vapor; revestimiento continuo/SATE exterior a definir por el proyecto, no incluido como material definitivo en el BIM."
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IsExternal",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ProductData",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ApproximateSurfaceMassKgM2",
+              "ifc_type": "IfcReal",
+              "value": 50.0
+            },
+            {
+              "name": "ReferencePanelWidthMM",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "ReferencePanelHeightMM",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "StudDepthModelledMM",
+              "ifc_type": "IfcInteger",
+              "value": 90
+            },
+            {
+              "name": "FactoryProduct",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "GeometricStatus",
+              "ifc_type": "IfcLabel",
+              "value": "SCHEMATIC_NOT_FOR_CONSTRUCTION"
+            },
+            {
+              "name": "FinishStatus",
+              "ifc_type": "IfcLabel",
+              "value": "SIN-ACABADO"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-LIGNUMTECH"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "FACHADA-ENTRAMADO-LIGERO"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SATE_outside_factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Project-defined and NOT included in schematic geometry"
+            },
+            {
+              "name": "approx_mass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "factory-prepared facade system for site installation"
+            },
+            {
+              "name": "documented_gypsum_board_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 15
+            },
+            {
+              "name": "documented_mineral_wool_density_kg_m3",
+              "ifc_type": "IfcInteger",
+              "value": 70
+            },
+            {
+              "name": "documented_mineral_wool_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 140
+            },
+            {
+              "name": "exterior_finish",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "external_finish",
+              "ifc_type": "IfcLabel",
+              "value": "Unfinished exterior: continuous finish/SATE designed and installed to project"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Prefabricated support; exterior SATE/finish is project-specific"
+            },
+            {
+              "name": "finish_by_project",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "insulation",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific thermal insulation layer"
+            },
+            {
+              "name": "integrated_window",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "is_external",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "mass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific mechanical connection to primary structure"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Timber framework, mineral wool, OSB-3, gypsum board and membranes"
+            },
+            {
+              "name": "reference_panel_geometry_status",
+              "ifc_type": "IfcLabel",
+              "value": "illustrative; within manufacturer optimum envelope, NOT a shop drawing"
+            },
+            {
+              "name": "reference_panel_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "reference_panel_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "reported_system_depth_mm",
+              "ifc_type": "IfcInteger",
+              "value": 90
+            },
+            {
+              "name": "reported_total_diagram_depth_m",
+              "ifc_type": "IfcReal",
+              "value": 0.13
+            },
+            {
+              "name": "rw_db",
+              "ifc_type": "IfcInteger",
+              "value": 45
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "non_load_bearing"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "non_load_bearing_light_timber_frame_support"
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 220
+            },
+            {
+              "name": "u_value_w_m2k",
+              "ifc_type": "IfcReal",
+              "value": 0.24
+            },
+            {
+              "name": "unresolved_conflict",
+              "ifc_type": "IfcLabel",
+              "value": "Dossier page 20 describes 140 mm mineral wool but calls the industrialized system 90 mm deep; page 21 depicts 90 mm frame + 18 mm board; do not treat modelling cavity depth as confirmed"
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific weather/water control layer"
+            },
+            {
+              "name": "window_integration",
+              "ifc_type": "IfcLabel",
+              "value": "Optional; omitted from representative IFC because dimensions/specification not supplied"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Placa de yeso laminado FOC",
+          "role": "internal_finish",
+          "material": "PYL FOC",
+          "thickness_mm": 15,
+          "source": "Dossier pp. 20-21"
+        },
+        {
+          "sequence": 2,
+          "name_es": "Barrera de vapor",
+          "role": "vapour_control",
+          "material": "Membrana",
+          "thickness_mm": null,
+          "source": "Dossier pp. 20-21"
+        },
+        {
+          "sequence": 4,
+          "name_es": "Entramado de madera y lana mineral",
+          "role": "frame_insulation",
+          "material": "Madera + lana mineral",
+          "frame_depth_modelled_mm": 90,
+          "insulation_documented_thickness_mm": 140,
+          "density_documented_kg_m3": 70,
+          "source": "Dossier pp. 20-21",
+          "note": "For light version reported depth is inconsistent with 140 mm wool; require manufacturer confirmation"
+        },
+        {
+          "sequence": 5,
+          "name_es": "Tablero estructural OSB-3",
+          "role": "structural_sheathing",
+          "material": "OSB-3",
+          "thickness_mm": 18,
+          "thickness_source": "Section diagram indicative, confirm by variant",
+          "source": "Dossier pp. 20-21"
+        },
+        {
+          "sequence": 7,
+          "name_es": "Acabado exterior",
+          "role": "external_finish",
+          "material": "SATE/acabado continuo no incluido en panel base",
+          "thickness_mm": null,
+          "status": "PROJECT_SPECIFIC",
+          "source": "Dossier pp. 20-21"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "manufacturer_dossier",
+          "title": "Dossier comercial Sistemas Constructivos Industrializados - Lignum Tech",
+          "document": "DossierCom_SistemasConstructivosIndustrializados.pdf",
+          "pages": "20-21",
+          "status": "PROVIDED"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "CLIENT_SIDE_POC",
+        "template_code": "ENV.FAC",
+        "issues": [
+          "IfcOpenShell / web-ifc independent parser not available in build environment; further viewer check required"
+        ]
+      },
+      "data_quality_notes": [
+        {
+          "issue": "Representative 3000 x 3000 mm IFC panel dimensions are modelling choice, not a stock product dimension",
+          "action": "Confirm project-specific module before releasing for design"
+        },
+        {
+          "issue": "Unverified previous-catalogue thermal/acoustic/fire/GWP/cost values removed",
+          "action": "Provide test reports, specific DoPs, suitable EPD modules and updated cost evidence"
+        },
+        {
+          "issue": "Contradiction: 90 mm stated industrialized system depth and 140 mm mineral wool layer, p.20 / p.21",
+          "action": "Manufacturer to confirm physical section, including 0.13 m diagram depth and exterior SATE"
+        },
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.is_industrialized",
+            "industrialization_data.une_41610.classification_applicable",
+            "industrialization_data.une_41610.function_classes",
+            "industrialization_data.une_41610.predominant_geometry",
+            "technical_data.properties.delivery_state",
+            "technical_data.properties.exterior_finish",
+            "technical_data.properties.factory_scope",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.insulation",
+            "technical_data.properties.integrated_window",
+            "technical_data.properties.mass_kg_m2",
+            "technical_data.properties.module_height_mm",
+            "technical_data.properties.module_width_mm",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.rw_db",
+            "technical_data.properties.thickness_mm",
+            "technical_data.properties.u_value_w_m2k",
+            "technical_data.properties.waterproofing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS002__LIGNUMTECH__FACHADA-ENTRAMADO-LIGERO.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "non_load_bearing_light_timber_frame_support",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Timber framework, mineral wool, OSB-3, gypsum board and membranes",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-prepared facade system for site installation",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 220,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 3000,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 3000,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 50,
+          "unit": "kg/m²"
+        },
+        "thermal_transmittance": {
+          "value": 0.24,
+          "unit": "W/(m²·K)"
+        },
+        "rw_db": {
+          "value": 45,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "ratr_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "waterproofing": {
+          "value": "project_specific weather/water control layer",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 123.75
+          },
+          "thermal_transmittance": {
+            "unit": "W/(m²·K)",
+            "value": 0.4
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 185.5
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en ENV.FAC. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de cerramiento de fachada; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia cerramiento de fachada.",
+        "functional_unit": "m2",
+        "short": "Soporte fachada de entramado ligero Lignum Tech. Esquema de demostración para la familia «Cerramiento de fachada»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Revestimiento exterior",
+            "name": "Revestimiento exterior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 11.6
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de soporte",
+            "name": "Capa de soporte",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 87.3
+          },
+          {
+            "function": "Aislamiento",
+            "material": "Aislamiento térmico",
+            "name": "Aislamiento térmico",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 71.6
+          },
+          {
+            "function": "Acabado",
+            "material": "Trasdosado interior",
+            "name": "Trasdosado interior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.0
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

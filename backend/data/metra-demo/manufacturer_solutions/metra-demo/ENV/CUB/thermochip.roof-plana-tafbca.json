@@ -1,0 +1,1093 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-THERMOCHIP",
+    "name": "THERMOCHIP S.L.U.",
+    "website": "https://www.thermochip.com/",
+    "description": "Fabricante de paneles sándwich industrializados para envolvente, cubiertas y forjados.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5USEVSTU9DSElQIFMuTC5VLjwvdGV4dD48L3N2Zz4=",
+    "address": "A Medua S/N, ES-32330 Sobradelo de Valdeorras (Ourense), España",
+    "contact_name": null,
+    "contact_email": "info@thermochip.com",
+    "contact_phone": "900 35 17 13",
+    "accreditation": {
+      "dau_reference": "20/121",
+      "supplied_dau_edition": "E",
+      "supplied_dau_issue_date": "2024-09-25",
+      "supplied_dau_valid_until": "2025-12-21"
+    },
+    "metadata": {
+      "country": "ES",
+      "product_system": "ROOF PLANA"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "ENV.CUB.PL-CON.GS003",
+      "generic_solution_codes": [
+        "ENV.CUB.PL-CON.GS005"
+      ],
+      "subsystem_code": "ENV.CUB",
+      "code": "MFR.THERMOCHIP.ROOF-PLANA.TAFBCA",
+      "commercial_reference": "TAFbca",
+      "name_es": "Thermochip ROOF PLANA TAFbca",
+      "description": "Panel sandwich machihembrado autoportante sin funcion estructural para cerramiento de cubiertas planas transitables y no transitables. Cara exterior de fibrocemento o cemento reforzado de 12,5 mm, núcleo XPS y cara interior de tablero alistonado monocapa de abeto rojo (picea abies).",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "ENV.CUB",
+        "template_version": "1.0",
+        "interoperability": {
+          "ifc_class": "IfcRoof",
+          "ifc_export_type": "FLAT_ROOF",
+          "ecob_bim_class": "Cubiertas planas",
+          "gubimclass_code": "30.20.10",
+          "gubimclass_description": "Cubiertas",
+          "gubimclass_version": "1.2",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "dau_reference": "DAU 20/121",
+          "dau_edition": "E",
+          "dau_issue_date": "2024-09-25",
+          "dau_valid_from": "2024-09-25",
+          "dau_valid_until_in_supplied_document": "2025-12-21",
+          "dau_status_as_of_generation": "SUPPLIED_DOCUMENT_VALIDITY_DATE_PASSED_CURRENT_RENEWAL_NOT_SUPPLIED",
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": "https://www.thermochip.com/",
+          "compliance_certificate": "DAU 20/121 Edición E (documento suministrado)",
+          "compliance_certificate_url": null,
+          "data_availability_note": "No se aporta en los documentos suministrados una renovación posterior al 21.12.2025 ni una DdP específica del panel completo."
+        },
+        "properties": {
+          "system_type": "Panel sandwich industrializado de cubierta plana",
+          "roof_role": "Cerramiento autoportante no estructural",
+          "primary_material": "Tablero cementoso + XPS + acabado interior",
+          "panel_length_mm": 2400,
+          "panel_width_mm": 550,
+          "representative_xps_mm": 120,
+          "representative_total_thickness_mm": 142.5,
+          "xps_thickness_options_mm": [
+            40,
+            60,
+            80,
+            100,
+            120,
+            160,
+            200
+          ],
+          "exterior_board_thickness_mm": 12.5,
+          "interior_face": "Tablero alistonado monocapa de abeto rojo (Picea abies)",
+          "interior_face_thickness_mm": 10.0,
+          "tongue_and_groove_all_edges": true,
+          "factory_bonded": true,
+          "load_bearing": false,
+          "self_supporting": true,
+          "is_external": true,
+          "is_thermal_envelope": true,
+          "trafficability": [
+            "non_trafficable",
+            "trafficable"
+          ],
+          "max_support_spacing_non_trafficable_mm": 1200,
+          "max_support_spacing_trafficable_mm": 600,
+          "requires_final_roof_covering": true,
+          "final_roof_covering_included": false,
+          "coat_false_ceiling_included": false,
+          "ifc_generation_revision": "THERMOCHIP-ROOF-v1.0",
+          "ifc_geometry_method": "IFC4 IfcRoof with independent SweptSolid layer representations and representative tongue-groove core geometry",
+          "ifc_root_entity": "IfcRoof",
+          "geometry_status": "Representative product BIM; not shop drawing",
+          "modelled_variant": "XPS 120 mm + exterior fibrocement board",
+          "roof_type": "Panel sandwich industrializado de cubierta plana",
+          "thickness_mm": 142.5,
+          "u_value_w_m2k": 0.27,
+          "slope_deg": 0.0,
+          "fire_rating": "project_specific"
+        },
+        "performance": {
+          "representative_thermal_resistance_m2k_w": 3.58,
+          "representative_u_value_w_m2k": 0.28,
+          "representative_panel_mass_kg": 30.94,
+          "representative_surface_mass_kg_m2": 23.439,
+          "positive_load_mean_kN_m2_at_1200mm": 11.51,
+          "positive_load_characteristic_kN_m2_at_1200mm": 5.99,
+          "negative_load_mean_kN_m2_600to1200mm": 5.4,
+          "negative_load_characteristic_kN_m2_600to1200mm": 4.23,
+          "impact_resistance_at_1200mm_for_min_125mm_panel": "1 x 700 J + 3 x 400 J",
+          "non_trafficable_access_category": "A4 ETAG 016-2",
+          "trafficable_use": "Habitual pedestrian traffic without restrictions when support spacing <= 600 mm",
+          "reaction_to_fire": "NOT_EVALUATED_FOR_ROOF_PLANA_PANELS_IN_DAU",
+          "fire_resistance": "NOT_EVALUATED_FOR_ROOF_PLANA_PANELS_IN_DAU",
+          "airborne_sound_insulation_to_exterior": "NOT_EVALUATED_IN_DAU",
+          "impact_sound_for_roof": "NOT_EVALUATED_IN_DAU",
+          "air_permeability": "NOT_EVALUATED_IN_DAU",
+          "performance_scope": "Panel-level values. Complete roof performance depends on supporting structure, final roof covering, joints and project-specific build-up."
+        },
+        "configurations": [
+          {
+            "xps_thickness_mm": 40,
+            "total_panel_thickness_mm": 62.5,
+            "thermal_resistance_m2k_w": 1.37,
+            "thermal_transmittance_w_m2k": 0.73,
+            "panel_mass_kg": 27.56,
+            "surface_mass_kg_m2": 20.879,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 60,
+            "total_panel_thickness_mm": 82.5,
+            "thermal_resistance_m2k_w": 1.87,
+            "thermal_transmittance_w_m2k": 0.54,
+            "panel_mass_kg": 28.41,
+            "surface_mass_kg_m2": 21.523,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 80,
+            "total_panel_thickness_mm": 102.5,
+            "thermal_resistance_m2k_w": 2.44,
+            "thermal_transmittance_w_m2k": 0.41,
+            "panel_mass_kg": 29.25,
+            "surface_mass_kg_m2": 22.159,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 100,
+            "total_panel_thickness_mm": 122.5,
+            "thermal_resistance_m2k_w": 2.86,
+            "thermal_transmittance_w_m2k": 0.35,
+            "panel_mass_kg": 30.1,
+            "surface_mass_kg_m2": 22.803,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 120,
+            "total_panel_thickness_mm": 142.5,
+            "thermal_resistance_m2k_w": 3.58,
+            "thermal_transmittance_w_m2k": 0.28,
+            "panel_mass_kg": 30.94,
+            "surface_mass_kg_m2": 23.439,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 160,
+            "total_panel_thickness_mm": 182.5,
+            "thermal_resistance_m2k_w": 4.72,
+            "thermal_transmittance_w_m2k": 0.21,
+            "panel_mass_kg": 32.63,
+            "surface_mass_kg_m2": 24.72,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          },
+          {
+            "xps_thickness_mm": 200,
+            "total_panel_thickness_mm": 222.5,
+            "thermal_resistance_m2k_w": 5.56,
+            "thermal_transmittance_w_m2k": 0.18,
+            "panel_mass_kg": 34.32,
+            "surface_mass_kg_m2": 26.0,
+            "thermal_value_basis": "DERIVED_FROM_DAU_20_121_E_COMPONENT_CONDUCTIVITIES"
+          }
+        ],
+        "generic_mapping": {
+          "strategy": "MAP_TO_EXISTING_VIVA_GENERIC_ONLY",
+          "generic_solution_code": "ENV.CUB.PL-CON.GS003",
+          "generic_solution_name": "Cubierta plana convencional no transitable autoprotegida con lana mineral e impermeabilización bituminosa SBS monocapa adherida",
+          "additional_generic_solution_codes": [
+            "ENV.CUB.PL-CON.GS005"
+          ],
+          "additional_generic_solution_names": [
+            "Cubierta plana transitable no ventilada convencional, con solado fijo, lana mineral e impermeabilización bituminosa monocapa"
+          ],
+          "match_quality": "PARTIAL_CLOSEST_EXISTING",
+          "rationale": "Se prioriza el arquetipo de cubierta plana convencional porque el panel Thermochip se dispone por debajo del revestimiento/impermeabilizacion final; se añade la solución transitable existente como correspondencia secundaria.",
+          "known_mismatches": [
+            "La solución genérica VIVA es una cubierta completa ejecutada por capas; Thermochip ROOF PLANA es un panel industrializado de cerramiento y no incluye la impermeabilización/protección final.",
+            "El genérico utiliza lana mineral y soporte de hormigón de referencia; Thermochip utiliza XPS y se fija a estructura de madera o acero no incluida."
+          ],
+          "manufacturer_specific_data_has_priority": true
+        },
+        "key_features": [
+          "Panel sandwich prefabricado en fábrica",
+          "Machihembrado en cuatro lados",
+          "Núcleo térmico XPS configurable 40-200 mm",
+          "Uso en cubierta plana transitable o no transitable según intereje de apoyos",
+          "Cara exterior cementosa preparada para recibir el acabado final de cubierta"
+        ]
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "ENV.CUB",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcRoof",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Cubiertas planas",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "1.2",
+          "code": "30.20.10",
+          "description": "Cubiertas",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ENVOLVENTE"
+          ],
+          "labels": [
+            "Envolvente"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "VIVA-GENERIC",
+          "code": "ENV.CUB.PL-CON.GS003",
+          "description": "Cubierta plana convencional no transitable autoprotegida con lana mineral e impermeabilización bituminosa SBS monocapa adherida",
+          "relation": "closest_existing_generic_mapping",
+          "match_quality": "PARTIAL_CLOSEST_EXISTING"
+        },
+        {
+          "scheme": "VIVA-GENERIC",
+          "code": "ENV.CUB.PL-CON.GS005",
+          "description": "Cubierta plana transitable no ventilada convencional, con solado fijo, lana mineral e impermeabilización bituminosa monocapa",
+          "relation": "additional_use_mapping",
+          "match_quality": "PARTIAL_TRAFFICABLE_USE"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "DAU",
+          "file_name": "THERMOCHIP-certificate-dau-20-121_d0e_floor-slabs-flat-roofs.pdf",
+          "reference": "DAU 20/121 Edición E",
+          "scope": "Current supplied authority for ROOF PLANA product codes, construction, dimensions, mechanical and thermal performance, use and installation."
+        },
+        {
+          "type": "manufacturer_system_catalogue",
+          "file_name": "THERMOCHIP-systems-catalogue-thermochip-facades-floor-slabs-flat-roof.pdf",
+          "scope": "System context and TFbcY component summary."
+        }
+      ],
+      "attributes": {
+        "product_family": "ROOF PLANA",
+        "product_category": "Panel sandwich industrializado para cubierta plana",
+        "load_bearing": false,
+        "self_supporting": true,
+        "prefabrication_level": "Panel 2D industrializado",
+        "physical_context_in_ifc": "PRODUCT_ONLY",
+        "generic_mapping_is_exact": false,
+        "roof_covering_scope": "NOT_INCLUDED",
+        "support_structure_scope": "NOT_INCLUDED"
+      },
+      "metrics": {
+        "nominal_length_mm": 2400,
+        "nominal_width_mm": 550,
+        "representative_total_thickness_mm": 142.5,
+        "representative_xps_mm": 120,
+        "representative_u_value_w_m2k": 0.28,
+        "representative_surface_mass_kg_m2": 23.439,
+        "positive_load_characteristic_kN_m2": 5.99,
+        "negative_load_characteristic_kN_m2": 4.23
+      },
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "DAU_SUPPLIED_PROJECT_VERIFICATION_REQUIRED",
+        "note": "Las prestaciones del panel no sustituyen el cálculo de la cubierta completa ni la selección de impermeabilización/protección final."
+      },
+      "environmental_data": {
+        "status": "NOT_PROVIDED_IN_SUPPLIED_DOCUMENTS",
+        "epd": null,
+        "gwp_a1_a3_kgco2e_per_fu": null,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 14.883
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.452
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 0.726
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.089
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 18.15,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.CUB",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 40.929
+            },
+            {
+              "module": "A4",
+              "value": 0.871
+            }
+          ],
+          "total": 41.8,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 522.498
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "status": "NOT_PROVIDED",
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 73.74
+            },
+            {
+              "label": "Mano de obra",
+              "value": 24.91
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 15.03
+            },
+            {
+              "label": "Transporte",
+              "value": 8.75
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 122.43,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.CUB",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 87.083,
+              "unit": "kg",
+              "rate": 0.55,
+              "subtotal": 47.9
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.968,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 30.98
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.271,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 10.03
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.17,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 8.33
+            },
+            {
+              "label": "Transporte",
+              "quantity": 8.7083,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.22
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 4.92,
+              "subtotal": 4.92
+            }
+          ],
+          "total": 103.38
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "factory_scope": "Pegado, calandrado, escuadrado, machihembrado y empaquetado en fábrica",
+        "delivery_state": "Panel sandwich 2D acabado de fábrica, pendiente de fijación y revestimiento de cubierta",
+        "mounting_interface": "Tornillos autorroscantes a madera o autotaladrantes a acero; soporte de proyecto no incluido",
+        "traceability": "Etiqueta de palé con producto, número de paneles, superficie, lote y pedido según DAU",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ENVOLVENTE",
+              "label": "Envolvente"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        }
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcRoof"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "FLAT_ROOF"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Cubiertas planas"
+            },
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "30.20.10"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Cubiertas"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "THERMOCHIP S.L.U."
+            },
+            {
+              "name": "Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "ROOF PLANA TAFbca"
+            }
+          ]
+        },
+        {
+          "name": "Pset_RoofCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IsExternal",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "Reference",
+              "ifc_type": "IfcLabel",
+              "value": "TAFbca"
+            },
+            {
+              "name": "FireRating",
+              "ifc_type": "IfcLabel",
+              "value": "NOT_EVALUATED_FOR_ROOF_PLANA_PANEL_IN_SUPPLIED_DAU"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Envolvente",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "ENV.CUB.PL-CON.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Cubierta plana convencional no transitable autoprotegida con lana mineral e impermeabilización bituminosa SBS monocapa adherida"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "THERMOCHIP S.L.U."
+            },
+            {
+              "name": "Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "ROOF PLANA TAFbca"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Cubierta",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaCubierta",
+              "ifc_type": "IfcLabel",
+              "value": "Panel industrializado para cubierta plana convencional"
+            },
+            {
+              "name": "MaterialAcabado",
+              "ifc_type": "IfcLabel",
+              "value": "Fibrocemento/cemento reforzado 12,5 mm"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 142.5
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": 0.28
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": 23.439
+            },
+            {
+              "name": "Pendiente_pct",
+              "ifc_type": "IfcLabel",
+              "value": "PROJECT_DEPENDENT"
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": "NOT_EVALUATED_FOR_ROOF_PLANA_PANEL"
+            }
+          ]
+        },
+        {
+          "name": "THERMOCHIP_Pset_Product",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CommercialCode",
+              "ifc_type": "IfcLabel",
+              "value": "TAFbca"
+            },
+            {
+              "name": "AvailableXPS_mm",
+              "ifc_type": "IfcLabel",
+              "value": "40;60;80;100;120;160;200"
+            },
+            {
+              "name": "RepresentativeXPS_mm",
+              "ifc_type": "IfcInteger",
+              "value": 120
+            },
+            {
+              "name": "TongueAndGroove",
+              "ifc_type": "IfcLabel",
+              "value": "4 lados; 2 macho + 2 hembra"
+            },
+            {
+              "name": "FinalRoofCoveringIncluded",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.THERMOCHIP.ROOF-PLANA.TAFBCA"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-THERMOCHIP"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "THERMOCHIP S.L.U."
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "TAFbca"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.CUB"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "1.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "coat_false_ceiling_included",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "exterior_board_thickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 12.5
+            },
+            {
+              "name": "factory_bonded",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "final_roof_covering_included",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "geometry_status",
+              "ifc_type": "IfcLabel",
+              "value": "Representative product BIM; not shop drawing"
+            },
+            {
+              "name": "ifc_generation_revision",
+              "ifc_type": "IfcLabel",
+              "value": "THERMOCHIP-ROOF-v1.0"
+            },
+            {
+              "name": "ifc_geometry_method",
+              "ifc_type": "IfcLabel",
+              "value": "IFC4 IfcRoof with independent SweptSolid layer representations and representative tongue-groove core geometry"
+            },
+            {
+              "name": "ifc_root_entity",
+              "ifc_type": "IfcLabel",
+              "value": "IfcRoof"
+            },
+            {
+              "name": "interior_face",
+              "ifc_type": "IfcLabel",
+              "value": "Tablero alistonado monocapa de abeto rojo (Picea abies)"
+            },
+            {
+              "name": "interior_face_thickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 10.0
+            },
+            {
+              "name": "is_external",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "is_thermal_envelope",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "load_bearing",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "max_support_spacing_non_trafficable_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1200
+            },
+            {
+              "name": "max_support_spacing_trafficable_mm",
+              "ifc_type": "IfcInteger",
+              "value": 600
+            },
+            {
+              "name": "modelled_variant",
+              "ifc_type": "IfcLabel",
+              "value": "XPS 120 mm + exterior fibrocement board"
+            },
+            {
+              "name": "panel_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2400
+            },
+            {
+              "name": "panel_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 550
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Tablero cementoso + XPS + acabado interior"
+            },
+            {
+              "name": "representative_total_thickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 142.5
+            },
+            {
+              "name": "representative_xps_mm",
+              "ifc_type": "IfcInteger",
+              "value": 120
+            },
+            {
+              "name": "requires_final_roof_covering",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "roof_role",
+              "ifc_type": "IfcLabel",
+              "value": "Cerramiento autoportante no estructural"
+            },
+            {
+              "name": "roof_type",
+              "ifc_type": "IfcLabel",
+              "value": "Panel sandwich industrializado de cubierta plana"
+            },
+            {
+              "name": "self_supporting",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "slope_deg",
+              "ifc_type": "IfcReal",
+              "value": 0.0
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Panel sandwich industrializado de cubierta plana"
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 142.5
+            },
+            {
+              "name": "tongue_and_groove_all_edges",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "u_value_w_m2k",
+              "ifc_type": "IfcReal",
+              "value": 0.27
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "key": "EXT",
+          "name_es": "Cara exterior",
+          "role": "exterior_board",
+          "properties": {
+            "material_family": "cement_board",
+            "material_label_es": "Tablero de fibrocemento o tablero de cemento reforzado",
+            "modelled_material": "fibrocemento",
+            "thickness_mm": 12.5,
+            "alternatives_documented": [
+              "fibrocemento",
+              "cemento reforzado"
+            ]
+          },
+          "required": true,
+          "performance": {
+            "reaction_to_fire": "A1 (componentes exteriores documentados)"
+          }
+        },
+        {
+          "key": "CORE",
+          "name_es": "Núcleo aislante",
+          "role": "thermal_insulation",
+          "properties": {
+            "material_family": "xps",
+            "material_label_es": "Poliestireno extruido (XPS)",
+            "available_thickness_mm": [
+              40,
+              60,
+              80,
+              100,
+              120,
+              160,
+              200
+            ],
+            "representative_thickness_mm": 120,
+            "density_min_kg_m3": 32,
+            "reaction_to_fire": "E",
+            "water_vapour_resistance_factor_mu": 50
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "INT",
+          "name_es": "Cara interior",
+          "role": "interior_finish",
+          "properties": {
+            "material_family": "fir_laminated",
+            "material_label_es": "Tablero alistonado monocapa de abeto rojo (Picea abies)",
+            "thickness_mm": 10.0
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "ADH",
+          "name_es": "Adhesivo entre capas",
+          "role": "bonding",
+          "properties": {
+            "material_family": "polyurethane_adhesive",
+            "material_label_es": "Adhesivo monocomponente de poliuretano",
+            "thickness_mm": null
+          },
+          "required": true,
+          "performance": {}
+        }
+      ],
+      "evidence": [
+        {
+          "type": "DAU",
+          "file_name": "THERMOCHIP-certificate-dau-20-121_d0e_floor-slabs-flat-roofs.pdf",
+          "scope": "Product definition and evaluated performance"
+        },
+        {
+          "type": "manufacturer_catalogue",
+          "file_name": "THERMOCHIP-systems-catalogue-thermochip-facades-floor-slabs-flat-roof.pdf",
+          "scope": "System guide"
+        }
+      ],
+      "ids_validation": {
+        "status": "PENDING_EXTERNAL_IDS_VALIDATION"
+      },
+      "data_quality_notes": [
+        {
+          "issue": "El DAU suministrado indica validez hasta 21.12.2025.",
+          "action": "La ficha conserva las prestaciones documentadas, pero marca la vigencia documental como pendiente de renovación actual aportada."
+        },
+        {
+          "issue": "El acabado/impermeabilizacion final de cubierta no forma parte del panel ROOF PLANA evaluado.",
+          "action": "No se modela ni se atribuyen prestaciones del revestimiento final al producto Thermochip."
+        },
+        {
+          "issue": "El tablero exterior puede ser fibrocemento o cemento reforzado.",
+          "action": "El IFC representa fibrocemento; el JSON conserva ambas alternativas documentadas."
+        },
+        {
+          "issue": "El perfil exacto del machihembrado no se dimensiona por completo en la documentación textual.",
+          "action": "El IFC incluye un machihembrado geométrico representativo y lo identifica expresamente como no apto para fabricación."
+        },
+        {
+          "issue": "Se modela XPS de 120 mm como variante BIM representativa.",
+          "action": "El JSON conserva la gama 40/60/80/100/120/160/200 mm y las prestaciones por espesor."
+        },
+        {
+          "issue": "La ficha TAH TARIMA GF aportada corresponde a otra familia de decking y no al ROOF PLANA del DAU 20/121.",
+          "action": "No se utiliza para crear una solución de cubierta plana en esta entrega."
+        },
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.roof_type",
+            "technical_data.properties.slope_deg",
+            "technical_data.properties.thickness_mm",
+            "technical_data.properties.u_value_w_m2k"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": "2024-09-25",
+      "valid_until": "2025-12-21",
+      "assets": [
+        {
+          "id": "MFR.THERMOCHIP.ROOF-PLANA.TAFBCA.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBCA.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Panel sandwich industrializado de cubierta plana",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Tablero cementoso + XPS + acabado interior",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 142.5,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 35.02,
+          "unit": "kg/m²"
+        },
+        "thermal_resistance": {
+          "value": 2.55,
+          "unit": "m²·K/W"
+        },
+        "waterproofing": {
+          "value": null,
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "roof_type": {
+          "value": "Panel sandwich industrializado de cubierta plana",
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 83.8
+          },
+          "thermal_resistance": {
+            "unit": "m²·K/W",
+            "value": 2.55
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 228.2
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en ENV.CUB. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de cubierta; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia cubierta.",
+        "functional_unit": "m2",
+        "short": "Thermochip ROOF PLANA TAFbca. Esquema de demostración para la familia «Cubierta»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Protección",
+            "material": "Protección superior",
+            "name": "Protección superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 16.6
+          },
+          {
+            "function": "Estanqueidad",
+            "material": "Impermeabilización",
+            "name": "Impermeabilización",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 6.2
+          },
+          {
+            "function": "Aislamiento",
+            "material": "Aislamiento",
+            "name": "Aislamiento",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 96.6
+          },
+          {
+            "function": "Estructura",
+            "material": "Soporte",
+            "name": "Soporte",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 108.8
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

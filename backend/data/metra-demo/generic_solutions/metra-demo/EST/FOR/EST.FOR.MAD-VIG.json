@@ -1,0 +1,1646 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.FOR",
+      "name_es": "Forjados"
+    },
+    "archetype": {
+      "code": "EST.FOR.MAD-VIG",
+      "name_es": "Forjado de viguetas de madera y tablero estructural"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.FOR.MAD-VIG.GS001",
+      "name_es": "Forjado de viguetas C18 con tablero estructural P4 y capa de compresión ligera",
+      "description": "Forjado tradicional con viguetas de madera aserrada de pino silvestre C18 de 70x70 mm a 600 mm, tablero estructural de partículas P4 de 30 mm, membrana bicapa fonoabsorbente, conectores madera-hormigón, malla B500T y capa de compresión de 40 mm de hormigón ligero HL-25/B/10/XC2.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EMF020",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-MAD-002",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "timber_concrete_composite",
+        "timber_strength_class": "C18",
+        "joist_width_mm": 70,
+        "joist_depth_mm": 70,
+        "joist_spacing_mm": 600,
+        "structural_board_type": "P4",
+        "structural_board_thickness_mm": 30,
+        "compression_layer_thickness_mm": 40,
+        "timber_volume_m3_m2": 0.008,
+        "construction_type": "timber_joist_structural_board_with_lightweight_concrete_topping",
+        "structural_system": "timber_joists_with_structural_board_and_composite_topping",
+        "total_depth_mm": 145,
+        "structural_element_thickness_mm": 70,
+        "structural_topping": {
+          "present": true,
+          "thickness_mm": 40,
+          "material": "HL-25/B/10/XC2 lightweight concrete"
+        },
+        "supporting_system": "direct support on structural element (CYPE EMF020 family)",
+        "timber_or_clt_specification": {
+          "joist_strength_class": "C18",
+          "joist_section_mm": "70x70",
+          "joist_spacing_mm": 600,
+          "structural_board": "P4 particleboard",
+          "structural_board_thickness_mm": 30
+        },
+        "connection_assembly_method": "galvanized staples for board; timber-concrete connectors; B500T mesh; in-situ lightweight topping",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "acoustic_layer_present": true,
+          "membrane_thickness_mm": 5,
+          "quantitative_performance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "material_origin_country": "Spain (CYPE EMF020 pine description)",
+        "delivery_form": "individual timber joists, structural boards, membrane, connectors and reinforcement; concrete delivered for site casting",
+        "factory_completion_level": "componentized system assembled and completed on site",
+        "assembly_method": "dry placement/fixing of joists and board, membrane and connectors, then reinforced lightweight concrete topping",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "attribute_calculations": {
+          "total_depth_mm": "70 mm joist depth + 30 mm board + 5 mm membrane + 40 mm topping = 145 mm"
+        },
+        "source_references": [
+          "legacy catalogue str-slb-mad(2).json: STR-SLB-MAD-002",
+          "CYPE Generador de Precios EMF020"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -19.7,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.5985,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-002 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 112.4,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.250667,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-002 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.665125,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.665125,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-MAD-002 industrialization cost decomposition",
+            "industrialized_cost_eur_m2": 74.76,
+            "assessed_cost_eur_m2": 112.4,
+            "counted_industrialized_components": [
+              "C18 timber joists",
+              "P4 structural board",
+              "galvanized staples",
+              "acoustic membrane and tapes",
+              "wood-concrete connectors",
+              "mesh/separators"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "total_depth_mm": "calculated from sourced sequential dimensions; no allowance added for finishes or tolerances",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "VIG",
+          "name_es": "Viguetas de madera C18",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_softwood",
+            "strength_class": "C18",
+            "section_mm": "70x70",
+            "spacing_mm": 600
+          }
+        },
+        {
+          "key": "TAB",
+          "name_es": "Tablero estructural P4",
+          "role": "structural_sheathing",
+          "properties": {
+            "material_family": "particleboard",
+            "board_type": "P4",
+            "thickness_mm": 30
+          }
+        },
+        {
+          "key": "MEM",
+          "name_es": "Membrana fonoabsorbente y desolidarización",
+          "role": "acoustic_separation",
+          "properties": {
+            "material_family": "bituminous_polyester_membrane",
+            "thickness_mm": 5
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores madera-hormigón",
+          "role": "composite_connector",
+          "properties": {
+            "material_family": "galvanized_steel"
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Malla electrosoldada B500T",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 20x20 Ø5-5 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Capa de compresión de hormigón ligero",
+          "role": "compression_layer",
+          "properties": {
+            "material_family": "lightweight_concrete",
+            "concrete_class": "HL-25/B/10/XC2",
+            "thickness_mm": 40
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 82.3,
+        "system_type": {
+          "value": "timber_joist_structural_board_with_lightweight_concrete_topping",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "timber_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "individual timber joists, structural boards, membrane, connectors and reinforcement; concrete delivered for site casting",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 145,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 6377.95,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2299.7,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 82.3,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "timber_joists_with_structural_board_and_composite_topping",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 197.92
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 243.8
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -19.7,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 97.244
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 9.487
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.744
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.115
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 118.59,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 39.504
+            },
+            {
+              "module": "A4",
+              "value": 0.823
+            }
+          ],
+          "total": 40.327,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 411.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 112.4,
+        "bc3": {
+          "root_code": "EMF020",
+          "decomposition": [
+            {
+              "code": "mt50spa052b",
+              "description": "Tablón de madera de pino para apuntalamiento",
+              "unit": "m",
+              "quantity": 0.04,
+              "unit_price": 6.32,
+              "amount": 0.25,
+              "industrialized": false
+            },
+            {
+              "code": "mt50spa101",
+              "description": "Clavos de acero para medios auxiliares",
+              "unit": "kg",
+              "quantity": 0.045,
+              "unit_price": 1.87,
+              "amount": 0.08,
+              "industrialized": false
+            },
+            {
+              "code": "mt50spa081a",
+              "description": "Puntal metálico telescópico hasta 3 m",
+              "unit": "ud",
+              "quantity": 0.013,
+              "unit_price": 19.25,
+              "amount": 0.25,
+              "industrialized": false
+            },
+            {
+              "code": "mt07mee100gai1baa",
+              "description": "Madera aserrada de pino silvestre PEFC para viguetas 70x70 mm, C18, ME-2, clase de uso 1, NP1",
+              "unit": "m3",
+              "quantity": 0.008,
+              "unit_price": 654.84,
+              "amount": 5.24,
+              "composition_key": "VIG",
+              "industrialized": true
+            },
+            {
+              "code": "mt08eff020o",
+              "description": "Tablero estructural de partículas P4 de 30 mm, machihembrado",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 22.16,
+              "amount": 23.27,
+              "composition_key": "TAB",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr512a",
+              "description": "Grapas de acero al carbono galvanizado para fijación madera-madera",
+              "unit": "kg",
+              "quantity": 0.2,
+              "unit_price": 27.0,
+              "amount": 5.4,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt15pdr030a",
+              "description": "Membrana impermeabilizante bicapa fonoabsorbente de 5 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 19.35,
+              "amount": 20.32,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt15pdr050c",
+              "description": "Cinta autoadhesiva de polietileno para sellado",
+              "unit": "m",
+              "quantity": 0.5,
+              "unit_price": 1.53,
+              "amount": 0.77,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt16pdr030a",
+              "description": "Banda perimetral autoadhesiva de espuma de polietileno",
+              "unit": "m",
+              "quantity": 1.0,
+              "unit_price": 2.66,
+              "amount": 2.66,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr200a",
+              "description": "Conector galvanizado M-7,5 para forjado madera-hormigón",
+              "unit": "ud",
+              "quantity": 6.1,
+              "unit_price": 2.32,
+              "amount": 14.15,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco020m",
+              "description": "Separador homologado para malla electrosoldada",
+              "unit": "ud",
+              "quantity": 2.0,
+              "unit_price": 0.09,
+              "amount": 0.18,
+              "industrialized": true
+            },
+            {
+              "code": "mt07ame010d",
+              "description": "Malla electrosoldada ME 20x20 Ø5-5 B500T",
+              "unit": "m2",
+              "quantity": 1.1,
+              "unit_price": 2.52,
+              "amount": 2.77,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt08var050",
+              "description": "Alambre galvanizado para atar",
+              "unit": "kg",
+              "quantity": 0.017,
+              "unit_price": 1.5,
+              "amount": 0.03,
+              "industrialized": false
+            },
+            {
+              "code": "mt10hes050psa",
+              "description": "Hormigón ligero HLA-25/B/10/XC2 fabricado en central",
+              "unit": "m3",
+              "quantity": 0.042,
+              "unit_price": 146.58,
+              "amount": 6.16,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.624,
+              "unit_price": 25.84,
+              "amount": 16.12,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.207,
+              "unit_price": 24.53,
+              "amount": 5.08,
+              "industrialized": false
+            },
+            {
+              "code": "mo044",
+              "description": "Oficial 1ª encofrador",
+              "unit": "h",
+              "quantity": 0.103,
+              "unit_price": 25.84,
+              "amount": 2.66,
+              "industrialized": false
+            },
+            {
+              "code": "mo091",
+              "description": "Ayudante encofrador",
+              "unit": "h",
+              "quantity": 0.103,
+              "unit_price": 24.53,
+              "amount": 2.53,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.024,
+              "unit_price": 25.84,
+              "amount": 0.62,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.024,
+              "unit_price": 24.53,
+              "amount": 0.59,
+              "industrialized": false
+            },
+            {
+              "code": "mo045",
+              "description": "Oficial 1ª estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.008,
+              "unit_price": 25.84,
+              "amount": 0.21,
+              "industrialized": false
+            },
+            {
+              "code": "mo092",
+              "description": "Ayudante estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.035,
+              "unit_price": 24.53,
+              "amount": 0.86,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 110.2,
+              "amount": 2.2,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 129.47
+            },
+            {
+              "label": "Mano de obra",
+              "value": 44.95
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 26.35
+            },
+            {
+              "label": "Transporte",
+              "value": 13.0
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 213.77,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 82.3,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 35.39
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.709,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 22.69
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.198,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 7.33
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 8.23,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.15
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 4.43,
+              "subtotal": 4.43
+            }
+          ],
+          "total": 93.04
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 74.76,
+        "assessed_cost": 112.4,
+        "ratio": 0.665
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.5985,
+        "economic_performance": 0.250667,
+        "industrialization_performance": 0.665125
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MAD-VIG.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MAD-VIG.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MAD-VIG.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de viguetas C18 con tablero estructural P4 y capa de compresión ligera"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado tradicional con viguetas de madera aserrada de pino silvestre C18 de 70x70 mm a 600 mm, tablero estructural de partículas P4 de 30 mm, membrana bicapa fonoabsorbente, conectores madera-hormigón, malla B500T y capa de compresión de 40 mm de hormigón ligero HL-25/B/10/XC2."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 112.4
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -19.7
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.665
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 30
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de viguetas C18 con tablero estructural P4 y capa de compresión ligera. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 36.4
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 49.6
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 141.6
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 16.2
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MAD-VIG.GS002",
+      "name_es": "Forjado de viguetas de madera laminada GL24h 60x200 mm con tablero estructural P4",
+      "description": "Forjado tradicional a intereje de 60 cm con viguetas de madera laminada encolada homogénea de pino silvestre GL24h de 60x200 mm, tablero estructural de partículas P4 de 30 mm, membrana bicapa fonoabsorbente de 5 mm, conectores madera-hormigón, malla B500T y capa de compresión de 40 mm de hormigón ligero HL-25/B/10/XC2.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EMF020",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "EN 14080",
+          "code": "EN 14080",
+          "relation": "partial"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "EN 312",
+          "code": "P4",
+          "relation": "partial"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "timber_joist_structural_board_with_lightweight_concrete_topping",
+        "structural_material": "timber_concrete_composite",
+        "slab_system": "timber_joists_structural_board",
+        "structural_system": "timber_joists_with_structural_board_and_composite_topping",
+        "total_depth_mm": 275,
+        "structural_element_thickness_mm": 200,
+        "timber_strength_class": "GL24h",
+        "joist_width_mm": 60,
+        "joist_depth_mm": 200,
+        "joist_spacing_mm": 600,
+        "timber_volume_m3_m2": 0.02,
+        "structural_board_type": "P4",
+        "structural_board_thickness_mm": 30,
+        "compression_layer_thickness_mm": 40,
+        "concrete_class": "HL-25/B/10/XC2",
+        "supporting_system": "direct support on structural element",
+        "structural_topping": {
+          "present": true,
+          "thickness_mm": 40,
+          "material": "HL-25/B/10/XC2 lightweight concrete"
+        },
+        "timber_or_clt_specification": {
+          "species": "Pinus sylvestris",
+          "product": "homogeneous glued laminated timber",
+          "strength_class": "GL24h",
+          "standard": "UNE-EN 14080",
+          "use_class": "1",
+          "protection_level": "NP1",
+          "formaldehyde_class": "E1",
+          "finish": "planed"
+        },
+        "connection_assembly_method": "galvanized staples for P4 board and screwed timber-concrete connectors; B500T mesh; cast lightweight topping",
+        "fire_performance": {
+          "joist_reaction_to_fire": "D-s2,d0",
+          "structural_board_reaction_to_fire": "D-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "acoustic_layer_present": true,
+          "membrane_thickness_mm": 5,
+          "quantitative_performance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "material_origin_country": "Spain",
+        "delivery_form": "glulam joists, P4 boards, membranes, connectors and reinforcement as components; lightweight concrete delivered for site casting",
+        "factory_completion_level": "factory-produced components with site assembly and wet completion",
+        "assembly_method": "place joists and board dry, fix membrane/connectors/mesh, then cast and cure lightweight concrete topping",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "attribute_calculations": {
+          "total_depth_mm": "200 mm joist depth + 30 mm board + 5 mm membrane + 40 mm topping = 275 mm"
+        },
+        "technical_value_assessment": {
+          "surface_mass_kg_m2": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "source_references": [
+          "CYPE Generador de Precios EMF020 current indexed GL24h 60x200 mm, P4 30 mm variant, 127.36 EUR/m2",
+          "legacy STR-SLB-MAD-002 used only as an explicit proxy for full-system GWP and as the component-classification basis for industrialization"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -19.7,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.5985,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "proxy from legacy CYPE EMF020 system STR-SLB-MAD-002 because no full-system A1-A3 EPD was found for the GL24h variant; same assembly family but different joist product/quantity"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 127.36,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.150933,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE Generador de Precios EMF020 current indexed GL24h 60x200 / P4 30 mm variant"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.682318,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.682318,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "current CYPE EMF020 cost decomposition; industrialized/non-industrialized component classification transferred from supplied legacy EMF020 decomposition, with GL24h joist cost substituted",
+            "industrialized_cost_eur_m2": 86.9,
+            "assessed_cost_eur_m2": 127.36,
+            "counted_industrialized_components": [
+              "GL24h joists",
+              "P4 structural board",
+              "galvanized staples",
+              "acoustic membrane and tapes",
+              "wood-concrete connectors",
+              "mesh/separators"
+            ],
+            "industrialized_component_classification_basis": "inferred from the supplied legacy EMF020 industrialized flags; not inferred from material alone"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "environmental_performance": "explicit proxy required to keep a numeric schema metric; not presented as a CYPE-published GWP for the GL24h variant",
+          "industrialization_performance": "ratio calculated from current cost values; industrialized component flags are inferred from the exact same EMF020 component roles in the supplied legacy catalogue",
+          "surface_mass": "not assessed; no defensible full-system mass was derived",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "VIG",
+          "name_es": "Viguetas de madera laminada GL24h",
+          "role": "structure",
+          "properties": {
+            "material_family": "glued_laminated_timber",
+            "species": "Pinus sylvestris",
+            "strength_class": "GL24h",
+            "section_mm": "60x200",
+            "spacing_mm": 600,
+            "volume_m3_m2": 0.02,
+            "reaction_to_fire": "D-s2,d0"
+          }
+        },
+        {
+          "key": "TAB",
+          "name_es": "Tablero estructural P4",
+          "role": "structural_sheathing",
+          "properties": {
+            "material_family": "particleboard",
+            "board_type": "P4",
+            "thickness_mm": 30,
+            "reaction_to_fire": "D-s2,d0"
+          }
+        },
+        {
+          "key": "MEM",
+          "name_es": "Membrana bicapa fonoabsorbente y banda perimetral",
+          "role": "acoustic_separation",
+          "properties": {
+            "material_family": "bituminous_polyester_membrane",
+            "thickness_mm": 5
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores madera-hormigón",
+          "role": "composite_connector",
+          "properties": {
+            "material_family": "galvanized_steel"
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Malla electrosoldada B500T",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 20x20 Ø5-5 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Capa de compresión de hormigón ligero",
+          "role": "compression_layer",
+          "properties": {
+            "material_family": "lightweight_concrete",
+            "concrete_class": "HL-25/B/10/XC2",
+            "thickness_mm": 40,
+            "volume_m3_m2": 0.042
+          }
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "timber_joist_structural_board_with_lightweight_concrete_topping",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "timber_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "glulam joists, P4 boards, membranes, connectors and reinforcement as components; lightweight concrete delivered for site casting",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 275,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5260.4,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2178.64,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 69.18,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "timber_joists_with_structural_board_and_composite_topping",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 115.55
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 229.6
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -19.7,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 66.723
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.51
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.255
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.882
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 81.37,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 139.333
+            },
+            {
+              "module": "A4",
+              "value": 2.903
+            }
+          ],
+          "total": 142.236,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1451.39
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 127.36,
+        "bc3": {
+          "root_code": "EMF020",
+          "decomposition": [
+            {
+              "code": "mt50spa052b",
+              "description": "Tablón de madera de pino para apuntalamiento",
+              "unit": "m",
+              "quantity": 0.04,
+              "unit_price": 6.32,
+              "amount": 0.25,
+              "industrialized": false
+            },
+            {
+              "code": "mt50spa101",
+              "description": "Clavos de acero para medios auxiliares",
+              "unit": "kg",
+              "quantity": 0.045,
+              "unit_price": 1.87,
+              "amount": 0.08,
+              "industrialized": false
+            },
+            {
+              "code": "mt50spa081a",
+              "description": "Puntal metálico telescópico hasta 3 m",
+              "unit": "ud",
+              "quantity": 0.013,
+              "unit_price": 19.25,
+              "amount": 0.25,
+              "industrialized": false
+            },
+            {
+              "code": "mt07mel100ca1aa",
+              "description": "Madera laminada encolada homogénea de pino silvestre GL24h 60x200 mm",
+              "unit": "m3",
+              "quantity": 0.02,
+              "unit_price": 869.05,
+              "amount": 17.38,
+              "composition_key": "VIG",
+              "industrialized": true
+            },
+            {
+              "code": "mt08eff020o",
+              "description": "Tablero estructural de partículas P4 de 30 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 22.16,
+              "amount": 23.27,
+              "composition_key": "TAB",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr512a",
+              "description": "Grapas galvanizadas para fijación madera-madera",
+              "unit": "kg",
+              "quantity": 0.2,
+              "unit_price": 27.0,
+              "amount": 5.4,
+              "industrialized": true
+            },
+            {
+              "code": "mt15pdr030a",
+              "description": "Membrana impermeabilizante bicapa fonoabsorbente de 5 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 19.35,
+              "amount": 20.32,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt15pdr050c",
+              "description": "Cinta autoadhesiva de polietileno para sellado",
+              "unit": "m",
+              "quantity": 0.5,
+              "unit_price": 1.53,
+              "amount": 0.77,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt16pdr030a",
+              "description": "Banda perimetral autoadhesiva de espuma de polietileno",
+              "unit": "m",
+              "quantity": 1.0,
+              "unit_price": 2.66,
+              "amount": 2.66,
+              "composition_key": "MEM",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr200a",
+              "description": "Conector galvanizado para forjado madera-hormigón",
+              "unit": "ud",
+              "quantity": 6.1,
+              "unit_price": 2.32,
+              "amount": 14.15,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco020m",
+              "description": "Separador homologado para malla electrosoldada",
+              "unit": "ud",
+              "quantity": 2.0,
+              "unit_price": 0.09,
+              "amount": 0.18,
+              "industrialized": true
+            },
+            {
+              "code": "mt07ame010d",
+              "description": "Malla electrosoldada ME 20x20 Ø5-5 B500T",
+              "unit": "m2",
+              "quantity": 1.1,
+              "unit_price": 2.52,
+              "amount": 2.77,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt08var050",
+              "description": "Alambre galvanizado para atar",
+              "unit": "kg",
+              "quantity": 0.017,
+              "unit_price": 1.5,
+              "amount": 0.03,
+              "industrialized": false
+            },
+            {
+              "code": "mt10hes050psa",
+              "description": "Hormigón ligero HLA-25/B/10/XC2 fabricado en central",
+              "unit": "m3",
+              "quantity": 0.042,
+              "unit_price": 146.58,
+              "amount": 6.16,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.69,
+              "unit_price": 25.84,
+              "amount": 17.83,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.24,
+              "unit_price": 24.53,
+              "amount": 5.89,
+              "industrialized": false
+            },
+            {
+              "code": "mo044",
+              "description": "Oficial 1ª encofrador",
+              "unit": "h",
+              "quantity": 0.103,
+              "unit_price": 25.84,
+              "amount": 2.66,
+              "industrialized": false
+            },
+            {
+              "code": "mo091",
+              "description": "Ayudante encofrador",
+              "unit": "h",
+              "quantity": 0.103,
+              "unit_price": 24.53,
+              "amount": 2.53,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.024,
+              "unit_price": 25.84,
+              "amount": 0.62,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.024,
+              "unit_price": 24.53,
+              "amount": 0.59,
+              "industrialized": false
+            },
+            {
+              "code": "mo045",
+              "description": "Oficial 1ª estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.008,
+              "unit_price": 25.84,
+              "amount": 0.21,
+              "industrialized": false
+            },
+            {
+              "code": "mo092",
+              "description": "Ayudante estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.035,
+              "unit_price": 24.53,
+              "amount": 0.86,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 124.86,
+              "amount": 2.5,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 152.64
+            },
+            {
+              "label": "Mano de obra",
+              "value": 53.06
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 36.25
+            },
+            {
+              "label": "Transporte",
+              "value": 15.53
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 257.48,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 290.278,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 124.82
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.102,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 35.26
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.309,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.43
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 29.0278,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 4.06
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 9.88,
+              "subtotal": 9.88
+            }
+          ],
+          "total": 207.5
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 86.9,
+        "assessed_cost": 127.36,
+        "ratio": 0.682318
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MAD-VIG.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MAD-VIG.GS002.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.5985,
+        "economic_performance": 0.150933,
+        "industrialization_performance": 0.682318
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MAD-VIG.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de viguetas de madera laminada GL24h 60x200 mm con tablero estructural P4"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado tradicional a intereje de 60 cm con viguetas de madera laminada encolada homogénea de pino silvestre GL24h de 60x200 mm, tablero estructural de partículas P4 de 30 mm, membrana bicapa fonoabsorbente de 5 mm, conectores madera-hormigón, malla B500T y capa de compresión de 40 mm de hormigón ligero HL-25/B/10/XC2."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 127.36
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -19.7
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.682318
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "glued_laminated_timber"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "glued_laminated_timber"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 30
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de viguetas de madera laminada GL24h 60x200 mm con tablero estructural P4. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 32.1
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 45.4
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 138.7
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 13.4
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

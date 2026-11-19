@@ -1,0 +1,949 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-ARCELORMITTAL-BS",
+    "name": "ArcelorMittal Building Solutions",
+    "website": "https://buildingsolutions.arcelormittal.com/",
+    "description": "Sistemas de chapa colaborante y soluciones integradas acero-hormigón para forjados.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5BcmNlbG9yTWl0dGFsIEJ1aWxkaW5nIFNvbHV0aW9uczwvdGV4dD48L3N2Zz4=",
+    "address": "Morinval, 55800 Contrisson, Francia",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "reference_catalogue": "Composite floor guide, January 2026",
+      "country": "FR",
+      "model_generation": "2026-10-05"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "EST.FOR.MIX-CC.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "EST.FOR",
+      "code": "MFR.AMBS.COFRADAL-260-DECIBEL",
+      "commercial_reference": "COFRADAL-260-DECIBEL",
+      "name_es": "Cofradal 260 mm Decibel",
+      "description": "Cofradal: elemento integrado con lana mineral y acabado inferior decibel",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "EST.FOR",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcSlab",
+          "ifc_export_type": "FLOOR",
+          "ecob_bim_class": "Forjados",
+          "gubimclass_code": "20.20.20.10",
+          "gubimclass_description": "Forjados",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 - VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": null,
+          "environmental_claim": null,
+          "compliance_certificate": "DTA 3.1/11-687_V2 (según guía)",
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Forjado mixto integrado Cofradal",
+          "structural_role": "Losa mixta portante: proyecto y ejecución a dimensionar",
+          "primary_material": "Chapa de acero galvanizado, hormigón y lana mineral",
+          "deck_profile": "Cofradal",
+          "deck_profile_section": "integrado prefabricado",
+          "deck_steel_grade": "S320GD",
+          "galvanizing": "ZMevolution",
+          "deck_thickness_mm": null,
+          "profile_height_mm": null,
+          "profile_pitch_mm_geometry_reference": null,
+          "profile_pitch_source": "Aproximacion grafica no acotada; no usar para fabricación",
+          "deck_cover_width_mm": 1200,
+          "deck_surface_mass_kg_m2": null,
+          "depth_mm": 260,
+          "width_mm": 1200,
+          "reference_model_length_mm": 5000,
+          "nominal_concrete_consumption_l_m2": 120,
+          "concrete_class": "C30/37",
+          "concrete_density_kg_m3": null,
+          "reinforcement": "Mallazo soldado diametro 6 / 200 mm (referencia guia)",
+          "fire_performance": "Hasta REI120 condicionado a armado/configuración y calculo especifico",
+          "fire_minimum_total_depth_mm": null,
+          "fire_rating_verified_for_this_ifc": false,
+          "profile_only_epd_applicability": "NOT_LISTED_IN_EPD",
+          "delivery_state": "Panel mixto integrado prefabricado (armados y montaje según proyecto)",
+          "factory_scope": "Sistema integrado con aislamiento y chapa y posterior conexión, según proyecto",
+          "insulation_type": "lana mineral 125 mm",
+          "finished_floor_mass_kg_m2_excluding_supports": 280,
+          "sound_reduction_rw_db_reference": null,
+          "impact_sound_lnw_db_reference": null,
+          "sound_absorption_alpha_w_reference": null,
+          "thermal_up_reference_w_m2k": null,
+          "model_geometry_level": "Schematic reference assembly; manufacturer manufacturing section required",
+          "commercial_availability": "Confirm coating, steel source, dimensions and configuration with manufacturer",
+          "prestressing_steel": "not_applicable",
+          "self_supporting": "project_specific",
+          "span_m": 5.0,
+          "design_load_kn_m2": 2.0,
+          "topping_mm": "project_specific",
+          "fire_rating": "Hasta REI120 condicionado a armado/configuración y calculo especifico",
+          "mounting_system": "project-specific lifting, bearing and mechanical connections"
+        },
+        "key_features": [
+          "Cofradal: elemento integrado con lana mineral y acabado inferior decibel"
+        ],
+        "generation_provenance": {
+          "generation_date": "2026-10-05",
+          "geometry_type": "Parametric IFC4 distinct steel/concrete components",
+          "source_document_paths": [
+            "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf"
+          ],
+          "reference_model": "BIM approximation; not fabrication geometry"
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "EST.FOR",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA-ARCHETYPE",
+          "code": "EST.FOR.MIX-CC",
+          "relation": "corresponds_to_family_not_exact_GS"
+        },
+        {
+          "scheme": "IFC",
+          "code": "IfcSlab",
+          "version": "IFC4 ADD2 TC1",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "code": "Forjados",
+          "version": "v.1_2021",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "code": "20.20.20.10",
+          "version": "v5",
+          "description": "Forjados",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ESTRUCTURALES"
+          ],
+          "labels": [
+            "Estructurales"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_catalogue",
+          "title": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "file_name": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "pages": "PDF 9-10 (pp. 16-19)",
+          "source_date": "2026-01",
+          "access": "archivo aportado"
+        }
+      ],
+      "attributes": {
+        "source_family": "COFRADAL",
+        "geometry_part_count": 7,
+        "production": "DECIBEL",
+        "product_model_identifier": "COFRADAL-260-DECIBEL"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PENDING_PROJECT_VERIFICATION",
+        "notes": "Dimensionado, cálculo de incendio y prescripciones según situación específica; la ficha no equivale a aprobación de proyecto."
+      },
+      "environmental_data": {
+        "epd": {
+          "registration_number": "EPD-IES-0025705:001",
+          "version_date": "2026-02-27",
+          "valid_until": "2031-02-26",
+          "declared_unit": "1 m2 of XCarb steel floor deck profile",
+          "status": "NOT_APPLICABLE_TO_THIS_PRODUCT_FROM_PROVIDED_EPD",
+          "applicability": "NOT_LISTED_IN_EPD",
+          "source_file": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "concrete_included": false
+        },
+        "indicators": {},
+        "full_composite_floor_gwp_a1_a3_kgco2e_m2": null,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 99.909
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 9.747
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.874
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.31
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 121.84,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 131.733
+            },
+            {
+              "module": "A4",
+              "value": 2.744
+            }
+          ],
+          "total": 134.477,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1372.22
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "price_basis": "No declarado en documentación aportada",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 100.56
+            },
+            {
+              "label": "Mano de obra",
+              "value": 38.64
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 28.34
+            },
+            {
+              "label": "Transporte",
+              "value": 9.02
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 2.51
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 179.07,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 274.444,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 118.01
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.08,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 34.56
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.303,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.21
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 27.4444,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 3.84
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 9.48,
+              "subtotal": 9.48
+            }
+          ],
+          "total": 199.15
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ESTRUCTURALES",
+              "label": "Estructurales"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "factory_scope": "Sistema integrado con aislamiento y chapa y posterior conexión, según proyecto",
+        "delivery_state": "Panel mixto integrado prefabricado (armados y montaje según proyecto)",
+        "traceability": "Se requiere lote, especificación del acero y confirmación de variante del pedido"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcSlab"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "FLOOR"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Cofradal: elemento integrado con lana mineral y acabado inferior decibel"
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcLabel",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA Marketplace desde guia ArcelorMittal"
+            },
+            {
+              "name": "ObjetoTitular",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "TipoBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Cofradal 260 mm Decibel"
+            },
+            {
+              "name": "Version",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA-2026.10 DRAFT"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Cofradal 260 mm Decibel"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "COFRADAL-260-DECIBEL"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Cofradal: elemento integrado con lana mineral y acabado inferior decibel"
+            },
+            {
+              "name": "Producto01_CertificadoConformidad",
+              "ifc_type": "IfcLabel",
+              "value": "DTA 3.1/11-687_V2 indicado en guía"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            },
+            {
+              "name": "ArchetypeCode",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 260.0
+            },
+            {
+              "name": "Anchura_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 1200.0
+            },
+            {
+              "name": "LongitudReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ArcelorMittalTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductCode",
+              "ifc_type": "IfcLabel",
+              "value": "MFR.AMBS.COFRADAL-260-DECIBEL"
+            },
+            {
+              "name": "Model",
+              "ifc_type": "IfcLabel",
+              "value": "COFRADAL-260-DECIBEL"
+            },
+            {
+              "name": "System",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR"
+            },
+            {
+              "name": "TotalDepth_mm",
+              "ifc_type": "IfcReal",
+              "value": 260.0
+            },
+            {
+              "name": "NominalConcreteVolume_l_m2",
+              "ifc_type": "IfcReal",
+              "value": 120.0
+            },
+            {
+              "name": "XCarbEPDApplicability",
+              "ifc_type": "IfcLabel",
+              "value": "NOT_LISTED_IN_EPD"
+            },
+            {
+              "name": "EPDIsForSteelProfileOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ReferenceGeometryOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "FireRatingVerifiedForThisModel",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "Pset_SlabCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.AMBS.COFRADAL-260-DECIBEL"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-ARCELORMITTAL-BS"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "COFRADAL-260-DECIBEL"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "EST.FOR"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "commercial_availability",
+              "ifc_type": "IfcLabel",
+              "value": "Confirm coating, steel source, dimensions and configuration with manufacturer"
+            },
+            {
+              "name": "concrete_class",
+              "ifc_type": "IfcLabel",
+              "value": "C30/37"
+            },
+            {
+              "name": "deck_cover_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1200
+            },
+            {
+              "name": "deck_profile",
+              "ifc_type": "IfcLabel",
+              "value": "Cofradal"
+            },
+            {
+              "name": "deck_profile_section",
+              "ifc_type": "IfcLabel",
+              "value": "integrado prefabricado"
+            },
+            {
+              "name": "deck_steel_grade",
+              "ifc_type": "IfcLabel",
+              "value": "S320GD"
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Panel mixto integrado prefabricado (armados y montaje según proyecto)"
+            },
+            {
+              "name": "depth_mm",
+              "ifc_type": "IfcInteger",
+              "value": 260
+            },
+            {
+              "name": "design_load_kn_m2",
+              "ifc_type": "IfcReal",
+              "value": 2.0
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Sistema integrado con aislamiento y chapa y posterior conexión, según proyecto"
+            },
+            {
+              "name": "finished_floor_mass_kg_m2_excluding_supports",
+              "ifc_type": "IfcInteger",
+              "value": 280
+            },
+            {
+              "name": "fire_performance",
+              "ifc_type": "IfcLabel",
+              "value": "Hasta REI120 condicionado a armado/configuración y calculo especifico"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "Hasta REI120 condicionado a armado/configuración y calculo especifico"
+            },
+            {
+              "name": "fire_rating_verified_for_this_ifc",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "galvanizing",
+              "ifc_type": "IfcLabel",
+              "value": "ZMevolution"
+            },
+            {
+              "name": "insulation_type",
+              "ifc_type": "IfcLabel",
+              "value": "lana mineral 125 mm"
+            },
+            {
+              "name": "model_geometry_level",
+              "ifc_type": "IfcLabel",
+              "value": "Schematic reference assembly; manufacturer manufacturing section required"
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific lifting, bearing and mechanical connections"
+            },
+            {
+              "name": "nominal_concrete_consumption_l_m2",
+              "ifc_type": "IfcInteger",
+              "value": 120
+            },
+            {
+              "name": "prestressing_steel",
+              "ifc_type": "IfcLabel",
+              "value": "not_applicable"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Chapa de acero galvanizado, hormigón y lana mineral"
+            },
+            {
+              "name": "profile_only_epd_applicability",
+              "ifc_type": "IfcLabel",
+              "value": "NOT_LISTED_IN_EPD"
+            },
+            {
+              "name": "profile_pitch_source",
+              "ifc_type": "IfcLabel",
+              "value": "Aproximacion grafica no acotada; no usar para fabricación"
+            },
+            {
+              "name": "reference_model_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 5000
+            },
+            {
+              "name": "reinforcement",
+              "ifc_type": "IfcLabel",
+              "value": "Mallazo soldado diametro 6 / 200 mm (referencia guia)"
+            },
+            {
+              "name": "self_supporting",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "span_m",
+              "ifc_type": "IfcReal",
+              "value": 5.0
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta portante: proyecto y ejecución a dimensionar"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado mixto integrado Cofradal"
+            },
+            {
+              "name": "topping_mm",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1200
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Chapa galvanizada inferior",
+          "role": "metal_underside",
+          "material": "S320GD ZMevolution",
+          "thickness_mm": "no especificado en documento"
+        },
+        {
+          "sequence": 2,
+          "name_es": "Lana mineral interior",
+          "role": "thermal_acoustic_insulation",
+          "material": "lana mineral",
+          "thickness_mm": 125
+        },
+        {
+          "sequence": 3,
+          "name_es": "Nervios y capa superior de hormigón",
+          "role": "structure",
+          "material": "C30/37",
+          "nominal_consumption_l_m2": 120
+        },
+        {
+          "sequence": 4,
+          "name_es": "Malla electrosoldada",
+          "role": "reinforcement",
+          "material": "acero",
+          "reference": "Ø6/200 según guía"
+        },
+        {
+          "sequence": 5,
+          "name_es": "Chapa inferior decibel",
+          "role": "soffit_finish",
+          "material": "acero acabado",
+          "acoustic_perforation_geometry": "NO_MODELED"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "technical_document",
+          "title": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "file_name": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "pages": "PDF 9-10 (pp. 16-19)",
+          "status": "SOURCE_REVIEWED"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "EXTERNAL_VALIDATION_PENDING"
+      },
+      "data_quality_notes": [
+        "IFC de referencia BIM: NO es geometría de fabricación, documento de cálculo ni certificado automático de resistencia al fuego.",
+        "Mediciones de volumen de hormigón y peso de chapa proceden de la guía, no se infieren de la geometría IFC esquemática.",
+        "Las armaduras, conectores, tolerancias de apoyo y dimensionado estructural requieren definición específica.",
+        "El atributo de escenario XCarb no modifica el material base: contratar acero XCarb y comprobar ámbito de la DAP antes de activar sus impactos.",
+        "Los indicadores ambientales de la DAP excluyen expresamente hormigón, armaduras, lana mineral, montaje y acabados.",
+        "La guía no proporciona el trazado 3D exacto del Cofradal ni su gramaje de chapa; la geometría representa una sección esquemática sin perforaciones modeladas.",
+        "αw 0,85 corresponde al acabado perforado Cofradal 200 Decibel de la guía; no extender automáticamente a Cofradal 260 sin ensayo confirmado.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.design_load_kn_m2",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.prestressing_steel",
+            "technical_data.properties.self_supporting",
+            "technical_data.properties.span_m",
+            "technical_data.properties.topping_mm"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "assets": [
+        {
+          "id": "MFR.AMBS.COFRADAL-260-DECIBEL.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-260-DECIBEL.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Forjado mixto integrado Cofradal",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Chapa de acero galvanizado, hormigón y lana mineral",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Panel mixto integrado prefabricado (armados y montaje según proyecto)",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 260,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5000,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1200,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 106.03,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "Losa mixta portante: proyecto y ejecución a dimensionar",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 87.73
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 250.7
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Cofradal 260 mm Decibel. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 37.8
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 46.7
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 149.8
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 16.4
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

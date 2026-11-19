@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.PIL",
+      "name_es": "Pilares"
+    },
+    "archetype": {
+      "code": "EST.PIL.HA-IS",
+      "name_es": "Pilar de hormigón armado in situ",
+      "description": "Pilar de hormigón armado in situ. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

@@ -1,0 +1,74 @@
+name: metra-tfm
+services:
+  db:
+    restart: unless-stopped
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?required}
+      POSTGRES_USER: ${POSTGRES_USER:?required}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?required}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      retries: 20
+  migrate:
+    build: ./backend
+    command: ["alembic", "upgrade", "head"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+    depends_on:
+      db: {condition: service_healthy}
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      JWT_SECRET: ${JWT_SECRET:?required}
+      COOKIE_SECURE: ${COOKIE_SECURE:-0}
+      ASSET_DIR: /data/assets
+      BRAND: ${BRAND:-METRA}
+      MAX_UPLOAD_BYTES: ${MAX_UPLOAD_BYTES:-52428800}
+    volumes: [asset_data:/data/assets]
+    depends_on:
+      db: {condition: service_healthy}
+      migrate: {condition: service_completed_successfully}
+      catalogue-init: {condition: service_completed_successfully}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      retries: 10
+  worker:
+    build: ./backend
+    command: ["python", "-m", "app.worker"]
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      ASSET_DIR: /data/assets
+    volumes: [asset_data:/data/assets]
+    depends_on:
+      db: {condition: service_healthy}
+      migrate: {condition: service_completed_successfully}
+      catalogue-init: {condition: service_completed_successfully}
+  catalogue-init:
+    build: ./backend
+    command: ["python", "scripts/bootstrap_catalogue_demo.py"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      ASSET_DIR: /data/assets
+      METRA_ADMIN_EMAIL: ${METRA_ADMIN_EMAIL:-}
+      METRA_ADMIN_PASSWORD: ${METRA_ADMIN_PASSWORD:-}
+      METRA_ADMIN_PASSWORD_FILE: ${METRA_ADMIN_PASSWORD_FILE:-}
+      METRA_ASSET_RIGHTS_FILE: ${METRA_ASSET_RIGHTS_FILE:-}
+    volumes: [asset_data:/data/assets]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports: ["${METRA_BIND_ADDRESS:-127.0.0.1}:${METRA_HTTP_PORT:-8080}:80"]
+    depends_on:
+      backend: {condition: service_healthy}
+volumes:
+  postgres_data:
+  asset_data:

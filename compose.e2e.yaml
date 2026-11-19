@@ -1,0 +1,40 @@
+# Always select -p metra-tfm-e2e with both files. Volumes remain project scoped.
+services:
+  db:
+    environment:
+      POSTGRES_DB: metra_publication_test
+      POSTGRES_USER: metra_e2e
+      POSTGRES_PASSWORD: MetraE2eOnly_2026
+  migrate:
+    environment:
+      DATABASE_URL: postgresql+psycopg://metra_e2e:MetraE2eOnly_2026@db:5432/metra_publication_test
+  catalogue-init:
+    environment:
+      DATABASE_URL: postgresql+psycopg://metra_e2e:MetraE2eOnly_2026@db:5432/metra_publication_test
+      METRA_ADMIN_EMAIL: admin-e2e@example.com
+      METRA_ADMIN_PASSWORD: MetraE2eAdminOnly_2026!
+      METRA_ADMIN_PASSWORD_FILE: ''
+      METRA_ASSET_RIGHTS_FILE: ''
+  backend:
+    environment:
+      DATABASE_URL: postgresql+psycopg://metra_e2e:MetraE2eOnly_2026@db:5432/metra_publication_test
+      JWT_SECRET: MetraE2eJwtSecretOnly_2026_change_after_tests
+      COOKIE_SECURE: '0'
+      METRA_TEST_DB: '1'
+      METRA_E2E_PROJECT: metra-tfm-e2e
+  worker:
+    environment:
+      DATABASE_URL: postgresql+psycopg://metra_e2e:MetraE2eOnly_2026@db:5432/metra_publication_test
+  frontend:
+    ports: !override ['127.0.0.1:${METRA_E2E_HTTP_PORT:-18080}:80']
+  e2e-fixtures:
+    profiles: ['fixtures']
+    build: ./backend
+    command: ['sh','-c','python scripts/seed_demo.py --public-demo && python scripts/seed_ifc_e2e.py']
+    environment:
+      DATABASE_URL: postgresql+psycopg://metra_e2e:MetraE2eOnly_2026@db:5432/metra_publication_test
+      ASSET_DIR: /data/assets
+      METRA_TEST_DB: '1'
+    volumes: [asset_data:/data/assets]
+    depends_on:
+      catalogue-init: {condition: service_completed_successfully}

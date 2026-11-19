@@ -1,0 +1,5514 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "METRA — API REST",
+    "version": "1.0.0",
+    "description": "Contrato publicado de rutas. DTOs más precisos en app/validation.py; este documento no sustituye validación de implementación."
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/api/v1/systems": {
+      "get": {
+        "operationId": "systems",
+        "tags": [
+          "systems"
+        ],
+        "summary": "Systems",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        }
+      }
+    },
+    "/api/v1/subsystems": {
+      "get": {
+        "operationId": "subsystems",
+        "tags": [
+          "subsystems"
+        ],
+        "summary": "Subsystems",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        }
+      }
+    },
+    "/api/v1/archetypes": {
+      "get": {
+        "operationId": "archetypes",
+        "tags": [
+          "archetypes"
+        ],
+        "summary": "Archetypes",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        }
+      }
+    },
+    "/api/v1/generic-solutions": {
+      "get": {
+        "operationId": "generics",
+        "tags": [
+          "generic-solutions"
+        ],
+        "summary": "Generics",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "code",
+                "name"
+              ],
+              "default": "code"
+            }
+          },
+          {
+            "name": "property",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "minimum",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "maximum",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "template_summary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/generic-solutions/{id}": {
+      "get": {
+        "operationId": "generic_detail",
+        "tags": [
+          "generic-solutions"
+        ],
+        "summary": "Generic detail",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/data-templates/{subsystem_code}": {
+      "get": {
+        "operationId": "template_public",
+        "tags": [
+          "data-templates"
+        ],
+        "summary": "Template public",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/SubsystemTemplate"
+                    },
+                    "meta": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subsystem_code",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/manufacturers": {
+      "get": {
+        "operationId": "manufacturers",
+        "tags": [
+          "manufacturers"
+        ],
+        "summary": "Manufacturers",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "catalogue"
+              ]
+            },
+            "description": "Lista nombres de fabricantes con fichas públicas, sin datos de contacto."
+          }
+        ]
+      }
+    },
+    "/api/v1/manufacturers/{id}": {
+      "get": {
+        "operationId": "manufacturer_detail",
+        "tags": [
+          "manufacturers"
+        ],
+        "summary": "Manufacturer detail",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/products": {
+      "get": {
+        "operationId": "products",
+        "tags": [
+          "products"
+        ],
+        "summary": "Products",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "code",
+                "name"
+              ],
+              "default": "code"
+            }
+          },
+          {
+            "name": "property",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "minimum",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "maximum",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "template_summary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/products/{id}": {
+      "get": {
+        "operationId": "product_detail",
+        "tags": [
+          "products"
+        ],
+        "summary": "Product detail",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/products/compare": {
+      "get": {
+        "operationId": "compare",
+        "tags": [
+          "products"
+        ],
+        "summary": "Compare",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "INCOMPATIBLE_SUBSYSTEM o VALIDATION",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DomainError"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "ids",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "system_id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "subsystem_id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/auth/register": {
+      "post": {
+        "operationId": "register",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Register",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "operationId": "login",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Login",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/refresh": {
+      "post": {
+        "operationId": "refresh",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Refresh",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/logout": {
+      "post": {
+        "operationId": "logout",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Logout",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/me": {
+      "get": {
+        "operationId": "me",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Me",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/auth/accept-invitation": {
+      "post": {
+        "operationId": "accept_invitation",
+        "tags": [
+          "auth"
+        ],
+        "summary": "Accept invitation",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/profile": {
+      "get": {
+        "operationId": "profile",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Profile",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "profile_update",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Profile update",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/invitations": {
+      "post": {
+        "operationId": "invitation_create",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Invitation create",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/products": {
+      "get": {
+        "operationId": "own_products",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Own products",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "own_create",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Own create",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/products/{id}": {
+      "get": {
+        "operationId": "own_detail",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Own detail",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "own_availability",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Own availability",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/products/{id}/revisions": {
+      "post": {
+        "operationId": "new_revision",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "New revision",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "source_revision_id": {
+                    "type": "string",
+                    "format": "uuid",
+                    "description": "Revisión finalizada del producto a restaurar en un nuevo borrador"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}": {
+      "get": {
+        "operationId": "own_revision",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Own revision",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "update_revision",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Update revision",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "composition": {
+                    "type": "array",
+                    "maxItems": 100,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "name"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "maxLength": 180
+                        },
+                        "material": {
+                          "type": "string",
+                          "maxLength": 180
+                        },
+                        "thickness_mm": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "nullable": true
+                        }
+                      }
+                    }
+                  },
+                  "economic_values": {
+                    "type": "array",
+                    "maxItems": 100,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "label",
+                        "value"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxLength": 180
+                        },
+                        "value": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "maxLength": 500
+                            },
+                            {
+                              "type": "number"
+                            }
+                          ]
+                        },
+                        "unit": {
+                          "type": "string",
+                          "maxLength": 60
+                        },
+                        "source": {
+                          "type": "string",
+                          "maxLength": 180
+                        }
+                      }
+                    }
+                  },
+                  "environmental_values": {
+                    "type": "array",
+                    "maxItems": 100,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "label",
+                        "value"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxLength": 180
+                        },
+                        "value": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "maxLength": 500
+                            },
+                            {
+                              "type": "number"
+                            }
+                          ]
+                        },
+                        "unit": {
+                          "type": "string",
+                          "maxLength": 60
+                        },
+                        "source": {
+                          "type": "string",
+                          "maxLength": 180
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}/submit": {
+      "post": {
+        "operationId": "submit_revision",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Submit revision",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}/assets": {
+      "post": {
+        "operationId": "upload_revision_asset",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Upload revision asset",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          },
+          "202": {
+            "description": "Original persistido y procesamiento en cola"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}/assets/{asset_id}": {
+      "patch": {
+        "operationId": "permissions",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Permissions",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "asset_id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "public_view_allowed",
+                  "public_download_allowed"
+                ],
+                "properties": {
+                  "public_view_allowed": {
+                    "type": "boolean"
+                  },
+                  "public_download_allowed": {
+                    "type": "boolean"
+                  },
+                  "rights_evidence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 2000,
+                    "description": "Obligatoria al conceder un nuevo permiso"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "unlink_asset",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Unlink asset",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "asset_id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/assets/{id}/{mode}": {
+      "get": {
+        "operationId": "asset_access",
+        "tags": [
+          "assets"
+        ],
+        "summary": "Asset access",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "mode",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/manufacturer/notifications": {
+      "get": {
+        "operationId": "notifications",
+        "tags": [
+          "manufacturer"
+        ],
+        "summary": "Notifications",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/notifications/{id}/read": {
+      "patch": {
+        "operationId": "mark_read",
+        "tags": [
+          "notifications"
+        ],
+        "summary": "Mark read",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reviews": {
+      "get": {
+        "operationId": "reviews_queue",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Reviews queue",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/reviews/{id}": {
+      "get": {
+        "operationId": "review_detail",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Review detail",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/reviews/{id}/approve": {
+      "post": {
+        "operationId": "approve",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Approve",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "document_permissions": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "required": [
+                        "public_view_allowed",
+                        "public_download_allowed"
+                      ],
+                      "properties": {
+                        "public_view_allowed": {
+                          "type": "boolean"
+                        },
+                        "public_download_allowed": {
+                          "type": "boolean"
+                        },
+                        "rights_evidence": {
+                          "type": "string",
+                          "minLength": 10,
+                          "maxLength": 2000,
+                          "description": "Obligatoria al conceder un permiso"
+                        }
+                      }
+                    },
+                    "description": "Políticas indexadas por ID de documento"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reviews/{id}/reject": {
+      "post": {
+        "operationId": "reject",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Reject",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/catalogue/{kind}": {
+      "get": {
+        "operationId": "admin_catalogue_list",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Admin catalogue list",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "kind",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "admin_catalogue_create",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Admin catalogue create",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "kind",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/catalogue/{kind}/{id}": {
+      "patch": {
+        "operationId": "admin_catalogue_update",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Admin catalogue update",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "kind",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Consulta privada de administración",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos consultados"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/catalogue/{kind}/{id}/{action}": {
+      "post": {
+        "operationId": "admin_archive",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Admin archive",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "kind",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "in": "path",
+            "name": "action",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/generic-solutions/{id}/assets": {
+      "post": {
+        "operationId": "generic_upload",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Generic upload",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          },
+          "202": {
+            "description": "Original persistido y procesamiento en cola"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/generic-solutions/{id}/assets/{asset_id}": {
+      "patch": {
+        "operationId": "generic_permissions",
+        "summary": "Actualizar permisos de un documento de una solución genérica",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "asset_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "public_view_allowed",
+                  "public_download_allowed"
+                ],
+                "properties": {
+                  "public_view_allowed": {
+                    "type": "boolean"
+                  },
+                  "public_download_allowed": {
+                    "type": "boolean"
+                  },
+                  "rights_evidence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 2000,
+                    "description": "Obligatoria al conceder un nuevo permiso"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/audit-logs": {
+      "get": {
+        "operationId": "audit_list",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Audit list",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/notifications": {
+      "get": {
+        "operationId": "admin_notifs",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Admin notifs",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/templates": {
+      "post": {
+        "operationId": "create_template",
+        "tags": [
+          "admin"
+        ],
+        "summary": "Create template",
+        "responses": {
+          "200": {
+            "description": "Success; data/meta envelope"
+          },
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation failure"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/overview": {
+      "get": {
+        "summary": "Consulta privada de administración",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos consultados"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ifc/inventory": {
+      "get": {
+        "operationId": "admin_ifc_inventory",
+        "summary": "IFC vinculados y permisos, paginados",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inventario resumido"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ifc/{id}/integrity": {
+      "get": {
+        "operationId": "admin_ifc_integrity",
+        "summary": "Verificación SHA-256 del original",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado de integridad"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ifc/{id}/history": {
+      "get": {
+        "operationId": "admin_ifc_history",
+        "summary": "Historial auditado de permisos IFC",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Cambios de permisos"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ifc/permissions/bulk": {
+      "post": {
+        "operationId": "admin_ifc_bulk_permissions",
+        "summary": "Cambio de derechos por lote con resultado por IFC",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado por IFC"
+          },
+          "403": {
+            "description": "Solo administrador"
+          },
+          "422": {
+            "description": "Datos inválidos"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/legacy/inventory": {
+      "get": {
+        "operationId": "legacy_inventory",
+        "summary": "Inventario DEMO_METRA resumido y paginado para publicación",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "kind",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "generic",
+                "commercial"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "published",
+                "all"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "q",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "code",
+                "name",
+                "updated"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page_size",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resumen y metadatos de paginación"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Solo administrador"
+          },
+          "422": {
+            "description": "Filtro inválido"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/legacy/products": {
+      "get": {
+        "summary": "Consulta privada de administración",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos consultados"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/legacy/products/{id}": {
+      "get": {
+        "summary": "Consulta privada de administración",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos consultados"
+          },
+          "403": {
+            "description": "Solo administrador"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/legacy/publications": {
+      "post": {
+        "operationId": "publish_legacy",
+        "summary": "Publicación editorial DEMO_METRA con resultado por ficha",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "ids",
+                  "evidence",
+                  "kind",
+                  "confirmed"
+                ],
+                "properties": {
+                  "ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  },
+                  "evidence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 2000
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "commercial",
+                      "generic"
+                    ]
+                  },
+                  "confirmed": {
+                    "type": "boolean",
+                    "enum": [
+                      true
+                    ]
+                  },
+                  "document_permissions": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "required": [
+                          "public_view_allowed",
+                          "public_download_allowed"
+                        ],
+                        "properties": {
+                          "public_view_allowed": {
+                            "type": "boolean"
+                          },
+                          "public_download_allowed": {
+                            "type": "boolean"
+                          },
+                          "rights_evidence": {
+                            "type": "string",
+                            "minLength": 10,
+                            "maxLength": 2000,
+                            "description": "Obligatoria al conceder un permiso"
+                          }
+                        }
+                      },
+                      "description": "Políticas indexadas por ID de documento"
+                    },
+                    "description": "Políticas indexadas por ID de ficha o revisión"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/assets/{id}/reprocess": {
+      "post": {
+        "operationId": "reprocess_asset",
+        "summary": "Reprocesar un original conservado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Procesamiento en cola"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/manufacturers": {
+      "get": {
+        "operationId": "admin_manufacturers",
+        "summary": "Listar organizaciones",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/manufacturers/{id}/invitations": {
+      "post": {
+        "operationId": "invite_manufacturer",
+        "summary": "Invitar a una organización existente",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "evidence"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "evidence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 2000
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reviews/bulk-approve": {
+      "post": {
+        "operationId": "bulk_approve",
+        "summary": "Aprobar revisiones pendientes por lote",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "document_permissions": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "required": [
+                          "public_view_allowed",
+                          "public_download_allowed"
+                        ],
+                        "properties": {
+                          "public_view_allowed": {
+                            "type": "boolean"
+                          },
+                          "public_download_allowed": {
+                            "type": "boolean"
+                          },
+                          "rights_evidence": {
+                            "type": "string",
+                            "minLength": 10,
+                            "maxLength": 2000,
+                            "description": "Obligatoria al conceder un permiso"
+                          }
+                        }
+                      },
+                      "description": "Políticas indexadas por ID de documento"
+                    },
+                    "description": "Políticas indexadas por ID de ficha o revisión"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/reviews/{id}/corrections": {
+      "post": {
+        "operationId": "request_corrections",
+        "summary": "Devolver una revisión para correcciones",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/imports": {
+      "post": {
+        "operationId": "import_cost_database",
+        "summary": "Importar una versión de una base de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Autenticación requerida"
+          },
+          "403": {
+            "description": "Permiso insuficiente"
+          },
+          "202": {
+            "description": "Original conservado y trabajo en cola"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "file"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "list_cost_imports",
+        "summary": "Consultar el estado de las importaciones BC3",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Trabajos de importación paginados"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/document-targets": {
+      "get": {
+        "operationId": "document_targets",
+        "summary": "Listar fichas para gestionar sus documentos",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/admin/products/{id}/assets/{asset_id}": {
+      "patch": {
+        "operationId": "published_permissions",
+        "summary": "Actualizar permisos de un documento comercial publicado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "asset_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "public_view_allowed",
+                  "public_download_allowed"
+                ],
+                "properties": {
+                  "public_view_allowed": {
+                    "type": "boolean"
+                  },
+                  "public_download_allowed": {
+                    "type": "boolean"
+                  },
+                  "rights_evidence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 2000,
+                    "description": "Obligatoria al conceder un nuevo permiso"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/cost-databases": {
+      "get": {
+        "operationId": "cost_databases",
+        "summary": "Listar bases de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "post": {
+        "operationId": "create_cost_database",
+        "summary": "Crear una base de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 180
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/cost-databases/{id}": {
+      "get": {
+        "operationId": "cost_database",
+        "summary": "Consultar una base de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "update_cost_database",
+        "summary": "Renombrar una base de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 180
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "archive_cost_database",
+        "summary": "Archivar una base de costes",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/{id}/concepts": {
+      "get": {
+        "operationId": "cost_concepts",
+        "summary": "Listar conceptos paginados",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/{id}/concepts/{concept_id}": {
+      "get": {
+        "operationId": "cost_concept",
+        "summary": "Consultar un concepto",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "edit_cost_concept",
+        "summary": "Editar un concepto",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "unit",
+                  "description",
+                  "unit_price"
+                ],
+                "properties": {
+                  "unit": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "unit_price": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/cost-databases/{id}/concepts/{concept_id}/decomposition": {
+      "get": {
+        "operationId": "cost_decomposition",
+        "summary": "Consultar la descomposición de un concepto",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/{id}/hierarchy": {
+      "get": {
+        "operationId": "cost_hierarchy",
+        "summary": "Consultar la jerarquía",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/{id}/export/bc3": {
+      "get": {
+        "operationId": "export_cost_database",
+        "summary": "Exportar BC3 regenerado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/cost-databases/{id}/source-file": {
+      "get": {
+        "operationId": "cost_source",
+        "summary": "Descargar el original",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/budgets": {
+      "get": {
+        "operationId": "budgets",
+        "summary": "Listar presupuestos privados",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "post": {
+        "operationId": "create_budget",
+        "summary": "Crear un presupuesto privado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 180
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/budgets/{id}": {
+      "get": {
+        "operationId": "budget",
+        "summary": "Consultar un presupuesto",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "update_budget",
+        "summary": "Renombrar un presupuesto",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 180
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "archive_budget",
+        "summary": "Archivar un presupuesto",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/budgets/{id}/items": {
+      "get": {
+        "operationId": "budget_items",
+        "summary": "Listar partidas",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "post": {
+        "operationId": "create_budget_item",
+        "summary": "Añadir una partida",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "code",
+                  "description",
+                  "unit",
+                  "quantity",
+                  "unit_price"
+                ],
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "quantity": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "unit_price": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/budgets/{id}/items/{item_id}": {
+      "patch": {
+        "operationId": "update_budget_item",
+        "summary": "Editar una partida",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "code",
+                  "description",
+                  "unit",
+                  "quantity",
+                  "unit_price"
+                ],
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "quantity": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "unit_price": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete_budget_item",
+        "summary": "Retirar una partida",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/budgets/{id}/totals": {
+      "get": {
+        "operationId": "budget_totals",
+        "summary": "Calcular el total de un presupuesto",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/budgets/{id}/export/bc3": {
+      "get": {
+        "operationId": "budget_export",
+        "summary": "Exportar un presupuesto como BC3",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/products/{id}/budgets": {
+      "get": {
+        "operationId": "product_budgets",
+        "summary": "Listar presupuestos asociados al producto",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "post": {
+        "operationId": "create_product_budget",
+        "summary": "Crear un presupuesto en el borrador",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 180
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/documents/{id}": {
+      "get": {
+        "operationId": "document_metadata",
+        "summary": "Consultar metadatos del documento",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/processing": {
+      "get": {
+        "operationId": "document_processing",
+        "summary": "Consultar el estado de procesamiento",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/retry": {
+      "post": {
+        "operationId": "document_retry",
+        "summary": "Reintentar el procesamiento",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/cancel": {
+      "post": {
+        "operationId": "document_cancel",
+        "summary": "Cancelar el trabajo en cola",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/summary": {
+      "get": {
+        "operationId": "document_summary",
+        "summary": "Consultar el resumen técnico",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/download": {
+      "get": {
+        "operationId": "document_download",
+        "summary": "Descargar el documento autorizado",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/documents/{id}/data": {
+      "get": {
+        "operationId": "document_data",
+        "summary": "Consultar datos técnicos paginados",
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/revisions/{id}/component-links": {
+      "get": {
+        "operationId": "component_links",
+        "summary": "Consultar vínculos de un componente IFC",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ifc_asset_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "global_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}/component-links": {
+      "post": {
+        "operationId": "create_component_link",
+        "summary": "Vincular un concepto BC3 o una EPD a un componente IFC",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "ifc_asset_id",
+                  "ifc_global_id",
+                  "target_asset_id",
+                  "evidence"
+                ],
+                "properties": {
+                  "ifc_asset_id": {
+                    "type": "string"
+                  },
+                  "ifc_global_id": {
+                    "type": "string"
+                  },
+                  "target_asset_id": {
+                    "type": "string"
+                  },
+                  "evidence": {
+                    "type": "string"
+                  },
+                  "concept_code": {
+                    "type": "string"
+                  },
+                  "material": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/manufacturer/revisions/{id}/component-links/{link_id}": {
+      "delete": {
+        "operationId": "remove_component_link",
+        "summary": "Retirar un vínculo del borrador",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "link_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación completada"
+          },
+          "404": {
+            "description": "Recurso no disponible"
+          }
+        }
+      }
+    },
+    "/api/v1/catalogue/counts": {
+      "get": {
+        "operationId": "catalogue_counts",
+        "summary": "Contar fichas publicadas por subsistema",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Recuentos de genéricas y comerciales agrupados por subsistema"
+          }
+        }
+      }
+    },
+    "/api/v1/documents/{id}/ifc-tree": {
+      "get": {
+        "operationId": "document_ifc_tree",
+        "summary": "Consultar índice compacto de un IFC visualizable",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Hasta 10000 elementos con clase y relaciones de composición"
+          },
+          "404": {
+            "description": "Visualización sin autorización"
+          },
+          "422": {
+            "description": "IFC inválido"
+          }
+        }
+      }
+    },
+    "/api/v1/documents/{id}/thumbnail": {
+      "get": {
+        "operationId": "document_thumbnail",
+        "summary": "Obtener miniatura de geometría IFC autorizada",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "security": [
+          {},
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Miniatura SVG",
+            "content": {
+              "image/svg+xml": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Sin miniatura o autorización de vista"
+          }
+        }
+      }
+    },
+    "/api/v1/solutions/compare": {
+      "get": {
+        "summary": "Comparar exactamente dos soluciones publicadas, genéricas o comerciales",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "ids",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "system_id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "subsystem_id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Datos públicos y advertencias de comparabilidad",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/ComparisonV4"
+                    },
+                    "meta": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "INCOMPATIBLE_SUBSYSTEM o VALIDATION",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DomainError"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Solución no publicada"
+          }
+        }
+      }
+    },
+    "/api/v1/documents/{id}/thumbnail-processing": {
+      "get": {
+        "summary": "Estado de miniatura IFC para un activo con permiso de vista",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estado persistido de generación"
+          },
+          "404": {
+            "description": "IFC sin acceso de visualización"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/data-quality": {
+      "get": {
+        "operationId": "admin_data_quality",
+        "summary": "admin data quality",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/DataQualityReport"
+                    },
+                    "meta": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acceso restringido"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/templates/{subsystem_code}/versions": {
+      "get": {
+        "operationId": "admin_template_versions",
+        "summary": "admin template versions",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado"
+          },
+          "403": {
+            "description": "Acceso restringido"
+          }
+        },
+        "parameters": [
+          {
+            "name": "subsystem_code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/openapi.json": {
+      "get": {
+        "operationId": "openapi",
+        "summary": "Contrato OpenAPI",
+        "responses": {
+          "200": {
+            "description": "Documento OpenAPI"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {}
+              }
+            }
+          }
+        }
+      },
+      "CanonicalValue": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
+          },
+          "unit": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "SOURCE_DECLARED",
+              "DEMO_SIMULATED",
+              "MISSING"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "verification_status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "value",
+          "unit",
+          "source_type",
+          "status"
+        ]
+      },
+      "TemplateField": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name_es": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "display_group": {
+            "type": "string"
+          },
+          "allowed_units": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "code",
+          "type",
+          "unit"
+        ]
+      },
+      "SubsystemTemplate": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "subsystem_id": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TemplateField"
+            }
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "code",
+          "version",
+          "fields"
+        ]
+      },
+      "AssetV4": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "file_type": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "original_name": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer"
+          },
+          "processing_status": {
+            "type": "string"
+          },
+          "integrity_status": {
+            "type": "string"
+          },
+          "association": {
+            "type": "object"
+          },
+          "public_view_allowed": {
+            "type": "boolean"
+          },
+          "public_download_allowed": {
+            "type": "boolean"
+          },
+          "derivatives": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "CanonicalSolution": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "object"
+          },
+          "template": {
+            "$ref": "#/components/schemas/SubsystemTemplate"
+          },
+          "properties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/CanonicalValue"
+            }
+          },
+          "composition": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "economic": {
+            "type": "object"
+          },
+          "environmental": {
+            "type": "object"
+          },
+          "assets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetV4"
+            }
+          },
+          "quality": {
+            "type": "object"
+          }
+        }
+      },
+      "ComparisonV4": {
+        "type": "object",
+        "properties": {
+          "solutions": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "canonical": {
+                  "$ref": "#/components/schemas/CanonicalSolution"
+                },
+                "key": {
+                  "type": "string"
+                },
+                "subsystem_id": {
+                  "type": "string"
+                },
+                "system_id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "same_functional_unit": {
+            "type": "boolean"
+          },
+          "same_subsystem": {
+            "type": "boolean"
+          }
+        }
+      },
+      "DataQualityReport": {
+        "type": "object",
+        "properties": {
+          "solutions": {
+            "type": "integer"
+          },
+          "schema_version": {
+            "type": "string"
+          },
+          "subsystems": {
+            "type": "object"
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "Pagination": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer"
+          },
+          "page_size": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          }
+        }
+      },
+      "DomainError": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1186 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.MAD-CLT",
+      "name_es": "Muro de paneles de madera contralaminada"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.MAD-CLT.GS001",
+      "name_es": "Muro estructural de panel CLT de 100 mm y 3 capas",
+      "description": "Muro estructural de panel contralaminado de madera de pino de 100 mm de espesor y 3 capas, encoladas con adhesivo de poliuretano libre de COV, clase de servicio 1 y 2, Euroclase B-s2,d0, acabado para revestir, trabajado en taller y montado en obra mediante herrajes, juntas y fijaciones mecánicas.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EMD010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1995-1-1 referenced by CYPE",
+          "code": "EN 1995-1-1",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "cross_laminated_timber_panel_wall",
+        "structural_material": "cross_laminated_timber",
+        "structural_system": "load_bearing_clt_panel_wall",
+        "total_thickness_mm": 100,
+        "structural_element_thickness_mm": 100,
+        "layers": 3,
+        "timber_species": "pine",
+        "density_kg_m3": 500,
+        "service_classes": [
+          "1",
+          "2"
+        ],
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "specific_heat_j_kgk": 1600,
+        "water_vapour_resistance_factor": 25,
+        "delivery_moisture_percent": "12 ± 2",
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed",
+          "note": "CYPE EMD010 wall item does not define the foundation/floor support detail"
+        },
+        "connection_assembly_method": "mechanical fittings, joints and fasteners; workshop cuts/notches followed by site placement and final fixing",
+        "fire_performance": {
+          "reaction_to_fire": "B-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-worked CLT structural panels with separate mechanical fittings",
+        "factory_completion_level": "primary load-bearing panel factory-produced and workshop-worked; connections completed on site",
+        "assembly_method": "panel layout, provisional fixing, plumbing/levelling, mechanical connections and final fixing",
+        "disassembly_strategy": {
+          "assessment_status": "inferred_potential",
+          "note": "mechanical fittings can potentially be removed, but reuse/disassembly performance is not quantified in EMD010"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "species": "pine",
+          "thickness_mm": 100,
+          "layers": 3,
+          "density_kg_m3": 500,
+          "service_classes": [
+            "1",
+            "2"
+          ],
+          "adhesive": "VOC-free polyurethane"
+        },
+        "source_references": [
+          "CYPE Generador de Precios EMD010, 100 mm / 3-layer pine CLT wall",
+          "OEKOBAUDAT Cross laminated timber (German average), A1-A3 GWP-total -669.6 kgCO2e/m3; applied as generic product proxy by panel volume"
+        ],
+        "attribute_calculations": {
+          "surface_mass_kg_m2": "0.100 m × 500 kg/m3 = 50.0 kg/m2"
+        },
+        "assessment_notes": {
+          "environmental_performance": "Generic OEKOBAUDAT CLT A1-A3 value multiplied by CYPE panel volume; not an EPD for the exact CYPE panel.",
+          "surface_mass": "Calculated directly from sourced CYPE thickness and density.",
+          "fire_performance": "Reaction to fire is sourced; fire resistance of the wall assembly is not assessed.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in EMD010.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -66.96,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.8348,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "calculated_proxy",
+            "source_reference": "OEKOBAUDAT generic German-average CLT A1-A3 GWP per m3 × CYPE panel thickness"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 87.32,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.417867,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE EMD010 current indexed Spain unit cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.807261,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.807261,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EMD010 decomposition; CLT panel and factory-made connection package counted as industrialized",
+            "industrialized_cost_eur_m2": 70.49,
+            "assessed_cost_eur_m2": 87.32,
+            "counted_industrialized_components": [
+              "CLT panel: 65.99 EUR/m2",
+              "connection hardware package: 4.50 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "CLT",
+          "name_es": "Panel contralaminado de madera de pino",
+          "role": "structure",
+          "properties": {
+            "material_family": "cross_laminated_timber",
+            "thickness_mm": 100,
+            "layers": 3,
+            "density_kg_m3": 500,
+            "reaction_to_fire": "B-s2,d0",
+            "thermal_conductivity_w_mk": 0.13
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Herrajes, juntas y fijaciones mecánicas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "steel_fixings",
+            "mechanical": true
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 50.0,
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "system_type": {
+          "value": "cross_laminated_timber_panel_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cross_laminated_timber",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-worked CLT structural panels with separate mechanical fittings",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 100,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1883.6,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 50.0,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_clt_panel_wall",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": 500,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 68.07
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 226.21
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -66.96,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 45.756
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.464
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.232
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.348
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 55.8,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 22.5
+            },
+            {
+              "module": "A4",
+              "value": 0.5
+            }
+          ],
+          "total": 23.0,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 250.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 87.32,
+        "bc3": {
+          "root_code": "EMD010",
+          "decomposition": [
+            {
+              "code": "mt07mee600ai",
+              "description": "Panel CLT de pino 100 mm, 3 capas",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 65.99,
+              "amount": 65.99,
+              "industrialized": true
+            },
+            {
+              "code": "mt07mee602",
+              "description": "Herrajes, juntas y elementos de fijación mecánica para panel CLT",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.243,
+              "unit_price": 18.1,
+              "amount": 4.4,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.486,
+              "unit_price": 16.94,
+              "amount": 8.23,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 110.59
+            },
+            {
+              "label": "Mano de obra",
+              "value": 40.93
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 29.67
+            },
+            {
+              "label": "Transporte",
+              "value": 13.28
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 194.47,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 50.0,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 24.0
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.875,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 28.0
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.245,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 9.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 5.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.7
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.87,
+              "subtotal": 3.87
+            }
+          ],
+          "total": 81.32
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 70.49,
+        "assessed_cost": 87.32,
+        "ratio": 0.807261
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-CLT.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-CLT.GS001.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.8348,
+        "economic_performance": 0.417867,
+        "industrialization_performance": 0.807261,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-CLT.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de panel CLT de 100 mm y 3 capas"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de panel contralaminado de madera de pino de 100 mm de espesor y 3 capas, encoladas con adhesivo de poliuretano libre de COV, clase de servicio 1 y 2, Euroclase B-s2,d0, acabado para revestir, trabajado en taller y montado en obra mediante herrajes, juntas y fijaciones mecánicas."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 87.32
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -66.96
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.807261
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 100
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": 500
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de panel CLT de 100 mm y 3 capas. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.MAD-CLT.GS002",
+      "name_es": "Muro estructural de panel CLT de 140 mm y 5 capas",
+      "description": "Muro estructural de panel contralaminado de madera de pino de 140 mm de espesor y 5 capas, encoladas con adhesivo de poliuretano libre de COV, clase de servicio 1 y 2, Euroclase B-s2,d0, acabado para revestir, trabajado en taller y montado en obra mediante herrajes, juntas y fijaciones mecánicas.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EMD010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1995-1-1 referenced by CYPE",
+          "code": "EN 1995-1-1",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "cross_laminated_timber_panel_wall",
+        "structural_material": "cross_laminated_timber",
+        "structural_system": "load_bearing_clt_panel_wall",
+        "total_thickness_mm": 140,
+        "structural_element_thickness_mm": 140,
+        "layers": 5,
+        "timber_species": "pine",
+        "density_kg_m3": 500,
+        "service_classes": [
+          "1",
+          "2"
+        ],
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "specific_heat_j_kgk": 1600,
+        "water_vapour_resistance_factor": 25,
+        "delivery_moisture_percent": "12 ± 2",
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed",
+          "note": "CYPE EMD010 wall item does not define the foundation/floor support detail"
+        },
+        "connection_assembly_method": "mechanical fittings, joints and fasteners; workshop cuts/notches followed by site placement and final fixing",
+        "fire_performance": {
+          "reaction_to_fire": "B-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-worked CLT structural panels with separate mechanical fittings",
+        "factory_completion_level": "primary load-bearing panel factory-produced and workshop-worked; connections completed on site",
+        "assembly_method": "panel layout, provisional fixing, plumbing/levelling, mechanical connections and final fixing",
+        "disassembly_strategy": {
+          "assessment_status": "inferred_potential",
+          "note": "mechanical fittings can potentially be removed, but reuse/disassembly performance is not quantified in EMD010"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "species": "pine",
+          "thickness_mm": 140,
+          "layers": 5,
+          "density_kg_m3": 500,
+          "service_classes": [
+            "1",
+            "2"
+          ],
+          "adhesive": "VOC-free polyurethane"
+        },
+        "source_references": [
+          "CYPE Generador de Precios EMD010, 140 mm / 5-layer pine CLT wall",
+          "OEKOBAUDAT Cross laminated timber (German average), A1-A3 GWP-total -669.6 kgCO2e/m3; applied as generic product proxy by panel volume"
+        ],
+        "attribute_calculations": {
+          "surface_mass_kg_m2": "0.140 m × 500 kg/m3 = 70.0 kg/m2"
+        },
+        "assessment_notes": {
+          "environmental_performance": "Generic OEKOBAUDAT CLT A1-A3 value multiplied by CYPE panel volume; not an EPD for the exact CYPE panel.",
+          "surface_mass": "Calculated directly from sourced CYPE thickness and density.",
+          "fire_performance": "Reaction to fire is sourced; fire resistance of the wall assembly is not assessed.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in EMD010.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -93.744,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.96872,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "calculated_proxy",
+            "source_reference": "OEKOBAUDAT generic German-average CLT A1-A3 GWP per m3 × CYPE panel thickness"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 108.09,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.2794,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE EMD010 current indexed Spain unit cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.834952,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.834952,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EMD010 decomposition; CLT panel and factory-made connection package counted as industrialized",
+            "industrialized_cost_eur_m2": 90.25,
+            "assessed_cost_eur_m2": 108.09,
+            "counted_industrialized_components": [
+              "CLT panel: 85.75 EUR/m2",
+              "connection hardware package: 4.50 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "CLT",
+          "name_es": "Panel contralaminado de madera de pino",
+          "role": "structure",
+          "properties": {
+            "material_family": "cross_laminated_timber",
+            "thickness_mm": 140,
+            "layers": 5,
+            "density_kg_m3": 500,
+            "reaction_to_fire": "B-s2,d0",
+            "thermal_conductivity_w_mk": 0.13
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Herrajes, juntas y fijaciones mecánicas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "steel_fixings",
+            "mechanical": true
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 70.0,
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "system_type": {
+          "value": "cross_laminated_timber_panel_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cross_laminated_timber",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-worked CLT structural panels with separate mechanical fittings",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 140,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1899.56,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 70.0,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_clt_panel_wall",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": 500,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 97.92
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 250.22
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -93.744,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 36.572
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.568
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.784
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.676
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 44.6,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 31.5
+            },
+            {
+              "module": "A4",
+              "value": 0.7
+            }
+          ],
+          "total": 32.2,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 350.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 108.09,
+        "bc3": {
+          "root_code": "EMD010",
+          "decomposition": [
+            {
+              "code": "mt07mee600cp",
+              "description": "Panel CLT de pino 140 mm, 5 capas",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 85.75,
+              "amount": 85.75,
+              "industrialized": true
+            },
+            {
+              "code": "mt07mee602",
+              "description": "Herrajes, juntas y elementos de fijación mecánica para panel CLT",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.243,
+              "unit_price": 18.1,
+              "amount": 4.4,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.486,
+              "unit_price": 16.94,
+              "amount": 8.23,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 123.96
+            },
+            {
+              "label": "Mano de obra",
+              "value": 44.65
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 33.79
+            },
+            {
+              "label": "Transporte",
+              "value": 13.14
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 215.54,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 70.0,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 33.6
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.984,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 31.49
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.276,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 10.21
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 7.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.98
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 4.6,
+              "subtotal": 4.6
+            }
+          ],
+          "total": 96.56
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 90.25,
+        "assessed_cost": 108.09,
+        "ratio": 0.834952
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-CLT.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-CLT.GS002.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.96872,
+        "economic_performance": 0.2794,
+        "industrialization_performance": 0.834952,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-CLT.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de panel CLT de 140 mm y 5 capas"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de panel contralaminado de madera de pino de 140 mm de espesor y 5 capas, encoladas con adhesivo de poliuretano libre de COV, clase de servicio 1 y 2, Euroclase B-s2,d0, acabado para revestir, trabajado en taller y montado en obra mediante herrajes, juntas y fijaciones mecánicas."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 108.09
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -93.744
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.834952
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 140
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": 500
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de panel CLT de 140 mm y 5 capas. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

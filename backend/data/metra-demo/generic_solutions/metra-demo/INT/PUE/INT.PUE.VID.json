@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PUE",
+      "name_es": "Puertas interiores"
+    },
+    "archetype": {
+      "code": "INT.PUE.VID",
+      "name_es": "Puerta interior de vidrio",
+      "description": "Puerta interior de vidrio. Los detalles de composición y prestaciones se definen en generic_solutions. Geometría y apertura proceden del BIM; la solución declara compatibilidad."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

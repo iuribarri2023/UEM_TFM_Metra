@@ -1,0 +1,23 @@
+{
+  "archetypes": 68,
+  "subsystems": 15,
+  "systems": 5,
+  "generic_solutions": 94,
+  "unique_codes": true,
+  "parent_links_checked": true,
+  "check_method": "Validación del corpus activo metra-demo: scripts/catalogue_data.py validate; inventory.json (94 genéricas, 91 comerciales, 185 IFC y enlaces verificados).",
+  "calculation_ready_configurable_subsystems": [
+    "EST.MUR",
+    "EST.FOR",
+    "ENV.FAC",
+    "ENV.VEN",
+    "ENV.CUB",
+    "INT.PAR",
+    "INT.TRA",
+    "INT.SUE",
+    "MOD.BAN"
+  ],
+  "calculation_support_policy": "Interior finishing and bathroom records include explicitly labelled provisional_poc assumptions where authoritative GWP/IdI evidence is not yet available. These are never runtime XLSX dependencies and must be replaced when validated product/project evidence becomes available.",
+  "max_archetype_code_length": 19,
+  "gubimclass_mapping": "taxonomy.json (clasificación de referencia incluida en el corpus)"
+}

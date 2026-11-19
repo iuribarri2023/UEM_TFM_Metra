@@ -1,0 +1,596 @@
+{
+  "g:ENV.CUB.PL-CON.GS001": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS001.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS001.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS002": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS002.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS002.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS003": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS003.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS003.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS004": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS004.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS004.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS005": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS005.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS005.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS006": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS006.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS006.ifc"
+  },
+  "g:ENV.CUB.PL-CON.GS007": {
+    "../../assets/ifc/generic/ENV.CUB.PL-CON.GS007.ifc": "assets/ifc/generic/ENV.CUB.PL-CON.GS007.ifc"
+  },
+  "g:ENV.CUB.PL-INV.GS001": {
+    "../../assets/ifc/generic/ENV.CUB.PL-INV.GS001.ifc": "assets/ifc/generic/ENV.CUB.PL-INV.GS001.ifc"
+  },
+  "g:ENV.CUB.PL-INV.GS002": {
+    "../../assets/ifc/generic/ENV.CUB.PL-INV.GS002.ifc": "assets/ifc/generic/ENV.CUB.PL-INV.GS002.ifc"
+  },
+  "g:ENV.CUB.PL-INV.GS003": {
+    "../../assets/ifc/generic/ENV.CUB.PL-INV.GS003.ifc": "assets/ifc/generic/ENV.CUB.PL-INV.GS003.ifc"
+  },
+  "g:ENV.CUB.PL-VEG.GS001": {
+    "../../assets/ifc/generic/ENV.CUB.PL-VEG.GS001.ifc": "assets/ifc/generic/ENV.CUB.PL-VEG.GS001.ifc"
+  },
+  "g:ENV.CUB.PL-VEG.GS002": {
+    "../../assets/ifc/generic/ENV.CUB.PL-VEG.GS002.ifc": "assets/ifc/generic/ENV.CUB.PL-VEG.GS002.ifc"
+  },
+  "g:ENV.CUB.PL-VEG.GS003": {
+    "../../assets/ifc/generic/ENV.CUB.PL-VEG.GS003.ifc": "assets/ifc/generic/ENV.CUB.PL-VEG.GS003.ifc"
+  },
+  "g:ENV.FAC.FAB-HD.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-HD.GS001.ifc": "assets/ifc/generic/ENV.FAC.FAB-HD.GS001.ifc"
+  },
+  "g:ENV.FAC.FAB-HD.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-HD.GS002.ifc": "assets/ifc/generic/ENV.FAC.FAB-HD.GS002.ifc"
+  },
+  "g:ENV.FAC.FAB-HD.GS003": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-HD.GS003.ifc": "assets/ifc/generic/ENV.FAC.FAB-HD.GS003.ifc"
+  },
+  "g:ENV.FAC.FAB-HD.GS004": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-HD.GS004.ifc": "assets/ifc/generic/ENV.FAC.FAB-HD.GS004.ifc"
+  },
+  "g:ENV.FAC.FAB-2H.GS005": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-2H.GS005.ifc": "assets/ifc/generic/ENV.FAC.FAB-2H.GS005.ifc"
+  },
+  "g:ENV.FAC.FAB-2H.GS006": {
+    "../../assets/ifc/generic/ENV.FAC.FAB-2H.GS006.ifc": "assets/ifc/generic/ENV.FAC.FAB-2H.GS006.ifc"
+  },
+  "g:ENV.FAC.FV-EL.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.FV-EL.GS001.ifc": "assets/ifc/generic/ENV.FAC.FV-EL.GS001.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS001.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS001.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS002.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS002.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS003": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS003.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS003.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS004": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS004.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS004.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS005": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS005.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS005.ifc"
+  },
+  "g:ENV.FAC.FV-FAB.GS006": {
+    "../../assets/ifc/generic/ENV.FAC.FV-FAB.GS006.ifc": "assets/ifc/generic/ENV.FAC.FV-FAB.GS006.ifc"
+  },
+  "g:ENV.FAC.FV-ME.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.FV-ME.GS001.ifc": "assets/ifc/generic/ENV.FAC.FV-ME.GS001.ifc"
+  },
+  "g:ENV.FAC.PH-AIS.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.PH-AIS.GS001.ifc": "assets/ifc/generic/ENV.FAC.PH-AIS.GS001.ifc"
+  },
+  "g:ENV.FAC.PH-AIS.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.PH-AIS.GS002.ifc": "assets/ifc/generic/ENV.FAC.PH-AIS.GS002.ifc"
+  },
+  "g:ENV.FAC.PH-AIS.GS003": {
+    "../../assets/ifc/generic/ENV.FAC.PH-AIS.GS003.ifc": "assets/ifc/generic/ENV.FAC.PH-AIS.GS003.ifc"
+  },
+  "g:ENV.FAC.PSM.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.PSM.GS001.ifc": "assets/ifc/generic/ENV.FAC.PSM.GS001.ifc"
+  },
+  "g:ENV.FAC.PSM.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.PSM.GS002.ifc": "assets/ifc/generic/ENV.FAC.PSM.GS002.ifc"
+  },
+  "g:ENV.FAC.RC-EL.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.RC-EL.GS001.ifc": "assets/ifc/generic/ENV.FAC.RC-EL.GS001.ifc"
+  },
+  "g:ENV.FAC.SATE-FAB.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-FAB.GS001.ifc": "assets/ifc/generic/ENV.FAC.SATE-FAB.GS001.ifc"
+  },
+  "g:ENV.FAC.SATE-FAB.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-FAB.GS002.ifc": "assets/ifc/generic/ENV.FAC.SATE-FAB.GS002.ifc"
+  },
+  "g:ENV.FAC.SATE-FAB.GS003": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-FAB.GS003.ifc": "assets/ifc/generic/ENV.FAC.SATE-FAB.GS003.ifc"
+  },
+  "g:ENV.FAC.SATE-FAB.GS004": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-FAB.GS004.ifc": "assets/ifc/generic/ENV.FAC.SATE-FAB.GS004.ifc"
+  },
+  "g:ENV.FAC.SATE-ME.GS001": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-ME.GS001.ifc": "assets/ifc/generic/ENV.FAC.SATE-ME.GS001.ifc"
+  },
+  "g:ENV.FAC.SATE-ME.GS002": {
+    "../../assets/ifc/generic/ENV.FAC.SATE-ME.GS002.ifc": "assets/ifc/generic/ENV.FAC.SATE-ME.GS002.ifc"
+  },
+  "g:ENV.VEN.ALU.GS001": {
+    "../../assets/ifc/generic/ENV.VEN.ALU.GS001.ifc": "assets/ifc/generic/ENV.VEN.ALU.GS001.ifc"
+  },
+  "g:ENV.VEN.ALU.GS002": {
+    "../../assets/ifc/generic/ENV.VEN.ALU.GS002.ifc": "assets/ifc/generic/ENV.VEN.ALU.GS002.ifc"
+  },
+  "g:ENV.VEN.ALU.GS003": {
+    "../../assets/ifc/generic/ENV.VEN.ALU.GS003.ifc": "assets/ifc/generic/ENV.VEN.ALU.GS003.ifc"
+  },
+  "g:ENV.VEN.MAD.GS001": {
+    "../../assets/ifc/generic/ENV.VEN.MAD.GS001.ifc": "assets/ifc/generic/ENV.VEN.MAD.GS001.ifc"
+  },
+  "g:ENV.VEN.MAD.GS002": {
+    "../../assets/ifc/generic/ENV.VEN.MAD.GS002.ifc": "assets/ifc/generic/ENV.VEN.MAD.GS002.ifc"
+  },
+  "g:ENV.VEN.MAD.GS003": {
+    "../../assets/ifc/generic/ENV.VEN.MAD.GS003.ifc": "assets/ifc/generic/ENV.VEN.MAD.GS003.ifc"
+  },
+  "g:ENV.VEN.PVC.GS001": {
+    "../../assets/ifc/generic/ENV.VEN.PVC.GS001.ifc": "assets/ifc/generic/ENV.VEN.PVC.GS001.ifc"
+  },
+  "g:ENV.VEN.PVC.GS002": {
+    "../../assets/ifc/generic/ENV.VEN.PVC.GS002.ifc": "assets/ifc/generic/ENV.VEN.PVC.GS002.ifc"
+  },
+  "g:ENV.VEN.PVC.GS003": {
+    "../../assets/ifc/generic/ENV.VEN.PVC.GS003.ifc": "assets/ifc/generic/ENV.VEN.PVC.GS003.ifc"
+  },
+  "g:EST.FOR.HOR-ALV.GS001": {
+    "../../assets/ifc/generic/EST.FOR.HOR-ALV.GS001.ifc": "assets/ifc/generic/EST.FOR.HOR-ALV.GS001.ifc"
+  },
+  "g:EST.FOR.HOR-ALV.GS002": {
+    "../../assets/ifc/generic/EST.FOR.HOR-ALV.GS002.ifc": "assets/ifc/generic/EST.FOR.HOR-ALV.GS002.ifc"
+  },
+  "g:EST.FOR.HOR-LMB.GS001": {
+    "../../assets/ifc/generic/EST.FOR.HOR-LMB.GS001.ifc": "assets/ifc/generic/EST.FOR.HOR-LMB.GS001.ifc"
+  },
+  "g:EST.FOR.HOR-LMB.GS002": {
+    "../../assets/ifc/generic/EST.FOR.HOR-LMB.GS002.ifc": "assets/ifc/generic/EST.FOR.HOR-LMB.GS002.ifc"
+  },
+  "g:EST.FOR.MAD-CLT.GS001": {
+    "../../assets/ifc/generic/EST.FOR.MAD-CLT.GS001.ifc": "assets/ifc/generic/EST.FOR.MAD-CLT.GS001.ifc"
+  },
+  "g:EST.FOR.MAD-CLT.GS002": {
+    "../../assets/ifc/generic/EST.FOR.MAD-CLT.GS002.ifc": "assets/ifc/generic/EST.FOR.MAD-CLT.GS002.ifc"
+  },
+  "g:EST.FOR.MAD-VIG.GS001": {
+    "../../assets/ifc/generic/EST.FOR.MAD-VIG.GS001.ifc": "assets/ifc/generic/EST.FOR.MAD-VIG.GS001.ifc"
+  },
+  "g:EST.FOR.MAD-VIG.GS002": {
+    "../../assets/ifc/generic/EST.FOR.MAD-VIG.GS002.ifc": "assets/ifc/generic/EST.FOR.MAD-VIG.GS002.ifc"
+  },
+  "g:EST.FOR.MIX-CC.GS001": {
+    "../../assets/ifc/generic/EST.FOR.MIX-CC.GS001.ifc": "assets/ifc/generic/EST.FOR.MIX-CC.GS001.ifc"
+  },
+  "g:EST.FOR.MIX-CC.GS002": {
+    "../../assets/ifc/generic/EST.FOR.MIX-CC.GS002.ifc": "assets/ifc/generic/EST.FOR.MIX-CC.GS002.ifc"
+  },
+  "g:EST.FOR.MIX-CC.GS003": {
+    "../../assets/ifc/generic/EST.FOR.MIX-CC.GS003.ifc": "assets/ifc/generic/EST.FOR.MIX-CC.GS003.ifc"
+  },
+  "g:EST.FOR.MIX-CC.GS004": {
+    "../../assets/ifc/generic/EST.FOR.MIX-CC.GS004.ifc": "assets/ifc/generic/EST.FOR.MIX-CC.GS004.ifc"
+  },
+  "g:EST.FOR.MIX-CC.GS005": {
+    "../../assets/ifc/generic/EST.FOR.MIX-CC.GS005.ifc": "assets/ifc/generic/EST.FOR.MIX-CC.GS005.ifc"
+  },
+  "g:EST.MUR.ACE-EL.GS001": {
+    "../../assets/ifc/generic/EST.MUR.ACE-EL.GS001.ifc": "assets/ifc/generic/EST.MUR.ACE-EL.GS001.ifc"
+  },
+  "g:EST.MUR.ACE-EL.GS002": {
+    "../../assets/ifc/generic/EST.MUR.ACE-EL.GS002.ifc": "assets/ifc/generic/EST.MUR.ACE-EL.GS002.ifc"
+  },
+  "g:EST.MUR.FAB-ARM.GS001": {
+    "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS001.ifc": "assets/ifc/generic/EST.MUR.FAB-ARM.GS001.ifc"
+  },
+  "g:EST.MUR.FAB-ARM.GS002": {
+    "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS002.ifc": "assets/ifc/generic/EST.MUR.FAB-ARM.GS002.ifc"
+  },
+  "g:EST.MUR.FAB-ARM.GS003": {
+    "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS003.ifc": "assets/ifc/generic/EST.MUR.FAB-ARM.GS003.ifc"
+  },
+  "g:EST.MUR.FAB-ARM.GS004": {
+    "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS004.ifc": "assets/ifc/generic/EST.MUR.FAB-ARM.GS004.ifc"
+  },
+  "g:EST.MUR.FAB-ARM.GS005": {
+    "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS005.ifc": "assets/ifc/generic/EST.MUR.FAB-ARM.GS005.ifc"
+  },
+  "g:EST.MUR.HOR-IS.GS001": {
+    "../../assets/ifc/generic/EST.MUR.HOR-IS.GS001.ifc": "assets/ifc/generic/EST.MUR.HOR-IS.GS001.ifc"
+  },
+  "g:EST.MUR.HOR-IS.GS002": {
+    "../../assets/ifc/generic/EST.MUR.HOR-IS.GS002.ifc": "assets/ifc/generic/EST.MUR.HOR-IS.GS002.ifc"
+  },
+  "g:EST.MUR.HOR-IS.GS003": {
+    "../../assets/ifc/generic/EST.MUR.HOR-IS.GS003.ifc": "assets/ifc/generic/EST.MUR.HOR-IS.GS003.ifc"
+  },
+  "g:EST.MUR.HOR-PRE.GS001": {
+    "../../assets/ifc/generic/EST.MUR.HOR-PRE.GS001.ifc": "assets/ifc/generic/EST.MUR.HOR-PRE.GS001.ifc"
+  },
+  "g:EST.MUR.HOR-PRE.GS002": {
+    "../../assets/ifc/generic/EST.MUR.HOR-PRE.GS002.ifc": "assets/ifc/generic/EST.MUR.HOR-PRE.GS002.ifc"
+  },
+  "g:EST.MUR.MAD-CLT.GS001": {
+    "../../assets/ifc/generic/EST.MUR.MAD-CLT.GS001.ifc": "assets/ifc/generic/EST.MUR.MAD-CLT.GS001.ifc"
+  },
+  "g:EST.MUR.MAD-CLT.GS002": {
+    "../../assets/ifc/generic/EST.MUR.MAD-CLT.GS002.ifc": "assets/ifc/generic/EST.MUR.MAD-CLT.GS002.ifc"
+  },
+  "g:EST.MUR.MAD-EL.GS001": {
+    "../../assets/ifc/generic/EST.MUR.MAD-EL.GS001.ifc": "assets/ifc/generic/EST.MUR.MAD-EL.GS001.ifc"
+  },
+  "g:EST.MUR.MAD-EL.GS002": {
+    "../../assets/ifc/generic/EST.MUR.MAD-EL.GS002.ifc": "assets/ifc/generic/EST.MUR.MAD-EL.GS002.ifc"
+  },
+  "g:EST.MUR.MAD-EL.GS003": {
+    "../../assets/ifc/generic/EST.MUR.MAD-EL.GS003.ifc": "assets/ifc/generic/EST.MUR.MAD-EL.GS003.ifc"
+  },
+  "g:EST.MUR.MAD-EL.GS004": {
+    "../../assets/ifc/generic/EST.MUR.MAD-EL.GS004.ifc": "assets/ifc/generic/EST.MUR.MAD-EL.GS004.ifc"
+  },
+  "g:EST.MUR.MAD-EL.GS005": {
+    "../../assets/ifc/generic/EST.MUR.MAD-EL.GS005.ifc": "assets/ifc/generic/EST.MUR.MAD-EL.GS005.ifc"
+  },
+  "g:INS.GEN.BIO.GS001": {
+    "../../assets/ifc/generic/INS.GEN.BIO.GS001.ifc": "assets/ifc/generic/INS.GEN.BIO.GS001.ifc"
+  },
+  "g:INS.GEN.CAL-GAS.GS001": {
+    "../../assets/ifc/generic/INS.GEN.CAL-GAS.GS001.ifc": "assets/ifc/generic/INS.GEN.CAL-GAS.GS001.ifc"
+  },
+  "g:INS.GEN.CC-GAS.GS001": {
+    "../../assets/ifc/generic/INS.GEN.CC-GAS.GS001.ifc": "assets/ifc/generic/INS.GEN.CC-GAS.GS001.ifc"
+  },
+  "g:INS.GEN.ENF-EL.GS001": {
+    "../../assets/ifc/generic/INS.GEN.ENF-EL.GS001.ifc": "assets/ifc/generic/INS.GEN.ENF-EL.GS001.ifc"
+  },
+  "g:INS.GEN.JOULE.GS001": {
+    "../../assets/ifc/generic/INS.GEN.JOULE.GS001.ifc": "assets/ifc/generic/INS.GEN.JOULE.GS001.ifc"
+  },
+  "g:INS.GEN.PDC-AA-EL.GS001": {
+    "../../assets/ifc/generic/INS.GEN.PDC-AA-EL.GS001.ifc": "assets/ifc/generic/INS.GEN.PDC-AA-EL.GS001.ifc"
+  },
+  "g:INS.GEN.PDC-AW-EL.GS001": {
+    "../../assets/ifc/generic/INS.GEN.PDC-AW-EL.GS001.ifc": "assets/ifc/generic/INS.GEN.PDC-AW-EL.GS001.ifc"
+  },
+  "g:INS.GEN.PDC-AW-GAS.GS001": {
+    "../../assets/ifc/generic/INS.GEN.PDC-AW-GAS.GS001.ifc": "assets/ifc/generic/INS.GEN.PDC-AW-GAS.GS001.ifc"
+  },
+  "g:INS.GEN.SOL-TERM.GS001": {
+    "../../assets/ifc/generic/INS.GEN.SOL-TERM.GS001.ifc": "assets/ifc/generic/INS.GEN.SOL-TERM.GS001.ifc"
+  },
+  "g:INS.TER.FC.GS001": {
+    "../../assets/ifc/generic/INS.TER.FC.GS001.ifc": "assets/ifc/generic/INS.TER.FC.GS001.ifc"
+  },
+  "g:INS.TER.RAD.GS001": {
+    "../../assets/ifc/generic/INS.TER.RAD.GS001.ifc": "assets/ifc/generic/INS.TER.RAD.GS001.ifc"
+  },
+  "g:INS.TER.SPL.GS001": {
+    "../../assets/ifc/generic/INS.TER.SPL.GS001.ifc": "assets/ifc/generic/INS.TER.SPL.GS001.ifc"
+  },
+  "g:INS.TER.SR.GS001": {
+    "../../assets/ifc/generic/INS.TER.SR.GS001.ifc": "assets/ifc/generic/INS.TER.SR.GS001.ifc"
+  },
+  "g:INT.PAR.ES-PLC.GS001": {
+    "../../assets/ifc/generic/INT.PAR.ES-PLC.GS001.ifc": "assets/ifc/generic/INT.PAR.ES-PLC.GS001.ifc"
+  },
+  "g:INT.PAR.ES-PLC.GS002": {
+    "../../assets/ifc/generic/INT.PAR.ES-PLC.GS002.ifc": "assets/ifc/generic/INT.PAR.ES-PLC.GS002.ifc"
+  },
+  "g:INT.PAR.ES-PLC.GS003": {
+    "../../assets/ifc/generic/INT.PAR.ES-PLC.GS003.ifc": "assets/ifc/generic/INT.PAR.ES-PLC.GS003.ifc"
+  },
+  "g:INT.PAR.FAB-1H.GS001": {
+    "../../assets/ifc/generic/INT.PAR.FAB-1H.GS001.ifc": "assets/ifc/generic/INT.PAR.FAB-1H.GS001.ifc"
+  },
+  "g:INT.SUE.BN-PF.GS001": {
+    "../../assets/ifc/generic/INT.SUE.BN-PF.GS001.ifc": "assets/ifc/generic/INT.SUE.BN-PF.GS001.ifc"
+  },
+  "g:INT.SUE.RA-PA.GS001": {
+    "../../assets/ifc/generic/INT.SUE.RA-PA.GS001.ifc": "assets/ifc/generic/INT.SUE.RA-PA.GS001.ifc"
+  },
+  "g:INT.SUE.RFH-PA.GS001": {
+    "../../assets/ifc/generic/INT.SUE.RFH-PA.GS001.ifc": "assets/ifc/generic/INT.SUE.RFH-PA.GS001.ifc"
+  },
+  "g:INT.SUE.RFS-PA.GS001": {
+    "../../assets/ifc/generic/INT.SUE.RFS-PA.GS001.ifc": "assets/ifc/generic/INT.SUE.RFS-PA.GS001.ifc"
+  },
+  "g:INT.TRA.ANC.GS001": {
+    "../../assets/ifc/generic/INT.TRA.ANC.GS001.ifc": "assets/ifc/generic/INT.TRA.ANC.GS001.ifc"
+  },
+  "g:INT.TRA.AUT.GS001": {
+    "../../assets/ifc/generic/INT.TRA.AUT.GS001.ifc": "assets/ifc/generic/INT.TRA.AUT.GS001.ifc"
+  },
+  "g:INT.TRA.DIR.GS001": {
+    "../../assets/ifc/generic/INT.TRA.DIR.GS001.ifc": "assets/ifc/generic/INT.TRA.DIR.GS001.ifc"
+  },
+  "g:MOD.BAN.MOD.GS001": {
+    "../../assets/ifc/generic/MOD.BAN.MOD.GS001.ifc": "assets/ifc/generic/MOD.BAN.MOD.GS001.ifc"
+  },
+  "g:MOD.BAN.POD.GS001": {
+    "../../assets/ifc/generic/MOD.BAN.POD.GS001.ifc": "assets/ifc/generic/MOD.BAN.POD.GS001.ifc"
+  },
+  "g:MOD.BAN.POD.GS002": {
+    "../../assets/ifc/generic/MOD.BAN.POD.GS002.ifc": "assets/ifc/generic/MOD.BAN.POD.GS002.ifc"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBC": {
+    "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBC.ifc": "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBC.ifc"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBCA": {
+    "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBCA.ifc": "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBCA.ifc"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBCT": {
+    "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBCT.ifc": "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TAFBCT.ifc"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TFBCY": {
+    "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TFBCY.ifc": "assets/ifc/ENV_CUB__ENV.CUB.PL-CON.GS003__THERMOCHIP__ROOF-PLANA-TFBCY.ifc"
+  },
+  "p:MFR.BUTECH.FV.KRION": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS007__BUTECH__FV-KRION.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS007__BUTECH__FV-KRION.ifc"
+  },
+  "p:MFR.BUTECH.FV.PORCELANICO": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS002__BUTECH__FV-PORCELANICO.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS002__BUTECH__FV-PORCELANICO.ifc"
+  },
+  "p:MFR.BUTECH.FV.XLIGHT.XTONE": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS002__BUTECH__FV-XLIGHT-XTONE.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS002__BUTECH__FV-XLIGHT-XTONE.ifc"
+  },
+  "p:MFR.BUTECH.MODFACADES": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__BUTECH__MODFACADES.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__BUTECH__MODFACADES.ifc"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.ESTANDAR": {
+    "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS001__CIDARK__P3-FACHADA-ESTANDAR.ifc": "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS001__CIDARK__P3-FACHADA-ESTANDAR.ifc"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.SATE": {
+    "assets/ifc/ENV_FAC__ENV.FAC.SATE-FAB.GS002__CIDARK__P3-FACHADA-SATE.ifc": "assets/ifc/ENV_FAC__ENV.FAC.SATE-FAB.GS002__CIDARK__P3-FACHADA-SATE.ifc"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.VENTILADA": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__CIDARK__P3-FACHADA-VENTILADA.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__CIDARK__P3-FACHADA-VENTILADA.ifc"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-AUTOPORTANTE": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__LIGNUMTECH__FACHADA-AUTOPORTANTE.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__LIGNUMTECH__FACHADA-AUTOPORTANTE.ifc"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO": {
+    "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS002__LIGNUMTECH__FACHADA-ENTRAMADO-LIGERO.ifc": "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS002__LIGNUMTECH__FACHADA-ENTRAMADO-LIGERO.ifc"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-ESTRUCTURAL": {
+    "assets/ifc/ENV_FAC__ENV.FAC.FV-ME.GS001__LIGNUMTECH__FACHADA-ESTRUCTURAL.ifc": "assets/ifc/ENV_FAC__ENV.FAC.FV-ME.GS001__LIGNUMTECH__FACHADA-ESTRUCTURAL.ifc"
+  },
+  "p:MFR.PREINCO.GRC-LAMINA-RIGIDIZADA": {
+    "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS003__PREINCO__GRC-LAMINA-RIGIDIZADA.ifc": "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS003__PREINCO__GRC-LAMINA-RIGIDIZADA.ifc"
+  },
+  "p:MFR.PREINCO.GRC-SANDWICH": {
+    "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS001__PREINCO__GRC-SANDWICH.ifc": "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS001__PREINCO__GRC-SANDWICH.ifc"
+  },
+  "p:MFR.PREINCO.GRC-STUD-FRAME": {
+    "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS002__PREINCO__GRC-STUD-FRAME.ifc": "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS002__PREINCO__GRC-STUD-FRAME.ifc"
+  },
+  "p:MFR.PREINCO.HORMIGON-ARMADO-PORTANTE": {
+    "assets/ifc/ENV_FAC__ENV.FAC.PH-EST.GS001__PREINCO__HORMIGON-ARMADO-PORTANTE.ifc": "assets/ifc/ENV_FAC__ENV.FAC.PH-EST.GS001__PREINCO__HORMIGON-ARMADO-PORTANTE.ifc"
+  },
+  "p:MFR.AMBS.COFRADAL-200-DECIBEL": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-200-DECIBEL.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-200-DECIBEL.ifc"
+  },
+  "p:MFR.AMBS.COFRADAL-200-STANDARD": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-200-STANDARD.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-200-STANDARD.ifc"
+  },
+  "p:MFR.AMBS.COFRADAL-260-DECIBEL": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-260-DECIBEL.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-260-DECIBEL.ifc"
+  },
+  "p:MFR.AMBS.COFRADAL-260-STANDARD": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-260-STANDARD.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__COFRADAL-260-STANDARD.ifc"
+  },
+  "p:MFR.AMBS.CP220-750-E113-H300": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E113-H300.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E113-H300.ifc"
+  },
+  "p:MFR.AMBS.CP220-750-E113-H340": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E113-H340.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E113-H340.ifc"
+  },
+  "p:MFR.AMBS.CP220-750-E125-H300": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E125-H300.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E125-H300.ifc"
+  },
+  "p:MFR.AMBS.CP220-750-E125-H340": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E125-H340.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP220-750-E125-H340.ifc"
+  },
+  "p:MFR.AMBS.CP45-1000-E080-H100": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP45-1000-E080-H100.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP45-1000-E080-H100.ifc"
+  },
+  "p:MFR.AMBS.CP45-1000-E080-H140": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP45-1000-E080-H140.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP45-1000-E080-H140.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E075-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E075-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E075-H120.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E075-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E075-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E075-H160.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E088-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E088-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E088-H120.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E088-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E088-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E088-H160.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E100-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E100-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E100-H120.ifc"
+  },
+  "p:MFR.AMBS.CP60P-1035-E100-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E100-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-1035-E100-H160.ifc"
+  },
+  "p:MFR.AMBS.CP60P-828-E075-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-828-E075-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-828-E075-H120.ifc"
+  },
+  "p:MFR.AMBS.CP60P-828-E100-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-828-E100-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-828-E100-H160.ifc"
+  },
+  "p:MFR.AMBS.CP80-1000-E088-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E088-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E088-H160.ifc"
+  },
+  "p:MFR.AMBS.CP80-1000-E100-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E100-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E100-H160.ifc"
+  },
+  "p:MFR.AMBS.CP80-1000-E113-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E113-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E113-H160.ifc"
+  },
+  "p:MFR.AMBS.CP80-1000-E125-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E125-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP80-1000-E125-H160.ifc"
+  },
+  "p:MFR.AMBS.CS40-900-E075-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E075-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E075-H120.ifc"
+  },
+  "p:MFR.AMBS.CS40-900-E088-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E088-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E088-H120.ifc"
+  },
+  "p:MFR.AMBS.CS40-900-E088-H160": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E088-H160.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E088-H160.ifc"
+  },
+  "p:MFR.AMBS.CS40-900-E100-H120": {
+    "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E100-H120.ifc": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CS40-900-E100-H120.ifc"
+  },
+  "p:MFR.EGOIN.CLT-060": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-060.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-060.ifc"
+  },
+  "p:MFR.EGOIN.CLT-075": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-075.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-075.ifc"
+  },
+  "p:MFR.EGOIN.CLT-080": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-080.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-080.ifc"
+  },
+  "p:MFR.EGOIN.CLT-090": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-090.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-090.ifc"
+  },
+  "p:MFR.EGOIN.CLT-100": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-100.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-100.ifc"
+  },
+  "p:MFR.EGOIN.CLT-120": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-120.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-120.ifc"
+  },
+  "p:MFR.EGOIN.CLT-125": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-125.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-125.ifc"
+  },
+  "p:MFR.EGOIN.CLT-150": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-150.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-150.ifc"
+  },
+  "p:MFR.EGOIN.CLT-200": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-200.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-200.ifc"
+  },
+  "p:MFR.EGOIN.CLT-280": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-280.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-280.ifc"
+  },
+  "p:MFR.EGOIN.LIGHT-150A": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-150A.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-150A.ifc"
+  },
+  "p:MFR.EGOIN.LIGHT-180A": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-180A.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-180A.ifc"
+  },
+  "p:MFR.EGOIN.LIGHT-200A": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-200A.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-200A.ifc"
+  },
+  "p:MFR.EGOIN.LIGHT-280A": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-280A.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-LIGHT-280A.ifc"
+  },
+  "p:MFR.EGOIN.MIX-240-LR": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-240-LR.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-240-LR.ifc"
+  },
+  "p:MFR.EGOIN.MIX-300-LR": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-300-LR.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-300-LR.ifc"
+  },
+  "p:MFR.EGOIN.MIX-340-LR": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-340-LR.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-340-LR.ifc"
+  },
+  "p:MFR.EGOIN.MIX-360-LR": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-360-LR.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-360-LR.ifc"
+  },
+  "p:MFR.EGOIN.MIX-400-LR": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-400-LR.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-MIX-400-LR.ifc"
+  },
+  "p:MFR.EGOIN.TT-060": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-060.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-060.ifc"
+  },
+  "p:MFR.EGOIN.TT-075": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-075.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-075.ifc"
+  },
+  "p:MFR.EGOIN.TT-100": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-100.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-CLT-TT-100.ifc"
+  },
+  "p:MFR.EGOIN.RIPA-01": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-01-LOSA-NERVADA.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-01-LOSA-NERVADA.ifc"
+  },
+  "p:MFR.EGOIN.RIPA-02": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-02-CAJON-CERRADO.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-02-CAJON-CERRADO.ifc"
+  },
+  "p:MFR.EGOIN.RIPA-03": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-03-CAJON-ABIERTO.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-03-CAJON-ABIERTO.ifc"
+  },
+  "p:MFR.EGOIN.RIPA-04": {
+    "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-04-TABLERO-NO-COLABORANTE.ifc": "assets/ifc/EST_FOR__EST.FOR.MAD-VIG__EGOIN__EGO-RIPA-04-TABLERO-NO-COLABORANTE.ifc"
+  },
+  "p:MFR.EGOIN.CLT-MURO-075": {
+    "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-075.ifc": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-075.ifc"
+  },
+  "p:MFR.EGOIN.CLT-MURO-090": {
+    "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-090.ifc": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-090.ifc"
+  },
+  "p:MFR.EGOIN.CLT-MURO-120": {
+    "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-120.ifc": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-120.ifc"
+  },
+  "p:MFR.EGOIN.CLT-MURO-125": {
+    "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-125.ifc": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-125.ifc"
+  },
+  "p:MFR.EGOIN.CLT-MURO-150": {
+    "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-150.ifc": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-150.ifc"
+  },
+  "p:MFR.VN.DM-180-H50": {
+    "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-180-H50.ifc": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-180-H50.ifc"
+  },
+  "p:MFR.VN.DM-200-H50": {
+    "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-200-H50.ifc": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-200-H50.ifc"
+  },
+  "p:MFR.VN.DM-250-H50": {
+    "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-250-H50.ifc": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-250-H50.ifc"
+  },
+  "p:MFR.VN.DM-300-H50": {
+    "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-300-H50.ifc": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-300-H50.ifc"
+  },
+  "p:MFR.VN.DM-400-H50": {
+    "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-400-H50.ifc": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-400-H50.ifc"
+  },
+  "p:MFR.LIGNUMTECH.BAN.MOCHETA1S": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-MOCHETA-1S.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-MOCHETA-1S.ifc"
+  },
+  "p:MFR.LIGNUMTECH.BAN.PMR": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-PMR-CTE.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-PMR-CTE.ifc"
+  },
+  "p:MFR.LIGNUMTECH.BAN.DOBLESENO": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-DOBLE-SENO.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-DOBLE-SENO.ifc"
+  },
+  "p:MFR.LIGNUMTECH.BAN.UFM": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-UFM.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-UFM.ifc"
+  },
+  "p:MFR.LIGNUMTECH.BAN.COCINABANO": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__MOD-COCINA-BANO.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__MOD-COCINA-BANO.ifc"
+  },
+  "p:MFR.PORCELANOSA.MONOBATH.STD": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-STD.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-STD.ifc"
+  },
+  "p:MFR.PORCELANOSA.MONOBATH.SR": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-SR.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-SR.ifc"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.LW": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-LW.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-LW.ifc"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.STD": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-STD.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-STD.ifc"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.WALKIN": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-WALKIN.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-WALKIN.ifc"
+  },
+  "p:MFR.STERCHELEGROUP.CBM.STD": {
+    "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBM-STD.ifc": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBM-STD.ifc"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PAR",
+      "name_es": "Particiones interiores verticales"
+    },
+    "archetype": {
+      "code": "INT.PAR.PMI",
+      "name_es": "Partición de paneles modulares industrializados",
+      "description": "Sistema modular de paneles y juntas distinto del simple suministro panelizado de una partición de entramado. La correspondencia más específica Tabiques/Mamparas depende de la solución."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

@@ -1,0 +1,505 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "MOD",
+      "name_es": "Unidades funcionales integradas"
+    },
+    "subsystem": {
+      "code": "MOD.BAN",
+      "name_es": "Módulos de baño y aseo"
+    },
+    "archetype": {
+      "code": "MOD.BAN.MOD",
+      "name_es": "Módulo integrado de baño/aseo",
+      "description": "Unidad funcional integrada 3D para baño o aseo. Soporte PoC mínimo vinculado a GuBIMClass-VIVA 90.10.10.10/20."
+    }
+  },
+  "profiles": {
+    "normalization": "VIVA-NORM-BATHROOM-POC-1.0",
+    "industrialization": "VIVA-IDI-SOLUTION-POC-1.0"
+  },
+  "generic_solutions": [
+    {
+      "code": "MOD.BAN.MOD.GS001",
+      "name_es": "Módulo de baño/aseo integrado · referencia PoC",
+      "description": "Módulo de baño/aseo integrado · referencia PoC",
+      "functional_unit": "ud",
+      "status": "ACTIVE",
+      "classifications": [
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "90.10.10.10",
+          "relation": "functional_reference"
+        },
+        {
+          "scheme": "VIVA-RES",
+          "version": "1.0.0",
+          "code": "MOD.BAN.MOD",
+          "relation": "classified_as",
+          "component": "archetype"
+        }
+      ],
+      "source_references": [
+        {
+          "source": "VIVA_Motor_PEM_v1_2.xlsx / 03_PRECIOS_ELEMENTOS · Baños y aseos ≈ 8.500 EUR/ud",
+          "status": "simulated_source_workbook"
+        }
+      ],
+      "properties": {
+        "catalogue_scope": "calculation_support_poc",
+        "normalization_inputs": {
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 8500.0,
+            "unit": "EUR/ud",
+            "functional_unit": "ud",
+            "best_reference_bound": 6000,
+            "worst_reference_bound": 12000,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((12000 - unit_cost) / (12000 - 6000), 0, 1)",
+            "calculation_result": 0.583333,
+            "assessment_status": "assessed",
+            "value_basis": "simulated_source_workbook",
+            "source_reference": "VIVA_Motor_PEM_v1_2.xlsx / 03_PRECIOS_ELEMENTOS · Baños y aseos ≈ 8.500 EUR/ud"
+          },
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 1250.0,
+            "unit": "kg CO2e/ud",
+            "functional_unit": "ud",
+            "best_reference_bound": 500,
+            "worst_reference_bound": 2000,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((2000 - GWP_A1_A3) / (2000 - 500), 0, 1)",
+            "calculation_result": 0.5,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption; replace with verified EPD/catalogue evidence"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.78,
+            "unit": "dimensionless",
+            "functional_unit": "ud",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.78,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "ud",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "gubim_codes": [
+          "90.10.10.10",
+          "90.10.10.20"
+        ],
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "function": "Estructura",
+          "material": "Estructura portante",
+          "name": "Estructura portante",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": null,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Cerramiento",
+          "material": "Envolvente",
+          "name": "Envolvente",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": null,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Equipo",
+          "material": "Instalaciones",
+          "name": "Instalaciones",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": null,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Acabado",
+          "material": "Acabados",
+          "name": "Acabados",
+          "order": 4,
+          "pattern": "linear",
+          "thickness_mm": null,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Módulo integrado de baño/aseo",
+          "unit": "unit",
+          "source_type": "CALCULATED"
+        },
+        "primary_material": {
+          "value": null,
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "module_width_mm": {
+          "value": 2191.73,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2439.44,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5602.36,
+          "unit": "mm"
+        },
+        "module_area_m2": {
+          "value": 5.17,
+          "unit": "m²"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/ud",
+            "value": 205.1
+          },
+          "module_area_m2": {
+            "unit": "m²",
+            "value": 5.17
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_per_fu": 1250.0,
+        "assessment_modules": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "value_status": "provisional_poc_assumption",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./ud",
+              "value": 76.35
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 7.449
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./ud",
+              "value": 3.724
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 5.587
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 93.11,
+          "unit": "kg CO₂ eq./ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 1161.0
+            },
+            {
+              "module": "A4",
+              "value": 13.5
+            }
+          ],
+          "total": 1174.5,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 18900
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 8500.0,
+        "price_basis": "simulated_source_workbook",
+        "bc3": {
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 3826.34
+            },
+            {
+              "label": "Mano de obra",
+              "value": 1331.91
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 884.58
+            },
+            {
+              "label": "Transporte",
+              "value": 341.13
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 6383.96,
+          "unit": "ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 1350,
+              "unit": "kg",
+              "rate": 1.45,
+              "subtotal": 1957.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 14.0,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 448.0
+            },
+            {
+              "label": "Montaje",
+              "quantity": 3.92,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 145.04
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 2.8,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 137.2
+            },
+            {
+              "label": "Transporte",
+              "quantity": 135.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 18.9
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 135.33,
+              "subtotal": 135.33
+            }
+          ],
+          "total": 2841.97
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 6630.0,
+        "assessed_cost": 8500.0,
+        "ratio": 0.78,
+        "value_status": "provisional_poc_assumption"
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.5,
+        "economic_performance": 0.583333,
+        "industrialization_performance": 0.78
+      },
+      "assets": [
+        {
+          "id": "MOD.BAN.MOD.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/MOD.BAN.MOD.GS001.ifc"
+        }
+      ],
+      "data_quality_notes": [
+        "Registro habilitado para evaluación end-to-end del PoC; los campos marcados provisional_poc no constituyen EPD, certificación ni precio oficial.",
+        "UNKNOWN != ZERO: estos valores provisionales son explícitos y deben sustituirse cuando exista evidencia de producto/proyecto validada.",
+        "Coste simulado del PEM PoC. GWP e industrialización son hipótesis explícitas de soporte hasta disponer de datos de producto."
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_UnidadesFuncionalesIntegradas",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "MOD.BAN.MOD.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Módulo de baño/aseo integrado · referencia PoC"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Módulo de baño/aseo integrado · referencia PoC"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "ud"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 8500.0
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 1250.0
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.78
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Bano",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaBano",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "GradoPrefabricacion",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "NumeroComponentes",
+              "ifc_type": "IfcInteger",
+              "value": null
+            },
+            {
+              "name": "SuperficieReferencia_m2",
+              "ifc_type": "IfcReal",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en MOD.BAN. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de módulo industrializado; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia módulo industrializado.",
+        "functional_unit": "ud",
+        "short": "Módulo de baño/aseo integrado · referencia PoC. Esquema de demostración para la familia «Módulo industrializado»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Estructura portante",
+            "name": "Estructura portante",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Cerramiento",
+            "material": "Envolvente",
+            "name": "Envolvente",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Equipo",
+            "material": "Instalaciones",
+            "name": "Instalaciones",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabados",
+            "name": "Acabados",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

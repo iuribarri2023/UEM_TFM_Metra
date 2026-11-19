@@ -1,0 +1,1084 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.ACE-EL",
+      "name_es": "Muro estructural de entramado ligero de acero"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.ACE-EL.GS001",
+      "name_es": "Muro estructural de entramado ligero de acero galvanizado de 0,8 mm",
+      "description": "Muro estructural exterior mediante panel estándar de 1220x2600 mm de entramado ligero de perfiles de acero conformado en frío galvanizado DX52D+Z275MA, espesor nominal de chapa 0.8 mm y separación entre montantes de 600 mm; perfiles mecanizados y ensamblados en taller, montados en obra con remaches y anclajes mecánicos.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EAL010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "light_gauge_steel_frame_wall",
+        "structural_material": "cold_formed_galvanized_steel",
+        "structural_system": "load_bearing_light_steel_frame",
+        "steel_grade": "DX52D+Z275MA",
+        "profile_thickness_mm": 0.8,
+        "stud_spacing_mm": 600,
+        "panel_width_mm": 1220,
+        "panel_height_mm": 2600,
+        "structural_element_thickness_mm": {
+          "assessment_status": "not_assessed",
+          "note": "profile gauge is not the wall/frame depth"
+        },
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": "mechanical anchors to slab or foundation",
+        "connection_assembly_method": "riveted profile-to-profile connections and self-drilling galvanized mechanical anchors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "standard 1220x2600 mm factory-assembled structural frame panel",
+        "factory_completion_level": "profiles mechanized and panel assembled in workshop; panel erected and anchored on site",
+        "assembly_method": "dry crane/manual erection as appropriate, alignment and mechanical anchoring",
+        "disassembly_strategy": {
+          "assessment_status": "inferred_potential",
+          "note": "mechanical rivets/anchors suggest partial separability, but reuse/disassembly performance is not quantified"
+        },
+        "span_or_applicability": {
+          "panel_height_mm": 2600,
+          "panel_width_mm": 1220,
+          "structural_capacity": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "source_references": [
+          "CYPE Generador de Precios EAL010: factory-assembled 1220x2600 mm DX52D+Z275MA panel, 0.8 mm gauge, 600 mm stud spacing",
+          "OEKOBAUDAT generic hot-dip galvanized steel sheet, area weight 5.72 kg/m2, A1-A3 GWP 16.79 kgCO2e per 5.72 kg reference sheet (environmental proxy)"
+        ],
+        "mass_assessment": {
+          "surface_mass_kg_m2": 4.205549,
+          "value_basis": "inferred from exact same 1220x2600 mm, 0.8 mm, 600 mm-stud CYPE EAL010 site-assembly material quantity"
+        },
+        "assessment_notes": {
+          "environmental_performance": "Calculated material-only proxy from frame steel mass and generic hot-dip galvanized steel-sheet A1-A3 factor; excludes fasteners/anchors and is not a CYPE-published GWP.",
+          "fire_performance": "No assembly fire rating stated in EAL010.",
+          "acoustic_performance": "No acoustic lining or quantified acoustic performance is part of this structural frame work item.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 12.344608,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.438277,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "calculated_proxy",
+            "source_reference": "CYPE frame mass + OEKOBAUDAT generic hot-dip galvanized steel-sheet A1-A3 factor; fasteners excluded"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 17.449559,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.88367,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EAL010 panel price divided by 1.22 x 2.60 m panel area"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.801084,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.801084,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EAL010 cost decomposition; only factory-assembled panel material counted as industrialized",
+            "industrialized_cost_eur_m2": 13.978562,
+            "assessed_cost_eur_m2": 17.449559,
+            "counted_industrialized_components": [
+              "factory-assembled EAL010 panel: 44.34 EUR/panel"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "FRM",
+          "name_es": "Panel de perfiles de acero conformado en frío galvanizado",
+          "role": "structure",
+          "properties": {
+            "material_family": "cold_formed_galvanized_steel",
+            "steel_grade": "DX52D+Z275MA",
+            "profile_thickness_mm": 0.8,
+            "stud_spacing_mm": 600,
+            "panel_dimensions_mm": "1220x2600",
+            "factory_assembled": true
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Remaches y anclajes mecánicos galvanizados",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "galvanized_steel_fixings",
+            "connection_type": "rivets_and_self_drilling_anchors"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 4.205549,
+        "system_type": {
+          "value": "light_gauge_steel_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cold_formed_galvanized_steel",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "standard 1220x2600 mm factory-assembled structural frame panel",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 226.58,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2079.67,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 4.205549,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_steel_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 132.24
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 273.89
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 12.344608,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 68.003
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.634
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.317
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.976
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 82.93,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 1.893
+            },
+            {
+              "module": "A4",
+              "value": 0.042
+            }
+          ],
+          "total": 1.935,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 21.03
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 17.449559,
+        "source_unit": "panel",
+        "source_panel_area_m2": 3.172,
+        "source_panel_total_cost_eur": 55.35,
+        "bc3": {
+          "root_code": "EAL010",
+          "decomposition": [
+            {
+              "code": "mt07lsf010ga",
+              "description": "Panel estándar de entramado ligero DX52D+Z275MA 0.8 mm, mecanizado y ensamblado en taller",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 44.34,
+              "amount": 44.34,
+              "industrialized": true
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 110.23
+            },
+            {
+              "label": "Mano de obra",
+              "value": 45.96
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 28.88
+            },
+            {
+              "label": "Transporte",
+              "value": 11.92
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 196.99,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 4.206,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 2.02
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 0.4206,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.06
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.54,
+              "subtotal": 2.54
+            }
+          ],
+          "total": 53.33
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 13.978562,
+        "assessed_cost": 17.449559,
+        "ratio": 0.801084
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.ACE-EL.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.ACE-EL.GS001.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.438277,
+        "economic_performance": 0.88367,
+        "industrialization_performance": 0.801084,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.ACE-EL.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero de acero galvanizado de 0,8 mm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior mediante panel estándar de 1220x2600 mm de entramado ligero de perfiles de acero conformado en frío galvanizado DX52D+Z275MA, espesor nominal de chapa 0.8 mm y separación entre montantes de 600 mm; perfiles mecanizados y ensamblados en taller, montados en obra con remaches y anclajes mecánicos."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 17.449559
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 12.344608
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.801084
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cold_formed_galvanized_steel"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cold_formed_galvanized_steel"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero de acero galvanizado de 0,8 mm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.ACE-EL.GS002",
+      "name_es": "Muro estructural de entramado ligero de acero galvanizado de 1,0 mm",
+      "description": "Muro estructural exterior mediante panel estándar de 1220x2600 mm de entramado ligero de perfiles de acero conformado en frío galvanizado DX52D+Z275MA, espesor nominal de chapa 1.0 mm y separación entre montantes de 600 mm; perfiles mecanizados y ensamblados en taller, montados en obra con remaches y anclajes mecánicos.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EAL010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "light_gauge_steel_frame_wall",
+        "structural_material": "cold_formed_galvanized_steel",
+        "structural_system": "load_bearing_light_steel_frame",
+        "steel_grade": "DX52D+Z275MA",
+        "profile_thickness_mm": 1.0,
+        "stud_spacing_mm": 600,
+        "panel_width_mm": 1220,
+        "panel_height_mm": 2600,
+        "structural_element_thickness_mm": {
+          "assessment_status": "not_assessed",
+          "note": "profile gauge is not the wall/frame depth"
+        },
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": "mechanical anchors to slab or foundation",
+        "connection_assembly_method": "riveted profile-to-profile connections and self-drilling galvanized mechanical anchors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "standard 1220x2600 mm factory-assembled structural frame panel",
+        "factory_completion_level": "profiles mechanized and panel assembled in workshop; panel erected and anchored on site",
+        "assembly_method": "dry crane/manual erection as appropriate, alignment and mechanical anchoring",
+        "disassembly_strategy": {
+          "assessment_status": "inferred_potential",
+          "note": "mechanical rivets/anchors suggest partial separability, but reuse/disassembly performance is not quantified"
+        },
+        "span_or_applicability": {
+          "panel_height_mm": 2600,
+          "panel_width_mm": 1220,
+          "structural_capacity": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "source_references": [
+          "CYPE Generador de Precios EAL010: factory-assembled 1220x2600 mm DX52D+Z275MA panel, 1.0 mm gauge, 600 mm stud spacing",
+          "OEKOBAUDAT generic hot-dip galvanized steel sheet, area weight 5.72 kg/m2, A1-A3 GWP 16.79 kgCO2e per 5.72 kg reference sheet (environmental proxy)"
+        ],
+        "mass_assessment": {
+          "surface_mass_kg_m2": 5.256936,
+          "value_basis": "calculated proxy: 0.8 mm EAL010 mass scaled linearly by steel gauge for same panel geometry"
+        },
+        "assessment_notes": {
+          "environmental_performance": "Calculated material-only proxy from frame steel mass and generic hot-dip galvanized steel-sheet A1-A3 factor; excludes fasteners/anchors and is not a CYPE-published GWP.",
+          "fire_performance": "No assembly fire rating stated in EAL010.",
+          "acoustic_performance": "No acoustic lining or quantified acoustic performance is part of this structural frame work item.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 15.430761,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.422846,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "calculated_proxy",
+            "source_reference": "CYPE frame mass + OEKOBAUDAT generic hot-dip galvanized steel-sheet A1-A3 factor; fasteners excluded"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 21.128625,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.859142,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EAL010 panel price divided by 1.22 x 2.60 m panel area"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.826321,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.826321,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EAL010 cost decomposition; only factory-assembled panel material counted as industrialized",
+            "industrialized_cost_eur_m2": 17.459016,
+            "assessed_cost_eur_m2": 21.128625,
+            "counted_industrialized_components": [
+              "factory-assembled EAL010 panel: 55.38 EUR/panel"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "FRM",
+          "name_es": "Panel de perfiles de acero conformado en frío galvanizado",
+          "role": "structure",
+          "properties": {
+            "material_family": "cold_formed_galvanized_steel",
+            "steel_grade": "DX52D+Z275MA",
+            "profile_thickness_mm": 1.0,
+            "stud_spacing_mm": 600,
+            "panel_dimensions_mm": "1220x2600",
+            "factory_assembled": true
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Remaches y anclajes mecánicos galvanizados",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "galvanized_steel_fixings",
+            "connection_type": "rivets_and_self_drilling_anchors"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 5.256936,
+        "system_type": {
+          "value": "light_gauge_steel_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cold_formed_galvanized_steel",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "standard 1220x2600 mm factory-assembled structural frame panel",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 214.7,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1954.04,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 5.256936,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_steel_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 283.77
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 121.13
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 15.430761,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 75.194
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.336
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.668
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.502
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 91.7,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 2.366
+            },
+            {
+              "module": "A4",
+              "value": 0.053
+            }
+          ],
+          "total": 2.419,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 26.285
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 21.128625,
+        "source_unit": "panel",
+        "source_panel_area_m2": 3.172,
+        "source_panel_total_cost_eur": 67.02,
+        "bc3": {
+          "root_code": "EAL010",
+          "decomposition": [
+            {
+              "code": "mt07lsf010gb",
+              "description": "Panel estándar de entramado ligero DX52D+Z275MA 1.0 mm, mecanizado y ensamblado en taller",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 55.38,
+              "amount": 55.38,
+              "industrialized": true
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 144.37
+            },
+            {
+              "label": "Mano de obra",
+              "value": 52.42
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 40.98
+            },
+            {
+              "label": "Transporte",
+              "value": 18.98
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 256.75,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 5.257,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 2.52
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 0.5257,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.07
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.57,
+              "subtotal": 2.57
+            }
+          ],
+          "total": 53.87
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 17.459016,
+        "assessed_cost": 21.128625,
+        "ratio": 0.826321
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.ACE-EL.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.ACE-EL.GS002.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.422846,
+        "economic_performance": 0.859142,
+        "industrialization_performance": 0.826321,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.ACE-EL.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero de acero galvanizado de 1,0 mm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior mediante panel estándar de 1220x2600 mm de entramado ligero de perfiles de acero conformado en frío galvanizado DX52D+Z275MA, espesor nominal de chapa 1.0 mm y separación entre montantes de 600 mm; perfiles mecanizados y ensamblados en taller, montados en obra con remaches y anclajes mecánicos."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 21.128625
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 15.430761
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.826321
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cold_formed_galvanized_steel"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cold_formed_galvanized_steel"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero de acero galvanizado de 1,0 mm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

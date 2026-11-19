@@ -1,0 +1,3126 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.MAD-EL",
+      "name_es": "Muro estructural de entramado ligero de madera"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.MAD-EL.GS001",
+      "name_es": "Muro estructural de entramado ligero C24 48x98 mm, corte en taller y unión clavada",
+      "description": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x98 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante clavos de acero galvanizado de alta adherencia.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EML010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-MAD-01",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "light_timber_frame",
+        "timber_species": "pinus_sylvestris",
+        "timber_strength_class": "C24",
+        "structural_quality": "T2",
+        "member_width_mm": 48,
+        "member_depth_mm": 98,
+        "use_class": "1",
+        "penetration_class": "NP1",
+        "workshop_cut": true,
+        "assembly": "site",
+        "primary_connection": "galvanized_nails",
+        "pefc_certified": true,
+        "timber_volume_m3_m2": 0.013,
+        "source_references": [
+          "legacy catalogue str-wal-mad.json: STR-WAL-MAD-01"
+        ],
+        "construction_type": "light_timber_frame_wall",
+        "structural_system": "load_bearing_light_timber_frame",
+        "structural_element_thickness_mm": 98,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "galvanized_nails",
+        "fire_performance": {
+          "constituent_reaction_to_fire": "D-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "pre-cut/labeled timber framing components and mechanical fixings",
+        "factory_completion_level": "workshop-cut components; final frame assembled on site",
+        "assembly_method": "dry mechanical assembly on site using nails/screws and structural sheathing where specified",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mechanical fasteners are present, but recoverability and reuse performance are not quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "timber_strength_class": "C24",
+          "species": "pinus_sylvestris",
+          "member_section_mm": "48x98",
+          "stud_spacing_mm": null
+        },
+        "assessment_notes": {
+          "fire_performance": "Reaction-to-fire data are retained where present; assembly fire resistance is not stated.",
+          "acoustic_performance": "No quantitative acoustic performance is stated.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -8.18,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.5409,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-01 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 34.85,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.767667,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-01 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.618938,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.618938,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-MAD-01 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 21.57,
+            "assessed_cost_eur_m2": 34.85,
+            "counted_industrialized_components": [
+              "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x98 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller: 14.85 EUR/m2",
+              "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm: 2.22 EUR/m2",
+              "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero: 4.5 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "EST",
+          "name_es": "Entramado estructural de madera C24",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_softwood",
+            "species": "pinus_sylvestris",
+            "strength_class": "C24",
+            "section_mm": "48x98",
+            "reaction_to_fire": "D-s2,d0",
+            "workshop_cut": true,
+            "characteristic_bending_strength_n_mm2": 24,
+            "characteristic_tension_parallel_n_mm2": 14,
+            "characteristic_compression_parallel_n_mm2": 21,
+            "mean_modulus_elasticity_parallel_n_mm2": 11000,
+            "characteristic_density_kg_m3": 350
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Fijaciones metálicas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "primary_fastener": "nail",
+            "primary_fastener_diameter_mm": 6,
+            "primary_fastener_length_mm": 100
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 6.4,
+        "system_type": {
+          "value": "light_timber_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light_timber_frame",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "pre-cut/labeled timber framing components and mechanical fixings",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 88.28,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1188.6,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 6.4,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_timber_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 48.54
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 178.26
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -8.18,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 50.069
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.885
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.442
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.664
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 61.06,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 2.88
+            },
+            {
+              "module": "A4",
+              "value": 0.064
+            }
+          ],
+          "total": 2.944,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 32.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 34.85,
+        "bc3": {
+          "root_code": "EML010",
+          "decomposition": [
+            {
+              "code": "mt07mee609aza",
+              "description": "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x98 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller",
+              "unit": "m3",
+              "quantity": 0.013,
+              "unit_price": 1142.4,
+              "amount": 14.85,
+              "composition_key": "EST",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr111l",
+              "description": "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm",
+              "unit": "ud",
+              "quantity": 6.0,
+              "unit_price": 0.37,
+              "amount": 2.22,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr409a450",
+              "description": "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.22,
+              "unit_price": 25.84,
+              "amount": 5.68,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.282,
+              "unit_price": 24.53,
+              "amount": 6.92,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 34.17,
+              "amount": 0.68,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 71.2
+            },
+            {
+              "label": "Mano de obra",
+              "value": 30.7
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 15.9
+            },
+            {
+              "label": "Transporte",
+              "value": 9.55
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 127.35,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 6.4,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 3.07
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 0.64,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.09
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.59,
+              "subtotal": 2.59
+            }
+          ],
+          "total": 54.46
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 21.57,
+        "assessed_cost": 34.85,
+        "ratio": 0.618938
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.5409,
+        "economic_performance": 0.767667,
+        "industrialization_performance": 0.618938,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-EL.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-EL.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-EL.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero C24 48x98 mm, corte en taller y unión clavada"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x98 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante clavos de acero galvanizado de alta adherencia."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 34.85
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -8.18
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.618938
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero C24 48x98 mm, corte en taller y unión clavada. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.MAD-EL.GS002",
+      "name_es": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión clavada",
+      "description": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x148 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante clavos de acero galvanizado de alta adherencia.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EML010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-MAD-002",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "light_timber_frame",
+        "timber_species": "pinus_sylvestris",
+        "timber_strength_class": "C24",
+        "structural_quality": "T2",
+        "member_width_mm": 48,
+        "member_depth_mm": 148,
+        "use_class": "1",
+        "penetration_class": "NP1",
+        "workshop_cut": true,
+        "assembly": "site",
+        "primary_connection": "galvanized_nails",
+        "pefc_certified": true,
+        "timber_volume_m3_m2": 0.019,
+        "source_references": [
+          "legacy catalogue str-wal-mad.json: STR-WAL-MAD-002"
+        ],
+        "construction_type": "light_timber_frame_wall",
+        "structural_system": "load_bearing_light_timber_frame",
+        "structural_element_thickness_mm": 148,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "galvanized_nails",
+        "fire_performance": {
+          "constituent_reaction_to_fire": "D-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "pre-cut/labeled timber framing components and mechanical fixings",
+        "factory_completion_level": "workshop-cut components; final frame assembled on site",
+        "assembly_method": "dry mechanical assembly on site using nails/screws and structural sheathing where specified",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mechanical fasteners are present, but recoverability and reuse performance are not quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "timber_strength_class": "C24",
+          "species": "pinus_sylvestris",
+          "member_section_mm": "48x148",
+          "stud_spacing_mm": null
+        },
+        "assessment_notes": {
+          "fire_performance": "Reaction-to-fire data are retained where present; assembly fire resistance is not stated.",
+          "acoustic_performance": "No quantitative acoustic performance is stated.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -11.96,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.5598,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-002 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 45.86,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.694267,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-002 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.61993,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.61993,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-MAD-002 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 28.43,
+            "assessed_cost_eur_m2": 45.86,
+            "counted_industrialized_components": [
+              "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller: 21.71 EUR/m2",
+              "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm: 2.22 EUR/m2",
+              "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero: 4.5 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "EST",
+          "name_es": "Entramado estructural de madera C24",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_softwood",
+            "species": "pinus_sylvestris",
+            "strength_class": "C24",
+            "section_mm": "48x148",
+            "reaction_to_fire": "D-s2,d0",
+            "workshop_cut": true,
+            "characteristic_bending_strength_n_mm2": 24,
+            "characteristic_tension_parallel_n_mm2": 14,
+            "characteristic_compression_parallel_n_mm2": 21,
+            "mean_modulus_elasticity_parallel_n_mm2": 11000,
+            "characteristic_density_kg_m3": 350
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Fijaciones metálicas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "primary_fastener": "nail",
+            "primary_fastener_diameter_mm": 6,
+            "primary_fastener_length_mm": 100
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 9.3,
+        "system_type": {
+          "value": "light_timber_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light_timber_frame",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "pre-cut/labeled timber framing components and mechanical fixings",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 74.65,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1643.27,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 9.3,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_timber_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 266.6
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 307.25
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -11.96,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 15.883
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.55
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 0.775
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.162
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 19.37,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 4.185
+            },
+            {
+              "module": "A4",
+              "value": 0.093
+            }
+          ],
+          "total": 4.278,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 46.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 45.86,
+        "bc3": {
+          "root_code": "EML010",
+          "decomposition": [
+            {
+              "code": "mt07mee609bza",
+              "description": "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller",
+              "unit": "m3",
+              "quantity": 0.019,
+              "unit_price": 1142.4,
+              "amount": 21.71,
+              "composition_key": "EST",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr111l",
+              "description": "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm",
+              "unit": "ud",
+              "quantity": 6.0,
+              "unit_price": 0.37,
+              "amount": 2.22,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr409a450",
+              "description": "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.283,
+              "unit_price": 25.84,
+              "amount": 7.31,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.376,
+              "unit_price": 24.53,
+              "amount": 9.22,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 44.96,
+              "amount": 0.9,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 73.22
+            },
+            {
+              "label": "Mano de obra",
+              "value": 27.68
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 15.8
+            },
+            {
+              "label": "Transporte",
+              "value": 10.09
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 126.79,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 9.3,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 4.46
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 0.93,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.13
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.67,
+              "subtotal": 2.67
+            }
+          ],
+          "total": 55.97
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 28.43,
+        "assessed_cost": 45.86,
+        "ratio": 0.61993
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.5598,
+        "economic_performance": 0.694267,
+        "industrialization_performance": 0.61993,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-EL.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-EL.GS002.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-EL.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión clavada"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x148 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante clavos de acero galvanizado de alta adherencia."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 45.86
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -11.96
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.61993
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión clavada. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.MAD-EL.GS003",
+      "name_es": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión atornillada",
+      "description": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x148 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante tornillos de cabeza avellanada de acero al carbono.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EML010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-MAD-003",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "light_timber_frame",
+        "timber_species": "pinus_sylvestris",
+        "timber_strength_class": "C24",
+        "structural_quality": "T2",
+        "member_width_mm": 48,
+        "member_depth_mm": 148,
+        "use_class": "1",
+        "penetration_class": "NP1",
+        "workshop_cut": true,
+        "assembly": "site",
+        "primary_connection": "carbon_steel_screws",
+        "pefc_certified": true,
+        "timber_volume_m3_m2": 0.019,
+        "source_references": [
+          "legacy catalogue str-wal-mad.json: STR-WAL-MAD-003"
+        ],
+        "construction_type": "light_timber_frame_wall",
+        "structural_system": "load_bearing_light_timber_frame",
+        "structural_element_thickness_mm": 148,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "carbon_steel_screws",
+        "fire_performance": {
+          "constituent_reaction_to_fire": "D-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "pre-cut/labeled timber framing components and mechanical fixings",
+        "factory_completion_level": "workshop-cut components; final frame assembled on site",
+        "assembly_method": "dry mechanical assembly on site using nails/screws and structural sheathing where specified",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mechanical fasteners are present, but recoverability and reuse performance are not quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "timber_strength_class": "C24",
+          "species": "pinus_sylvestris",
+          "member_section_mm": "48x148",
+          "stud_spacing_mm": null
+        },
+        "assessment_notes": {
+          "fire_performance": "Reaction-to-fire data are retained where present; assembly fire resistance is not stated.",
+          "acoustic_performance": "No quantitative acoustic performance is stated.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -11.96,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.5598,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-003 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 45.74,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.695067,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-003 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.636423,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.636423,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-MAD-003 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 29.11,
+            "assessed_cost_eur_m2": 45.74,
+            "counted_industrialized_components": [
+              "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller: 21.71 EUR/m2",
+              "Tornillo de cabeza avellanada de acero al carbono, diámetro 6 mm y longitud 120 mm, con tratamiento superficial de resina epoxi: 2.9 EUR/m2",
+              "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero: 4.5 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "EST",
+          "name_es": "Entramado estructural de madera C24",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_softwood",
+            "species": "pinus_sylvestris",
+            "strength_class": "C24",
+            "section_mm": "48x148",
+            "reaction_to_fire": "D-s2,d0",
+            "workshop_cut": true,
+            "characteristic_bending_strength_n_mm2": 24,
+            "characteristic_tension_parallel_n_mm2": 14,
+            "characteristic_compression_parallel_n_mm2": 21,
+            "mean_modulus_elasticity_parallel_n_mm2": 11000,
+            "characteristic_density_kg_m3": 350
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Fijaciones metálicas atornilladas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "carbon_steel",
+            "primary_fastener": "countersunk_screw",
+            "primary_fastener_diameter_mm": 6,
+            "primary_fastener_length_mm": 120,
+            "epoxy_surface_treatment": true
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 9.3,
+        "system_type": {
+          "value": "light_timber_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light_timber_frame",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "pre-cut/labeled timber framing components and mechanical fixings",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 115.18,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1298.75,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 9.3,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_timber_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 254.77
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 168.98
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -11.96,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 83.968
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 8.192
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.096
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.144
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 102.4,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 4.185
+            },
+            {
+              "module": "A4",
+              "value": 0.093
+            }
+          ],
+          "total": 4.278,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 46.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 45.74,
+        "bc3": {
+          "root_code": "EML010",
+          "decomposition": [
+            {
+              "code": "mt07mee609bza",
+              "description": "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller",
+              "unit": "m3",
+              "quantity": 0.019,
+              "unit_price": 1142.4,
+              "amount": 21.71,
+              "composition_key": "EST",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr118lb",
+              "description": "Tornillo de cabeza avellanada de acero al carbono, diámetro 6 mm y longitud 120 mm, con tratamiento superficial de resina epoxi",
+              "unit": "ud",
+              "quantity": 5.0,
+              "unit_price": 0.58,
+              "amount": 2.9,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr409a450",
+              "description": "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.267,
+              "unit_price": 25.84,
+              "amount": 6.9,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.36,
+              "unit_price": 24.53,
+              "amount": 8.83,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 44.84,
+              "amount": 0.9,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 112.18
+            },
+            {
+              "label": "Mano de obra",
+              "value": 37.21
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 29.12
+            },
+            {
+              "label": "Transporte",
+              "value": 10.2
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 2.6
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 191.31,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 9.3,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 4.46
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 0.93,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.13
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.67,
+              "subtotal": 2.67
+            }
+          ],
+          "total": 55.97
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 29.11,
+        "assessed_cost": 45.74,
+        "ratio": 0.636423
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.5598,
+        "economic_performance": 0.695067,
+        "industrialization_performance": 0.636423,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-EL.GS003.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-EL.GS003.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-EL.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión atornillada"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, formado por montantes, carreras y testeros de 48x148 mm, clase resistente C24 y calidad estructural T2, protegidos para clase de uso 1 con penetración NP1, cortados y numerados en taller y montados en obra mediante tornillos de cabeza avellanada de acero al carbono."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 45.74
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -11.96
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.636423
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero C24 48x148 mm, corte en taller y unión atornillada. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.MAD-EL.GS004",
+      "name_es": "Muro estructural de entramado ligero C24 48x148 mm con tablero estructural P5 de 15 mm",
+      "description": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, de 48x148 mm, clase resistente C24 y calidad T2, cortado y numerado en taller, unido con clavos galvanizados y arriostrado por la cara exterior mediante tablero estructural de partículas tipo P5 de 15 mm.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EML010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-MAD-004",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "light_timber_frame",
+        "timber_species": "pinus_sylvestris",
+        "timber_strength_class": "C24",
+        "structural_quality": "T2",
+        "member_width_mm": 48,
+        "member_depth_mm": 148,
+        "use_class": "1",
+        "penetration_class": "NP1",
+        "workshop_cut": true,
+        "assembly": "site",
+        "structurally_sheathed": true,
+        "sheathing_thickness_mm": 15,
+        "pefc_certified": true,
+        "timber_volume_m3_m2": 0.019,
+        "structural_sheathing_volume_m3_m2": 0.015,
+        "source_references": [
+          "legacy catalogue str-wal-mad.json: STR-WAL-MAD-004"
+        ],
+        "construction_type": "light_timber_frame_wall",
+        "structural_system": "load_bearing_light_timber_frame",
+        "structural_element_thickness_mm": 148,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "mechanical timber-frame fasteners and structural sheathing fixings where present",
+        "fire_performance": {
+          "constituent_reaction_to_fire": "D-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "pre-cut/labeled timber framing components and mechanical fixings with structural sheathing",
+        "factory_completion_level": "workshop-cut components; final frame assembled on site",
+        "assembly_method": "dry mechanical assembly on site using nails/screws and structural sheathing where specified",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mechanical fasteners are present, but recoverability and reuse performance are not quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "timber_strength_class": "C24",
+          "species": "pinus_sylvestris",
+          "member_section_mm": "48x148",
+          "stud_spacing_mm": null
+        },
+        "assessment_notes": {
+          "fire_performance": "Reaction-to-fire data are retained where present; assembly fire resistance is not stated.",
+          "acoustic_performance": "No quantitative acoustic performance is stated.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -24.24,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.6212,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-004 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 67.96,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.546933,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-004 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.554444,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.554444,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-MAD-004 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 37.68,
+            "assessed_cost_eur_m2": 67.96,
+            "counted_industrialized_components": [
+              "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller: 21.71 EUR/m2",
+              "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm: 2.22 EUR/m2",
+              "Tablero estructural de partículas tipo P5 para ambiente húmedo, 15 mm, bordes canteados, clase E1: 7.52 EUR/m2",
+              "Clavo de acero galvanizado de alta adherencia, diámetro 4 mm y longitud 75 mm: 1.73 EUR/m2",
+              "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero: 4.5 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "EST",
+          "name_es": "Entramado estructural de madera C24",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_softwood",
+            "species": "pinus_sylvestris",
+            "strength_class": "C24",
+            "section_mm": "48x148",
+            "reaction_to_fire": "D-s2,d0",
+            "workshop_cut": true,
+            "characteristic_bending_strength_n_mm2": 24,
+            "characteristic_tension_parallel_n_mm2": 14,
+            "characteristic_compression_parallel_n_mm2": 21,
+            "mean_modulus_elasticity_parallel_n_mm2": 11000,
+            "characteristic_density_kg_m3": 350
+          }
+        },
+        {
+          "key": "TAB",
+          "name_es": "Tablero estructural de partículas P5",
+          "role": "structural_sheathing",
+          "properties": {
+            "material_family": "wood_particle_board",
+            "board_type": "P5",
+            "thickness_mm": 15,
+            "reaction_to_fire": "D-s2,d0",
+            "formaldehyde_emission_class": "E1"
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Fijaciones metálicas",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "primary_fastener": "nail"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 18.8,
+        "system_type": {
+          "value": "light_timber_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light_timber_frame",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "pre-cut/labeled timber framing components and mechanical fixings with structural sheathing",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 226.14,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1290.05,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 18.8,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_timber_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 104.85
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 174.21
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -24.24,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 79.04
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.711
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.856
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.783
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 96.39,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 8.46
+            },
+            {
+              "module": "A4",
+              "value": 0.188
+            }
+          ],
+          "total": 8.648,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 94.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 67.96,
+        "bc3": {
+          "root_code": "EML010",
+          "decomposition": [
+            {
+              "code": "mt07mee609bza",
+              "description": "Conjunto de elementos estructurales de madera aserrada de pino silvestre PEFC, 48x148 mm, C24, T2, clase de uso 1, NP1, cepillados, cortados y numerados en taller",
+              "unit": "m3",
+              "quantity": 0.019,
+              "unit_price": 1142.4,
+              "amount": 21.71,
+              "composition_key": "EST",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr111l",
+              "description": "Clavo de acero galvanizado de alta adherencia, diámetro 6 mm y longitud 100 mm",
+              "unit": "ud",
+              "quantity": 6.0,
+              "unit_price": 0.37,
+              "amount": 2.22,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt08eff040aa",
+              "description": "Tablero estructural de partículas tipo P5 para ambiente húmedo, 15 mm, bordes canteados, clase E1",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 7.52,
+              "amount": 7.52,
+              "composition_key": "TAB",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr111d",
+              "description": "Clavo de acero galvanizado de alta adherencia, diámetro 4 mm y longitud 75 mm",
+              "unit": "ud",
+              "quantity": 13.333,
+              "unit_price": 0.13,
+              "amount": 1.73,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr409a450",
+              "description": "Repercusión de elementos de fijación mecánica de acero galvanizado DX51D+Z275N para montaje de entramado ligero",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.529,
+              "unit_price": 25.84,
+              "amount": 13.67,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.623,
+              "unit_price": 24.53,
+              "amount": 15.28,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 66.63,
+              "amount": 1.33,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 155.86
+            },
+            {
+              "label": "Mano de obra",
+              "value": 69.25
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 37.88
+            },
+            {
+              "label": "Transporte",
+              "value": 17.56
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 280.55,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 18.8,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 9.02
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 1.88,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.26
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 2.9,
+              "subtotal": 2.9
+            }
+          ],
+          "total": 60.89
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 37.68,
+        "assessed_cost": 67.96,
+        "ratio": 0.554444
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.6212,
+        "economic_performance": 0.546933,
+        "industrialization_performance": 0.554444,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-EL.GS004.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-EL.GS004.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-EL.GS004"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de entramado ligero C24 48x148 mm con tablero estructural P5 de 15 mm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural exterior de entramado ligero de madera aserrada de pino silvestre con certificado PEFC, de 48x148 mm, clase resistente C24 y calidad T2, cortado y numerado en taller, unido con clavos galvanizados y arriostrado por la cara exterior mediante tablero estructural de partículas tipo P5 de 15 mm."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 67.96
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -24.24
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.554444
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "sawn_softwood"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 15
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de entramado ligero C24 48x148 mm con tablero estructural P5 de 15 mm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.MAD-EL.GS005",
+      "name_es": "Muro autoportante C24 120x60 mm con OSB, contrachapado y fibra de madera, mecanización CNC",
+      "description": "Muro compuesto por entramado estructural autoportante de madera aserrada C24, clase de uso 2, nivel de protección 1 y acabado cepillado, con montantes y travesaños de 120x60 mm dispuestos cada 40 cm y grado de mecanización medio mediante CNC y/o ensamblado en taller; tablero OSB canteado de 15 mm en la cara exterior, tablero contrachapado en la cara interior, cintas de sellado de estanqueidad entre tableros y aislamiento intermedio de fibras de madera.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMM.2e",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-MAD-05",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "light_timber_frame",
+        "timber_strength_class": "C24",
+        "member_depth_mm": 120,
+        "member_width_mm": 60,
+        "stud_spacing_mm": 400,
+        "use_class": "2",
+        "protection_level": "1",
+        "workshop_mechanization": "medium",
+        "cnc_cutting": true,
+        "workshop_assembly": true,
+        "structurally_sheathed": true,
+        "inferred_insulation_thickness_mm": 120,
+        "inferred_plywood_thickness_mm": 15,
+        "timber_volume_m3_m2": 0.024,
+        "osb_volume_m3_m2": 0.015,
+        "plywood_volume_m3_m2": 0.015,
+        "wood_fibre_insulation_volume_m3_m2": 0.102,
+        "total_thickness_mm": 150,
+        "source_references": [
+          "legacy catalogue str-wal-mad.json: STR-WAL-MAD-05"
+        ],
+        "construction_type": "light_timber_frame_wall",
+        "structural_system": "load_bearing_light_timber_frame",
+        "structural_element_thickness_mm": 120,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "mechanical timber-frame fasteners and structural sheathing fixings where present",
+        "fire_performance": {
+          "constituent_reaction_to_fire": {
+            "assessment_status": "not_assessed"
+          },
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "pre-cut/labeled timber framing components and mechanical fixings with structural sheathing",
+        "factory_completion_level": "workshop-cut components; partial workshop assembly/mechanization documented",
+        "assembly_method": "dry mechanical assembly on site using nails/screws and structural sheathing where specified",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mechanical fasteners are present, but recoverability and reuse performance are not quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "timber_strength_class": "C24",
+          "species": null,
+          "member_section_mm": "60x120",
+          "stud_spacing_mm": 400
+        },
+        "assessment_notes": {
+          "fire_performance": "Reaction-to-fire data are retained where present; assembly fire resistance is not stated.",
+          "acoustic_performance": "No quantitative acoustic performance is stated.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric.",
+          "economic_performance": "Normalized from the legacy unit_cost 343.03 EUR/m2. The legacy industrialization denominator is 105.85 EUR/m2 and is retained separately; the discrepancy is not silently reconciled."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -69.41,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.84705,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-05 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 343.03,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.0,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-MAD-05 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.616438,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.616438,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-MAD-05 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 65.25,
+            "assessed_cost_eur_m2": 105.85,
+            "counted_industrialized_components": [
+              "Conjunto de elementos estructurales C24 cortados y numerados en taller, 48x148 mm usado como equivalente de coste para sección 60x120 mm a igual modulación: 21.71 EUR/m2",
+              "Tablero estructural OSB/4 de 15 mm, equivalente al tablero OSB exterior de la solución: 8.93 EUR/m2",
+              "Tablero estructural contrachapado de 15 mm, equivalente al tablero interior de la solución: 14.77 EUR/m2",
+              "Panel flexible de fibra de madera de 80 mm empleado como proxy paramétrico de coste para 120 mm de aislamiento: 16.6 EUR/m2",
+              "Tornillo de cabeza avellanada de acero al carbono para fijación de tableros: 3.24 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "OSB",
+          "name_es": "Tablero OSB exterior",
+          "role": "structural_sheathing",
+          "properties": {
+            "material_family": "osb",
+            "thickness_mm": 15,
+            "density_kg_m3": 611
+          }
+        },
+        {
+          "key": "EST",
+          "name_es": "Entramado estructural de madera C24",
+          "role": "structure",
+          "properties": {
+            "material_family": "sawn_timber",
+            "strength_class": "C24",
+            "section_mm": "120x60",
+            "spacing_mm": 400,
+            "workshop_mechanization": "medium",
+            "cnc_cutting": true,
+            "characteristic_bending_strength_n_mm2": 24,
+            "characteristic_tension_parallel_n_mm2": 14,
+            "characteristic_compression_parallel_n_mm2": 21,
+            "mean_modulus_elasticity_parallel_n_mm2": 11000,
+            "characteristic_density_kg_m3": 350
+          }
+        },
+        {
+          "key": "AIS",
+          "name_es": "Aislamiento de fibra de madera",
+          "role": "thermal_insulation",
+          "properties": {
+            "material_family": "wood_fibre",
+            "thickness_mm": 120,
+            "thermal_conductivity_w_mk": 0.038,
+            "density_kg_m3": 50
+          }
+        },
+        {
+          "key": "PLY",
+          "name_es": "Tablero contrachapado interior",
+          "role": "structural_sheathing",
+          "properties": {
+            "material_family": "plywood",
+            "thickness_mm": 15
+          }
+        },
+        {
+          "key": "SEL",
+          "name_es": "Cintas de sellado de estanqueidad",
+          "role": "airtightness_sealing",
+          "properties": {
+            "material_family": "sealing_tape"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 33.8,
+        "system_type": {
+          "value": "light_timber_frame_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light_timber_frame",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "pre-cut/labeled timber framing components and mechanical fixings with structural sheathing",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 150,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2070.19,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 33.8,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "load_bearing_light_timber_frame",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 47.27
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 177.1
+          }
+        }
+      },
+      "energy_data": {
+        "assessment_type": "envelope",
+        "indicators": {
+          "u_value_w_m2k": 0.352
+        }
+      },
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -69.41,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 65.51
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.391
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.196
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.793
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 79.89,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 15.21
+            },
+            {
+              "module": "A4",
+              "value": 0.338
+            }
+          ],
+          "total": 15.548,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 169.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 343.03,
+        "bc3": {
+          "root_code": "EEMM.2e",
+          "decomposition": [
+            {
+              "code": "mt07mee609bza",
+              "description": "Conjunto de elementos estructurales C24 cortados y numerados en taller, 48x148 mm usado como equivalente de coste para sección 60x120 mm a igual modulación",
+              "unit": "m3",
+              "quantity": 0.019,
+              "unit_price": 1142.4,
+              "amount": 21.71,
+              "composition_key": "EST",
+              "industrialized": true
+            },
+            {
+              "code": "mt07tdm040m",
+              "description": "Tablero estructural OSB/4 de 15 mm, equivalente al tablero OSB exterior de la solución",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 8.5,
+              "amount": 8.93,
+              "composition_key": "OSB",
+              "industrialized": true
+            },
+            {
+              "code": "mt07tdm060a",
+              "description": "Tablero estructural contrachapado de 15 mm, equivalente al tablero interior de la solución",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 14.07,
+              "amount": 14.77,
+              "composition_key": "PLY",
+              "industrialized": true
+            },
+            {
+              "code": "mt16bab030c",
+              "description": "Panel flexible de fibra de madera de 80 mm empleado como proxy paramétrico de coste para 120 mm de aislamiento",
+              "unit": "m2",
+              "quantity": 1.575,
+              "unit_price": 10.54,
+              "amount": 16.6,
+              "composition_key": "AIS",
+              "industrialized": true
+            },
+            {
+              "code": "mt07emr118ga",
+              "description": "Tornillo de cabeza avellanada de acero al carbono para fijación de tableros",
+              "unit": "ud",
+              "quantity": 18.0,
+              "unit_price": 0.18,
+              "amount": 3.24,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera, equivalente a montaje de entramado y tableros",
+              "unit": "h",
+              "quantity": 0.643,
+              "unit_price": 25.84,
+              "amount": 16.61,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera, equivalente a montaje de entramado y tableros",
+              "unit": "h",
+              "quantity": 0.736,
+              "unit_price": 24.53,
+              "amount": 18.05,
+              "industrialized": false
+            },
+            {
+              "code": "mo054",
+              "description": "Oficial 1ª montador de aislamientos",
+              "unit": "h",
+              "quantity": 0.121,
+              "unit_price": 25.52,
+              "amount": 3.09,
+              "industrialized": false
+            },
+            {
+              "code": "mo101",
+              "description": "Ayudante montador de aislamientos",
+              "unit": "h",
+              "quantity": 0.121,
+              "unit_price": 23.59,
+              "amount": 2.85,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 146.73
+            },
+            {
+              "label": "Mano de obra",
+              "value": 45.38
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 26.83
+            },
+            {
+              "label": "Transporte",
+              "value": 16.44
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 3.18
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 238.56,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 33.8,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 16.22
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 3.38,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.47
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.27,
+              "subtotal": 3.27
+            }
+          ],
+          "total": 68.67
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 65.25,
+        "assessed_cost": 105.85,
+        "ratio": 0.616438
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.84705,
+        "economic_performance": 0.0,
+        "industrialization_performance": 0.616438,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.MAD-EL.GS005.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.MAD-EL.GS005.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-EL.GS005"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro autoportante C24 120x60 mm con OSB, contrachapado y fibra de madera, mecanización CNC"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro compuesto por entramado estructural autoportante de madera aserrada C24, clase de uso 2, nivel de protección 1 y acabado cepillado, con montantes y travesaños de 120x60 mm dispuestos cada 40 cm y grado de mecanización medio mediante CNC y/o ensamblado en taller; tablero OSB canteado de 15 mm en la cara exterior, tablero contrachapado en la cara interior, cintas de sellado de estanqueidad entre tableros y aislamiento intermedio de fibras de madera."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 343.03
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -69.41
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.616438
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "osb"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "osb"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 15
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": 611
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro autoportante C24 120x60 mm con OSB, contrachapado y fibra de madera, mecanización CNC. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

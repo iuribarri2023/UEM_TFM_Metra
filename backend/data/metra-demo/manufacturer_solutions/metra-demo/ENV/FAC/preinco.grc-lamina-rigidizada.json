@@ -1,0 +1,949 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-PREINCO",
+    "name": "Prefabricados PREINCO S.L.",
+    "website": "https://www.preinco.com/",
+    "description": "Fabricante de paneles prefabricados GRC y hormigón armado para fachadas.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5QcmVmYWJyaWNhZG9zIFBSRUlOQ08gUy5MLjwvdGV4dD48L3N2Zz4=",
+    "address": "Calle Bronce 14, Polígono Industrial Aimayr, 28330 San Martín de la Vega (Madrid)",
+    "contact_name": null,
+    "contact_email": "comercial@preinco.com",
+    "contact_phone": "+34 91 691 66 00",
+    "accreditation": {},
+    "metadata": {
+      "country": "ES"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "ENV.FAC.FV-FAB.GS006",
+      "generic_solution_codes": [],
+      "subsystem_code": "ENV.FAC",
+      "code": "MFR.PREINCO.GRC-LAMINA-RIGIDIZADA",
+      "commercial_reference": "GRC-LAMINA-RIGIDIZADA",
+      "name_es": "Panel GRC tipo Lámina Rigidizada PREINCO",
+      "description": "Lamina GRC nominal 10 mm con nervios rigidizadores posteriores del mismo material; pieza decorativa de pequena superficie.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "ENV.FAC",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "NOTDEFINED",
+          "ecob_bim_class": "Muros de fachada",
+          "gubimclass_code": "30.10.10.20",
+          "gubimclass_description": "Fachadas prefabricadas",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 - VIVA"
+        },
+        "properties": {
+          "structural_role": "non_load_bearing",
+          "system_type": "lamina-rigidizada",
+          "is_external": true,
+          "primary_material": "Glassfibre reinforced concrete (GRC)",
+          "reference_panel_width_mm": 2600,
+          "reference_panel_height_mm": 1800,
+          "reference_panel_thickness_mm": 70,
+          "surface_mass_range_kg_m2": [
+            30,
+            45
+          ],
+          "window_modelled": false,
+          "window_nominal_mm": null,
+          "window_scope": "Not appropriate for small decorative panel",
+          "geometry_status": "illustrative panel; no structural or shop-drawing approval",
+          "u_value_w_m2k": 0.35,
+          "rw_db": 50,
+          "fire_rating": "project_specific",
+          "geometry_assumptions": [
+            "Los 70 mm de vuelo de nervio son geometria ilustrativa: el DIT no establece profundidad universal.",
+            "No se abre ventana por tratarse de panel decorativo de pequeno formato y no una tipologia de hueco normalizada.",
+            "70 mm is a representation-only total section including 60 mm rib depth; manufacturer to dimension per project."
+          ],
+          "ifc_generation_revision": "v2.0",
+          "ifc_geometry_method": "IFC4 SweptSolid; explicit cut shapes, local placements and native parts",
+          "ifc_material_associations": {
+            "GRC": 2
+          },
+          "ifc_root_entity": "IfcWall",
+          "ifc_product_component_count": 1,
+          "ifc_window_separate": false,
+          "ifc_material_scope": "IFC constituent materials attached to individually named building elements; window separate and referential",
+          "thickness_mm": 200,
+          "mass_kg_m2": 155,
+          "module_width_mm": 2600,
+          "module_height_mm": 1800,
+          "integrated_window": false,
+          "exterior_finish": "project_specific",
+          "insulation": "project_specific thermal insulation layer",
+          "waterproofing": "project_specific weather/water control layer",
+          "factory_scope": "product_only",
+          "delivery_state": "factory-prepared facade system for site installation",
+          "mounting_system": "project-specific mechanical connection to primary structure"
+        },
+        "source_trace": {
+          "composition": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "geometry": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "technical_dit": "416p/26"
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "ENV.FAC",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA",
+          "code": "ENV.FAC.FV-FAB.GS006",
+          "relation": "generic_reference",
+          "confidence": "new exact archetype extension"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "30.10.10.20",
+          "description": "Fachadas prefabricadas",
+          "relation": "primary"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_dossier",
+          "title": "Catalogo digital PREINCO",
+          "document": "Catalogo_Preinco_Digital-2.pdf",
+          "pages": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "status": "PROVIDED"
+        },
+        {
+          "type": "technical_assessment",
+          "title": "DITplus 416p/26",
+          "document": "DIT-416p_26-paneles-GRC-PREINCO.pdf",
+          "status": "IN_SUPPLIED_DATE_RANGE_SUBJECT_TO_ANNUAL_FOLLOWUP",
+          "scope": "GRC no portante"
+        }
+      ],
+      "attributes": {
+        "provenance_status": "DOCUMENTED_WITH_GEOMETRY_ASSUMPTIONS",
+        "model_geometry": "isolated representative panel; dimensions and window not manufacturer shop drawing",
+        "assessment_expiry": "2031-05-18"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "status": "PROJECT_DEPENDENT",
+        "note": "Performance subject to specific design, manufacture and annual DIT monitoring. DIT 432p/20 expired on 2025-11-30 in supplied document."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_PROVIDED",
+          "indicators": {},
+          "gwp_a1_a3_kgco2e_per_fu": null
+        },
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 22.714
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.216
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.108
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.662
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 27.7,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 110.05
+            },
+            {
+              "module": "A4",
+              "value": 1.55
+            }
+          ],
+          "total": 111.6,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1395
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "unit": "m2",
+        "unit_cost": null,
+        "price_status": "NOT_PROVIDED",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 143.98
+            },
+            {
+              "label": "Mano de obra",
+              "value": 53.1
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 29.74
+            },
+            {
+              "label": "Transporte",
+              "value": 13.33
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 240.15,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 155,
+              "unit": "kg",
+              "rate": 0.83,
+              "subtotal": 128.65
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.59,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 50.88
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.445,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 16.47
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.2,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 9.8
+            },
+            {
+              "label": "Transporte",
+              "quantity": 15.5,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 2.17
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 10.4,
+              "subtotal": 10.4
+            }
+          ],
+          "total": 218.37
+        }
+      },
+      "industrialization_data": {
+        "predominant_geometry": "panel",
+        "production_location": "factory",
+        "delivery_form": "prefabricated_panel",
+        "factory_scope": "product_only",
+        "basis": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+        "is_industrialized": true,
+        "une_41610": {
+          "function_classes": [
+            {
+              "code": "ENVOLVENTE",
+              "label": "Elementos de envolvente"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          },
+          "classification_applicable": true
+        }
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Identity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "GenericSolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC.FV-FAB.GS006"
+            },
+            {
+              "name": "Manufacturer",
+              "ifc_type": "IfcLabel",
+              "value": "PREINCO"
+            },
+            {
+              "name": "Model",
+              "ifc_type": "IfcLabel",
+              "value": "GRC-LAMINA-RIGIDIZADA"
+            },
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.PREINCO.GRC-LAMINA-RIGIDIZADA"
+            },
+            {
+              "name": "ModelStatus",
+              "ifc_type": "IfcLabel",
+              "value": "DRAFT_COORDINATION"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "30.10.10.20"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Fachadas prefabricadas"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Prefabricados PREINCO S.L."
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "GRC-LAMINA-RIGIDIZADA"
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Panel GRC tipo Lámina Rigidizada PREINCO"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcText",
+              "value": "Lamina GRC nominal 10 mm con nervios rigidizadores posteriores del mismo material; pieza decorativa de pequena superficie."
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IsExternal",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "Reference",
+              "ifc_type": "IfcIdentifier",
+              "value": "GRC-LAMINA-RIGIDIZADA"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ProductData",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ReferencePanelWidthMM",
+              "ifc_type": "IfcInteger",
+              "value": 2600
+            },
+            {
+              "name": "ReferencePanelHeightMM",
+              "ifc_type": "IfcInteger",
+              "value": 1800
+            },
+            {
+              "name": "ReferencePanelThicknessMM",
+              "ifc_type": "IfcInteger",
+              "value": 80
+            },
+            {
+              "name": "FactoryProduct",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "GeometricStatus",
+              "ifc_type": "IfcLabel",
+              "value": "PRODUCT_ONLY_SCHEMATIC_NOT_SHOP_DRAWING"
+            },
+            {
+              "name": "DITReference",
+              "ifc_type": "IfcLabel",
+              "value": "416p/26"
+            },
+            {
+              "name": "DITCertificateUntil",
+              "ifc_type": "IfcLabel",
+              "value": "2031-05-18"
+            },
+            {
+              "name": "PanelWeightRangeKgM2",
+              "ifc_type": "IfcLabel",
+              "value": "[30, 45]"
+            }
+          ]
+        },
+        {
+          "name": "PREINCO_Pset_SourceAndScope",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CatalogueSource",
+              "ifc_type": "IfcLabel",
+              "value": "Catalogo_Preinco_Digital-2.pdf"
+            },
+            {
+              "name": "TechnicalSource",
+              "ifc_type": "IfcLabel",
+              "value": "DIT-416p_26-paneles-GRC-PREINCO.pdf"
+            },
+            {
+              "name": "SourcePages",
+              "ifc_type": "IfcLabel",
+              "value": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23"
+            },
+            {
+              "name": "GeometryAssumptions",
+              "ifc_type": "IfcText",
+              "value": "Los 70 mm de vuelo de nervio son geometria ilustrativa: el DIT no establece profundidad universal.; No se abre ventana por tratarse de panel decorativo de pequeno formato y no una tipologia de hueco normalizada."
+            },
+            {
+              "name": "WindowScope",
+              "ifc_type": "IfcLabel",
+              "value": "Sin ventana: lamina decorativa"
+            },
+            {
+              "name": "ProductScope",
+              "ifc_type": "IfcLabel",
+              "value": "Solo panel prefabricado, sin edificio, forjado ni fachada interior por terceros"
+            },
+            {
+              "name": "ManufacturerApproval",
+              "ifc_type": "IfcLabel",
+              "value": "NO - coordinación BIM ilustrativa"
+            }
+          ]
+        },
+        {
+          "name": "PREINCO_Pset_MaterialComposition",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "PrimaryMaterial",
+              "ifc_type": "IfcLabel",
+              "value": "GRC"
+            },
+            {
+              "name": "UnitSystem",
+              "ifc_type": "IfcLabel",
+              "value": "Metres (SI)"
+            }
+          ]
+        },
+        {
+          "name": "PREINCO_Pset_Certification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Document",
+              "ifc_type": "IfcLabel",
+              "value": "DITplus 416p/26"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.PREINCO.GRC-LAMINA-RIGIDIZADA"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-PREINCO"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Prefabricados PREINCO S.L."
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "GRC-LAMINA-RIGIDIZADA"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "factory-prepared facade system for site installation"
+            },
+            {
+              "name": "exterior_finish",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "product_only"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "geometry_status",
+              "ifc_type": "IfcLabel",
+              "value": "illustrative panel; no structural or shop-drawing approval"
+            },
+            {
+              "name": "ifc_generation_revision",
+              "ifc_type": "IfcLabel",
+              "value": "v2.0"
+            },
+            {
+              "name": "ifc_geometry_method",
+              "ifc_type": "IfcLabel",
+              "value": "IFC4 SweptSolid; explicit cut shapes, local placements and native parts"
+            },
+            {
+              "name": "ifc_material_scope",
+              "ifc_type": "IfcLabel",
+              "value": "IFC constituent materials attached to individually named building elements; window separate and referential"
+            },
+            {
+              "name": "ifc_product_component_count",
+              "ifc_type": "IfcInteger",
+              "value": 1
+            },
+            {
+              "name": "ifc_root_entity",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "ifc_window_separate",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "insulation",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific thermal insulation layer"
+            },
+            {
+              "name": "integrated_window",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "is_external",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "mass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 155
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1800
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2600
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific mechanical connection to primary structure"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Glassfibre reinforced concrete (GRC)"
+            },
+            {
+              "name": "reference_panel_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1800
+            },
+            {
+              "name": "reference_panel_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 70
+            },
+            {
+              "name": "reference_panel_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2600
+            },
+            {
+              "name": "rw_db",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "non_load_bearing"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "lamina-rigidizada"
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 200
+            },
+            {
+              "name": "u_value_w_m2k",
+              "ifc_type": "IfcReal",
+              "value": 0.35
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific weather/water control layer"
+            },
+            {
+              "name": "window_modelled",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "window_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Not appropriate for small decorative panel"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Lamina plana GRC",
+          "role": "outer_skin",
+          "material": "GRC",
+          "thickness_mm": 10,
+          "source": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "note": null
+        },
+        {
+          "sequence": 2,
+          "name_es": "Nervios GRC posteriores",
+          "role": "stiffener",
+          "material": "GRC",
+          "thickness_mm": null,
+          "source": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "note": "Variable / require project calculation"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "manufacturer_dossier",
+          "title": "Catalogo digital PREINCO",
+          "document": "Catalogo_Preinco_Digital-2.pdf",
+          "pages": "Catalogo pp. 6,9; DIT 416p/26 pp. 5, 23",
+          "status": "PROVIDED"
+        },
+        {
+          "type": "technical_assessment",
+          "title": "DITplus 416p/26",
+          "document": "DIT-416p_26-paneles-GRC-PREINCO.pdf",
+          "status": "IN_SUPPLIED_DATE_RANGE_SUBJECT_TO_ANNUAL_FOLLOWUP",
+          "scope": "GRC no portante"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "NOT_AVAILABLE",
+        "template_code": "ENV.FAC",
+        "issues": [
+          "Full independent geometric viewer and project-specific IDS test pending"
+        ]
+      },
+      "data_quality_notes": [
+        {
+          "issue": "Los 70 mm de vuelo de nervio son geometria ilustrativa: el DIT no establece profundidad universal.",
+          "action": "Confirm with PREINCO before manufacture"
+        },
+        {
+          "issue": "No se abre ventana por tratarse de panel decorativo de pequeno formato y no una tipologia de hueco normalizada.",
+          "action": "Confirm with PREINCO before manufacture"
+        },
+        {
+          "issue": "Previous IFC model under-defined material and type semantics",
+          "action": "v2 IFC4 has material assignments, isolated product hierarchy, openings and type property sets"
+        },
+        {
+          "issue": "Independent IfcOpenShell/commercial viewer not available in generation environment",
+          "action": "STEP geometry audit included; viewer acceptance test remains to be performed"
+        },
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.is_industrialized",
+            "industrialization_data.une_41610.classification_applicable",
+            "industrialization_data.une_41610.function_classes",
+            "industrialization_data.une_41610.predominant_geometry",
+            "technical_data.properties.delivery_state",
+            "technical_data.properties.exterior_finish",
+            "technical_data.properties.factory_scope",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.insulation",
+            "technical_data.properties.integrated_window",
+            "technical_data.properties.mass_kg_m2",
+            "technical_data.properties.module_height_mm",
+            "technical_data.properties.module_width_mm",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.rw_db",
+            "technical_data.properties.thickness_mm",
+            "technical_data.properties.u_value_w_m2k",
+            "technical_data.properties.waterproofing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.PREINCO.GRC-LAMINA-RIGIDIZADA.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/ENV_FAC__ENV.FAC.GRC.GS003__PREINCO__GRC-LAMINA-RIGIDIZADA.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "lamina-rigidizada",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Glassfibre reinforced concrete (GRC)",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-prepared facade system for site installation",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2600,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1800,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 155,
+          "unit": "kg/m²"
+        },
+        "thermal_transmittance": {
+          "value": 0.35,
+          "unit": "W/(m²·K)"
+        },
+        "rw_db": {
+          "value": 50,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "ratr_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "waterproofing": {
+          "value": "project_specific weather/water control layer",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 52.29
+          },
+          "thermal_transmittance": {
+            "unit": "W/(m²·K)",
+            "value": 0.31
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 196.4
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en ENV.FAC. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de cerramiento de fachada; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia cerramiento de fachada.",
+        "functional_unit": "m2",
+        "short": "Panel GRC tipo Lámina Rigidizada PREINCO. Esquema de demostración para la familia «Cerramiento de fachada»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Revestimiento exterior",
+            "name": "Revestimiento exterior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 12.5
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de soporte",
+            "name": "Capa de soporte",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 93.8
+          },
+          {
+            "function": "Aislamiento",
+            "material": "Aislamiento térmico",
+            "name": "Aislamiento térmico",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 74.5
+          },
+          {
+            "function": "Acabado",
+            "material": "Trasdosado interior",
+            "name": "Trasdosado interior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.6
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

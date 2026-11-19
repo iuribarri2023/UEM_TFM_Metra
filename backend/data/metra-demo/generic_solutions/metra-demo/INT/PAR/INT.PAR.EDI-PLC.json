@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PAR",
+      "name_es": "Particiones interiores verticales"
+    },
+    "archetype": {
+      "code": "INT.PAR.EDI-PLC",
+      "name_es": "Partición de doble entramado independiente y placas",
+      "description": "Partición de doble entramado independiente y placas. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

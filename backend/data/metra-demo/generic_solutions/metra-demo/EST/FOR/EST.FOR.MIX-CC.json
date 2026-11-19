@@ -1,0 +1,3381 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.FOR",
+      "name_es": "Forjados"
+    },
+    "archetype": {
+      "code": "EST.FOR.MIX-CC",
+      "name_es": "Forjado mixto de chapa colaborante y hormigón"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.FOR.MIX-CC.GS001",
+      "name_es": "Forjado mixto de chapa colaborante galvanizada de 1,20 mm y 15 cm",
+      "description": "Forjado mixto acero-hormigón de 15 cm de canto con chapa colaborante galvanizada de 1,20 mm, hormigón de 25 N/mm², mallazo B500T ME 15x30 Ø5-5 y 10 conectores de cortante de 50 mm por m², con apuntalamiento temporal durante la ejecución.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFA.2caabb",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "partial"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "RD 470/2021",
+          "code": "Título 4 / Anejo 30",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1994-1-1:2013",
+          "code": "EN 1994-1-1",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-STL-001",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "steel_concrete_composite",
+        "slab_system": "composite_metal_deck",
+        "total_depth_mm": 150,
+        "deck_thickness_mm": 1.2,
+        "deck_profile_height_mm": 60,
+        "deck_mass_kg_m2": 15.2,
+        "connector_count_m2": 10,
+        "connector_height_mm": 50,
+        "concrete_strength_n_mm2": 25,
+        "propped_during_construction": true,
+        "construction_type": "steel_concrete_composite_slab_with_profiled_deck",
+        "structural_system": "composite_metal_deck",
+        "structural_element_thickness_mm": 150,
+        "structural_topping": {
+          "assessment_status": "not_applicable",
+          "note": "the concrete layer is an integral part of the composite slab, not a separate structural topping"
+        },
+        "connection_assembly_method": "profiled galvanized steel deck with cast-in-situ concrete and shear connectors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+        "factory_completion_level": "partially prefabricated/componentized; composite action completed on site",
+        "assembly_method": "deck placement, reinforcement/connectors where specified, followed by in-situ concrete casting",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "reinforcement_grade": "B500S/B500T",
+        "source_references": [
+          "legacy catalogue str-slb-stl(2).json: STR-SLB-STL-001",
+          "CYPE/FIVE legacy classification retained: FIVE-BDC EEFA.2caabb"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 69.6,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.152,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-001 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 69.82,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.534533,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-001 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.670868,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.670868,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-STL-001 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 46.84,
+            "assessed_cost_eur_m2": 69.82,
+            "counted_industrialized_components": [
+              "legacy BC3 components flagged industrialized=true"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CHP",
+          "name_es": "Chapa grecada de acero galvanizado",
+          "role": "composite_deck",
+          "properties": {
+            "material_family": "galvanized_steel_sheet",
+            "thickness_mm": 1.2,
+            "profile_height_mm": 60,
+            "profile_spacing_mm": 205
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores de cortante",
+          "role": "shear_connector",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "connector_height_mm": 50
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 0.0
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Malla electrosoldada",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 15x30 Ø5-5 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "concrete_slab",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "H-25",
+            "volume_m3_m2": 0.112
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 287.2,
+        "system_type": {
+          "value": "steel_concrete_composite_slab_with_profiled_deck",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "steel_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 150,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 4369.85,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 840.23,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 287.2,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "composite_metal_deck",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 39.02
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 254.7
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 69.6,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 52.39
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.111
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.556
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.833
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 63.89,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 137.856
+            },
+            {
+              "module": "A4",
+              "value": 2.872
+            }
+          ],
+          "total": 140.728,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1436.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 69.82,
+        "bc3": {
+          "root_code": "EEFA.2caabb",
+          "decomposition": [
+            {
+              "code": "MOOA.8a",
+              "description": "Oficial 1ª construcción",
+              "unit": "h",
+              "quantity": 0.3,
+              "unit_price": 15.77,
+              "amount": 4.73,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA12a",
+              "description": "Peón ordinario construcción",
+              "unit": "h",
+              "quantity": 0.3,
+              "unit_price": 13.11,
+              "amount": 3.93,
+              "industrialized": false
+            },
+            {
+              "code": "PEAC13ca",
+              "description": "Chapa colaborante de acero galvanizado de 1,20 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 28.7,
+              "amount": 30.14,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "PBPC.3acba",
+              "description": "Hormigón H-25, consistencia blanda, TM 12 mm, ambiente IIa",
+              "unit": "m3",
+              "quantity": 0.112,
+              "unit_price": 67.3,
+              "amount": 7.54,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "PEAW.9a",
+              "description": "Conector para forjado mixto de 50 mm",
+              "unit": "u",
+              "quantity": 10.0,
+              "unit_price": 1.52,
+              "amount": 15.2,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "PEAM.3aba",
+              "description": "Mallazo ME 15x30 Ø5-5 B500T",
+              "unit": "m2",
+              "quantity": 1.2,
+              "unit_price": 1.25,
+              "amount": 1.5,
+              "composition_key": "MAL",
+              "industrialized": true
+            },
+            {
+              "code": "PBAA.1a",
+              "description": "Agua",
+              "unit": "m3",
+              "quantity": 0.1,
+              "unit_price": 1.05,
+              "amount": 0.11,
+              "industrialized": false
+            },
+            {
+              "code": "MMMH.5c",
+              "description": "Vibrador de gasolina con aguja Ø30-50 mm",
+              "unit": "h",
+              "quantity": 0.1,
+              "unit_price": 1.42,
+              "amount": 0.14,
+              "industrialized": false
+            },
+            {
+              "code": "%0200",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 63.3,
+              "amount": 1.27,
+              "industrialized": false
+            },
+            {
+              "code": "EEHF.2a",
+              "description": "Sopandado de forjado",
+              "unit": "m",
+              "quantity": 0.3,
+              "unit_price": 4.36,
+              "amount": 1.31,
+              "industrialized": false
+            },
+            {
+              "code": "%CI0600",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 6.0,
+              "unit_price": 65.87,
+              "amount": 3.95,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 130.4
+            },
+            {
+              "label": "Mano de obra",
+              "value": 47.1
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 24.45
+            },
+            {
+              "label": "Transporte",
+              "value": 14.62
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 3.44
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 220.01,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 287.2,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 123.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.098,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 35.14
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.307,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.36
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 28.72,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 4.02
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 9.8,
+              "subtotal": 9.8
+            }
+          ],
+          "total": 205.87
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 46.84,
+        "assessed_cost": 69.82,
+        "ratio": 0.671
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.152,
+        "economic_performance": 0.534533,
+        "industrialization_performance": 0.670868
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MIX-CC.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MIX-CC.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado mixto de chapa colaborante galvanizada de 1,20 mm y 15 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado mixto acero-hormigón de 15 cm de canto con chapa colaborante galvanizada de 1,20 mm, hormigón de 25 N/mm², mallazo B500T ME 15x30 Ø5-5 y 10 conectores de cortante de 50 mm por m², con apuntalamiento temporal durante la ejecución."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 69.82
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 69.6
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.671
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 1.2
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado mixto de chapa colaborante galvanizada de 1,20 mm y 15 cm. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 35.1
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 46.3
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 156.8
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 16.5
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MIX-CC.GS002",
+      "name_es": "Losa mixta colaborante de 10 cm con chapa de 0,75 mm y conectores soldados",
+      "description": "Losa mixta de 10 cm de canto con chapa colaborante galvanizada de 0,75 mm, perfil de 44 mm e intereje 172 mm, 10 conectores soldados Ø19x81 mm por m², hormigón HA-25/F/20/XC2, 1 kg/m² de B500S y malla ME 15x30 Ø6-6 B500T.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EHX005",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFA",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "partial"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "RD 470/2021",
+          "code": "Título 4 / Anejo 30",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1994-1-1:2013",
+          "code": "EN 1994-1-1",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-STL-003",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "steel_concrete_composite",
+        "slab_system": "composite_metal_deck",
+        "total_depth_mm": 100,
+        "deck_thickness_mm": 0.75,
+        "deck_profile_height_mm": 44,
+        "deck_profile_spacing_mm": 172,
+        "deck_mass_kg_m2": 7.9,
+        "connector_count_m2": 10,
+        "connector_diameter_mm": 19,
+        "connector_height_mm": 81,
+        "reinforcement_kg_m2": 1.0,
+        "construction_type": "steel_concrete_composite_slab_with_profiled_deck",
+        "structural_system": "composite_metal_deck",
+        "structural_element_thickness_mm": 100,
+        "structural_topping": {
+          "assessment_status": "not_applicable",
+          "note": "the concrete layer is an integral part of the composite slab, not a separate structural topping"
+        },
+        "connection_assembly_method": "profiled galvanized steel deck with cast-in-situ concrete and shear connectors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+        "factory_completion_level": "partially prefabricated/componentized; composite action completed on site",
+        "assembly_method": "deck placement, reinforcement/connectors where specified, followed by in-situ concrete casting",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "reinforcement_grade": "B500S/B500T",
+        "source_references": [
+          "legacy catalogue str-slb-stl(2).json: STR-SLB-STL-003",
+          "CYPE/FIVE legacy classification retained: CYPE-Generator EHX005",
+          "CYPE/FIVE legacy classification retained: FIVE-BDC EEFA"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 42.65,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.28675,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-003 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 98.84,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.341067,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-003 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.553521,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.553521,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-STL-003 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 54.71,
+            "assessed_cost_eur_m2": 98.84,
+            "counted_industrialized_components": [
+              "legacy BC3 components flagged industrialized=true"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CHP",
+          "name_es": "Chapa grecada de acero galvanizado",
+          "role": "composite_deck",
+          "properties": {
+            "material_family": "galvanized_steel_sheet",
+            "thickness_mm": 0.75,
+            "profile_height_mm": 44,
+            "profile_spacing_mm": 172
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores de cortante",
+          "role": "shear_connector",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "connector_height_mm": 81
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 1.0
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Malla electrosoldada",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 15x30 Ø6-6 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "concrete_slab",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/F/20/XC2",
+            "volume_m3_m2": 0.065
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 169.5,
+        "system_type": {
+          "value": "steel_concrete_composite_slab_with_profiled_deck",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "steel_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 100,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 4562.17,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 809.38,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 169.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "composite_metal_deck",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 214.13
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 262.5
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 42.65,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 23.149
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.258
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.129
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.694
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 28.23,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 81.36
+            },
+            {
+              "module": "A4",
+              "value": 1.695
+            }
+          ],
+          "total": 83.055,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 847.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 98.84,
+        "bc3": {
+          "root_code": "EHX005",
+          "decomposition": [
+            {
+              "code": "mt07pcl010aacba",
+              "description": "Perfil de chapa galvanizada 0,75 mm, 44 mm, intereje 172 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 28.94,
+              "amount": 30.39,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07pcl020",
+              "description": "Pieza angular de chapa galvanizada para remates",
+              "unit": "m",
+              "quantity": 0.04,
+              "unit_price": 27.2,
+              "amount": 1.09,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07pcl030",
+              "description": "Tornillo autotaladrante rosca-chapa",
+              "unit": "Ud",
+              "quantity": 6.0,
+              "unit_price": 0.35,
+              "amount": 2.1,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco020i",
+              "description": "Separador homologado para losas",
+              "unit": "Ud",
+              "quantity": 3.0,
+              "unit_price": 0.09,
+              "amount": 0.27,
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco010c",
+              "description": "Ferralla B500S elaborada en taller",
+              "unit": "kg",
+              "quantity": 1.0,
+              "unit_price": 1.6,
+              "amount": 1.6,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt08var050",
+              "description": "Alambre galvanizado para atar",
+              "unit": "kg",
+              "quantity": 0.028,
+              "unit_price": 1.5,
+              "amount": 0.04,
+              "industrialized": false
+            },
+            {
+              "code": "mt07ame010h",
+              "description": "Malla electrosoldada ME 15x30 Ø6-6 B500T",
+              "unit": "m2",
+              "quantity": 1.15,
+              "unit_price": 3.53,
+              "amount": 4.06,
+              "composition_key": "MAL",
+              "industrialized": true
+            },
+            {
+              "code": "mt10haf010ctms",
+              "description": "Hormigón HA-25/F/20/XC2 fabricado en central",
+              "unit": "m3",
+              "quantity": 0.065,
+              "unit_price": 92.2,
+              "amount": 5.99,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mt07cem040a",
+              "description": "Conector soldado de acero galvanizado Ø19 mm, altura 81 mm",
+              "unit": "Ud",
+              "quantity": 10.0,
+              "unit_price": 1.52,
+              "amount": 15.2,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "mt08cur020a",
+              "description": "Agente filmógeno de curado",
+              "unit": "l",
+              "quantity": 0.15,
+              "unit_price": 1.56,
+              "amount": 0.23,
+              "industrialized": false
+            },
+            {
+              "code": "mq08sol030",
+              "description": "Equipo auxiliar para soldadura de conectores",
+              "unit": "h",
+              "quantity": 0.508,
+              "unit_price": 19.68,
+              "amount": 10.0,
+              "industrialized": false
+            },
+            {
+              "code": "mo047",
+              "description": "Oficial 1ª montador de estructura metálica",
+              "unit": "h",
+              "quantity": 0.636,
+              "unit_price": 25.84,
+              "amount": 16.43,
+              "industrialized": false
+            },
+            {
+              "code": "mo094",
+              "description": "Ayudante montador de estructura metálica",
+              "unit": "h",
+              "quantity": 0.246,
+              "unit_price": 24.53,
+              "amount": 6.03,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.035,
+              "unit_price": 25.84,
+              "amount": 0.9,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.033,
+              "unit_price": 24.53,
+              "amount": 0.81,
+              "industrialized": false
+            },
+            {
+              "code": "mo045",
+              "description": "Oficial 1ª estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.014,
+              "unit_price": 25.84,
+              "amount": 0.36,
+              "industrialized": false
+            },
+            {
+              "code": "mo092",
+              "description": "Ayudante estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.057,
+              "unit_price": 24.53,
+              "amount": 1.4,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 96.9,
+              "amount": 1.94,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 195.08
+            },
+            {
+              "label": "Mano de obra",
+              "value": 86.53
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 53.56
+            },
+            {
+              "label": "Transporte",
+              "value": 17.75
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 352.92,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 169.5,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 72.89
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.913,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 29.22
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.256,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 9.47
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 16.95,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 2.37
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 6.8,
+              "subtotal": 6.8
+            }
+          ],
+          "total": 142.8
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 54.71,
+        "assessed_cost": 98.84,
+        "ratio": 0.554
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.28675,
+        "economic_performance": 0.341067,
+        "industrialization_performance": 0.553521
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MIX-CC.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MIX-CC.GS002.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta colaborante de 10 cm con chapa de 0,75 mm y conectores soldados"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Losa mixta de 10 cm de canto con chapa colaborante galvanizada de 0,75 mm, perfil de 44 mm e intereje 172 mm, 10 conectores soldados Ø19x81 mm por m², hormigón HA-25/F/20/XC2, 1 kg/m² de B500S y malla ME 15x30 Ø6-6 B500T."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 98.84
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 42.65
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.554
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.75
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Losa mixta colaborante de 10 cm con chapa de 0,75 mm y conectores soldados. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 34.0
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 47.1
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 164.7
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 16.7
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MIX-CC.GS003",
+      "name_es": "Losa mixta colaborante de 12 cm con chapa de 0,75 mm y 4 conectores",
+      "description": "Losa mixta de 12 cm de canto con chapa colaborante galvanizada de 0,75 mm, perfil aproximado de 70 mm e intereje 210 mm, 4 conectores soldados por m², hormigón HA-25/B/20/IIa y armadura/malla electrosoldada.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EHX005",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFA",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "partial"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "RD 470/2021",
+          "code": "Título 4 / Anejo 30",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1994-1-1:2013",
+          "code": "EN 1994-1-1",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-STL-004",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "steel_concrete_composite",
+        "slab_system": "composite_metal_deck",
+        "total_depth_mm": 120,
+        "deck_thickness_mm": 0.75,
+        "deck_profile_height_mm": 70,
+        "deck_profile_spacing_mm": 210,
+        "deck_mass_kg_m2": 8.9,
+        "connector_count_m2": 4,
+        "connector_diameter_mm": 19,
+        "connector_height_mm": 81,
+        "reinforcement_kg_m2": 1.0,
+        "construction_type": "steel_concrete_composite_slab_with_profiled_deck",
+        "structural_system": "composite_metal_deck",
+        "structural_element_thickness_mm": 120,
+        "structural_topping": {
+          "assessment_status": "not_applicable",
+          "note": "the concrete layer is an integral part of the composite slab, not a separate structural topping"
+        },
+        "connection_assembly_method": "profiled galvanized steel deck with cast-in-situ concrete and shear connectors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+        "factory_completion_level": "partially prefabricated/componentized; composite action completed on site",
+        "assembly_method": "deck placement, reinforcement/connectors where specified, followed by in-situ concrete casting",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "reinforcement_grade": "B500S/B500T",
+        "source_references": [
+          "legacy catalogue str-slb-stl(2).json: STR-SLB-STL-004",
+          "CYPE/FIVE legacy classification retained: CYPE-Generator EHX005",
+          "CYPE/FIVE legacy classification retained: FIVE-BDC EEFA"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 49.86,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.2507,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-004 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 54.53,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.636467,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-004 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.479002,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.479002,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-STL-004 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 26.12,
+            "assessed_cost_eur_m2": 54.53,
+            "counted_industrialized_components": [
+              "legacy BC3 components flagged industrialized=true"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CHP",
+          "name_es": "Chapa grecada de acero galvanizado",
+          "role": "composite_deck",
+          "properties": {
+            "material_family": "galvanized_steel_sheet",
+            "thickness_mm": 0.75,
+            "profile_height_mm": 70,
+            "profile_spacing_mm": 210
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores de cortante",
+          "role": "shear_connector",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "connector_height_mm": 81
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 1.0
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Malla electrosoldada",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "electrowelded_mesh"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "concrete_slab",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/B/20/IIa",
+            "volume_m3_m2": 0.11
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 276.5,
+        "system_type": {
+          "value": "steel_concrete_composite_slab_with_profiled_deck",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "steel_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 120,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 3665.63,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2366.29,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 276.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "composite_metal_deck",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 295.68
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 257.1
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 49.86,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 70.11
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.84
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.42
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.13
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 85.5,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 132.72
+            },
+            {
+              "module": "A4",
+              "value": 2.765
+            }
+          ],
+          "total": 135.485,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1382.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 54.53,
+        "bc3": {
+          "root_code": "EHX005",
+          "decomposition": [
+            {
+              "code": "mt07pcl010aefba",
+              "description": "Perfil de chapa galvanizada 0,75 mm, altura 70 mm, intereje 210 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 19.62,
+              "amount": 20.6,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco020k",
+              "description": "Separador homologado para losas",
+              "unit": "Ud",
+              "quantity": 3.0,
+              "unit_price": 0.08,
+              "amount": 0.24,
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco010a",
+              "description": "Ferralla elaborada en taller industrial",
+              "unit": "kg",
+              "quantity": 1.0,
+              "unit_price": 0.8,
+              "amount": 0.8,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt07ame010d",
+              "description": "Malla electrosoldada",
+              "unit": "m2",
+              "quantity": 1.15,
+              "unit_price": 1.39,
+              "amount": 1.6,
+              "composition_key": "MAL",
+              "industrialized": true
+            },
+            {
+              "code": "mt10haf010nga",
+              "description": "Hormigón HA-25/B/20/IIa fabricado en central",
+              "unit": "m3",
+              "quantity": 0.11,
+              "unit_price": 77.7,
+              "amount": 8.55,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mt07cem040a",
+              "description": "Conector soldado de acero galvanizado Ø19 mm",
+              "unit": "Ud",
+              "quantity": 4.0,
+              "unit_price": 0.72,
+              "amount": 2.88,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "mq08sol030",
+              "description": "Equipo auxiliar para soldadura de conectores",
+              "unit": "h",
+              "quantity": 0.21,
+              "unit_price": 17.94,
+              "amount": 3.77,
+              "industrialized": false
+            },
+            {
+              "code": "mo042",
+              "description": "Oficial 1ª estructurista",
+              "unit": "h",
+              "quantity": 0.55,
+              "unit_price": 18.75,
+              "amount": 10.31,
+              "industrialized": false
+            },
+            {
+              "code": "mo089",
+              "description": "Ayudante estructurista",
+              "unit": "h",
+              "quantity": 0.17,
+              "unit_price": 18.55,
+              "amount": 3.15,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Medios auxiliares",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 51.9,
+              "amount": 1.04,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 3.0,
+              "unit_price": 52.94,
+              "amount": 1.59,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 180.52
+            },
+            {
+              "label": "Mano de obra",
+              "value": 77.49
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 46.24
+            },
+            {
+              "label": "Transporte",
+              "value": 18.65
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 322.9,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 276.5,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 118.9
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.083,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 34.66
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.303,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.21
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 27.65,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 3.87
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 9.53,
+              "subtotal": 9.53
+            }
+          ],
+          "total": 200.22
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 26.12,
+        "assessed_cost": 54.53,
+        "ratio": 0.479
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.2507,
+        "economic_performance": 0.636467,
+        "industrialization_performance": 0.479002
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MIX-CC.GS003.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MIX-CC.GS003.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta colaborante de 12 cm con chapa de 0,75 mm y 4 conectores"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Losa mixta de 12 cm de canto con chapa colaborante galvanizada de 0,75 mm, perfil aproximado de 70 mm e intereje 210 mm, 4 conectores soldados por m², hormigón HA-25/B/20/IIa y armadura/malla electrosoldada."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 54.53
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 49.86
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.479
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.75
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Losa mixta colaborante de 12 cm con chapa de 0,75 mm y 4 conectores. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 38.1
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 46.1
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 157.8
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.1
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MIX-CC.GS004",
+      "name_es": "Losa mixta colaborante de 15 cm con chapa de 0,70 mm y conectores de 106 mm",
+      "description": "Losa mixta de 15 cm de canto con chapa colaborante galvanizada de 0,70 mm, perfil de 59 mm e intereje 150 mm, 10 conectores soldados Ø19x106 mm por m², hormigón HA-25/B/20/IIa, 2,5 kg/m² de B500S y malla ME 15x30 Ø6-6 B500T.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EHX005",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFA",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "partial"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "RD 470/2021",
+          "code": "Título 4 / Anejo 30",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1994-1-1:2013",
+          "code": "EN 1994-1-1",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-STL-005",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "steel_concrete_composite",
+        "slab_system": "composite_metal_deck",
+        "total_depth_mm": 150,
+        "deck_thickness_mm": 0.7,
+        "deck_profile_height_mm": 59,
+        "deck_profile_spacing_mm": 150,
+        "deck_mass_kg_m2": 10.0,
+        "connector_count_m2": 10,
+        "connector_diameter_mm": 19,
+        "connector_height_mm": 106,
+        "reinforcement_kg_m2": 2.5,
+        "construction_type": "steel_concrete_composite_slab_with_profiled_deck",
+        "structural_system": "composite_metal_deck",
+        "structural_element_thickness_mm": 150,
+        "structural_topping": {
+          "assessment_status": "not_applicable",
+          "note": "the concrete layer is an integral part of the composite slab, not a separate structural topping"
+        },
+        "connection_assembly_method": "profiled galvanized steel deck with cast-in-situ concrete and shear connectors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+        "factory_completion_level": "partially prefabricated/componentized; composite action completed on site",
+        "assembly_method": "deck placement, reinforcement/connectors where specified, followed by in-situ concrete casting",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "reinforcement_grade": "B500S/B500T",
+        "source_references": [
+          "legacy catalogue str-slb-stl(2).json: STR-SLB-STL-005",
+          "CYPE/FIVE legacy classification retained: CYPE-Generator EHX005",
+          "CYPE/FIVE legacy classification retained: FIVE-BDC EEFA"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 61.0,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.195,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-005 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 73.17,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.5122,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-005 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.422988,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.422988,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-STL-005 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 30.95,
+            "assessed_cost_eur_m2": 73.17,
+            "counted_industrialized_components": [
+              "legacy BC3 components flagged industrialized=true"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CHP",
+          "name_es": "Chapa grecada de acero galvanizado",
+          "role": "composite_deck",
+          "properties": {
+            "material_family": "galvanized_steel_sheet",
+            "thickness_mm": 0.7,
+            "profile_height_mm": 59,
+            "profile_spacing_mm": 150
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores de cortante",
+          "role": "shear_connector",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "connector_height_mm": 106
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 2.5
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Malla electrosoldada",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 15x30 Ø6-6 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "concrete_slab",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/B/20/IIa",
+            "volume_m3_m2": 0.118
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 300.9,
+        "system_type": {
+          "value": "steel_concrete_composite_slab_with_profiled_deck",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "steel_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 150,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 3974.29,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 671.95,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 300.9,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "composite_metal_deck",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 51.87
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 261.6
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 61.0,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 68.716
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.704
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.352
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.028
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 83.8,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 144.432
+            },
+            {
+              "module": "A4",
+              "value": 3.009
+            }
+          ],
+          "total": 147.441,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1504.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 73.17,
+        "bc3": {
+          "root_code": "EHX005",
+          "decomposition": [
+            {
+              "code": "mt07pcl010",
+              "description": "Perfil de chapa galvanizada 0,70 mm, perfil 59 mm, intereje 150 mm",
+              "unit": "m2",
+              "quantity": 1.05,
+              "unit_price": 18.31,
+              "amount": 19.23,
+              "composition_key": "CHP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco020",
+              "description": "Separador homologado para losas",
+              "unit": "Ud",
+              "quantity": 3.0,
+              "unit_price": 0.08,
+              "amount": 0.24,
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco010",
+              "description": "Ferralla B500S elaborada en taller industrial",
+              "unit": "kg",
+              "quantity": 2.5,
+              "unit_price": 0.79,
+              "amount": 1.98,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt08var050",
+              "description": "Alambre galvanizado para atar",
+              "unit": "kg",
+              "quantity": 0.046,
+              "unit_price": 1.08,
+              "amount": 0.05,
+              "industrialized": false
+            },
+            {
+              "code": "mt07ame010",
+              "description": "Malla electrosoldada ME 15x30 Ø6-6 B500T",
+              "unit": "m2",
+              "quantity": 1.15,
+              "unit_price": 1.3,
+              "amount": 1.5,
+              "composition_key": "MAL",
+              "industrialized": true
+            },
+            {
+              "code": "mt10haf010",
+              "description": "Hormigón HA-25/B/20/IIa fabricado en central",
+              "unit": "m3",
+              "quantity": 0.118,
+              "unit_price": 67.89,
+              "amount": 8.01,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mt07cem040",
+              "description": "Conector soldado de acero galvanizado Ø19 mm, altura 106 mm",
+              "unit": "Ud",
+              "quantity": 10.0,
+              "unit_price": 0.8,
+              "amount": 8.0,
+              "composition_key": "CON",
+              "industrialized": true
+            },
+            {
+              "code": "PBAA.1a",
+              "description": "Agua",
+              "unit": "m3",
+              "quantity": 0.005,
+              "unit_price": 1.47,
+              "amount": 0.01,
+              "industrialized": false
+            },
+            {
+              "code": "mq08sol030",
+              "description": "Equipo auxiliar para soldadura de conectores",
+              "unit": "h",
+              "quantity": 0.573,
+              "unit_price": 17.47,
+              "amount": 10.01,
+              "industrialized": false
+            },
+            {
+              "code": "mo047",
+              "description": "Oficial 1ª montador de estructura metálica",
+              "unit": "h",
+              "quantity": 0.723,
+              "unit_price": 16.41,
+              "amount": 11.86,
+              "industrialized": false
+            },
+            {
+              "code": "mo094",
+              "description": "Ayudante montador de estructura metálica",
+              "unit": "h",
+              "quantity": 0.28,
+              "unit_price": 16.06,
+              "amount": 4.5,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.061,
+              "unit_price": 16.41,
+              "amount": 1.0,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.055,
+              "unit_price": 16.06,
+              "amount": 0.88,
+              "industrialized": false
+            },
+            {
+              "code": "mo045",
+              "description": "Oficial 1ª estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.029,
+              "unit_price": 16.41,
+              "amount": 0.48,
+              "industrialized": false
+            },
+            {
+              "code": "mo092",
+              "description": "Ayudante estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.118,
+              "unit_price": 16.06,
+              "amount": 1.9,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 69.65,
+              "amount": 1.39,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 3.0,
+              "unit_price": 71.04,
+              "amount": 2.13,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 205.62
+            },
+            {
+              "label": "Mano de obra",
+              "value": 74.42
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 48.52
+            },
+            {
+              "label": "Transporte",
+              "value": 24.52
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 353.08,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 300.9,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 129.39
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.116,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 35.71
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.312,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.54
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 30.09,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 4.21
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 10.15,
+              "subtotal": 10.15
+            }
+          ],
+          "total": 213.05
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 30.95,
+        "assessed_cost": 73.17,
+        "ratio": 0.423
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.195,
+        "economic_performance": 0.5122,
+        "industrialization_performance": 0.422988
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MIX-CC.GS004.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MIX-CC.GS004.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC.GS004"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta colaborante de 15 cm con chapa de 0,70 mm y conectores de 106 mm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Losa mixta de 15 cm de canto con chapa colaborante galvanizada de 0,70 mm, perfil de 59 mm e intereje 150 mm, 10 conectores soldados Ø19x106 mm por m², hormigón HA-25/B/20/IIa, 2,5 kg/m² de B500S y malla ME 15x30 Ø6-6 B500T."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 73.17
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 61.0
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.423
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.7
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Losa mixta colaborante de 15 cm con chapa de 0,70 mm y conectores de 106 mm. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 34.3
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 47.9
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 164.9
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 14.5
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MIX-CC.GS005",
+      "name_es": "Losa mixta colaborante de 20 cm de canto",
+      "description": "Losa mixta acero-hormigón de 20 cm de canto basada en la familia CYPE EHX006, con chapa colaborante galvanizada, conectores soldados, armadura B500S, malla electrosoldada y hormigón estructural. La geometría material se parametriza a partir de la variante EHX005 de 15 cm, incrementando el volumen de hormigón para el mayor canto.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EHX006",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFA",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-A",
+          "code": "DB-SE-A",
+          "relation": "partial"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "RD 470/2021",
+          "code": "Título 4 / Anejo 30",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 1994-1-1:2013",
+          "code": "EN 1994-1-1",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-STL-006",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "steel_concrete_composite",
+        "slab_system": "composite_metal_deck",
+        "total_depth_mm": 200,
+        "deck_thickness_mm": 0.7,
+        "deck_profile_height_mm": 59,
+        "deck_profile_spacing_mm": 150,
+        "deck_mass_kg_m2": 10.0,
+        "connector_count_m2": 10,
+        "connector_diameter_mm": 19,
+        "connector_height_mm": 106,
+        "reinforcement_kg_m2": 2.5,
+        "construction_type": "steel_concrete_composite_slab_with_profiled_deck",
+        "structural_system": "composite_metal_deck",
+        "structural_element_thickness_mm": 200,
+        "structural_topping": {
+          "assessment_status": "not_applicable",
+          "note": "the concrete layer is an integral part of the composite slab, not a separate structural topping"
+        },
+        "connection_assembly_method": "profiled galvanized steel deck with cast-in-situ concrete and shear connectors",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+        "factory_completion_level": "partially prefabricated/componentized; composite action completed on site",
+        "assembly_method": "deck placement, reinforcement/connectors where specified, followed by in-situ concrete casting",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "reinforcement_grade": "B500S/B500T",
+        "source_references": [
+          "legacy catalogue str-slb-stl(2).json: STR-SLB-STL-006",
+          "CYPE/FIVE legacy classification retained: CYPE-Generator EHX006",
+          "CYPE/FIVE legacy classification retained: FIVE-BDC EEFA"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 70.05,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.14975,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-006 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 109.34,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.271067,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-STL-006 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.423,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.423,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "proxy from STR-SLB-STL-005; STR-SLB-STL-006 has no industrialization decomposition in supplied catalogue",
+            "industrialized_cost_eur_m2": 46.25082,
+            "assessed_cost_eur_m2": 109.34,
+            "counted_industrialized_components": [
+              "proxy based on the closest legacy composite-deck configuration with explicit cost decomposition"
+            ],
+            "proxy_basis_ratio": 0.423,
+            "proxy_basis_source_solution": "STR-SLB-STL-005"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric.",
+          "industrialization_performance": "explicit proxy because the supplied legacy record has no component cost decomposition",
+          "source_geometry": "legacy record itself states its geometry/material quantities were parametrized from a 15 cm EHX005 variant"
+        }
+      },
+      "composition": [
+        {
+          "key": "CHP",
+          "name_es": "Chapa grecada de acero galvanizado",
+          "role": "composite_deck",
+          "properties": {
+            "material_family": "galvanized_steel_sheet",
+            "thickness_mm": 0.7,
+            "profile_height_mm": 59,
+            "profile_spacing_mm": 150
+          }
+        },
+        {
+          "key": "CON",
+          "name_es": "Conectores de cortante",
+          "role": "shear_connector",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "connector_height_mm": 106
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 2.5
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Malla electrosoldada",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 15x30 Ø6-6 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "concrete_slab",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/B/20",
+            "volume_m3_m2": 0.168
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 420.9,
+        "system_type": {
+          "value": "steel_concrete_composite_slab_with_profiled_deck",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "steel_concrete_composite",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-produced profiled steel deck and reinforcement; concrete cast on site",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5982.65,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 904.64,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 420.9,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "composite_metal_deck",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 299.21
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 239.3
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 70.05,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 58.441
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.702
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.851
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.276
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 71.27,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 202.032
+            },
+            {
+              "module": "A4",
+              "value": 4.209
+            }
+          ],
+          "total": 206.241,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2104.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 109.34,
+        "bc3": {
+          "root_code": "EHX006",
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 155.17
+            },
+            {
+              "label": "Mano de obra",
+              "value": 65.74
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 32.06
+            },
+            {
+              "label": "Transporte",
+              "value": 17.99
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 270.96,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 420.9,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 180.99
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.255,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 40.16
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.351,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 12.99
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 42.09,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 5.89
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 13.1,
+              "subtotal": 13.1
+            }
+          ],
+          "total": 275.18
+        }
+      },
+      "industrialization_data": {},
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.14975,
+        "economic_performance": 0.271067,
+        "industrialization_performance": 0.423
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MIX-CC.GS005.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MIX-CC.GS005.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC.GS005"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta colaborante de 20 cm de canto"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Losa mixta acero-hormigón de 20 cm de canto basada en la familia CYPE EHX006, con chapa colaborante galvanizada, conectores soldados, armadura B500S, malla electrosoldada y hormigón estructural. La geometría material se parametriza a partir de la variante EHX005 de 15 cm, incrementando el volumen de hormigón para el mayor canto."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 109.34
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 70.05
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": null
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "galvanized_steel_sheet"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.7
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Losa mixta colaborante de 20 cm de canto. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 34.4
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 45.9
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 145.4
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 13.6
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

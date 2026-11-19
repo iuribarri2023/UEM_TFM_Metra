@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PUE",
+      "name_es": "Puertas interiores"
+    },
+    "archetype": {
+      "code": "INT.PUE.MAD",
+      "name_es": "Puerta interior de madera o derivados",
+      "description": "Incluye madera y derivados; núcleo y acabados son variantes. Un inserto acristalado no cambia por sí solo la familia a VID. Geometría y apertura proceden del BIM; la solución declara compatibilidad."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

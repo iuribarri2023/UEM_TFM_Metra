@@ -1,0 +1,1112 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.HOR-PRE",
+      "name_es": "Muro de paneles prefabricados de hormigón"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.HOR-PRE.GS001",
+      "name_es": "Muro de doble panel prefabricado de hormigón de 20 cm con núcleo hormigonado in situ",
+      "description": "Sistema de muro de doble cara prefabricado de hormigón de 20 cm de espesor total, compuesto por dos placas prefabricadas de 5 cm unidas mediante celosías metálicas, con núcleo central hormigonado in situ con HA-25/F/20/XC2. Paneles hasta 3,0 m de altura y 8,50 m de longitud, colocados con grúa, apuntalados temporalmente y completados mediante hormigonado del núcleo.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EPM010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 14992",
+          "code": "EN 14992",
+          "relation": "exact_for_precast_panel"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "current CYPE referenced Spanish structural concrete regulation",
+          "code": "Código Estructural",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "semi_precast_double_wall_concrete",
+        "structural_material": "precast_and_cast_in_place_reinforced_concrete",
+        "structural_system": "double_wall_precast_panel_with_cast_in_place_structural_core",
+        "total_thickness_mm": 200,
+        "structural_element_thickness_mm": 200,
+        "precast_face_thickness_mm": 50,
+        "precast_faces_count": 2,
+        "cast_in_place_core_nominal_thickness_mm": 100,
+        "concrete_class": "HA-25/F/20/XC2",
+        "core_concrete_volume_m3_m2": 0.105,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": "foundation/wall support with starter reinforcement; exact support detailing project-specific",
+        "connection_assembly_method": "factory-connected double precast faces with metal lattice; crane erection, temporary props, and cast-in-place concrete core",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made double-wall panel delivered as a large element; structural core concrete delivered separately",
+        "factory_completion_level": "semi-precast: two 50 mm concrete faces and lattice factory-made; structural core completed on site",
+        "assembly_method": "crane placement, plumbing and temporary propping, phased core concreting and vibration, then depropping",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "site-cast core creates a monolithic completed wall"
+        },
+        "span_or_applicability": {
+          "maximum_panel_height_m": 3.0,
+          "maximum_panel_length_m": 8.5
+        },
+        "source_references": [
+          "CYPE Generador de Precios EPM010 20 cm double-wall configuration, UNE-EN 14992, HA-25/F/20/XC2 core",
+          "OEKOBAUDAT 'Precast concrete wall, thickness 12cm; 291.3 kg/m2', A1-A3 GWP 40.45 kgCO2e/m2; thickness-scaled as an explicit environmental/mass proxy"
+        ],
+        "assessment_notes": {
+          "classification_scope": "CYPE names EPM010 'muro de cerramiento'. It is included here as a semi-precast concrete wall construction system; load-bearing structural applicability must be verified in project design rather than inferred from this catalogue record.",
+          "environmental_performance": "Proxy scales a generic 120 mm precast-wall A1-A3 value by total wall thickness. It is not the EPM010 product EPD and does not separately model the exact precast/in-situ split.",
+          "surface_mass": "Proxy scales the 291.3 kg/m2 reference mass of the 120 mm OEKOBAUDAT wall by thickness.",
+          "fire_performance": "No assembly fire-resistance rating in the exact CYPE work item.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 67.416667,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.162917,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "OEKOBAUDAT 120 mm precast-wall A1-A3 GWP thickness-scaled to total EPM010 wall thickness"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 164.52,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.0,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE EPM010 current indexed Spain unit cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.541575,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.541575,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EPM010 decomposition; only factory-made double-wall panel counted as industrialized",
+            "industrialized_cost_eur_m2": 89.1,
+            "assessed_cost_eur_m2": 164.52,
+            "counted_industrialized_components": [
+              "factory-made double-wall panel: 89.10 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "PAN",
+          "name_es": "Doble placa prefabricada de hormigón",
+          "role": "precast_structural_shell",
+          "properties": {
+            "material_family": "precast_concrete",
+            "face_thickness_mm": 50,
+            "faces_count": 2,
+            "product_standard": "UNE-EN 14992"
+          }
+        },
+        {
+          "key": "CEL",
+          "name_es": "Celosías metálicas de unión entre placas",
+          "role": "precast_face_connector",
+          "properties": {
+            "material_family": "steel_lattice",
+            "factory_integrated": true
+          }
+        },
+        {
+          "key": "NUC",
+          "name_es": "Hormigón del núcleo estructural",
+          "role": "cast_in_place_core",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/F/20/XC2",
+            "volume_m3_m2": 0.105
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 485.5,
+        "maximum_panel_height_m": 3.0,
+        "maximum_panel_length_m": 8.5,
+        "system_type": {
+          "value": "semi_precast_double_wall_concrete",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "precast_and_cast_in_place_reinforced_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made double-wall panel delivered as a large element; structural core concrete delivered separately",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1011.13,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 485.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "double_wall_precast_panel_with_cast_in_place_structural_core",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 34.72
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 338.07
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 67.416667,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 90.889
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 8.867
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.434
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.65
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 110.84,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 218.475
+            },
+            {
+              "module": "A4",
+              "value": 4.855
+            }
+          ],
+          "total": 223.33,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2427.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 164.52,
+        "bc3": {
+          "root_code": "EPM010",
+          "decomposition": [
+            {
+              "code": "mt07pha100a",
+              "description": "Muro de doble cara prefabricado de hormigón 20 cm según UNE-EN 14992",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 89.1,
+              "amount": 89.1,
+              "industrialized": true
+            },
+            {
+              "code": "mt10haf010ctms",
+              "description": "Hormigón HA-25/F/20/XC2 fabricado en central para núcleo",
+              "unit": "m3",
+              "quantity": 0.105,
+              "unit_price": 92.2,
+              "amount": 9.681,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 156.68
+            },
+            {
+              "label": "Mano de obra",
+              "value": 60.69
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 30.24
+            },
+            {
+              "label": "Transporte",
+              "value": 18.1
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 2.64
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 268.35,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 485.5,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 233.04
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.939,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 62.05
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.543,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 20.09
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 48.55,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 6.8
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 16.88,
+              "subtotal": 16.88
+            }
+          ],
+          "total": 354.54
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 89.1,
+        "assessed_cost": 164.52,
+        "ratio": 0.541575
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.HOR-PRE.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.HOR-PRE.GS001.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.162917,
+        "economic_performance": 0.0,
+        "industrialization_performance": 0.541575,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-PRE.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de doble panel prefabricado de hormigón de 20 cm con núcleo hormigonado in situ"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Sistema de muro de doble cara prefabricado de hormigón de 20 cm de espesor total, compuesto por dos placas prefabricadas de 5 cm unidas mediante celosías metálicas, con núcleo central hormigonado in situ con HA-25/F/20/XC2. Paneles hasta 3,0 m de altura y 8,50 m de longitud, colocados con grúa, apuntalados temporalmente y completados mediante hormigonado del núcleo."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 164.52
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 67.416667
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.541575
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "precast_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "precast_concrete"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de doble panel prefabricado de hormigón de 20 cm con núcleo hormigonado in situ. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.HOR-PRE.GS002",
+      "name_es": "Muro de doble panel prefabricado de hormigón de 25 cm con núcleo hormigonado in situ",
+      "description": "Sistema de muro de doble cara prefabricado de hormigón de 25 cm de espesor total, compuesto por dos placas prefabricadas de 5 cm unidas mediante celosías metálicas, con núcleo central hormigonado in situ con HA-25/F/20/XC2. Paneles hasta 3,0 m de altura y 8,50 m de longitud, colocados con grúa, apuntalados temporalmente y completados mediante hormigonado del núcleo.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EPM010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "UNE-EN 14992",
+          "code": "EN 14992",
+          "relation": "exact_for_precast_panel"
+        },
+        {
+          "scheme": "Código Estructural",
+          "version": "current CYPE referenced Spanish structural concrete regulation",
+          "code": "Código Estructural",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "semi_precast_double_wall_concrete",
+        "structural_material": "precast_and_cast_in_place_reinforced_concrete",
+        "structural_system": "double_wall_precast_panel_with_cast_in_place_structural_core",
+        "total_thickness_mm": 250,
+        "structural_element_thickness_mm": 250,
+        "precast_face_thickness_mm": 50,
+        "precast_faces_count": 2,
+        "cast_in_place_core_nominal_thickness_mm": 150,
+        "concrete_class": "HA-25/F/20/XC2",
+        "core_concrete_volume_m3_m2": 0.158,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": "foundation/wall support with starter reinforcement; exact support detailing project-specific",
+        "connection_assembly_method": "factory-connected double precast faces with metal lattice; crane erection, temporary props, and cast-in-place concrete core",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made double-wall panel delivered as a large element; structural core concrete delivered separately",
+        "factory_completion_level": "semi-precast: two 50 mm concrete faces and lattice factory-made; structural core completed on site",
+        "assembly_method": "crane placement, plumbing and temporary propping, phased core concreting and vibration, then depropping",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "site-cast core creates a monolithic completed wall"
+        },
+        "span_or_applicability": {
+          "maximum_panel_height_m": 3.0,
+          "maximum_panel_length_m": 8.5
+        },
+        "source_references": [
+          "CYPE Generador de Precios EPM010 25 cm double-wall configuration, UNE-EN 14992, HA-25/F/20/XC2 core",
+          "OEKOBAUDAT 'Precast concrete wall, thickness 12cm; 291.3 kg/m2', A1-A3 GWP 40.45 kgCO2e/m2; thickness-scaled as an explicit environmental/mass proxy"
+        ],
+        "assessment_notes": {
+          "classification_scope": "CYPE names EPM010 'muro de cerramiento'. It is included here as a semi-precast concrete wall construction system; load-bearing structural applicability must be verified in project design rather than inferred from this catalogue record.",
+          "environmental_performance": "Proxy scales a generic 120 mm precast-wall A1-A3 value by total wall thickness. It is not the EPM010 product EPD and does not separately model the exact precast/in-situ split.",
+          "surface_mass": "Proxy scales the 291.3 kg/m2 reference mass of the 120 mm OEKOBAUDAT wall by thickness.",
+          "fire_performance": "No assembly fire-resistance rating in the exact CYPE work item.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 84.270833,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.078646,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "OEKOBAUDAT 120 mm precast-wall A1-A3 GWP thickness-scaled to total EPM010 wall thickness"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 183.99,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.0,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE EPM010 current indexed Spain unit cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.51655,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.51655,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EPM010 decomposition; only factory-made double-wall panel counted as industrialized",
+            "industrialized_cost_eur_m2": 95.04,
+            "assessed_cost_eur_m2": 183.99,
+            "counted_industrialized_components": [
+              "factory-made double-wall panel: 95.04 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "PAN",
+          "name_es": "Doble placa prefabricada de hormigón",
+          "role": "precast_structural_shell",
+          "properties": {
+            "material_family": "precast_concrete",
+            "face_thickness_mm": 50,
+            "faces_count": 2,
+            "product_standard": "UNE-EN 14992"
+          }
+        },
+        {
+          "key": "CEL",
+          "name_es": "Celosías metálicas de unión entre placas",
+          "role": "precast_face_connector",
+          "properties": {
+            "material_family": "steel_lattice",
+            "factory_integrated": true
+          }
+        },
+        {
+          "key": "NUC",
+          "name_es": "Hormigón del núcleo estructural",
+          "role": "cast_in_place_core",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/F/20/XC2",
+            "volume_m3_m2": 0.158
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 606.875,
+        "maximum_panel_height_m": 3.0,
+        "maximum_panel_length_m": 8.5,
+        "system_type": {
+          "value": "semi_precast_double_wall_concrete",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "precast_and_cast_in_place_reinforced_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made double-wall panel delivered as a large element; structural core concrete delivered separately",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 250,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2255.65,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 606.875,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "double_wall_precast_panel_with_cast_in_place_structural_core",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 295.9
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 320.52
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 84.270833,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 20.664
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.016
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.008
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.512
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 25.2,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 273.094
+            },
+            {
+              "module": "A4",
+              "value": 6.069
+            }
+          ],
+          "total": 279.163,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 3034.375
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 183.99,
+        "bc3": {
+          "root_code": "EPM010",
+          "decomposition": [
+            {
+              "code": "mt07pha100b",
+              "description": "Muro de doble cara prefabricado de hormigón 25 cm según UNE-EN 14992",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 95.04,
+              "amount": 95.04,
+              "industrialized": true
+            },
+            {
+              "code": "mt10haf010ctms",
+              "description": "Hormigón HA-25/F/20/XC2 fabricado en central para núcleo",
+              "unit": "m3",
+              "quantity": 0.158,
+              "unit_price": 92.2,
+              "amount": 14.5676,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 159.69
+            },
+            {
+              "label": "Mano de obra",
+              "value": 50.4
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 30.75
+            },
+            {
+              "label": "Transporte",
+              "value": 15.89
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 256.73,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 606.875,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 291.3
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 2.096,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 67.07
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.587,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 21.72
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 60.6875,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 8.5
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 20.21,
+              "subtotal": 20.21
+            }
+          ],
+          "total": 424.48
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 95.04,
+        "assessed_cost": 183.99,
+        "ratio": 0.51655
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.HOR-PRE.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.HOR-PRE.GS002.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "environmental_performance": 0.078646,
+        "economic_performance": 0.0,
+        "industrialization_performance": 0.51655,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-PRE.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de doble panel prefabricado de hormigón de 25 cm con núcleo hormigonado in situ"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Sistema de muro de doble cara prefabricado de hormigón de 25 cm de espesor total, compuesto por dos placas prefabricadas de 5 cm unidas mediante celosías metálicas, con núcleo central hormigonado in situ con HA-25/F/20/XC2. Paneles hasta 3,0 m de altura y 8,50 m de longitud, colocados con grúa, apuntalados temporalmente y completados mediante hormigonado del núcleo."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 183.99
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 84.270833
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.51655
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "precast_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "precast_concrete"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de doble panel prefabricado de hormigón de 25 cm con núcleo hormigonado in situ. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

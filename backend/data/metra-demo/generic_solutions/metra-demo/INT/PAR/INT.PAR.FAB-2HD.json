@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PAR",
+      "name_es": "Particiones interiores verticales"
+    },
+    "archetype": {
+      "code": "INT.PAR.FAB-2HD",
+      "name_es": "Partición de fábrica de dos hojas desacopladas",
+      "description": "Dos hojas de fábrica desacopladas, tal como confirma AVRA-A061 en el JSON original."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

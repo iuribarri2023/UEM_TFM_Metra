@@ -1,0 +1,997 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-CIDARK",
+    "name": "CIDARK",
+    "website": "https://www.cidark.com/",
+    "description": "Fabricante y desarrollador del Sistema P3 de paneles estructurales industrializados de acero galvanizado para construcción modular.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5DSURBUks8L3RleHQ+PC9zdmc+",
+    "address": "PI Lintzirin Gaina B-1, 20180 Oiartzun (Gipuzkoa), España",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": "+34 943 335 811",
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "product_system": "P3"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "ENV.FAC.RC-EL.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "ENV.FAC",
+      "code": "MFR.CIDARK.P3.FACHADA.ESTANDAR",
+      "commercial_reference": "P3-FACHADA-ESTANDAR",
+      "name_es": "P3 Fachada Estandar",
+      "description": "Panel estructural industrializado de fachada Sistema P3 con bastidor de acero galvanizado, lana mineral, tableros hidrofugos y EPS grafito, preparado para recibir acabado exterior.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "ENV.FAC",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "USERDEFINED",
+          "ecob_bim_class": "Muros de fachada",
+          "gubimclass_code": "30.10.10.20",
+          "gubimclass_description": "Fachadas prefabricadas",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": "https://www.cidark.com/casa-modular-paneles/panel-prefabricado-fachada/",
+          "environmental_claim": null,
+          "compliance_certificate": "CIDARK states Sistema P3 alignment with CTE and EN 1090",
+          "compliance_certificate_url": "https://www.cidark.com/sistema-p3/",
+          "ecolabel": null,
+          "data_availability_note": "No se ha incorporado un número de DoP/marcado CE específico de esta variante porque no constaba en la fuente técnica utilizada para esta entrega."
+        },
+        "properties": {
+          "system_type": "Panel estructural industrializado de fachada",
+          "structural_role": "Portante; estructura y hoja principal",
+          "primary_material": "Acero galvanizado + lana mineral + tablero hidrofugo de fibras orientadas + EPS grafito",
+          "thickness_mm": 164,
+          "u_value_w_m2k": 0.322,
+          "rw_db": 47.0,
+          "fire_rating": "REI30",
+          "reaction_to_fire": "A2-s1,d0",
+          "is_external": true,
+          "load_bearing": true,
+          "module_width_mm": 1200,
+          "module_height_mm": 3000,
+          "integrated_window": false,
+          "factory_scope": "Panel estructural industrializado P3 con configuracion de fachada especifica",
+          "delivery_state": "Panel 2D industrializado listo para montaje y acabado segun variante",
+          "mounting_system": "Uniones atornilladas del Sistema P3; elementos auxiliares segun proyecto",
+          "ifc_generation_revision": "CIDARK-v2.0-existing-generics",
+          "ifc_geometry_method": "IFC4 SweptSolid, product-only decomposition, explicit material styles and type Psets",
+          "ifc_root_entity": "IfcWall",
+          "geometry_status": "Representative product BIM; not shop drawing",
+          "module_dimensions_status": "REPRESENTATIVE_BIM_GEOMETRY",
+          "generic_mapping_status": "PARTIAL_CLOSEST_EXISTING",
+          "mass_kg_m2": 72,
+          "exterior_finish": "project_specific",
+          "insulation": "project_specific thermal insulation layer",
+          "waterproofing": "project_specific weather/water control layer"
+        },
+        "performance": {
+          "ThermalTransmittance_U_W_m2K": 0.322,
+          "MechanicalCompressionResistance_kN_ml": 50.6,
+          "AirborneSoundResistance_dBA": 47.0,
+          "ReactionToFire": "A2-s1,d0",
+          "FireResistance": "REI30",
+          "PerformanceBasis": "Manufacturer current product page: values based on tests, theoretical calculations and recognised guides; project-specific verification required"
+        },
+        "generic_mapping": {
+          "strategy": "MAP_TO_EXISTING_VIVA_GENERIC_ONLY",
+          "generic_solution_code": "ENV.FAC.RC-EL.GS001",
+          "generic_solution_name": "Fachada ligera de entramado metálico con placa exterior de cemento, lana mineral y placas de yeso laminado",
+          "match_quality": "PARTIAL_CLOSEST_EXISTING",
+          "rationale": "Se prioriza la coincidencia en entramado metálico ligero, aislamiento en cavidad y solución de cerramiento por placas.",
+          "known_mismatches": [
+            "La solución genérica no es portante, mientras que el panel P3 de CIDARK se declara estructural/portante.",
+            "La solución genérica usa placa exterior de cemento y PYL; CIDARK publica tablero hidrófugo de fibras orientadas y EPS grafito."
+          ],
+          "manufacturer_specific_data_has_priority": true
+        },
+        "key_features": [
+          "Panel industrializado bidimensional del Sistema P3",
+          "Bastidor estructural de acero galvanizado",
+          "Aislamiento de lana mineral en núcleo",
+          "Montaje en seco mediante uniones atornilladas",
+          "Producto modelado sin elementos de contexto del edificio",
+          "EPS grafito acanalado de 50 mm",
+          "Preparado para recibir el acabado exterior definido por proyecto"
+        ]
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "ENV.FAC",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Muros de fachada",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "30.10.10.20",
+          "description": "Fachadas prefabricadas",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ENVOLVENTE",
+            "ESTRUCTURA"
+          ],
+          "labels": [
+            "Envolvente",
+            "Estructura"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "VIVA-GENERIC",
+          "code": "ENV.FAC.RC-EL.GS001",
+          "description": "Fachada ligera de entramado metálico con placa exterior de cemento, lana mineral y placas de yeso laminado",
+          "relation": "closest_existing_generic_mapping",
+          "match_quality": "PARTIAL_CLOSEST_EXISTING"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_product_page",
+          "url": "https://www.cidark.com/casa-modular-paneles/panel-prefabricado-fachada/",
+          "scope": "Current technical composition, nominal dimensions and performance values"
+        },
+        {
+          "type": "manufacturer_system_page",
+          "url": "https://www.cidark.com/sistema-p3/",
+          "scope": "P3 structural/industrialized system description and EN 1090 reference"
+        },
+        {
+          "type": "manufacturer_historic_pdf",
+          "url": "https://www.cidark.com/casas-prefabricadas-modulares/wp-content/uploads/2017/12/Casas-Modulares-Prefabricadas-CIDARK.pdf",
+          "scope": "Secondary historic reference for P3 board/frame arrangement; not used as current performance authority"
+        }
+      ],
+      "attributes": {
+        "product_family": "Sistema P3",
+        "product_category": "Panel estructural industrializado de fachada",
+        "structural_system": "Entramado ligero de acero galvanizado",
+        "load_bearing": true,
+        "prefabrication_level": "Panel 2D industrializado",
+        "physical_context_in_ifc": "PRODUCT_ONLY",
+        "generic_mapping_is_exact": false
+      },
+      "metrics": {
+        "nominal_total_thickness_mm": 164,
+        "thermal_transmittance_w_m2k": 0.322,
+        "airborne_sound_resistance_dba": 47.0,
+        "mechanical_compression_resistance_kn_ml": 50.6,
+        "fire_resistance": "REI30",
+        "reaction_to_fire": "A2-s1,d0"
+      },
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "MANUFACTURER_STATEMENT_PROJECT_VERIFICATION_REQUIRED",
+        "note": "Las prestaciones de producto no sustituyen la justificación del proyecto ni la comprobación de la solución completa."
+      },
+      "environmental_data": {
+        "status": "NOT_PROVIDED_IN_TECHNICAL_SOURCE_USED",
+        "epd": null,
+        "gwp_a1_a3_kgco2e_per_fu": null,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 86.543
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 8.443
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.222
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.332
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 105.54,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 51.12
+            },
+            {
+              "module": "A4",
+              "value": 0.72
+            }
+          ],
+          "total": 51.84,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 648
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "status": "NOT_PROVIDED",
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 62.77
+            },
+            {
+              "label": "Mano de obra",
+              "value": 32.29
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 18.62
+            },
+            {
+              "label": "Transporte",
+              "value": 9.74
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 123.42,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 72,
+              "unit": "kg",
+              "rate": 0.83,
+              "subtotal": 59.76
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.215,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 38.88
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.34,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 12.58
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.2,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 9.8
+            },
+            {
+              "label": "Transporte",
+              "quantity": 7.2,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.01
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 6.1,
+              "subtotal": 6.1
+            }
+          ],
+          "total": 128.13
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "factory_scope": "Structural facade panel manufactured in factory",
+        "delivery_state": "2D load-bearing facade panel",
+        "mounting_interface": "Dry bolted assembly; project-specific start/bracing/fixing profiles",
+        "traceability": "Solution code + BIM revision",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ENVOLVENTE",
+              "label": "Envolvente"
+            },
+            {
+              "code": "ESTRUCTURA",
+              "label": "Estructura"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "generic_mapping_note": "La correspondencia VIVA usa el arquetipo existente más cercano; consultar technical_data.generic_mapping para diferencias."
+      },
+      "viva_metrics": {
+        "status": "NOT_SCORED_TO_AVOID_UNSUPPORTED_INFERENCE"
+      },
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "USERDEFINED"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Muros de fachada"
+            },
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "30.10.10.20"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Fachadas prefabricadas"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "CIDARK"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 164
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IsExternal",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "Reference",
+              "ifc_type": "IfcLabel",
+              "value": "P3-FACHADA-ESTANDAR"
+            },
+            {
+              "name": "FireRating",
+              "ifc_type": "IfcLabel",
+              "value": "REI30"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Envolvente",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "ENV.FAC.RC-EL.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Fachada ligera de entramado metálico con placa exterior de cemento, lana mineral y placas de yeso laminado"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "CIDARK"
+            },
+            {
+              "name": "Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "P3-FACHADA-ESTANDAR"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Fachada",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaFachada",
+              "ifc_type": "IfcLabel",
+              "value": "Panel estructural industrializado de fachada"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 164
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": 0.322
+            },
+            {
+              "name": "AislamientoAcustico_dBA",
+              "ifc_type": "IfcReal",
+              "value": 47.0
+            },
+            {
+              "name": "ReaccionFuego",
+              "ifc_type": "IfcLabel",
+              "value": "A2-s1,d0"
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": "REI30"
+            },
+            {
+              "name": "Portante",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "CIDARK_Pset_SourceAndScope",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductURL",
+              "ifc_type": "IfcLabel",
+              "value": "https://www.cidark.com/casa-modular-paneles/panel-prefabricado-fachada/"
+            },
+            {
+              "name": "GeometryStatus",
+              "ifc_type": "IfcLabel",
+              "value": "REPRESENTATIVE_PRODUCT_BIM"
+            },
+            {
+              "name": "NoBuildingContext",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ProductOnlyPhysicalElements",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ModelledVariant",
+              "ifc_type": "IfcLabel",
+              "value": "Modulo opaco representativo 1200 x 3000 mm; acabado exterior posterior no incluido"
+            },
+            {
+              "name": "GeometryInference",
+              "ifc_type": "IfcLabel",
+              "value": "Composicion material actual documentada; OSB doble de 12 mm y bastidor 90 mm usados como reconciliacion geometrica del espesor nominal de 164 mm."
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.CIDARK.P3.FACHADA.ESTANDAR"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-CIDARK"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "CIDARK"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "P3-FACHADA-ESTANDAR"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Panel 2D industrializado listo para montaje y acabado segun variante"
+            },
+            {
+              "name": "exterior_finish",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Panel estructural industrializado P3 con configuracion de fachada especifica"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "REI30"
+            },
+            {
+              "name": "generic_mapping_status",
+              "ifc_type": "IfcLabel",
+              "value": "PARTIAL_CLOSEST_EXISTING"
+            },
+            {
+              "name": "geometry_status",
+              "ifc_type": "IfcLabel",
+              "value": "Representative product BIM; not shop drawing"
+            },
+            {
+              "name": "ifc_generation_revision",
+              "ifc_type": "IfcLabel",
+              "value": "CIDARK-v2.0-existing-generics"
+            },
+            {
+              "name": "ifc_geometry_method",
+              "ifc_type": "IfcLabel",
+              "value": "IFC4 SweptSolid, product-only decomposition, explicit material styles and type Psets"
+            },
+            {
+              "name": "ifc_root_entity",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "insulation",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific thermal insulation layer"
+            },
+            {
+              "name": "integrated_window",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "is_external",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "load_bearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "mass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 72
+            },
+            {
+              "name": "module_dimensions_status",
+              "ifc_type": "IfcLabel",
+              "value": "REPRESENTATIVE_BIM_GEOMETRY"
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1200
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Uniones atornilladas del Sistema P3; elementos auxiliares segun proyecto"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Acero galvanizado + lana mineral + tablero hidrofugo de fibras orientadas + EPS grafito"
+            },
+            {
+              "name": "reaction_to_fire",
+              "ifc_type": "IfcLabel",
+              "value": "A2-s1,d0"
+            },
+            {
+              "name": "rw_db",
+              "ifc_type": "IfcReal",
+              "value": 47.0
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Portante; estructura y hoja principal"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Panel estructural industrializado de fachada"
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 164
+            },
+            {
+              "name": "u_value_w_m2k",
+              "ifc_type": "IfcReal",
+              "value": 0.322
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific weather/water control layer"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "key": "TM-EXT",
+          "name_es": "Tablero hidrofugo de fibras orientadas exterior",
+          "role": "exterior_board",
+          "properties": {
+            "material_family": "wood_based_board",
+            "thickness_mm": 12,
+            "thickness_status": "representative_geometry"
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "EST",
+          "name_es": "Bastidor estructural de acero galvanizado",
+          "role": "structural_frame",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "frame_depth_mm": 90,
+            "frame_depth_status": "inferred_from_nominal_total"
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "AT",
+          "name_es": "Lana mineral en nucleo",
+          "role": "thermal_insulation",
+          "properties": {
+            "material_family": "mineral_wool",
+            "thickness_mm": 85
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "TM-INT",
+          "name_es": "Tablero hidrofugo de fibras orientadas interior",
+          "role": "interior_board",
+          "properties": {
+            "material_family": "wood_based_board",
+            "thickness_mm": 12,
+            "presence_status": "inferred_from_nominal_total_and_historic_P3"
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "EPS-INT",
+          "name_es": "EPS grafito acanalado interior",
+          "role": "service_layer_insulation",
+          "properties": {
+            "material_family": "graphite_eps",
+            "thickness_mm": 50
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "J",
+          "name_es": "Banda de espuma de poliuretano",
+          "role": "perimeter_seal",
+          "properties": {
+            "material_family": "polyurethane_foam"
+          },
+          "required": true,
+          "performance": {}
+        },
+        {
+          "key": "LIFT",
+          "name_es": "Asa de elevacion",
+          "role": "lifting_accessory",
+          "properties": {
+            "material_family": "not_specified_by_manufacturer"
+          },
+          "required": true,
+          "performance": {}
+        }
+      ],
+      "evidence": [
+        {
+          "type": "manufacturer_product_page",
+          "url": "https://www.cidark.com/casa-modular-paneles/panel-prefabricado-fachada/",
+          "scope": "Current product data"
+        },
+        {
+          "type": "catalogue_mapping_decision",
+          "status": "EXPLICIT_APPROXIMATE_MAPPING",
+          "generic_solution_code": "ENV.FAC.RC-EL.GS001",
+          "rationale": "Se prioriza la coincidencia en entramado metálico ligero, aislamiento en cavidad y solución de cerramiento por placas."
+        }
+      ],
+      "ids_validation": {
+        "status": "PENDING_EXTERNAL_IDS_VALIDATION"
+      },
+      "data_quality_notes": [
+        {
+          "issue": "La solución de fabricante no coincide al 100% con ninguna solución genérica existente del catálogo VIVA.",
+          "action": "Se prioriza la coincidencia en entramado metálico ligero, aislamiento en cavidad y solución de cerramiento por placas. Se preservan en este JSON la composición y las prestaciones específicas de CIDARK; la solución genérica se usa sólo como correspondencia de catálogo.",
+          "known_mismatches": [
+            "La solución genérica no es portante, mientras que el panel P3 de CIDARK se declara estructural/portante.",
+            "La solución genérica usa placa exterior de cemento y PYL; CIDARK publica tablero hidrófugo de fibras orientadas y EPS grafito."
+          ]
+        },
+        {
+          "issue": "The current public product pages state material families and nominal total panel thickness, but do not fully publish all individual board/frame geometric dimensions.",
+          "action": "The IFC uses a 90 mm steel frame and two 12 mm oriented-fibre boards so the documented 85 mm mineral wool, 50 mm graphite EPS and nominal total thickness reconcile geometrically. These dimensions are flagged as representative/inferred."
+        },
+        {
+          "issue": "The lifting handle and polyurethane band are listed by CIDARK but their exact geometry/location is not publicly specified.",
+          "action": "They are represented schematically and explicitly tagged as representative geometry."
+        },
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.exterior_finish",
+            "technical_data.properties.insulation",
+            "technical_data.properties.mass_kg_m2",
+            "technical_data.properties.waterproofing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.CIDARK.P3.FACHADA.ESTANDAR.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/ENV_FAC__ENV.FAC.RC-EL.GS001__CIDARK__P3-FACHADA-ESTANDAR.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Panel estructural industrializado de fachada",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Acero galvanizado + lana mineral + tablero hidrofugo de fibras orientadas + EPS grafito",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Panel 2D industrializado listo para montaje y acabado segun variante",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 164,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1200,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 3000,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 72,
+          "unit": "kg/m²"
+        },
+        "thermal_transmittance": {
+          "value": 0.322,
+          "unit": "W/(m²·K)"
+        },
+        "rw_db": {
+          "value": 47.0,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "ratr_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "waterproofing": {
+          "value": "project_specific weather/water control layer",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 46.28
+          },
+          "thermal_transmittance": {
+            "unit": "W/(m²·K)",
+            "value": 0.34
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 199.7
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en ENV.FAC. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de cerramiento de fachada; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia cerramiento de fachada.",
+        "functional_unit": "m2",
+        "short": "P3 Fachada Estandar. Esquema de demostración para la familia «Cerramiento de fachada»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Revestimiento exterior",
+            "name": "Revestimiento exterior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 12.7
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de soporte",
+            "name": "Capa de soporte",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 95.4
+          },
+          {
+            "function": "Aislamiento",
+            "material": "Aislamiento térmico",
+            "name": "Aislamiento térmico",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 75.7
+          },
+          {
+            "function": "Acabado",
+            "material": "Trasdosado interior",
+            "name": "Trasdosado interior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.9
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

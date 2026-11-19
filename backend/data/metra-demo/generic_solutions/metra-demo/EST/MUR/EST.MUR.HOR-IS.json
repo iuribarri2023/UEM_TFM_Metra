@@ -1,0 +1,1766 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.HOR-IS",
+      "name_es": "Muro de hormigón armado in situ"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.HOR-IS.GS001",
+      "name_es": "Muro de hormigón armado HA-30/B/20/XC4 de 20 cm",
+      "description": "Muro estructural de hormigón armado de 20 cm de espesor y acabado visto, ejecutado con hormigón HA-30/B/20/XC4 y acero B500S, con barras verticales Ø12 cada 20 cm y horizontales Ø10 cada 20 cm en ambas caras, hormigonado mediante cubilote con encofrado metálico, vibrado, curado y desencofrado.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMH.1abebfcbb",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "Código Estructural / DB-SE",
+          "code": "DB-SE",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-001",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete",
+        "total_thickness_mm": 200,
+        "concrete_strength_class": "HA-30",
+        "concrete_consistency": "B",
+        "maximum_aggregate_size_mm": 20,
+        "exposure_class": "XC4",
+        "reinforcement_grade": "B500S",
+        "reinforcement_kg_m2": 16.56,
+        "reinforcement_kg_m3": 78.83,
+        "finish": "exposed",
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-001"
+        ],
+        "construction_type": "cast_in_place_reinforced_concrete_wall",
+        "structural_system": "cast_in_place_reinforced_concrete_load_bearing_wall",
+        "structural_element_thickness_mm": 200,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "continuous B500S reinforcement and in-situ concrete; formwork, placing, vibration, curing and stripping as defined by the legacy work item",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+        "factory_completion_level": "factory-produced materials; structural wall formed in situ",
+        "assembly_method": "reinforcement placement, formwork, site concreting, vibration, curing and formwork removal",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "continuous wet construction; no reversible disassembly performance quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "concrete_specification": {
+          "strength_class": "HA-30",
+          "exposure_class": "XC4",
+          "maximum_aggregate_size_mm": 20
+        },
+        "reinforcement_specification": {
+          "steel_grade": "B500S",
+          "reinforcement_kg_m2": 16.56
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the legacy source.",
+          "acoustic_performance": "No quantitative airborne/impact sound value is stated in the legacy source.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 49.01,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.25495,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-001 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 115.8,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.228,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-001 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.423806,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.423806,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-HOR-001 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 18.55,
+            "assessed_cost_eur_m2": 43.77,
+            "counted_industrialized_components": [
+              "Acero B 500 S elaborado: 18.55 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "reinforced_concrete",
+            "concrete_class": "HA-30/B/20/XC4",
+            "thickness_mm": 200
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero B500S",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "steel_grade": "B500S",
+            "reinforcement_kg_m2": 16.56,
+            "vertical_bars": "Ø12 c/200 mm",
+            "horizontal_bars": "Ø10 c/200 mm"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 496.6,
+        "system_type": {
+          "value": "cast_in_place_reinforced_concrete_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1028.46,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 496.6,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "cast_in_place_reinforced_concrete_load_bearing_wall",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 280.24
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 226.87
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 49.01,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 33.12
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.231
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.616
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.423
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 40.39,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 223.47
+            },
+            {
+              "module": "A4",
+              "value": 4.966
+            }
+          ],
+          "total": 228.436,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2483.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 115.8,
+        "bc3": {
+          "root_code": "EEMH.1abebfcbb",
+          "decomposition": [
+            {
+              "code": "PBPC30abbaaa",
+              "description": "Hormigón estructural HA-30/B/20/XC4 preparado en central",
+              "unit": "m3",
+              "quantity": 0.21,
+              "unit_price": 120.1,
+              "amount": 25.22,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA.2c",
+              "description": "Acero B 500 S elaborado",
+              "unit": "kg",
+              "quantity": 16.56,
+              "unit_price": 1.12,
+              "amount": 18.55,
+              "composition_key": "ARM",
+              "industrialized": true
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 110.88
+            },
+            {
+              "label": "Mano de obra",
+              "value": 37.49
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 22.37
+            },
+            {
+              "label": "Transporte",
+              "value": 12.21
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 182.95,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 496.6,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 238.37
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.954,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 62.53
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.547,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 20.24
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 49.66,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 6.95
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 17.19,
+              "subtotal": 17.19
+            }
+          ],
+          "total": 360.96
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 18.55,
+        "assessed_cost": 43.77,
+        "ratio": 0.423806
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.25495,
+        "economic_performance": 0.228,
+        "industrialization_performance": 0.423806,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.HOR-IS.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.HOR-IS.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-IS.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de hormigón armado HA-30/B/20/XC4 de 20 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de hormigón armado de 20 cm de espesor y acabado visto, ejecutado con hormigón HA-30/B/20/XC4 y acero B500S, con barras verticales Ø12 cada 20 cm y horizontales Ø10 cada 20 cm en ambas caras, hormigonado mediante cubilote con encofrado metálico, vibrado, curado y desencofrado."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 115.8
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 49.01
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.423806
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 200
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de hormigón armado HA-30/B/20/XC4 de 20 cm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.HOR-IS.GS002",
+      "name_es": "Muro de hormigón armado HA-30/B/20/XC4 de 25 cm",
+      "description": "Muro estructural de hormigón armado de 25 cm de espesor y acabado visto, ejecutado con hormigón HA-30/B/20/XC4 y acero B500S, con barras verticales Ø10 cada 20 cm y horizontales Ø10 cada 20 cm en ambas caras, hormigonado mediante cubilote con encofrado metálico, vibrado, curado y desencofrado.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMH.1bbebccbb",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "Código Estructural / DB-SE",
+          "code": "DB-SE",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-002",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete",
+        "total_thickness_mm": 250,
+        "concrete_strength_class": "HA-30",
+        "concrete_consistency": "B",
+        "maximum_aggregate_size_mm": 20,
+        "exposure_class": "XC4",
+        "reinforcement_grade": "B500S",
+        "reinforcement_kg_m2": 13.57,
+        "reinforcement_kg_m3": 51.71,
+        "finish": "exposed",
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-002"
+        ],
+        "construction_type": "cast_in_place_reinforced_concrete_wall",
+        "structural_system": "cast_in_place_reinforced_concrete_load_bearing_wall",
+        "structural_element_thickness_mm": 250,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "continuous B500S reinforcement and in-situ concrete; formwork, placing, vibration, curing and stripping as defined by the legacy work item",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+        "factory_completion_level": "factory-produced materials; structural wall formed in situ",
+        "assembly_method": "reinforcement placement, formwork, site concreting, vibration, curing and formwork removal",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "continuous wet construction; no reversible disassembly performance quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "concrete_specification": {
+          "strength_class": "HA-30",
+          "exposure_class": "XC4",
+          "maximum_aggregate_size_mm": 20
+        },
+        "reinforcement_specification": {
+          "steel_grade": "B500S",
+          "reinforcement_kg_m2": 13.57
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the legacy source.",
+          "acoustic_performance": "No quantitative airborne/impact sound value is stated in the legacy source.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 57.88,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.2106,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-002 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 120.24,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.1984,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-002 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.324856,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.324856,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-HOR-002 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 15.2,
+            "assessed_cost_eur_m2": 46.79,
+            "counted_industrialized_components": [
+              "Acero B 500 S elaborado: 15.2 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "reinforced_concrete",
+            "concrete_class": "HA-30/B/20/XC4",
+            "thickness_mm": 250
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero B500S",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "steel_grade": "B500S",
+            "reinforcement_kg_m2": 13.57,
+            "vertical_bars": "Ø10 c/200 mm",
+            "horizontal_bars": "Ø10 c/200 mm"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 613.6,
+        "system_type": {
+          "value": "cast_in_place_reinforced_concrete_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 250,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 900.61,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 613.6,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "cast_in_place_reinforced_concrete_load_bearing_wall",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 298.26
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 238.15
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 57.88,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 46.601
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.546
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.273
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.41
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 56.83,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 276.12
+            },
+            {
+              "module": "A4",
+              "value": 6.136
+            }
+          ],
+          "total": 282.256,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 3068.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 120.24,
+        "bc3": {
+          "root_code": "EEMH.1bbebccbb",
+          "decomposition": [
+            {
+              "code": "PBPC30abbaaa",
+              "description": "Hormigón estructural HA-30/B/20/XC4 preparado en central",
+              "unit": "m3",
+              "quantity": 0.263,
+              "unit_price": 120.1,
+              "amount": 31.59,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA.2c",
+              "description": "Acero B 500 S elaborado",
+              "unit": "kg",
+              "quantity": 13.57,
+              "unit_price": 1.12,
+              "amount": 15.2,
+              "composition_key": "ARM",
+              "industrialized": true
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 146.95
+            },
+            {
+              "label": "Mano de obra",
+              "value": 53.53
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 29.89
+            },
+            {
+              "label": "Transporte",
+              "value": 17.13
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 5.53
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 253.03,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 613.6,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 294.53
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 2.104,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 67.33
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.589,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 21.79
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 61.36,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 8.59
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 20.4,
+              "subtotal": 20.4
+            }
+          ],
+          "total": 428.32
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 15.2,
+        "assessed_cost": 46.79,
+        "ratio": 0.324856
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.2106,
+        "economic_performance": 0.1984,
+        "industrialization_performance": 0.324856,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.HOR-IS.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.HOR-IS.GS002.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-IS.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de hormigón armado HA-30/B/20/XC4 de 25 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de hormigón armado de 25 cm de espesor y acabado visto, ejecutado con hormigón HA-30/B/20/XC4 y acero B500S, con barras verticales Ø10 cada 20 cm y horizontales Ø10 cada 20 cm en ambas caras, hormigonado mediante cubilote con encofrado metálico, vibrado, curado y desencofrado."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 120.24
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 57.88
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.324856
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 250
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de hormigón armado HA-30/B/20/XC4 de 25 cm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.HOR-IS.GS003",
+      "name_es": "Muro de hormigón armado HA-30 de 40 cm",
+      "description": "Muro estructural de hormigón armado de 40 cm de espesor y acabado para revestir, con hormigón HA-30 de clase de exposición XC2 y acero B500S, con barras verticales Ø16 cada 15 cm y horizontales Ø12 cada 15 cm en ambas caras, ejecutado con encofrado trepante, vertido, vibrado, curado y desencofrado.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMH.1ebcbgeca",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "Código Estructural / DB-SE",
+          "code": "DB-SE",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-003",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete",
+        "total_thickness_mm": 400,
+        "concrete_strength_class": "HA-30",
+        "maximum_aggregate_size_mm": 20,
+        "exposure_class": "XC2",
+        "reinforcement_grade": "B500S",
+        "reinforcement_kg_m2": 36.19,
+        "reinforcement_kg_m3": 86.17,
+        "finish": "to_be_finished",
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-003"
+        ],
+        "construction_type": "cast_in_place_reinforced_concrete_wall",
+        "structural_system": "cast_in_place_reinforced_concrete_load_bearing_wall",
+        "structural_element_thickness_mm": 400,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "continuous B500S reinforcement and in-situ concrete; formwork, placing, vibration, curing and stripping as defined by the legacy work item",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+        "factory_completion_level": "factory-produced materials; structural wall formed in situ",
+        "assembly_method": "reinforcement placement, formwork, site concreting, vibration, curing and formwork removal",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "continuous wet construction; no reversible disassembly performance quantified"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "concrete_specification": {
+          "strength_class": "HA-30",
+          "exposure_class": "XC2",
+          "maximum_aggregate_size_mm": 20
+        },
+        "reinforcement_specification": {
+          "steel_grade": "B500S",
+          "reinforcement_kg_m2": 36.19
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the legacy source.",
+          "acoustic_performance": "No quantitative airborne/impact sound value is stated in the legacy source.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 99.47,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.00265,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-003 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 220.45,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.0,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-003 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.194884,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.194884,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-HOR-003 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 40.53,
+            "assessed_cost_eur_m2": 207.97,
+            "counted_industrialized_components": [
+              "Acero B 500 S elaborado: 40.53 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "HOR",
+          "name_es": "Hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "reinforced_concrete",
+            "concrete_class": "HA-30",
+            "exposure_class": "XC2",
+            "thickness_mm": 400
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura de acero B500S",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "steel_grade": "B500S",
+            "reinforcement_kg_m2": 36.19,
+            "vertical_bars": "Ø16 c/150 mm",
+            "horizontal_bars": "Ø12 c/150 mm"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 996.2,
+        "system_type": {
+          "value": "cast_in_place_reinforced_concrete_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "ready-mix structural concrete plus reinforcing steel; wall completed on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 400,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1414.26,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 996.2,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "cast_in_place_reinforced_concrete_load_bearing_wall",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 179.61
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 229.37
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 99.47,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 32.775
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.198
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.599
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.398
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 39.97,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 448.29
+            },
+            {
+              "module": "A4",
+              "value": 9.962
+            }
+          ],
+          "total": 458.252,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 4981.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 220.45,
+        "bc3": {
+          "root_code": "EEMH.1ebcbgeca",
+          "decomposition": [
+            {
+              "code": "MOOA.8a",
+              "description": "Oficial 1ª construcción",
+              "unit": "h",
+              "quantity": 0.03,
+              "unit_price": 21.52,
+              "amount": 0.65,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA10a",
+              "description": "Ayudante construcción",
+              "unit": "h",
+              "quantity": 0.06,
+              "unit_price": 18.59,
+              "amount": 1.12,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA12a",
+              "description": "Peón ordinario construcción",
+              "unit": "h",
+              "quantity": 0.06,
+              "unit_price": 18.0,
+              "amount": 1.08,
+              "industrialized": false
+            },
+            {
+              "code": "MOOB.7a",
+              "description": "Oficial montador ferralla",
+              "unit": "h",
+              "quantity": 0.36,
+              "unit_price": 23.9,
+              "amount": 8.6,
+              "industrialized": false
+            },
+            {
+              "code": "MOOB12a",
+              "description": "Peón ordinario ferralla",
+              "unit": "h",
+              "quantity": 0.36,
+              "unit_price": 18.91,
+              "amount": 6.81,
+              "industrialized": false
+            },
+            {
+              "code": "MMMH.3a",
+              "description": "Bomba de hormigón sobre camión",
+              "unit": "h",
+              "quantity": 0.06,
+              "unit_price": 185.16,
+              "amount": 11.11,
+              "industrialized": false
+            },
+            {
+              "code": "MMMH15a",
+              "description": "Vibrador de gasolina con aguja Ø30-50 mm",
+              "unit": "h",
+              "quantity": 0.12,
+              "unit_price": 2.12,
+              "amount": 0.25,
+              "industrialized": false
+            },
+            {
+              "code": "PEAA.2c",
+              "description": "Acero B 500 S elaborado",
+              "unit": "kg",
+              "quantity": 36.19,
+              "unit_price": 1.12,
+              "amount": 40.53,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "PBPC28bbcaaa",
+              "description": "Hormigón HA-30/F/20/XC2",
+              "unit": "m3",
+              "quantity": 0.42,
+              "unit_price": 125.53,
+              "amount": 52.72,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "PBAA.1a",
+              "description": "Agua",
+              "unit": "m3",
+              "quantity": 0.07,
+              "unit_price": 1.08,
+              "amount": 0.08,
+              "industrialized": false
+            },
+            {
+              "code": "%0350",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 3.5,
+              "unit_price": 122.3,
+              "amount": 4.3,
+              "industrialized": false
+            },
+            {
+              "code": "EEHM.3aa",
+              "description": "Encofrado trepante para muro de menos de 4 m, acabado no visto",
+              "unit": "m2",
+              "quantity": 2.0,
+              "unit_price": 23.03,
+              "amount": 46.06,
+              "industrialized": false
+            },
+            {
+              "code": "%2000",
+              "description": "Incremento por coyuntura DANA",
+              "unit": "%",
+              "quantity": 20.0,
+              "unit_price": 173.3,
+              "amount": 34.66,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 78.2
+            },
+            {
+              "label": "Mano de obra",
+              "value": 40.21
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 23.7
+            },
+            {
+              "label": "Transporte",
+              "value": 10.74
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 152.85,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 996.2,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 478.18
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 2.34,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 74.88
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.655,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 24.24
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 99.62,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 13.95
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 30.35,
+              "subtotal": 30.35
+            }
+          ],
+          "total": 637.28
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 40.53,
+        "assessed_cost": 207.97,
+        "ratio": 0.194884
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.00265,
+        "economic_performance": 0.0,
+        "industrialization_performance": 0.194884,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.HOR-IS.GS003.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.HOR-IS.GS003.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-IS.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de hormigón armado HA-30 de 40 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de hormigón armado de 40 cm de espesor y acabado para revestir, con hormigón HA-30 de clase de exposición XC2 y acero B500S, con barras verticales Ø16 cada 15 cm y horizontales Ø12 cada 15 cm en ambas caras, ejecutado con encofrado trepante, vertido, vibrado, curado y desencofrado."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 220.45
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 99.47
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.194884
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "reinforced_concrete"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 400
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de hormigón armado HA-30 de 40 cm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

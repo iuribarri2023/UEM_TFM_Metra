@@ -1,0 +1,899 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-EGOIN",
+    "name": "Egoin S.A.",
+    "website": "https://egoin.com/",
+    "description": "Fabricante de soluciones industrializadas estructurales de madera.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5FZ29pbiBTLkEuPC90ZXh0Pjwvc3ZnPg==",
+    "address": "Natxitua-Ea (Bizkaia), España",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "source_scope": "Prontuario 2019; ETA CLT 2017; ETA RIPA 2023",
+      "generation_date": "2026-10-05"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "EST.FOR.MAD-CLT.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "EST.FOR",
+      "code": "MFR.EGOIN.CLT-200",
+      "commercial_reference": "CLT-200",
+      "name_es": "Egoin EGO CLT macizo 200 mm",
+      "description": "Panel macizo de capas de tablas encoladas, alternadas a 90 grados.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "EST.FOR",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcSlab",
+          "ifc_export_type": "FLOOR",
+          "ecob_bim_class": "Forjados",
+          "gubimclass_code": "20.20.20.10",
+          "gubimclass_description": "Forjados",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": null,
+          "environmental_claim": null,
+          "compliance_certificate": "ETA 11/0464 (2017), solo en condiciones del documento",
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Panel CLT macizo",
+          "structural_role": "Forjado estructural a verificar en proyecto",
+          "primary_material": "Madera contralaminada (Pinus radiata C24)",
+          "depth_mm": 200,
+          "width_mm": 2450,
+          "reference_model_length_mm": 5000,
+          "self_supporting": true,
+          "fire_rating": "project_specific",
+          "factory_scope": "Prefabricación industrial de paneles estructurales",
+          "delivery_state": "Elemento 2D fabricado bajo pedido",
+          "mounting_system": "Montaje con medios de elevación y uniones según cálculo de proyecto",
+          "wood_species": "Pinus radiata",
+          "wood_resistance_class": "C24",
+          "wood_volume_l_m2": 200,
+          "surface_mass_kg_m2_reference": 104,
+          "layer_count": 5,
+          "layer_thicknesses_mm": [
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "reaction_to_fire": "D-s2,d0 (ETA EGO CLT)",
+          "thermal_conductivity_w_mk": 0.13,
+          "concrete_class": "not_applicable",
+          "prestressing_steel": "not_applicable",
+          "span_m": 5.0,
+          "design_load_kn_m2": 2.0,
+          "topping_mm": 0
+        },
+        "key_features": [
+          "Panel macizo de capas de tablas encoladas, alternadas a 90 grados."
+        ],
+        "generation_provenance": {
+          "generation_date": "2026-10-05",
+          "geometry_type": "Parametric reference geometry",
+          "source_dimensions": "manufacturer values except explicit reference width/length/section assumptions",
+          "source_document_paths": [
+            "0-PRONTUARIO-TECNICO.pdf",
+            "EGOIN_ETA-CLT.pdf"
+          ]
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "EST.FOR",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4 ADD2 TC1",
+          "code": "IfcSlab",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Forjados",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "20.20.20.10",
+          "description": "Forjados",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ESTRUCTURALES"
+          ],
+          "labels": [
+            "Estructurales"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_prontuario",
+          "title": "0-PRONTUARIO-TECNICO.pdf",
+          "file_name": "0-PRONTUARIO-TECNICO.pdf",
+          "pages": "PDF 11 y 21-25",
+          "access": "documentación aportada por usuario",
+          "source_date": "2019-01"
+        },
+        {
+          "type": "eta",
+          "title": "EGOIN_ETA-CLT.pdf",
+          "file_name": "EGOIN_ETA-CLT.pdf",
+          "pages": "PDF 3-11 y 16-18",
+          "access": "documentación aportada por usuario",
+          "source_date": "2017-04-20"
+        }
+      ],
+      "attributes": {
+        "source_family": "CLT",
+        "IFC_geometry_solid_count": 5
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PENDING_PROJECT_VERIFICATION",
+        "notes": "Sin atribuir cumplimiento CTE automático a una composición aislada."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_PROVIDED"
+        },
+        "indicators": {},
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 43.255
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.22
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.11
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.165
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 52.75,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 49.92
+            },
+            {
+              "module": "A4",
+              "value": 1.04
+            }
+          ],
+          "total": 50.96,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 520
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "price_basis": "No declarado en las fuentes",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 162.39
+            },
+            {
+              "label": "Mano de obra",
+              "value": 61.36
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 34.17
+            },
+            {
+              "label": "Transporte",
+              "value": 15.61
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 273.53,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 104,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 44.72
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.769,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.61
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.215,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 7.96
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 10.4,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.46
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 5.04,
+              "subtotal": 5.04
+            }
+          ],
+          "total": 105.84
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ESTRUCTURALES",
+              "label": "Estructurales"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "factory_scope": "Prefabricación industrial de paneles estructurales",
+        "delivery_state": "Elemento 2D fabricado bajo pedido",
+        "traceability": "Referencia de familia y variante; lote real pendiente de pedido",
+        "mounting_interface": "Montaje con medios de elevación y uniones según cálculo de proyecto"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcSlab"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "FLOOR"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Panel macizo de capas de tablas encoladas, alternadas a 90 grados."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcLabel",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA Marketplace · derivado de fuentes Egoin"
+            },
+            {
+              "name": "ObjetoTitular",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "TipoBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin EGO CLT macizo 200 mm"
+            },
+            {
+              "name": "Version",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA-2026.10 DRAFT"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin EGO CLT macizo 200 mm"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "CLT-200"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Panel macizo de capas de tablas encoladas, alternadas a 90 grados."
+            },
+            {
+              "name": "Producto01_CertificadoConformidad",
+              "ifc_type": "IfcLabel",
+              "value": "ETA 11/0464 (2017), solo en condiciones del documento"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 200.0
+            },
+            {
+              "name": "Anchura_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 2450.0
+            },
+            {
+              "name": "LongitudReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_EgoinTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductCode",
+              "ifc_type": "IfcLabel",
+              "value": "MFR.EGOIN.CLT-200"
+            },
+            {
+              "name": "Family",
+              "ifc_type": "IfcLabel",
+              "value": "CLT"
+            },
+            {
+              "name": "TotalDepth_mm",
+              "ifc_type": "IfcReal",
+              "value": 200.0
+            },
+            {
+              "name": "Width_mm",
+              "ifc_type": "IfcReal",
+              "value": 2450.0
+            },
+            {
+              "name": "ReferenceLength_mm",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            },
+            {
+              "name": "TimberVolume_l_m2",
+              "ifc_type": "IfcInteger",
+              "value": 200
+            },
+            {
+              "name": "SurfaceMass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 104
+            },
+            {
+              "name": "ReferenceGeometryOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ETAReference",
+              "ifc_type": "IfcLabel",
+              "value": "ETA 11/0464 (2017), solo en condiciones del documento"
+            }
+          ]
+        },
+        {
+          "name": "Pset_SlabCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.EGOIN.CLT-200"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-EGOIN"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "CLT-200"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "EST.FOR"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "concrete_class",
+              "ifc_type": "IfcLabel",
+              "value": "not_applicable"
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Elemento 2D fabricado bajo pedido"
+            },
+            {
+              "name": "depth_mm",
+              "ifc_type": "IfcInteger",
+              "value": 200
+            },
+            {
+              "name": "design_load_kn_m2",
+              "ifc_type": "IfcReal",
+              "value": 2.0
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Prefabricación industrial de paneles estructurales"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "layer_count",
+              "ifc_type": "IfcInteger",
+              "value": 5
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Montaje con medios de elevación y uniones según cálculo de proyecto"
+            },
+            {
+              "name": "prestressing_steel",
+              "ifc_type": "IfcLabel",
+              "value": "not_applicable"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Madera contralaminada (Pinus radiata C24)"
+            },
+            {
+              "name": "reaction_to_fire",
+              "ifc_type": "IfcLabel",
+              "value": "D-s2,d0 (ETA EGO CLT)"
+            },
+            {
+              "name": "reference_model_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 5000
+            },
+            {
+              "name": "self_supporting",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "span_m",
+              "ifc_type": "IfcReal",
+              "value": 5.0
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado estructural a verificar en proyecto"
+            },
+            {
+              "name": "surface_mass_kg_m2_reference",
+              "ifc_type": "IfcInteger",
+              "value": 104
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Panel CLT macizo"
+            },
+            {
+              "name": "thermal_conductivity_w_mk",
+              "ifc_type": "IfcReal",
+              "value": 0.13
+            },
+            {
+              "name": "topping_mm",
+              "ifc_type": "IfcInteger",
+              "value": 0
+            },
+            {
+              "name": "width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2450
+            },
+            {
+              "name": "wood_resistance_class",
+              "ifc_type": "IfcLabel",
+              "value": "C24"
+            },
+            {
+              "name": "wood_species",
+              "ifc_type": "IfcLabel",
+              "value": "Pinus radiata"
+            },
+            {
+              "name": "wood_volume_l_m2",
+              "ifc_type": "IfcInteger",
+              "value": 200
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Lámina CLT 1",
+          "role": "structure",
+          "material": "Pinus radiata C24",
+          "thickness_mm": 40,
+          "fiber_direction_deg": 0
+        },
+        {
+          "sequence": 2,
+          "name_es": "Lámina CLT 2",
+          "role": "structure",
+          "material": "Pinus radiata C24",
+          "thickness_mm": 40,
+          "fiber_direction_deg": 90
+        },
+        {
+          "sequence": 3,
+          "name_es": "Lámina CLT 3",
+          "role": "structure",
+          "material": "Pinus radiata C24",
+          "thickness_mm": 40,
+          "fiber_direction_deg": 0
+        },
+        {
+          "sequence": 4,
+          "name_es": "Lámina CLT 4",
+          "role": "structure",
+          "material": "Pinus radiata C24",
+          "thickness_mm": 40,
+          "fiber_direction_deg": 90
+        },
+        {
+          "sequence": 5,
+          "name_es": "Lámina CLT 5",
+          "role": "structure",
+          "material": "Pinus radiata C24",
+          "thickness_mm": 40,
+          "fiber_direction_deg": 0
+        }
+      ],
+      "evidence": [
+        {
+          "type": "technical_document",
+          "title": "0-PRONTUARIO-TECNICO.pdf",
+          "status": "SOURCE_REVIEWED",
+          "file_name": "0-PRONTUARIO-TECNICO.pdf",
+          "pages": "PDF 11 y 21-25"
+        },
+        {
+          "type": "technical_document",
+          "title": "EGOIN_ETA-CLT.pdf",
+          "status": "SOURCE_REVIEWED",
+          "file_name": "EGOIN_ETA-CLT.pdf",
+          "pages": "PDF 3-11 y 16-18"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "EXTERNAL_VALIDATION_PENDING"
+      },
+      "data_quality_notes": [
+        "DRAFT BIM paramétrico: no sustituye la verificación estructural, acústica, térmica o de incendio de cada obra.",
+        "sección verificada; longitud 5.000 mm representativa de fabricación a medida",
+        "Los documentos no proporcionan precio, DAP/EPD por variante ni declaración de prestaciones individual: estos campos permanecen vacíos.",
+        "El prontuario y la ETA presentan diferencias en densidades y gama dimensional. Los valores de masa superficial tabulados son del prontuario y no se sustituyen por cálculos de la ETA.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.mounting_interface",
+            "technical_data.properties.concrete_class",
+            "technical_data.properties.design_load_kn_m2",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.prestressing_steel",
+            "technical_data.properties.self_supporting",
+            "technical_data.properties.span_m",
+            "technical_data.properties.topping_mm"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "assets": [
+        {
+          "id": "MFR.EGOIN.CLT-200.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/EST_FOR__EST.FOR.MAD-CLT__EGOIN__EGO-CLT-200.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Panel CLT macizo",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Madera contralaminada (Pinus radiata C24)",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Elemento 2D fabricado bajo pedido",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5000,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2450,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 104,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "Forjado estructural a verificar en proyecto",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 187.49
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 251.0
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Egoin EGO CLT macizo 200 mm. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 33.2
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 40.3
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 164.1
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 13.4
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1200 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-ARCELORMITTAL-BS",
+    "name": "ArcelorMittal Building Solutions",
+    "website": "https://buildingsolutions.arcelormittal.com/",
+    "description": "Sistemas de chapa colaborante y soluciones integradas acero-hormigón para forjados.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5BcmNlbG9yTWl0dGFsIEJ1aWxkaW5nIFNvbHV0aW9uczwvdGV4dD48L3N2Zz4=",
+    "address": "Morinval, 55800 Contrisson, Francia",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "reference_catalogue": "Composite floor guide, January 2026",
+      "country": "FR",
+      "model_generation": "2026-10-05"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "EST.FOR.MIX-CC.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "EST.FOR",
+      "code": "MFR.AMBS.CP60P-828-E075-H120",
+      "commercial_reference": "CP60P-828-E075-H120",
+      "name_es": "Cofraplus 60+ 828 mm · chapa 0.75 mm · canto 120 mm",
+      "description": "Cofraplus 60+: perfil de chapa 0.75 mm, canto de referencia 120 mm, hormigón C25/30.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "EST.FOR",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcSlab",
+          "ifc_export_type": "FLOOR",
+          "ecob_bim_class": "Forjados",
+          "gubimclass_code": "20.20.20.10",
+          "gubimclass_description": "Forjados",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 - VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": "EN 1090-1 (según guía)",
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": null,
+          "environmental_claim": null,
+          "compliance_certificate": null,
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Forjado mixto chapa colaborante y hormigón",
+          "structural_role": "Losa mixta portante: proyecto y ejecución a dimensionar",
+          "primary_material": "Chapa colaborante de acero galvanizado y hormigón in situ",
+          "deck_profile": "Cofraplus 60+",
+          "deck_profile_section": "trapezoidal",
+          "deck_steel_grade": "S350GD",
+          "galvanizing": "ZM175",
+          "deck_thickness_mm": 0.75,
+          "profile_height_mm": 58,
+          "profile_pitch_mm_geometry_reference": 207,
+          "profile_pitch_source": "Dibujo acotado del usuario",
+          "deck_cover_width_mm": 828,
+          "deck_surface_mass_kg_m2": 8.53,
+          "depth_mm": 120,
+          "width_mm": 828,
+          "reference_model_length_mm": 3000,
+          "nominal_concrete_consumption_l_m2": 85,
+          "concrete_class": "C25/30",
+          "concrete_density_kg_m3": "2500",
+          "reinforcement": "Mallazo y barras según comprobación específica de proyecto",
+          "fire_performance": "REI30 para espesor tabulado bajo hipótesis y detalles de guía; mayores clases requieren armado",
+          "fire_minimum_total_depth_mm": {
+            "30": 110,
+            "60": 120,
+            "90": 140,
+            "120": 160
+          },
+          "fire_rating_verified_for_this_ifc": false,
+          "profile_only_epd_applicability": "SIMILAR_PROFILE_60_NOT_EXPLICITLY_60PLUS",
+          "delivery_state": "Chapa perfilada fabricada en taller; armado y hormigón vertido in situ",
+          "factory_scope": "Perfilado industrial del deck; ejecución mixta terminada en obra",
+          "insulation_type": null,
+          "finished_floor_mass_kg_m2_excluding_supports": null,
+          "sound_reduction_rw_db_reference": null,
+          "impact_sound_lnw_db_reference": null,
+          "sound_absorption_alpha_w_reference": null,
+          "thermal_up_reference_w_m2k": null,
+          "model_geometry_level": "Section-accurate in known envelope dimensions; fold geometry is an interpretative reference",
+          "commercial_availability": "Confirm coating, steel source, dimensions and configuration with manufacturer",
+          "prestressing_steel": "not_applicable",
+          "self_supporting": "project_specific",
+          "span_m": 5.0,
+          "design_load_kn_m2": 2.0,
+          "topping_mm": "project_specific",
+          "fire_rating": "REI30 para espesor tabulado bajo hipótesis y detalles de guía; mayores clases requieren armado",
+          "mounting_system": "project-specific lifting, bearing and mechanical connections"
+        },
+        "key_features": [
+          "Cofraplus 60+: perfil de chapa 0.75 mm, canto de referencia 120 mm, hormigón C25/30."
+        ],
+        "generation_provenance": {
+          "generation_date": "2026-10-05",
+          "geometry_type": "Parametric IFC4 distinct steel/concrete components",
+          "source_document_paths": [
+            "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+            "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+            "Cofraplus-60+-2D--78de2e271591fdc494c24638be983e59.jpg"
+          ],
+          "reference_model": "BIM approximation; not fabrication geometry"
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "EST.FOR",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA-ARCHETYPE",
+          "code": "EST.FOR.MIX-CC",
+          "relation": "corresponds_to_family_not_exact_GS"
+        },
+        {
+          "scheme": "IFC",
+          "code": "IfcSlab",
+          "version": "IFC4 ADD2 TC1",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "code": "Forjados",
+          "version": "v.1_2021",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "code": "20.20.20.10",
+          "version": "v5",
+          "description": "Forjados",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ESTRUCTURALES"
+          ],
+          "labels": [
+            "Estructurales"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_catalogue",
+          "title": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "file_name": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "pages": "PDF 5 (pp. 8-9), dibujo 2D aportado",
+          "source_date": "2026-01",
+          "access": "archivo aportado"
+        },
+        {
+          "type": "environmental_product_declaration",
+          "title": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "file_name": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "pages": "PDF 1, 3-6, 11-12 y 15-16",
+          "source_date": "2026-02-27",
+          "access": "archivo aportado"
+        },
+        {
+          "type": "dimensioned_user_drawing",
+          "title": "Cofraplus-60+-2D.jpg",
+          "pages": "alzado 1035/207/58",
+          "file_name": "Cofraplus-60+-2D--78de2e271591fdc494c24638be983e59.jpg",
+          "access": "imagen aportada"
+        }
+      ],
+      "attributes": {
+        "source_family": "COFRAPLUS-60PLUS",
+        "geometry_part_count": 2,
+        "production": "STANDARD",
+        "product_model_identifier": "CP60P-828-E075-H120"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PENDING_PROJECT_VERIFICATION",
+        "notes": "Dimensionado, cálculo de incendio y prescripciones según situación específica; la ficha no equivale a aprobación de proyecto."
+      },
+      "environmental_data": {
+        "epd": {
+          "registration_number": "EPD-IES-0025705:001",
+          "version_date": "2026-02-27",
+          "valid_until": "2031-02-26",
+          "declared_unit": "1 m2 of XCarb steel floor deck profile",
+          "status": "CONDITIONAL_OPTION_NOT_ASSIGNED_TO_BASELINE",
+          "applicability": "SIMILAR_PROFILE_60_NOT_EXPLICITLY_60PLUS",
+          "source_file": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "concrete_included": false
+        },
+        "indicators": {},
+        "full_composite_floor_gwp_a1_a3_kgco2e_m2": null,
+        "optional_xcarb_profile_scenario": {
+          "activation_condition": "Confirm supply of XCarb recycled and renewably produced steel for this exact profile/coating/plant; additionally confirm 60+ eligibility where applicable",
+          "calculation": "a (EPD page 16) * manufacturer declared steel mass kg/m2",
+          "mass_kg_m2": 8.53,
+          "declared_unit": "1 m2 steel profile; environmental units are indicator-specific; excludes concrete, reinforcement, insulation, supporting structure",
+          "modules_by_indicator": {
+            "GWP-GHG": {
+              "unit": "kg CO2e/m2 steel profile",
+              "modules": {
+                "A1-A3": 8.47882,
+                "A4": 0.09383,
+                "A5": 0.620131,
+                "C1": 0.000769406,
+                "C2": 0.092977,
+                "C3": 0.174012,
+                "C4": 0.000539096,
+                "D": -1.28803
+              }
+            },
+            "GWP-total": {
+              "unit": "kg CO2e/m2 steel profile",
+              "modules": {
+                "A1-A3": 8.17174,
+                "A4": 0.09383,
+                "A5": 0.9383,
+                "C1": 0.000769406,
+                "C2": 0.092977,
+                "C3": 0.174012,
+                "C4": 0.000539096,
+                "D": -1.28803
+              }
+            },
+            "GWP-fossil": {
+              "unit": "kg CO2e/m2 steel profile",
+              "modules": {
+                "A1-A3": 8.47029,
+                "A4": 0.09383,
+                "A5": 0.619278,
+                "C1": 0.000769406,
+                "C2": 0.092977,
+                "C3": 0.174012,
+                "C4": 0.000539096,
+                "D": -1.2795
+              }
+            },
+            "GWP-biogenic": {
+              "unit": "kg CO2e/m2 steel profile",
+              "modules": {
+                "A1-A3": -0.309639,
+                "A4": 2.1325e-05,
+                "A5": 0.321581,
+                "C1": 0.0,
+                "C2": 0.0,
+                "C3": 0.0,
+                "C4": 0.0,
+                "D": -6.67046e-06
+              }
+            },
+            "GWP-luluc": {
+              "unit": "kg CO2e/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.00367643,
+                "A4": 4.21382e-05,
+                "A5": 0.00035826,
+                "C1": 7.88172e-08,
+                "C2": 4.16264e-05,
+                "C3": 0.000214103,
+                "C4": 3.07933e-07,
+                "D": -0.000150981
+              }
+            },
+            "ODP": {
+              "unit": "kg CFC11e/m2 steel profile",
+              "modules": {
+                "A1-A3": 2.33722e-08,
+                "A4": 1.39039e-09,
+                "A5": 4.92181e-09,
+                "C1": 1.17714e-11,
+                "C2": 1.37333e-09,
+                "C3": 2.32869e-09,
+                "C4": 1.56099e-11,
+                "D": -4.64885e-09
+              }
+            },
+            "AP": {
+              "unit": "mol H+ eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.0267842,
+                "A4": 0.000320728,
+                "A5": 0.00241399,
+                "C1": 6.94342e-06,
+                "C2": 0.000317316,
+                "C3": 0.00207279,
+                "C4": 3.82144e-06,
+                "D": -0.00504123
+              }
+            },
+            "EP-freshwater": {
+              "unit": "kg P eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.000116861,
+                "A4": 7.31874e-06,
+                "A5": 0.000174865,
+                "C1": 2.2178e-08,
+                "C2": 7.23344e-06,
+                "C3": 0.000111743,
+                "C4": 4.42707e-08,
+                "D": -0.000543361
+              }
+            },
+            "EP-marine": {
+              "unit": "kg N eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.00616719,
+                "A4": 0.000104919,
+                "A5": 0.000649986,
+                "C1": 3.21581e-06,
+                "C2": 0.000104066,
+                "C3": 0.000457208,
+                "C4": 1.45863e-06,
+                "D": -0.00111743
+              }
+            },
+            "EP-terrestrial": {
+              "unit": "mol N eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.0668752,
+                "A4": 0.00115155,
+                "A5": 0.00644868,
+                "C1": 3.52289e-05,
+                "C2": 0.00112596,
+                "C3": 0.00516918,
+                "C4": 1.58658e-05,
+                "D": -0.0122832
+              }
+            },
+            "POCP": {
+              "unit": "kg NMVOC eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.0197896,
+                "A4": 0.000473415,
+                "A5": 0.00209838,
+                "C1": 1.04919e-05,
+                "C2": 0.000466591,
+                "C3": 0.00152687,
+                "C4": 5.69804e-06,
+                "D": -0.00419676
+              }
+            },
+            "ADP-minerals-metals": {
+              "unit": "kg Sb eq/m2 steel profile",
+              "modules": {
+                "A1-A3": 0.000320728,
+                "A4": 2.559e-07,
+                "A5": 9.4683e-06,
+                "C1": 2.67842e-10,
+                "C2": 2.53341e-07,
+                "C3": 1.22832e-05,
+                "C4": 8.39352e-10,
+                "D": -1.22832e-05
+              }
+            },
+            "ADP-fossil": {
+              "unit": "MJ/m2 steel profile",
+              "modules": {
+                "A1-A3": 95.536,
+                "A4": 1.34774,
+                "A5": 6.4828,
+                "C1": 0.0099801,
+                "C2": 1.33068,
+                "C3": 1.98749,
+                "C4": 0.0131362,
+                "D": -12.7097
+              }
+            },
+            "WDP": {
+              "unit": "m3 deprived/m2 steel profile",
+              "modules": {
+                "A1-A3": 2.0472,
+                "A4": 0.0067387,
+                "A5": 0.169747,
+                "C1": 2.50782e-05,
+                "C2": 0.00666193,
+                "C3": 0.0418823,
+                "C4": 3.81291e-05,
+                "D": -0.218368
+              }
+            }
+          },
+          "reference_product_gwp_total_a1_a3_kgco2e_m2": 8.17,
+          "reference_product_mass_kg_m2": 8.53
+        },
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 67.543
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.59
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.295
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.942
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 82.37,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 60.8
+            },
+            {
+              "module": "A4",
+              "value": 1.267
+            }
+          ],
+          "total": 62.067,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 633.335
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "price_basis": "No declarado en documentación aportada",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 125.37
+            },
+            {
+              "label": "Mano de obra",
+              "value": 48.59
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 25.29
+            },
+            {
+              "label": "Transporte",
+              "value": 11.41
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 210.66,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 126.667,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 54.47
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.824,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 26.37
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.231,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.55
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 12.6667,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.77
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 5.66,
+              "subtotal": 5.66
+            }
+          ],
+          "total": 118.87
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ESTRUCTURALES",
+              "label": "Estructurales"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "factory_scope": "Perfilado industrial del deck; ejecución mixta terminada en obra",
+        "delivery_state": "Chapa perfilada fabricada en taller; armado y hormigón vertido in situ",
+        "traceability": "Se requiere lote, especificación del acero y confirmación de variante del pedido"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcSlab"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "FLOOR"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Cofraplus 60+: perfil de chapa 0.75 mm, canto de referencia 120 mm, hormigón C25/30."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcLabel",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA Marketplace desde guia ArcelorMittal"
+            },
+            {
+              "name": "ObjetoTitular",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "TipoBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Cofraplus 60+ 828 mm · chapa 0.75 mm · canto 120 mm"
+            },
+            {
+              "name": "Version",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA-2026.10 DRAFT"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Cofraplus 60+ 828 mm · chapa 0.75 mm · canto 120 mm"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "CP60P-828-E075-H120"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Cofraplus 60+: perfil de chapa 0.75 mm, canto de referencia 120 mm, hormigón C25/30."
+            },
+            {
+              "name": "Producto01_CertificadoConformidad",
+              "ifc_type": "IfcLabel",
+              "value": "Marcado CE EN 1090-1 indicado en guía"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.20.10"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Forjados"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            },
+            {
+              "name": "ArchetypeCode",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MIX-CC"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 120.0
+            },
+            {
+              "name": "Anchura_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 828.0
+            },
+            {
+              "name": "LongitudReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 3000.0
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ArcelorMittalTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductCode",
+              "ifc_type": "IfcLabel",
+              "value": "MFR.AMBS.CP60P-828-E075-H120"
+            },
+            {
+              "name": "Model",
+              "ifc_type": "IfcLabel",
+              "value": "CP60P-828-E075-H120"
+            },
+            {
+              "name": "System",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR"
+            },
+            {
+              "name": "DeckThickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.75
+            },
+            {
+              "name": "DeckProfileHeight_mm",
+              "ifc_type": "IfcReal",
+              "value": 58.0
+            },
+            {
+              "name": "Pitch_mm",
+              "ifc_type": "IfcReal",
+              "value": 207.0
+            },
+            {
+              "name": "TotalDepth_mm",
+              "ifc_type": "IfcReal",
+              "value": 120.0
+            },
+            {
+              "name": "NominalDeckMass_kg_m2",
+              "ifc_type": "IfcReal",
+              "value": 8.53
+            },
+            {
+              "name": "NominalConcreteVolume_l_m2",
+              "ifc_type": "IfcReal",
+              "value": 85.0
+            },
+            {
+              "name": "XCarbEPDApplicability",
+              "ifc_type": "IfcLabel",
+              "value": "SIMILAR_PROFILE_60_NOT_EXPLICITLY_60PLUS"
+            },
+            {
+              "name": "EPDIsForSteelProfileOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ReferenceGeometryOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "FireRatingVerifiedForThisModel",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "Pset_SlabCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.AMBS.CP60P-828-E075-H120"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-ARCELORMITTAL-BS"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "ArcelorMittal Building Solutions"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "CP60P-828-E075-H120"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "EST.FOR"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "commercial_availability",
+              "ifc_type": "IfcLabel",
+              "value": "Confirm coating, steel source, dimensions and configuration with manufacturer"
+            },
+            {
+              "name": "concrete_class",
+              "ifc_type": "IfcLabel",
+              "value": "C25/30"
+            },
+            {
+              "name": "concrete_density_kg_m3",
+              "ifc_type": "IfcLabel",
+              "value": "2500"
+            },
+            {
+              "name": "deck_cover_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 828
+            },
+            {
+              "name": "deck_profile",
+              "ifc_type": "IfcLabel",
+              "value": "Cofraplus 60+"
+            },
+            {
+              "name": "deck_profile_section",
+              "ifc_type": "IfcLabel",
+              "value": "trapezoidal"
+            },
+            {
+              "name": "deck_steel_grade",
+              "ifc_type": "IfcLabel",
+              "value": "S350GD"
+            },
+            {
+              "name": "deck_surface_mass_kg_m2",
+              "ifc_type": "IfcReal",
+              "value": 8.53
+            },
+            {
+              "name": "deck_thickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 0.75
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Chapa perfilada fabricada en taller; armado y hormigón vertido in situ"
+            },
+            {
+              "name": "depth_mm",
+              "ifc_type": "IfcInteger",
+              "value": 120
+            },
+            {
+              "name": "design_load_kn_m2",
+              "ifc_type": "IfcReal",
+              "value": 2.0
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Perfilado industrial del deck; ejecución mixta terminada en obra"
+            },
+            {
+              "name": "fire_performance",
+              "ifc_type": "IfcLabel",
+              "value": "REI30 para espesor tabulado bajo hipótesis y detalles de guía; mayores clases requieren armado"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "REI30 para espesor tabulado bajo hipótesis y detalles de guía; mayores clases requieren armado"
+            },
+            {
+              "name": "fire_rating_verified_for_this_ifc",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "galvanizing",
+              "ifc_type": "IfcLabel",
+              "value": "ZM175"
+            },
+            {
+              "name": "model_geometry_level",
+              "ifc_type": "IfcLabel",
+              "value": "Section-accurate in known envelope dimensions; fold geometry is an interpretative reference"
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific lifting, bearing and mechanical connections"
+            },
+            {
+              "name": "nominal_concrete_consumption_l_m2",
+              "ifc_type": "IfcInteger",
+              "value": 85
+            },
+            {
+              "name": "prestressing_steel",
+              "ifc_type": "IfcLabel",
+              "value": "not_applicable"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Chapa colaborante de acero galvanizado y hormigón in situ"
+            },
+            {
+              "name": "profile_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 58
+            },
+            {
+              "name": "profile_only_epd_applicability",
+              "ifc_type": "IfcLabel",
+              "value": "SIMILAR_PROFILE_60_NOT_EXPLICITLY_60PLUS"
+            },
+            {
+              "name": "profile_pitch_mm_geometry_reference",
+              "ifc_type": "IfcInteger",
+              "value": 207
+            },
+            {
+              "name": "profile_pitch_source",
+              "ifc_type": "IfcLabel",
+              "value": "Dibujo acotado del usuario"
+            },
+            {
+              "name": "reference_model_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "reinforcement",
+              "ifc_type": "IfcLabel",
+              "value": "Mallazo y barras según comprobación específica de proyecto"
+            },
+            {
+              "name": "self_supporting",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "span_m",
+              "ifc_type": "IfcReal",
+              "value": 5.0
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Losa mixta portante: proyecto y ejecución a dimensionar"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado mixto chapa colaborante y hormigón"
+            },
+            {
+              "name": "topping_mm",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 828
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Chapa perfilada de acero galvanizado",
+          "role": "composite_steel_deck",
+          "material": "S350GD ZM175",
+          "thickness_mm": 0.75,
+          "surface_mass_kg_m2": 8.53
+        },
+        {
+          "sequence": 2,
+          "name_es": "Hormigón estructural vertido in situ",
+          "role": "concrete_slab",
+          "material": "C25/30",
+          "total_slab_depth_mm": 120,
+          "nominal_consumption_l_m2": 85
+        },
+        {
+          "sequence": 3,
+          "name_es": "Armadura, conectores y malla de reparto",
+          "role": "project_defined_reinforcement",
+          "material": "Acero de armado, pendiente definición",
+          "quantity_status": "NOT_DEFINED_DO_NOT_USE_FOR_BOM"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "technical_document",
+          "title": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "file_name": "AMBS_ Composite floor guide_EN_2026_DIGITAL--ebd2ade1e9d9a66cdd793c3ce496d993.pdf",
+          "pages": "PDF 5 (pp. 8-9), dibujo 2D aportado",
+          "status": "SOURCE_REVIEWED"
+        },
+        {
+          "type": "technical_document",
+          "title": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "file_name": "XCarb EPD Composite FLoors--23da5c4dc12cd749f2f2d70df288b4f2.pdf",
+          "pages": "PDF 1, 3-6, 11-12 y 15-16",
+          "status": "SOURCE_REVIEWED"
+        },
+        {
+          "type": "technical_document",
+          "title": "Cofraplus-60+-2D.jpg",
+          "file_name": "Cofraplus-60+-2D--78de2e271591fdc494c24638be983e59.jpg",
+          "pages": "alzado 1035/207/58",
+          "status": "SOURCE_REVIEWED"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "EXTERNAL_VALIDATION_PENDING"
+      },
+      "data_quality_notes": [
+        "IFC de referencia BIM: NO es geometría de fabricación, documento de cálculo ni certificado automático de resistencia al fuego.",
+        "Mediciones de volumen de hormigón y peso de chapa proceden de la guía, no se infieren de la geometría IFC esquemática.",
+        "Las armaduras, conectores, tolerancias de apoyo y dimensionado estructural requieren definición específica.",
+        "El atributo de escenario XCarb no modifica el material base: contratar acero XCarb y comprobar ámbito de la DAP antes de activar sus impactos.",
+        "Los indicadores ambientales de la DAP excluyen expresamente hormigón, armaduras, lana mineral, montaje y acabados.",
+        "El paso/ancho de los pliegues para los perfiles distintos de CP60+ es aproximación gráfica; la altura del perfil sí está indicada en la denominación/ficha.",
+        "La DAP enumera Cofraplus 60, no dice literalmente Cofraplus 60+; equivalencia/alcance pendientes de confirmación del fabricante. La imagen adjunta permite verificar ancho 1035, paso 207 y canto 58. La versión 828 resulta de 4 módulos de 207.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.design_load_kn_m2",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.prestressing_steel",
+            "technical_data.properties.self_supporting",
+            "technical_data.properties.span_m",
+            "technical_data.properties.topping_mm"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "assets": [
+        {
+          "id": "MFR.AMBS.CP60P-828-E075-H120.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/EST_FOR__EST.FOR.MIX-CC__ARCELORMITTAL__CP60P-828-E075-H120.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Forjado mixto chapa colaborante y hormigón",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Chapa colaborante de acero galvanizado y hormigón in situ",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Chapa perfilada fabricada en taller; armado y hormigón vertido in situ",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 120,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 3000,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 828,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 55.27,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "Losa mixta portante: proyecto y ejecución a dimensionar",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 222.35
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 261.4
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Cofraplus 60+ 828 mm · chapa 0.75 mm · canto 120 mm. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 37.9
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 40.4
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 169.0
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 14.1
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

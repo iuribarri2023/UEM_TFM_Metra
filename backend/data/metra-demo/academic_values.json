@@ -1,0 +1,1749 @@
+{
+  "g:ENV.CUB.PL-CON.GS001": {
+    "/technical_performance/thermal_resistance/value": "68f55134cd414fe59a864b1620d93943131bd4bc595ac7ea886539dae0ef6742",
+    "/overview": "7eac0c5ab3f5030078104102a815e921effbff23b28eaeed2c3dff2ffab88563",
+    "/composition_scenario": "967ede676e6c18211bf405d647eda7d35f6c4edbf52c9006239d206f10951410",
+    "/economic_data/illustrative": "b29677f63de40007425c60efd52c672bb04c76a63ea52c7bda00f1163c1f68d9",
+    "/environmental_data/illustrative": "2ee74343c4cb16c937e8aa7a1ce2122416109ee94314769eec44c3a949c853fb",
+    "/technical_performance/illustrative": "1b71d792e8fadafdf93066a5f042c0cb5edc1506ae3f012eedfee2eac109d215"
+  },
+  "g:ENV.CUB.PL-CON.GS002": {
+    "/technical_performance/thermal_resistance/value": "db7dc8ce07623b4654a57d0ad29200bdcf4eff470334d40dae8a2675a165372a",
+    "/overview": "d941fab03b6ceed4b9ef448165a969084ef3e43e3d060e253ddcfd33e2299a47",
+    "/composition_scenario": "dea01d2068797ca36b9f393cf138370f9248402267e94baff76b1d0420692664",
+    "/economic_data/illustrative": "7b9b6e28562f704e7797aac2b17dd8f973c4d048d95771d6f0729a7f51bd0b78",
+    "/environmental_data/illustrative": "b88c08edcd96f2e1261e730c9fc78082bdb043a2a5e280d079bb3a21cb562deb",
+    "/technical_performance/illustrative": "92d2923184c6ea718fb51e9c0cf26e6fa65532ab98335e74ce30fb70cdde71c1"
+  },
+  "g:ENV.CUB.PL-CON.GS003": {
+    "/technical_performance/thermal_resistance/value": "e718bb7e10671e71148d0e3067877531739a6446685ce358a981635f9119859d",
+    "/overview": "714c4981173406569ba100850f49ff9f77927d02faa548abc3ad1b2f8feca8ea",
+    "/composition_scenario": "8cce8c9dc1f05d3cdfa5a1a1c6c6c6f56b0d97790a40cde613db68a8d1d11b87",
+    "/economic_data/illustrative": "cdfcbb43428f57633396e92df53cfc3b590d0fb9e675e17d96f00f25826f787d",
+    "/environmental_data/illustrative": "7dce2ca2b337bbd5a058e8087d7897c1bd3c446df2f4d7ec2e3ae60b13abe1f6",
+    "/technical_performance/illustrative": "9059b2c4b064d87b165a56d81dca290fd482c266fff7d24c3aee839f2a2906d8"
+  },
+  "g:ENV.CUB.PL-CON.GS004": {
+    "/technical_performance/thermal_resistance/value": "aaf780e166b6c1517fb316e5597c7fa14397f1e39563cec63e6e50bd2da36a46",
+    "/overview": "81ee4142a0a1dd14f5493032607ebea8895eec590db2cfbc65c6acb114dad253",
+    "/composition_scenario": "9e441499134486ec4b3ae583eacce271734f2cf605d69a9f93555029a7fcc4c7",
+    "/economic_data/illustrative": "32e4becda7895d1309df7f6466d5dff59b7ea04d462e2c014ee53c80dd38d10a",
+    "/environmental_data/illustrative": "87501a268509a134a70a976995b8e222570ebe35c06260c54926f940fb19d23c",
+    "/technical_performance/illustrative": "133dfe2287d5b10f930d8a0e9a51d93fd4824ce910cfd46e10970a42ae7b892e"
+  },
+  "g:ENV.CUB.PL-CON.GS005": {
+    "/technical_performance/thermal_resistance/value": "902795fe6daca24ce5bca2a8f7c9de0201f677be45668721b8d56e7312ee8a6e",
+    "/overview": "4320e72c9f1fed69946f6424cd1a01db6b8ccc5fb8161e82dab01b78c4e1494d",
+    "/composition_scenario": "3597532c36e835d552bb84a426c4467933a9af05db0d314b330d85d9c6291a22",
+    "/economic_data/illustrative": "291764bd5197aa69bfb46e0c6d1fdc21bdcf8c146dd0336ddf293c1a4bae4ee6",
+    "/environmental_data/illustrative": "aa4de5c864709843f7b7ead630566a98522eb27ab498bb2c1c9ea9c84a31bc42",
+    "/technical_performance/illustrative": "5a49acf3bf56a00428f8b0276af013bef1261cf79039f97d4710e532fc8b2ed9"
+  },
+  "g:ENV.CUB.PL-CON.GS006": {
+    "/technical_performance/thermal_resistance/value": "c57e4cd50184263c817352a6451e3c4c03cc5fd4c94543d0557b0141cf2b44b2",
+    "/overview": "0ef53aa11b6cfae8068b9f259d0cde3c762977392eb596ecb65503bf36144a70",
+    "/composition_scenario": "ff1c84562e1a8d762c3791e0274e901760e254117e42b5154cff210d37d6a6fa",
+    "/economic_data/illustrative": "046b395663079b32540fcc0620da1119ebb17d582cccba9db0e6f0db0775d680",
+    "/environmental_data/illustrative": "64bbe890f98d5272b12b1b84efd058a96075a70c731a2f08b58e8456606d9348",
+    "/technical_performance/illustrative": "32d472aa9eb543d1dc50d5f74a851a8fd9d6ebe495a67e6644f1d074cf816f86"
+  },
+  "g:ENV.CUB.PL-CON.GS007": {
+    "/technical_performance/thermal_resistance/value": "cf0cdaad3303f6f430f548897210bf2b1e58b4ba51475c5236a16cbf145b2723",
+    "/overview": "2e857f7895c124fa24b3bb7dc36fc2b08f388e571ac0cd9c78c7006fa9410d36",
+    "/composition_scenario": "af7e58baec36b4bd791f486fac56969632760b3b87d6ca1cedfbf1ef6092c4db",
+    "/economic_data/illustrative": "a9bfa106cec47f1475f94a799c2ffe1c5e58d781ca026016ab85481b1caaefb7",
+    "/environmental_data/illustrative": "668945a5db5ab0f437987d8068f899669f4e78b55ec2b1d779a640821961525b",
+    "/technical_performance/illustrative": "ec0712139540d53e4a8d5e67e9117c221b54c7d3d8a5db76486dd02ae05d1902"
+  },
+  "g:ENV.CUB.PL-INV.GS001": {
+    "/technical_performance/thermal_resistance/value": "0c2da39183d5e85438136c0fd6a19f4e70d5cca24251cdaca7e28082a4dd1052",
+    "/overview": "cdcdc28b0cdb1f0efb02f4eef9f3bf52b3a4f4191343b9d77dac372222ad778b",
+    "/composition_scenario": "324b8a9821f2a9c1cb3226c6c81acb70993aeb1214397a147b64300e37d668fc",
+    "/economic_data/illustrative": "42b179059c5b6b5d2f669ccdfc0939ffafac38f639951122d34a39b7e4dcfaec",
+    "/environmental_data/illustrative": "42f032360ec7cdc426e7e049b6c859bebcfa4036e3ef5ea3ec01300779ef3e55",
+    "/technical_performance/illustrative": "8b886e32c9fc6ec6fde49bf6fbffb0f9f845b2a9a9342490bb2ff79863f35340"
+  },
+  "g:ENV.CUB.PL-INV.GS002": {
+    "/technical_performance/thermal_resistance/value": "32209ccbf8a8e509b9027698cc173343a2695e8ecdbe899bf5335a3100c956fc",
+    "/overview": "78c6c4b4c09df3a2e34d52ed7e8df5f0f41017538774dcaa0fa1d70b6f052554",
+    "/composition_scenario": "66cf4f1a38bbeb71320b7bac67b0a6a52f618a57bedcfe90145d79875c81c403",
+    "/economic_data/illustrative": "0c6a5361f69923a9f069f90353546e60df767f67bf8cb57d885d91e6cbe1e945",
+    "/environmental_data/illustrative": "20045e393c9a47e653610987b744219f694f3fd952b86a11c581c9e0585a11f5",
+    "/technical_performance/illustrative": "9a54f89d8ea69a849456ead784337c611942774127d5d5014bedd91bef825044"
+  },
+  "g:ENV.CUB.PL-INV.GS003": {
+    "/technical_performance/thermal_resistance/value": "f574522e0318b5cd23e21a70cc6ed7c4fbc1de5d87363ad3fd7312bee4e0468c",
+    "/overview": "b7d7713bd1ada368d9e262c80ddac7ceebcac2efd368a529cf810085cee48930",
+    "/composition_scenario": "09f2d84d61bd0b2875d338b1f155c5f2d4936dafb51e86c16e6cb40946ea74e3",
+    "/economic_data/illustrative": "282dd33753909e497b324eccb6b0f1d4325a7e2906a56672bcaa004e9ca9a715",
+    "/environmental_data/illustrative": "5c72cc91aa91ca14b86fbad1a751ac64b7c26bc8360fa3fb0347fcacc157e5fe",
+    "/technical_performance/illustrative": "4f526de52ad9cc848b3d16fdbcdb3e51bc955a443cf10519a897794f8a273683"
+  },
+  "g:ENV.CUB.PL-VEG.GS001": {
+    "/technical_performance/thermal_resistance/value": "e722cd5750467480e3ead3c8bf750a3ab060cd819e562d4a4c772138daa83ee1",
+    "/overview": "b69abfe735d7eddad4e8914389002e3f5c7c46b6637335a6c9e27f60a26f40d3",
+    "/composition_scenario": "427caeaee58675ed9e58ee63f37f2514708baf26f9046cc707ac7b9339fb6315",
+    "/economic_data/illustrative": "2a1b302305bb3f2727c6a2f60fe90aba8c5f9740d89599c67429289380b8d49f",
+    "/environmental_data/illustrative": "9bb727dd9ff9d7825fea01ca68c4c1843c1d777894164c24df9757f590062bad",
+    "/technical_performance/illustrative": "b017e3a66348f46e032fe7419285746aefc933e3f04ce47ab12fc5a2626d629f"
+  },
+  "g:ENV.CUB.PL-VEG.GS002": {
+    "/technical_performance/thermal_resistance/value": "442a29e2408a2f9d8ebc3993b44e4867d3b80853367b2f80ee3bb424d026ce2e",
+    "/overview": "9722879028df1dc09e9a79828f4d39ba8de2163d0559e0162c8328a6831f1ee2",
+    "/composition_scenario": "a482fa60c838bb480f2edbd4e7b3bac9b712cad758bf05193ec0a13d1060952d",
+    "/economic_data/illustrative": "3228292f552bb83edecf7e054ec227885dafb96dc5308c4190f8dcad12d57b5f",
+    "/environmental_data/illustrative": "ba59e122f309c24a7dfc075defedc19e9530b4d44ff57b3b4e3ce320b4e1e8bf",
+    "/technical_performance/illustrative": "02f8e3b380cfc7e586043d8ee304e62edb16689f06a0e40842c05579b5984c87"
+  },
+  "g:ENV.CUB.PL-VEG.GS003": {
+    "/technical_performance/thermal_resistance/value": "2eaaa72530911cbf92525c1367ff12a4ac78dde2b2f17f8806df9c32394b46e6",
+    "/overview": "6f09cc1ee9263f65142651c8a4df48f8914350583626f195c36dcc2e1ebe906f",
+    "/composition_scenario": "22c9948d7207ec879b52121898a900b0ce264fab3dc2c4069f965feafe83cef4",
+    "/economic_data/illustrative": "efd6c6ff45009fce1266f9d4b3b17d7ea9421da0220a7b11a68f778baee2fe5d",
+    "/environmental_data/illustrative": "b9f5aed6ca029a0cfb79228e8ed22168bad1c7957ec641ca83e697b952a90228",
+    "/technical_performance/illustrative": "738cfdf4a3564fd0a615462a690899c6467eb2bcbcf633be3939bd30a304d45c"
+  },
+  "g:ENV.FAC.FAB-HD.GS001": {
+    "/technical_performance/module_width_mm/value": "20bbfc0e85dbb92bed9ecce97e79e783e849a14cfbaa13c0109f8880846cd5ce",
+    "/technical_performance/module_height_mm/value": "7d1698c1b549afb421d7ecfea2d6b3b8d362db576900c566c04b72d7be469b3d",
+    "/technical_performance/thermal_transmittance/value": "221764976efe04132774d96b0253cc31434c5261737469324f222621baf34b20",
+    "/technical_performance/rw_db/value": "97683c1979d90e4ac85425318996e4c7b299756e7a791e0a9bac5787212c468e",
+    "/overview": "a1f259dbbf5011d3c35d68720bccf054dcc7436d2d754f4e28f0db97d821ee59",
+    "/composition_scenario": "d88e563771aba9b73ef4799833d0a5a00b0a20d614ce61df13050f1c423fdece",
+    "/economic_data/illustrative": "3ab8de10b7558c9e94e79b73c86f7612fd499551f8d3fa82cb67fefd2ff6525d",
+    "/environmental_data/illustrative": "4cc07054a1e1d35d0b21975997b6dd2cdd29a526e3990f99dcfe9aeb8a2afe09",
+    "/technical_performance/illustrative": "30bdf7deb4e53398cf51765239ebda3e26e0089a64141ef4412a34a5aa1222c0"
+  },
+  "g:ENV.FAC.FAB-HD.GS002": {
+    "/technical_performance/module_width_mm/value": "216dcea6039bb54b4bb11048b047eff26abcf8ebbedad960010ca491f1e693e6",
+    "/technical_performance/module_height_mm/value": "8834600356cff504f38ca5b6410acf2931ba709d0749e5ef6abd0f9206ffe9d7",
+    "/technical_performance/thermal_transmittance/value": "6382e07f9de0c85293aee2a45b88c61c28589419682ecc2f8c097f750e861a24",
+    "/technical_performance/rw_db/value": "457a963a813c0963d0661e888ecf53b80354035cb3b6a740ada5e7e4cd5eb0b1",
+    "/overview": "b2516060353dc2f528d47b4d6a2f24ee05f965a478f0a29a877fc68af0f5b531",
+    "/composition_scenario": "1b747a766e8a6ee96f732b5373e8babbd8f911ffd31c7a8673c751b9a411f45e",
+    "/economic_data/illustrative": "e1b26aac921f96c40cb2821eee81f097398e74f954c3517a23a1f3d36b8f5687",
+    "/environmental_data/illustrative": "0305b1140c1e68fb81ef77b4f4f3e68b9b8835e3e8ab08dc939939527cd6d41a",
+    "/technical_performance/illustrative": "b4f11faa3147fd5827bef73e82950a5ac431a86f8fa151f6226c09ff691251a9"
+  },
+  "g:ENV.FAC.FAB-HD.GS003": {
+    "/technical_performance/module_width_mm/value": "c421b04a4de3076885bb50669eff3758a6dacf77ff93d7016c81c9af958ad566",
+    "/technical_performance/module_height_mm/value": "2fd40943e30338c0ca902a4b51e8e49755f52ebbc9409a55086069cd306645b0",
+    "/technical_performance/thermal_transmittance/value": "db9640880876d03f065d8ef201f81d17b0fc8aa13103eacfcef4bceb907c56de",
+    "/technical_performance/rw_db/value": "829562167549310d0b0146af03cd86ac3f2ded2f85cfd21b4b805e3ac9db672e",
+    "/overview": "e969d74eb14b5434d92dabee0ecd079879e88d954b6e4edcec0f89054e9167ad",
+    "/composition_scenario": "d6c14e804d5da5ac9e0dc1a03b34603f47efb5503d02a4e23efaa3b4b7f7d5f0",
+    "/economic_data/illustrative": "8e732e64609c72c10990881b3e0096319a5acf80acd14247f30ff1c987f5732a",
+    "/environmental_data/illustrative": "d719e2d1a87907d6770b02b1d84d5191b6212953d6844d33fac8e60cb0e21f92",
+    "/technical_performance/illustrative": "3090be0df32dbd8646f4ca7433870e85292fcf7ed13c2a2caa7f21f1423966f2"
+  },
+  "g:ENV.FAC.FAB-HD.GS004": {
+    "/technical_performance/module_width_mm/value": "61c16f36926c53ce75e6ad81bca13914b840fdb9af55e20868139dd5d47c3505",
+    "/technical_performance/module_height_mm/value": "dd5828a41fa16a164d915af21e73aaec3a56043bea721eead4067007a2ad8948",
+    "/technical_performance/thermal_transmittance/value": "6d49251ba160fb2354414fa1f71a08e89ed043d038af8ccfe33b7e6adedac0d4",
+    "/technical_performance/rw_db/value": "691a330cb4f9349a96525c301743f87e962b114458c538e58a30e504ff456693",
+    "/overview": "19b9f85adcbfaadf798cab58f3a3c472f47779ce6a22df10ed8167c6726e1f3c",
+    "/composition_scenario": "344fdb3b6e39c82a2a0a51586a672aa79d8e5a108877eabd91ff768ebc3abfc5",
+    "/economic_data/illustrative": "ecd14dda151b7b781124b5a44d34c49ac55cc66b23c6163687ce89ba2e30fce1",
+    "/environmental_data/illustrative": "d154a3969fdcd496cba95ee71481e5ad964b4a33d7242099c243610d41a94c02",
+    "/technical_performance/illustrative": "27f2766f3ff903f02914605e1dd6525bce5056a035b2ee258f54f358bf38fe40"
+  },
+  "g:ENV.FAC.FAB-2H.GS005": {
+    "/technical_performance/module_width_mm/value": "dba91d05fdbefad6080600c5ee06342bd4957b8e36a2782e105119bfb3279fe0",
+    "/technical_performance/module_height_mm/value": "b6dcc86bbd50fb4f3f040c368ba57e99b5b994e175c6f22363b059c2f483eb6d",
+    "/technical_performance/thermal_transmittance/value": "5547bf1b31f892555db7bd0f3942410b37ebc0e5b2d956580f04d5d268a3561d",
+    "/technical_performance/rw_db/value": "641120437343ed97d2852b3cecd2b62b804a7546a1a8a1666fefdce5819848ad",
+    "/overview": "780221ca0291ebb31cee02a061a381799d57241bdc096a6e2e87a3113e28eb20",
+    "/composition_scenario": "ba869321f9f4ce305c3386f6bd1d4d16089867abcbcc52888e777c81648de9de",
+    "/economic_data/illustrative": "368758238c1474486befeaa78ca1c7c706ca8c42022a1d5bef323d5eafb077da",
+    "/environmental_data/illustrative": "128bccc8485f750c88a5488275dc84621481489b2009b43204279ad6b2f5f6c3",
+    "/technical_performance/illustrative": "6c455f4d00973b0fbaf72b756d49cda2ed292666c488ac2cb877d868361f3222"
+  },
+  "g:ENV.FAC.FAB-2H.GS006": {
+    "/technical_performance/module_width_mm/value": "b0ae8336853074fc618bdb269cd2667e010075e06100968da1237ec3eb170cf6",
+    "/technical_performance/module_height_mm/value": "48c982a149a3d78c513e774103347e9d8ec45a7c1df92473fa732eed231d981a",
+    "/technical_performance/thermal_transmittance/value": "44896b09365746b5f7167ee4d64988a38f7f4628803cbf86224e74eeb7c69e9d",
+    "/technical_performance/rw_db/value": "b38de4a0e2f959b4850a37be64966331e4eb33adfac72819ab51d97489ccea8f",
+    "/overview": "5b32cd3d91fd9abdbb765df9dbbaa7a0f466766f24699010b5bbf8a8d97a3155",
+    "/composition_scenario": "419150f467ff50b0da31035a9178892e5163cd8022ce2c1115533934554ea1d6",
+    "/economic_data/illustrative": "606e7e9d0239e273dc114c2a2099ebce8131137347b7089e91e124ac9bb9cb12",
+    "/environmental_data/illustrative": "7d8375132033d5e19835f16fc3658eeb6a0c7ca32032baa1c125fc6585f587d0",
+    "/technical_performance/illustrative": "12fed20a01ba430d2c94974533dd6a4e05546f6bed90f220c09a48ffbbc305f1"
+  },
+  "g:ENV.FAC.FV-EL.GS001": {
+    "/technical_performance/module_width_mm/value": "06641a54f6d5ecc7d5577b527f43cea715b9d6c055a4952918e8c4141dc7290c",
+    "/technical_performance/module_height_mm/value": "b4a24032950d92dbedf0ae781c1630e37d9549c3c23d4a138aef3d584b5ae95a",
+    "/technical_performance/thermal_transmittance/value": "bffb16d6fe1445f051b3cff3025340011b817b391ffc04dcd77d1452efa10c25",
+    "/technical_performance/rw_db/value": "d8b2ae1daf8dbac8e50a4c9a5938dedd9f45739d95c434db72202daa47307615",
+    "/overview": "86e14a75b4673f575306c5b9f530215779a9396703dde5726eb83ca8e7b3498a",
+    "/composition_scenario": "97537f79368bfb36f0368a5b4de2a54fe952bc3f0edb5d00ab7457cc545122f9",
+    "/economic_data/illustrative": "51e9cbe2c5aa47522c67d43c450c32a876064b2150c08ec0155ad06c86d25b1c",
+    "/environmental_data/illustrative": "fc95855c0ef332a770ee9a4466540675b08b426e346e8d52bfebecf72483194a",
+    "/technical_performance/illustrative": "23037f4751884cd7c1acc6b99021c6de3cf883a976d13ac00780cfb98d5af8f1"
+  },
+  "g:ENV.FAC.FV-FAB.GS001": {
+    "/technical_performance/module_width_mm/value": "0fb42a1271a11a037220cb8cba4f848812b901901b27b17a34f8f32310881f08",
+    "/technical_performance/module_height_mm/value": "3057253bb9835b2db628ee43a1d6904b4ea11356ecd5ed2b59688012836e3058",
+    "/technical_performance/thermal_transmittance/value": "4942870d7312d707982f792e63180e31f72925b998dec46f7ce23db6f16e2d3b",
+    "/technical_performance/rw_db/value": "df03c2dcc6f6667c8e870426494878a93897bec14decd17c0b04a16ab9557e3e",
+    "/overview": "2ed9e95798b3039a6ce5efc2f2f8d71bbc79d38078bff82a4651935259cfa278",
+    "/composition_scenario": "0670c2ad61c3bb691a1bebe8bb74665d2e9c91ce15a4c5c7b89e7c476fa66b17",
+    "/economic_data/illustrative": "f633ea96cc9e32ef9086d85edaa0aabbecf1c0d2d1609d459760b18a93f2b57e",
+    "/environmental_data/illustrative": "cb81ec28067d3c499090b97ba248ce261c05b63231a01914de2fec0083478ef5",
+    "/technical_performance/illustrative": "ebf2aae0c7d6370055a029636a11e622374bacfcf279c4e549cc2b8d36fdfa5f"
+  },
+  "g:ENV.FAC.FV-FAB.GS002": {
+    "/technical_performance/module_width_mm/value": "2bb69d38ddc97891fbaa61efcb66d7cf91072558522baae55117fa8bd2282afe",
+    "/technical_performance/module_height_mm/value": "3f60bfd1fecd98c225cf0395f87e7aa8d954677943ea6483f7de6e342ac42506",
+    "/technical_performance/thermal_transmittance/value": "5552c3489bf697c3f025f900854d2e537378af7b9fea4590de04a3f1ad2ffc6e",
+    "/technical_performance/rw_db/value": "ccfbbcc40cee9957c28181feb417170eb79bfe4e50095790b17ae71bb7b35aec",
+    "/overview": "a4273c65c1369418f6a960502be3c058e1d51253d95214206a87c6fc898fa83e",
+    "/composition_scenario": "f1d4c0e4dc2b93c64edb420cb21fd4dbee1ba6f09db1feb97aa7411384f4c0a9",
+    "/economic_data/illustrative": "e7dc3278e00bbaa15dc68be8b0f5e5a1627e830ed848b4c6cb69ae7efa7d8688",
+    "/environmental_data/illustrative": "24c01cc1d28b3484c15cf4c5daf4cd1b8c0c522a87e47fe25134ba3b6bb6388a",
+    "/technical_performance/illustrative": "8994614560f5149a4c69d27a1da1cefdc995bbb79e44376a2178092453382f85"
+  },
+  "g:ENV.FAC.FV-FAB.GS003": {
+    "/technical_performance/module_width_mm/value": "f37c51ea4e10612a9e9620c0594d8f070a530b843a4dc5273dc0b0fa08bdf879",
+    "/technical_performance/module_height_mm/value": "da78806e69d405a3c175381e8f4cd45bb3aac8c1d8d4042bcac909091ab3ec87",
+    "/technical_performance/thermal_transmittance/value": "bffb16d6fe1445f051b3cff3025340011b817b391ffc04dcd77d1452efa10c25",
+    "/technical_performance/rw_db/value": "ccc5227991e3f2be9c6bf0142e52f7b230150762273a955f14c952bbcca0cd46",
+    "/overview": "140e5bf5b38c6e5acab84c21ef85d2b096194d1b36ab1f47aec8dec1caacf463",
+    "/composition_scenario": "f35d8b4d06c2644e6d7a81f6712d7d0ccf5b54cc1246c973a9060c5728af2e6f",
+    "/economic_data/illustrative": "ca7154d0f40aefd57f6a596a318e59dd880cffc9b51a35f570d14ba63048288d",
+    "/environmental_data/illustrative": "244b86f7cb0abfd47ae5d6ab673e5ac5e1b0cd8fada4cd3952280175be412094",
+    "/technical_performance/illustrative": "6e2f437b21a9a544268ec8b436794056b57ab5f6089e80c2465bfecb08659b04"
+  },
+  "g:ENV.FAC.FV-FAB.GS004": {
+    "/technical_performance/module_width_mm/value": "e59869027cca20fddbf22ec1ffee0ab205a3d502c0c1e52bb68064b25e7f2306",
+    "/technical_performance/module_height_mm/value": "3e4972d62c4cbaa9a163b221c28a2ca01db434bcdaf8eef9b6643069a523d937",
+    "/technical_performance/thermal_transmittance/value": "5547bf1b31f892555db7bd0f3942410b37ebc0e5b2d956580f04d5d268a3561d",
+    "/technical_performance/rw_db/value": "1166db998d479808cebfc25a1103a870fa8256dc851e7112b1bdfd62941824d8",
+    "/overview": "d10ebdc3a57af3f41c893093a3aa99386cb44dd66beaa42214556513ab9cc4ff",
+    "/composition_scenario": "15f24cbdd8b290674b6b5f7ff7eb6273a6dd35be04ac4780a6fa2aae5028f2d0",
+    "/economic_data/illustrative": "e0fe876aa06fe9e41e88bf770fa513120dc63ddb711d09980e4c905eaecace72",
+    "/environmental_data/illustrative": "d3e78ab5cb53b259402f4a12d5940a804be90aad97590a5da7ee2f55e8ea7602",
+    "/technical_performance/illustrative": "43ab388eea6d71f05bdf2a7ce77f8b9cc5ffa5d9b644cdba8ad31811d2920e3b"
+  },
+  "g:ENV.FAC.FV-FAB.GS005": {
+    "/technical_performance/module_width_mm/value": "46cc0f69cf021ecfcc50cee7ded9a041fb2a6347a14b01bb13d38ec0dfa35baa",
+    "/technical_performance/module_height_mm/value": "7ea943b2a7f91896ed670d3ddd4a96bafc2b06b597c3f03f791f4088413488f6",
+    "/technical_performance/thermal_transmittance/value": "6669743c77ff5bb876bc7aa9cd5d54b997bee0bd5b6e1f86a1516feb574b0ff6",
+    "/technical_performance/rw_db/value": "a445ff43f38012133804cdf54a61d43b42e0b750fe516cfa685dd8c37a20bc4c",
+    "/overview": "d7e28a81cb08df47a4395cb6550e1b61ff2175358b5c37c8f911672af0eea508",
+    "/composition_scenario": "5a3ad7a410dbd05fa0fa65d00bcf62b34bb203f1268d237c0bba79fb901f2625",
+    "/economic_data/illustrative": "12153e2bbb0b87e5f2530330141694116d108102dc4daed915f6d78c76b152e1",
+    "/environmental_data/illustrative": "8ba04eb83467f74583bc33ab1639f2366939102a50c80e56c5df605cd5614881",
+    "/technical_performance/illustrative": "8ae1744aff2ee3ea6c51f7bfeb9abcf1b1be35158d07a887f20e143280525ca9"
+  },
+  "g:ENV.FAC.FV-FAB.GS006": {
+    "/technical_performance/module_width_mm/value": "a9d2fc94f535632fa27a23c391338229b336a21d588b7c7941c3591c77d3446f",
+    "/technical_performance/module_height_mm/value": "3388cbfa17286d7a64f134c324cd13793b9d1da25c82c86df94bfec70e325a11",
+    "/technical_performance/thermal_transmittance/value": "347effe255a4e184f77baf14637aa83fb2db1f9d66b4eb1940937f626894de15",
+    "/technical_performance/rw_db/value": "a8ee3d0a32e36c7cef748c7e1768668d9bca76455d40c8d066544c293d889cfe",
+    "/overview": "100ccf82259c79abe61e07bb7e3e298ae452f3567df32fec3c9d354e6a4b0b78",
+    "/composition_scenario": "2e8af185d14725b93fd07bc15ff92966f4ecb3bac372dc5f529a910b434b2cf5",
+    "/economic_data/illustrative": "c89f56c875e4358e8849ada7b96f73693a12e084b44009d0473d9ad6759c5824",
+    "/environmental_data/illustrative": "9f35198ebe212033b8b36807de0760621ca708cc8e5115c91ffe51b58550b18a",
+    "/technical_performance/illustrative": "33cbfebf47cc19d7f9bf54c4c9cb3507f3721a134c04541b2103f2c21938a2ad"
+  },
+  "g:ENV.FAC.FV-ME.GS001": {
+    "/technical_performance/module_width_mm/value": "97f1fc1de98a389e65965fff8d26f941b903bb211228a737e2bfca23eceb8fcc",
+    "/technical_performance/module_height_mm/value": "cf5edc5be7fb4ab9aebf5fde03ee33c64c78dba9b58806b4e0435067dff3d007",
+    "/technical_performance/thermal_transmittance/value": "ad9dadb817c4ea957beef59cc28b49ccb843c8c0996b1492547942a1cc6925ba",
+    "/technical_performance/rw_db/value": "8cf391c8db15d048e556662b9cdb78075e15bd3d10aacf53a9dd3477e00121c5",
+    "/overview": "ee3fd66ba96bdb894cd5656e788a7a82d060f2a30a1f8191d789c059c2e32365",
+    "/composition_scenario": "91a7085d5a2d80d06a7492aabc00e25b9b8d0a7bd5878467570a2ffc5109a128",
+    "/economic_data/illustrative": "ab65a720acf3e25329189c3e9673be3b463e3d8279c07d862b94b199f679f7e3",
+    "/environmental_data/illustrative": "2fd9e85c369047fa5cddc1b019e18839379591f70bc92a0c9dff56b01c01d47e",
+    "/technical_performance/illustrative": "3daf024da85f791e177de99895f99ea48d06a657f0d907dc5002e39cc231c4a5"
+  },
+  "g:ENV.FAC.PH-AIS.GS001": {
+    "/technical_performance/module_width_mm/value": "59f181a8222a36d0246e26c86e855af5389fa7bc89dcf5f865366dddfd306b31",
+    "/technical_performance/module_height_mm/value": "525c774f09ffb5ed5dc14242428a0504b8dd581071d5d0c682ee64115891a060",
+    "/technical_performance/thermal_transmittance/value": "5552c3489bf697c3f025f900854d2e537378af7b9fea4590de04a3f1ad2ffc6e",
+    "/technical_performance/rw_db/value": "c1c9a7b94d8ac9e3b4609a9507acad4b54be097807c1da6459c6d17bcfd050cd",
+    "/overview": "7d6c302247feedddf53d258a61c7579a8d5c1c13a484b6c54ff85d01145d814f",
+    "/composition_scenario": "4cbf16c78646e7b6f3e9aa9f1668c371b1e4b7b52aef7c38eab34488cf8d329d",
+    "/economic_data/illustrative": "c909dffe85a70de364b5f99715e48323d40c929045db25adac7a15c52cc4d8c6",
+    "/environmental_data/illustrative": "395a8d2d51a0715c4474f828e33273ffb1837b342ff30978c1bf9c9fd6b1c24c",
+    "/technical_performance/illustrative": "167e79c728de5e96fbd47c7c4d7a0fb5615c19e9a3c0512ec5706ad7751a7db3"
+  },
+  "g:ENV.FAC.PH-AIS.GS002": {
+    "/technical_performance/module_width_mm/value": "55ea5692ceab24588845a10ebe638cff95f4f31b41c6f3b70ce093b0bae17e0c",
+    "/technical_performance/module_height_mm/value": "3af2a770302fd8356bc96c61292e77fcc63ee9c1a46a88df2434c6c27bafe357",
+    "/technical_performance/thermal_transmittance/value": "7fb14de5048de343cfee21a32861e8ea59a4aeb9b93735e0bd463c73fa3c4af2",
+    "/technical_performance/rw_db/value": "4b28a7af7cd67294f54660cc9a39a51c9a72de22caaab70b3b8cdd11aac3b9f9",
+    "/overview": "38cc1d35605eb93b02740cc37513f7796a488528663253ad2b42547437700b4a",
+    "/composition_scenario": "1d015a6cb12d6a617feac81c3f9c0fd3381ad192dc67cd85bf0054f043f377b8",
+    "/economic_data/illustrative": "8df13a7f64886d4efb37d4bb22da5ba5a3e4d9cdd1990309f75270ea68eefd51",
+    "/environmental_data/illustrative": "85af270a1224fd4ae8c9b34ecbdbcadd4b37752c092c0823cc2f5facf005969c",
+    "/technical_performance/illustrative": "d28bd64e35138e75a05164244014806859e3b03e4bf914557157b0f37d28b836"
+  },
+  "g:ENV.FAC.PH-AIS.GS003": {
+    "/technical_performance/module_width_mm/value": "da5e123bcc62656737e452a2a0bf742dac900105e98e3a8e2fad917fc48c8c82",
+    "/technical_performance/module_height_mm/value": "312c7cc62d14c60633899d3121e1a33b40ef07d65a35f0e289b78080a0c60d35",
+    "/technical_performance/thermal_transmittance/value": "bffb16d6fe1445f051b3cff3025340011b817b391ffc04dcd77d1452efa10c25",
+    "/technical_performance/rw_db/value": "75b0ae3beb196603485ae3605cdba5ee8df254b2043836f44669b310101b2fff",
+    "/overview": "f1561226306ac8a2c505d9fe57237dbf8d22ee0b67685550adcbe45d119b9d30",
+    "/composition_scenario": "cea3aec4e25459be249c3838027adb9f670eafd80e5a3e525dcc0d1db7abfef1",
+    "/economic_data/illustrative": "ee5e261bbb0d549e2046742323eba357430a6379e748c15bbb260e89c0bd18e8",
+    "/environmental_data/illustrative": "a88ebb8a3c9865924e506116695425daccbfada4d5c8de902f459cae5b6523d4",
+    "/technical_performance/illustrative": "4110d9bf774d1dfcd0b70dd5a6a443e22f212fbc1057c460c886d9713af69261"
+  },
+  "g:ENV.FAC.PSM.GS001": {
+    "/technical_performance/module_width_mm/value": "a79602499324fa924d67cb5839b6eeba0b32ec35cc73f6e127b25f2079d25815",
+    "/technical_performance/module_height_mm/value": "c6cfb9e2bdacf7f18fda8c5896f42eff6169de510142fc1482e2ed8a440efec5",
+    "/technical_performance/thermal_transmittance/value": "f3e360d89952f40d3b79d0b07dd0b94f1cbf9017cba5d2a5f8128e4146d6e3c1",
+    "/technical_performance/rw_db/value": "fa9f86324091ec215f1562f1b8b3800e3a45cb2dd05ce391029a046ef40b7845",
+    "/overview": "a4d72e9414558ee8088a7239a0504f5db1dbaed960e9a87277232142953b16d4",
+    "/composition_scenario": "b3f614456b18b4f983f5b0ad66d1d4e17c61c108191d4cbc7089ebc32410b257",
+    "/economic_data/illustrative": "f9ac6c4a8f7988e138ef2c63ebd7ea6a85df0d90c95eaaf339a65a1278b15286",
+    "/environmental_data/illustrative": "b7948a343879cb620df59dbc5334723e82de841bf8bd524c5118c7856034a832",
+    "/technical_performance/illustrative": "09d4563d9cd3abf6fc85728ee560d74911f20efa352371ef19620009bea1015d"
+  },
+  "g:ENV.FAC.PSM.GS002": {
+    "/technical_performance/module_width_mm/value": "29a223b190bead02300fc3ac52d76a4d45f544c4d8cccedd99a61f02272771c8",
+    "/technical_performance/module_height_mm/value": "67564ba3e400ff128d9ef5d0d890ae121638f35666f3b0101abc8327cbf9f802",
+    "/technical_performance/thermal_transmittance/value": "c85e09eb8176db9e00c43c8bdc564dd91330c9d14f2a52ad6bc7872931e4c7ef",
+    "/technical_performance/rw_db/value": "97f106a4a4bb2e1d066060f960752d75309b9637fc79b883836b6e3d8c72f36e",
+    "/overview": "247e2e13b05153065c40ae49e5b991cb5e57661814c9f636eaa73027f295353f",
+    "/composition_scenario": "92ab3ad4a6c3a727986a069cac8da9f9c1eff4637ff4283be22129cbe496fbf2",
+    "/economic_data/illustrative": "0f614060d20f835ba9002a2ef967474f02da0b68d3ced561f718f44e9f517b01",
+    "/environmental_data/illustrative": "cce7dcd67d3e02fa06df2398da2c2e40b4860c9fb45100b87420451367379495",
+    "/technical_performance/illustrative": "abe427e902f503b95a583c3ea26554bc5d93bc1966483a72325e2baa87f369c2"
+  },
+  "g:ENV.FAC.RC-EL.GS001": {
+    "/technical_performance/module_width_mm/value": "76b8cd5b6f3e23f18e96529e02ba43bd345f2aac1a28f6dba83685c88064c154",
+    "/technical_performance/module_height_mm/value": "f29048f685b2875de3f45e8434ef098d956ecf778783481cc7664a2576408538",
+    "/technical_performance/thermal_transmittance/value": "37f253d59e6203142bd9b0b9a7ac8044b7217baca69cfc9846e3748a3f804cc0",
+    "/technical_performance/rw_db/value": "a4117e717fc4907c0751326386583630d805123d4b2c701ec58337fc7aeb3ac5",
+    "/overview": "267f5f88e14a85615cb471368db9544adeff9411eb5791ff82cce68afbc1b7e4",
+    "/composition_scenario": "5261d698d2c6c87d08a493d61e7549f7056e1d0c52f5890f7c5be8ea7d004869",
+    "/economic_data/illustrative": "d9f7651ed5af57d5f436512d1d1ba2246f85ea0ba82ddbb090d8b65578a8fa4f",
+    "/environmental_data/illustrative": "e21109cfc8c49e8b6214080539f0e845d43f27221c67c698c80c47dd47191bf4",
+    "/technical_performance/illustrative": "e2c5186666ba310917cd72a0027698216b3621ffb5b23b08f8989b0d5fb692bd"
+  },
+  "g:ENV.FAC.SATE-FAB.GS001": {
+    "/technical_performance/module_width_mm/value": "db30018f0c73faec210bfa2d099f1b7b13358b52dba7fb52790a3594b3d8b69e",
+    "/technical_performance/module_height_mm/value": "3d002b70e1486a111a325ee46c8423ac904f99d380499e960e5735813268ed75",
+    "/technical_performance/thermal_transmittance/value": "0bf56cc40e84014dc3401457a1bcb79a256e56c97cbf693f155b78bf815fd106",
+    "/technical_performance/rw_db/value": "eb71e37662aaaa88a4473511d1dc8b74deaf8fb551c7f89f79a1d273ae241792",
+    "/overview": "f555779b70a76bb926866d8e13a014406f67e3081edd3ca3b3b191d2e6a36e7a",
+    "/composition_scenario": "23c7fd39e7cbfddb16cc2f5c237859c1b5672fe8529de2002445d1451b20d158",
+    "/economic_data/illustrative": "34f931b1d6e7d01b8d58a3ded2888f978ec5af81506de4e622877d9016dc65ec",
+    "/environmental_data/illustrative": "761d85065b2531581d40abe9895aef4f057f94c1afe5853f3aac3790cce95b6a",
+    "/technical_performance/illustrative": "f2edfbd5beca0a7232572ad8551ab69180feefec9bf67e329e2aac2d750fdac3"
+  },
+  "g:ENV.FAC.SATE-FAB.GS002": {
+    "/technical_performance/module_width_mm/value": "1a751800db7a75b5f0dc53cea7bb7eccf09d8de2b3c903663060bad878e2230f",
+    "/technical_performance/module_height_mm/value": "7f8775c931baca6237912aed8734a7e5b91dfaa89bba6f612f6d0a1c23adda36",
+    "/technical_performance/thermal_transmittance/value": "6669743c77ff5bb876bc7aa9cd5d54b997bee0bd5b6e1f86a1516feb574b0ff6",
+    "/technical_performance/rw_db/value": "0df47e57d01cbea1abbdeb4cdc06837a5fedcdef95a43be8e164923624723f81",
+    "/overview": "d249406ea93cf20c913ebe5a605279f28d0aa63099ec76a18f18410dc47b218b",
+    "/composition_scenario": "8d0077c7454fd77b9071c537a1ba2ed8f7e731bca6732eada11ddfe8ffe9aaef",
+    "/economic_data/illustrative": "183ff50da74c1424623b1fde165fda2c22d16a0ed8412589aa2d91e03f49483e",
+    "/environmental_data/illustrative": "c72900e1a193dba57975c0f4e4dbabedc28b4e83c1b27cd51774417c53e1ee5e",
+    "/technical_performance/illustrative": "68084a5ee30989934b76422368238340b07a779720a8588c8662678123c8cf29"
+  },
+  "g:ENV.FAC.SATE-FAB.GS003": {
+    "/technical_performance/module_width_mm/value": "e5b8d37f8c22e015f0e8aa2e5df81ead7329ca185e547d5ba4e7146a84ffb766",
+    "/technical_performance/module_height_mm/value": "d6dce3fec5c0a2436b78004a992fdd27d1f230cc014f3da18024ade8c5e5a9d0",
+    "/technical_performance/thermal_transmittance/value": "37f253d59e6203142bd9b0b9a7ac8044b7217baca69cfc9846e3748a3f804cc0",
+    "/technical_performance/rw_db/value": "f96391e355070df8db4ecbdbf1989e9412675062e0e14510e74b5624aa042bfa",
+    "/overview": "5937e4a06781584c88aed92ef31c2ff9957b025f0bf9deb6575be24f1335d292",
+    "/composition_scenario": "5c9e62d4a59319e37bac0849f036c961d89b7403bcce6a418319045db0037710",
+    "/economic_data/illustrative": "067e65af9d86eb5e6dbfd98fe9af96433e93cf16d873c4db1ee5525253af8a8b",
+    "/environmental_data/illustrative": "7e2bdec572cb3aee6ffc58022b1a910e62e4f966be62a950311254dc02286216",
+    "/technical_performance/illustrative": "56de1bd309b3687586b04d8f9334eb6f74120e8f32d006d287837303d99f6ea7"
+  },
+  "g:ENV.FAC.SATE-FAB.GS004": {
+    "/technical_performance/module_width_mm/value": "274de569fa0b4b410845536be9174dfc729c352b5edebf002ac534cb1161350a",
+    "/technical_performance/module_height_mm/value": "a3ca5b5ccd8e109bd4d1dec0faa83dad9db8ef0dc711268baed8a61f8655417c",
+    "/technical_performance/thermal_transmittance/value": "347effe255a4e184f77baf14637aa83fb2db1f9d66b4eb1940937f626894de15",
+    "/technical_performance/rw_db/value": "b6baeef13aa10724a227a99a44ce810b8a91086374991df8f08766f2cf118924",
+    "/overview": "125beb7cd6ba99c365ceb36adca8b3611223da0cc89934375f695f835ec7c63e",
+    "/composition_scenario": "4a8a02b932485c6779c6f8ff6ff5fc7530e081103e65d8306317d21e3eef081e",
+    "/economic_data/illustrative": "1c40c60b4752e38b83d54cfcad4a9984f00bfd4ccdb787cec35ec288ed323171",
+    "/environmental_data/illustrative": "a8c94c3a28018134a3ac0ef0f10b3f9ea315f9135b3c7ea4e0a793d11ab694e9",
+    "/technical_performance/illustrative": "08ae61f3fd784f05f79a748662744a2682a6e4fdd2b3b705554f1fac79b4817a"
+  },
+  "g:ENV.FAC.SATE-ME.GS001": {
+    "/technical_performance/module_width_mm/value": "da5e38fb2d44dd93e6a60eb22ff41f4592db9fe70b2f780e5aa608a2147cc51e",
+    "/technical_performance/module_height_mm/value": "5044ad2df8c7b6c428cafdfd64bf3019a298efd37b6d11fd38d52503a040f253",
+    "/technical_performance/thermal_transmittance/value": "533a26b6cb8cb2c7fa4bb5667e8318d1d75e69872537118cb92f950f4d8739e8",
+    "/technical_performance/rw_db/value": "bf67d5c9f2969e182ce8307e4eb629d59e3cc480844d23f85283160e0dcb12b5",
+    "/overview": "95b8a990267543e87992380e71c929821b3945c3c214088e3effd42d8b01c564",
+    "/composition_scenario": "829661ebf0993798e8b4426142977cd45feee3a30e05887ed510ff8066f06896",
+    "/economic_data/illustrative": "c917f954c4a12d2a271fe05806d66225d3767320a71d252a057c75f144f8106f",
+    "/environmental_data/illustrative": "6127631d080c8cc0732ecf8807e272e7de4067abb47d6525377c302592b42212",
+    "/technical_performance/illustrative": "6a7bd8ca9598c5647027b7c247e5e9bceb5cba4ead82344fc1d5cc4b56df86e1"
+  },
+  "g:ENV.FAC.SATE-ME.GS002": {
+    "/technical_performance/module_width_mm/value": "2493481ee781744f8aa711af90ef3af7ff9d4d4fb2c23d84a5360126916a7ac5",
+    "/technical_performance/module_height_mm/value": "513ff7f8da3ce87598ac158fbd95185baaab814cfe4f0eefa9865392ce34e9ed",
+    "/technical_performance/thermal_transmittance/value": "dd2f324d090bedf04eda038fd97aa8a9f6078d233eeb4ce45e779374d5c97338",
+    "/technical_performance/rw_db/value": "4bac0bfd0f2436ca385294415bb4e98eba3b229b1a7693a94630db89fc18eefd",
+    "/overview": "adfcfb4a244c6652fddaaf4bb62a77450047521536dd07a97a3960173f17c64c",
+    "/composition_scenario": "8fb09072ad0e8664dd3dc228c83dc4774f0259dea25cb3173c4a50df2f0663ed",
+    "/economic_data/illustrative": "29fc5c2b621533d08ac1dc5b20bbeacbbaca3da703b5ccaedc273381ab1425c8",
+    "/environmental_data/illustrative": "2baddc45da632915172bf2730fbf59e5a126a1bca3031e46f9aacfd432f58f0a",
+    "/technical_performance/illustrative": "db98bbeb70901623741629bff5975abc7ed45c67e59df72ad4faed7a37e497dc"
+  },
+  "g:ENV.VEN.ALU.GS001": {
+    "/technical_performance/thermal_transmittance/value": "28b478ce49706c4e6689e2f3a9a964ee5642134488d4a25280a7d9b6fce123cd",
+    "/technical_performance/rw_db/value": "126245e41703779f9db97c2a9379716ad72791d1fd45a00c7177f91a37bd4890",
+    "/overview": "ddc114254da139abbb43922c999286aa4d2544bd444a4e38aeb9cff3a380863a",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "830310ee03b6779ebc4fd6cbc98844759c6c1b30bc8d841fdd0f47fc1030415c",
+    "/environmental_data/illustrative": "7a1d4b2fe681696c65d64722aa0dd518145eea187c488aaa575ef9f0ab08ef6d",
+    "/technical_performance/illustrative": "4526789a1fcf023884dcb199910fc90c90fba8b651bf2d8724927399cfe9d122"
+  },
+  "g:ENV.VEN.ALU.GS002": {
+    "/technical_performance/thermal_transmittance/value": "9e0b4cf4674e99f35cee887f39a536d7eec76952c7ad0dac343845eae33337ea",
+    "/technical_performance/rw_db/value": "c77f4d3e64ea22c7033a2cd1ed5ea84abcee8212b9f790697ec17d4ff4b665dd",
+    "/overview": "2266e09947528d95bdd6dff77ffd01f6cdf2c57a226f2fc145f8b4f9be91221d",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "5151f220c261b386b2d4f0ab79d70f307c138c248bbd92e475247362cf9e73e0",
+    "/environmental_data/illustrative": "29f412c285fd7e4204ffcb231a172a865ac1cac1e5a8b728b2d2ceaa26fe8110",
+    "/technical_performance/illustrative": "7c0eb971eacc7c821746447f3c0f605a5890777722105e933c6f055c97d8fa22"
+  },
+  "g:ENV.VEN.ALU.GS003": {
+    "/technical_performance/thermal_transmittance/value": "4908d4c63d21ceed10a0f62deb7489ac322e1d831a2190ce0091e1120e2e8360",
+    "/technical_performance/rw_db/value": "900c13f739b9500f35fb8346793cf8ae9769d26d10ae278a183f0b4995c8a94b",
+    "/overview": "d8a7037b378d623ffdd410dea0b5637079c4927e416ee7e499536613a509ec0f",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "8db5b82d9a0bc084131ff2095471f0788265cabc1c72b1960c3596497230a5dd",
+    "/environmental_data/illustrative": "1d6f6461b19a921914164e295dd01c471eab011217ce2abd60eae8b44f9374d3",
+    "/technical_performance/illustrative": "65cfdb61773fd5b0ad390ade1f09442f0a2a062bfc2819ca54b1468bc3675ee0"
+  },
+  "g:ENV.VEN.MAD.GS001": {
+    "/technical_performance/thermal_transmittance/value": "1af39c17f8425a4d06f77f021fe9879036d219e637b1067d200ef786d157522a",
+    "/technical_performance/rw_db/value": "0efe705a332de7364ae7574b36f539bbd7750100e92850adf5dee3837c0b7de6",
+    "/overview": "efcf596a87d8df97be41fd3b6be9000708f0469e89b945b0ad56799647c159a3",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "d74b99031bcd09565ca4253ac8920441eecba8f8e28bd2e15a59eddc9d277283",
+    "/environmental_data/illustrative": "2f4994f0082b06cc0754ba7ef586704f39b5c0fb869c181afe673b65e9367e2d",
+    "/technical_performance/illustrative": "4178eafcd27a7e187d74343104a9d132e8b6ddb5f77495bf713954709a205fb6"
+  },
+  "g:ENV.VEN.MAD.GS002": {
+    "/technical_performance/thermal_transmittance/value": "77ac319bfe1979e2d799d9e6987e65feb54f61511c03552ebae990826c208590",
+    "/technical_performance/rw_db/value": "e8d8db1f501d8f84882830826fe34c68e1a344c3e4a379018c993605feea2d53",
+    "/overview": "1dbd56243484d9a5250a3aa4696b610781090b2b2ad9c70a4d33af704af4d4b8",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "14007e877448d066704db9eda9678964aaa9769568e793a8f252de2cdb67b29a",
+    "/environmental_data/illustrative": "9e78fa657958446219ee791c3bbdf97478882796fceb9c41884dae2566aac5dc",
+    "/technical_performance/illustrative": "1cab235493b1035aece91cb7fc8ca8f063a276b45e51c669eae8fa9313fbb2f2"
+  },
+  "g:ENV.VEN.MAD.GS003": {
+    "/technical_performance/thermal_transmittance/value": "d72c6e9cf20da8c31ac4f040ef135702d47c889b5a520bd14a54e911d13607c4",
+    "/technical_performance/rw_db/value": "16c635e3b08b1aaf3f1746a960e352526ad5a4a7c101d414b702d6e2653ccee5",
+    "/overview": "bf4977f7be78528571502b86bef7a9085863e9e47e018f0082cd465abf736e0c",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "a5d725b20dba301fb140b544a037b7c56d1222d535f5ccf60ca740cc9b46f22b",
+    "/environmental_data/illustrative": "e931f4cdecd27844e29df61afd5d812c3440c440638a64becb6cf6d623c5325e",
+    "/technical_performance/illustrative": "d3a5c46813823d9f73e8f4cf83076f37339a81553ba9b2fa73365a66de04a0e5"
+  },
+  "g:ENV.VEN.PVC.GS001": {
+    "/technical_performance/thermal_transmittance/value": "7296495fb31e7feb6d9a1f2796bb5c6a2522b53cf8b7311ea516dcdf66b6b48b",
+    "/technical_performance/rw_db/value": "0ec44c5492673dde446e03ce3fed8b639a43ec1f4caf9eeaa86167d70d60bb0d",
+    "/overview": "b9e38600609f6cd1bb609796feea019592bc454c9f95aca5d3b800386c28f87e",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "d18686402fb43fa7eec5fd9b61498ac3138e150d096baffbf0f2373d43a6dd73",
+    "/environmental_data/illustrative": "1a0d8006c1694c849377b7519e5c0427aa5a520ae51050ef6abad917d0c27180",
+    "/technical_performance/illustrative": "8c2b844b29db8b3f03e1f519c7533f324325b8eba5c5bf354177bba64ef53dbf"
+  },
+  "g:ENV.VEN.PVC.GS002": {
+    "/technical_performance/thermal_transmittance/value": "1203a188641dbd6fde35d5eec4b4629afcbf5d67e7c5c17d5792a21320fd6f6a",
+    "/technical_performance/rw_db/value": "2606f31efc142c865b28fcacf71870887ad38b63a0d22b212fa0cf9b3618170b",
+    "/overview": "b2b08c0732f34e4d36d48ce680aecf77c68ef0e03704528fc5f2acd2aeb979e6",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "9feb8989639bf2dadf805ff6aff8f03b3ca2a00775f6e7eee9ca9f07f28f959f",
+    "/environmental_data/illustrative": "4f716e9e8eb9701ef6ac526e9eaa62af26b873fc02e53f5e929827db21db2eb7",
+    "/technical_performance/illustrative": "974dc2734cf39b56440701e6b62b851832b8b2a1fc2d3a72611c061e62a81d39"
+  },
+  "g:ENV.VEN.PVC.GS003": {
+    "/technical_performance/thermal_transmittance/value": "4908d4c63d21ceed10a0f62deb7489ac322e1d831a2190ce0091e1120e2e8360",
+    "/technical_performance/rw_db/value": "17681429357e08d03366d3074cda1ca5edcb4621d639ce5aa3b709212ec2acf6",
+    "/overview": "b5efe2763e750e8224c0543920013dba1fc40c842f9aaf40ffa9ef066c1aa320",
+    "/composition_scenario": "c2ff8cbd5ee9faa6e29cd88acf87e056f202027519da61ba18f17803827452c3",
+    "/economic_data/illustrative": "e8f7a8bde57f96363807baa162a043d8d4812121afd60159602c6f2cf014ca23",
+    "/environmental_data/illustrative": "7797944c488bfccbc4e6b0a0fcee9bec75e2cbd60bdc61eb5ecc06268603976c",
+    "/technical_performance/illustrative": "376828ae86c71f0eedca81c8419cdeda53cb1ab962dc6afbc672e96cb8f2ae47"
+  },
+  "g:EST.FOR.HOR-ALV.GS001": {
+    "/technical_performance/reference_length_mm/value": "d4e60feb229b8e56250f4bca60bd50976709eb80f7f2a8733935f502570c58d5",
+    "/technical_performance/module_width_mm/value": "7ba7e25c77140be03c4e29ff9b658c2cfdedb1fb41360f91ff0e813f3bc8c797",
+    "/overview": "da1a1e8aee3e664c8c75120a980b4b0d6a7c2527eec82e654347d2d07b86648c",
+    "/composition_scenario": "812e7cb200aa02cb67268b44d95eb60dff3162657f2ea3cc2fab23a40412359f",
+    "/economic_data/illustrative": "2deb1cc264a815ac45677cf704a190035b5f119d1d9dbe7084fcfeb53b629e4d",
+    "/environmental_data/illustrative": "c51927c5dd47ee3c916f1d1944569c801747d2cbd603ca6f50e756c7c21c6af3",
+    "/technical_performance/illustrative": "1f4c5cc620f48eb0f3572cc1f34ff82a54d944ff88fa5d4fc1500f7d93271a88"
+  },
+  "g:EST.FOR.HOR-ALV.GS002": {
+    "/technical_performance/reference_length_mm/value": "2a79109bdedb6adb96ca990861c7096887b88df538f1f372c0d5f01b98108302",
+    "/technical_performance/module_width_mm/value": "e69e2d9ed036b19d228cd8fbe536346d0b223b50139a1fc8ef23972142ddc3a4",
+    "/technical_performance/surface_mass/value": "fdf937bba75bc1fb612fbd11eddbe602694d248cfee0fd2d60007e7e9d2b3e9a",
+    "/overview": "a747b6f977f000fa622b29d3269923960c478d99472a5dd82405e6794d48567f",
+    "/composition_scenario": "735b2f6e8885371a289af00c056eabe50b1b740d7b3a7524a9df5cfcfe12abb8",
+    "/economic_data/illustrative": "cfbfe155e61095bb596c8dd4889c713a45440ab47c916d0e2bc874826ef65a76",
+    "/environmental_data/illustrative": "226e6b32c2228ab74185eb30f1bad0caf01b5b8e5df9495f831e92cabd12c563",
+    "/technical_performance/illustrative": "1b83b73ec81e5b43fb17a34809f7ae32d1e7514e2d4e52856c8039fb81a54cc6"
+  },
+  "g:EST.FOR.HOR-LMB.GS001": {
+    "/technical_performance/reference_length_mm/value": "908423dffa401659cba68e85b8f96fee353a1856e05862ec8b8c940af3fa7e63",
+    "/technical_performance/module_width_mm/value": "a62f9e70fddbefe28bdf16246f4ec3cbb03d236332b24f3f1795d313f10f3ed1",
+    "/overview": "7f4555bc3e0c370a80ffe2c5b5129cf680fbfcc7873de1b6d978d3fd6709959d",
+    "/composition_scenario": "f8e8b22a2d64a65c96a98b26283e4c864c0e5f01dee7c8501f385498f45f1b31",
+    "/economic_data/illustrative": "ebe44f4b641d4059500b04e401909f6208433f7edffc27af74599cfada075d7e",
+    "/environmental_data/illustrative": "ed1b63bd1d6728984844169769ae0a0b52b8e150a068e62a8d51e583c319bfb0",
+    "/technical_performance/illustrative": "312c9d253bc1883ad037c5d8476b26e09b6bab84179427568afc2f85a975b6db"
+  },
+  "g:EST.FOR.HOR-LMB.GS002": {
+    "/technical_performance/reference_length_mm/value": "5c0e68db1042703fdeda8c0b3d77a9cd7efbead1ac2acdc8f3ef46c83f0806f1",
+    "/technical_performance/module_width_mm/value": "755098db9a60637a0b4f370f5d307b6c3107d23ea604f22b6e56c90535d2fb5d",
+    "/overview": "f5adda60f7cf6557be660e52cbf6392df805b67385ec98b29e1fdc1aab6f91bf",
+    "/composition_scenario": "099eb613b4755f234bc3588e808626013a9c948b7fa625078b10213f49470821",
+    "/economic_data/illustrative": "dd25d044795a0be5a82a063ef1fc37a0f22871922c8b3b55dc64b1f999216ba2",
+    "/environmental_data/illustrative": "9712340c2708afa5c59d7d8ffbd4533b4ecfe7a58287b1055e44ae1b101d2ab1",
+    "/technical_performance/illustrative": "a9cdf50da12037d72a86c0ff026d6941364335c896f0247d43ce2b66c9ff02f1"
+  },
+  "g:EST.FOR.MAD-CLT.GS001": {
+    "/technical_performance/reference_length_mm/value": "43ac2e21f2d0a02e633770b912149f484dcdaefa5a2408363f9a82bdffcee84d",
+    "/technical_performance/module_width_mm/value": "3825d52c3a344e687372e4e02c583ee6e3e257a8d305b19b3b29365a23bad34a",
+    "/overview": "d9a02fe3d55b2db864db08d5aad49da0a6870565460c16e9f786cdbcf1239a44",
+    "/composition_scenario": "8671ddb698d6e6f6b7b8d1a6f84ef7f52d84f31b3c6c78be93726a264e9b9aba",
+    "/economic_data/illustrative": "fe2bdddd394ceb8ce157193c74ee9fbd8a23332bbfcfef9318507b30e9ed2870",
+    "/environmental_data/illustrative": "91b88dd5ab558474f58aa3c88cf4c42a0c8cb9018fc440836f881a66f7d70816",
+    "/technical_performance/illustrative": "213e65958c21921a99194bc399cc94ee01915472ecb15af28b8cf763dfc85c67"
+  },
+  "g:EST.FOR.MAD-CLT.GS002": {
+    "/technical_performance/reference_length_mm/value": "c541e28225285a0507464745187408e17d0ef92293d2ec87ce9fc0118f113853",
+    "/technical_performance/module_width_mm/value": "638a5e1cd89e434164a292332b05909fb88553da167419765c309d34b9b515b7",
+    "/overview": "042ffd6af48a13cbd5af59939a8e8be115788411c07157b66a0590986e74ec60",
+    "/composition_scenario": "0b5ac7546333598f83be197a7d8b3e96453b5372de60fe54b08b885014c69fc8",
+    "/economic_data/illustrative": "9296bf15ae51f9bd3ecf6d5456d625d8834dc8ac1f81367ae1c61032b3fe48e1",
+    "/environmental_data/illustrative": "94cc5a0b06b0aa434ffb24f766bf0e3df007dbedc7541fc6956425a648a99a81",
+    "/technical_performance/illustrative": "aecf3af4d17b2fad2723b8b400a9757e5f822515135a950cd37b364ad464680d"
+  },
+  "g:EST.FOR.MAD-VIG.GS001": {
+    "/technical_performance/reference_length_mm/value": "8268a34aa608f46d3563ea6be2a3f34e23b79da9bdf9ca1c8b41a1f4c42dc8c9",
+    "/technical_performance/module_width_mm/value": "2d7c165a07bf06ae8ae67fcbed98086e5a81c93bbc0df69c01b88c98862125d9",
+    "/overview": "00c052b27702a6ad420b6b169490ff05643f7c7846b982784f9ee8ea98412223",
+    "/composition_scenario": "4f24263759c49f12245656441599c440b23e9594429e92e6c99e61d6ca7b9a3f",
+    "/economic_data/illustrative": "cfd82e6b87c3242241a527453295abcfa5e6a4bbec40f0f71aa0ae826562d76a",
+    "/environmental_data/illustrative": "08412e966350a6d3e0f7d4391893ea89c072497eea32d77e549f175dffa8b68c",
+    "/technical_performance/illustrative": "8383c4a72bb0fb27fa30703ebd104dd8ef63fca11e8477d1784ceb11b7914b04"
+  },
+  "g:EST.FOR.MAD-VIG.GS002": {
+    "/technical_performance/reference_length_mm/value": "cc363df212b8ae14f26d24acb9e85dca62b0a3afeaeedf6ccac3dd44b93260c9",
+    "/technical_performance/module_width_mm/value": "22be38fff8d5a1b7e6d0cac18099e9856528793eee7c1cd3b3832bb480361e29",
+    "/technical_performance/surface_mass/value": "78f766a4746f40b28caa7b43262e9cb36e8df448c6cbe2fcafee54c21111b7d8",
+    "/overview": "69dd5dd10e671f024c45af5e3905f991202cd50fe5ba78f72c73d92166b194fb",
+    "/composition_scenario": "bc00ce2c42aadf99e568c1b63488ad00091220869bc9cf808589ab519c3504a0",
+    "/economic_data/illustrative": "653625dfef7330b25dd2fb6b1d7adddb11ff8fcb6a82476502f1622dc38982e3",
+    "/environmental_data/illustrative": "15d9ef2b5ebbc78e3181ec0e73e4ae25ef83de05a66566b50682a3a25a8fab71",
+    "/technical_performance/illustrative": "688e4b2a8b9171a5b7ea83b0ebbc034319bd371f7b3f4880c0ea0d4b1143c39c"
+  },
+  "g:EST.FOR.MIX-CC.GS001": {
+    "/technical_performance/reference_length_mm/value": "c778d241054bc866091e8f86bbb09278331dbf7b3f9ef52ef3a1e287119dcbb6",
+    "/technical_performance/module_width_mm/value": "d3bad8a37adec251b51f112c77766e837abfbe20e15b2aa174ccd18a97d5695f",
+    "/overview": "53aace68a1b658b638f72a1a41f6896bd948acfbf2bd1c1deafae8f0f6be4673",
+    "/composition_scenario": "9db8e60a8e7e2bc54982f25bbe447d8306683be30c566a2eac067d7ce18826d0",
+    "/economic_data/illustrative": "0a12c3cbabb7cfcfd6b1c27f96aba7f963cf992ef36615e24da6f9800d783130",
+    "/environmental_data/illustrative": "c247ac6e91f88c9e5532fe99fce9871dcfe65202ded0c350d0256511c4771fa8",
+    "/technical_performance/illustrative": "fc7b64bda4c56662940187711c09ac52a9c7e22fbad756a610ccd3b634a3b998"
+  },
+  "g:EST.FOR.MIX-CC.GS002": {
+    "/technical_performance/reference_length_mm/value": "96be9427dcef5f64acf46f2c4f997ce4c88b2c4a44e3cba19692095e02972523",
+    "/technical_performance/module_width_mm/value": "45cfc9fb5f99e1a17c29bc34ce81f3b9d501efabaa54880c969f63eeaa93e969",
+    "/overview": "1e01b61dd901d6310f3d0072a080546b537903d678adcd9f6dfd08760b9a101e",
+    "/composition_scenario": "6e5caa3db1b7803afa8c3194ccf985d45b0cb2b45ff65d0fdd1e6f0b60723e30",
+    "/economic_data/illustrative": "e12216177ee84ea4c8edfaed65dd478df8e6be38611f137f306e574eb5844734",
+    "/environmental_data/illustrative": "d3fa4d08fc639b029856c6d428912ad0f773068c723ed2d2da07c0de44f9561b",
+    "/technical_performance/illustrative": "2cdb66a8d6036d5aa019987fa499b71f2498b8ebeec0c055b323f9a396eec165"
+  },
+  "g:EST.FOR.MIX-CC.GS003": {
+    "/technical_performance/reference_length_mm/value": "63327765dd9e652aeedbb5fbb8073d3dda1e6bb0a5918b6fd5eba465100496a9",
+    "/technical_performance/module_width_mm/value": "f399a98ce5e288e23c6c429b1741c2577a46eebb8e4c99f916aa5d980edf934c",
+    "/overview": "45a4d3c9314b2b09ffe8961e3102cda3fa930d090c4250d13230d18207183aad",
+    "/composition_scenario": "dd472debb3f1bc2ed5e2807123dac16ae3e50386f55608a011cdcef82c4f1db9",
+    "/economic_data/illustrative": "312e48f547235365865666d7d60dd1081ee21159050c5c6efffc173a016584ef",
+    "/environmental_data/illustrative": "9443d7b29d7ea981a71536fb75c42ac12acbadfd8af869ab5de48ceccfb23aa6",
+    "/technical_performance/illustrative": "a21830ba1838bae168ef08c48e9d14ff95d62b811b733ff4dc1b42a9840bb5bc"
+  },
+  "g:EST.FOR.MIX-CC.GS004": {
+    "/technical_performance/reference_length_mm/value": "75a7f96cd5f33cc3938828c74a7301e663cf0aeece8e9bc93e9db2839bdf5418",
+    "/technical_performance/module_width_mm/value": "b6c55b5fae87a25d4b2b15529fd16655ff34ed906957a68daa576ed8ce71fc55",
+    "/overview": "1a2ba76b656713c993283205eb6b071747512c00d7e83d74ffac2ae824c7309d",
+    "/composition_scenario": "aeee9ba296364f16d78d8385b1cd6026918f1695cd096970a1bf540e2cc86669",
+    "/economic_data/illustrative": "ede83a173c4fd725b5a6e915ef8886a957da3016a6a18f4b4595a8a2ab809f68",
+    "/environmental_data/illustrative": "51e4329b15d38cd54109bfd625e7d6d270c65c2a408d483578cfc318128f8969",
+    "/technical_performance/illustrative": "8656f03ee1b1ce6aee81b678cf97395f891ee5b5f6a95cbc66cda9d7e7307245"
+  },
+  "g:EST.FOR.MIX-CC.GS005": {
+    "/technical_performance/reference_length_mm/value": "b1242f3456c9f3b8bd98dfc7cc1f14747b1f3899a77d8b977384c8876e464bad",
+    "/technical_performance/module_width_mm/value": "c5540661df452e80041e78e926d0abaeb59f4337e89d96d96935122788a86ffe",
+    "/overview": "a00c9d42f035e27f22c5f148124cedd64cbab859e8d11ac6b390ab6a369452ed",
+    "/composition_scenario": "0b7f933242a092586449c7f929572b1ad152e46ed575a5c48171bef0972dedb0",
+    "/economic_data/illustrative": "84ddd43f37eca3fe2bd506eb719368cc8ecb2254ea75b548121953a5c47d159a",
+    "/environmental_data/illustrative": "9dd67062cfe1edfdbafdff011a0ddcd351f47721a7bfd871d67ebd61bc2c97aa",
+    "/technical_performance/illustrative": "ec90f34d4f270417a3f104b952c1f2ab5f4d721e652db0b075122fdf63dc8432"
+  },
+  "g:EST.MUR.ACE-EL.GS001": {
+    "/technical_performance/total_thickness_mm/value": "dff72a684063a71bbbb9060b05e5b8b7375b951e2251ca927220b58ee0ef9081",
+    "/technical_performance/module_height_mm/value": "1fee643de7f2b021b6e6b4758071ea7ad62485bb457b33ccd2bb341f28ed890a",
+    "/overview": "dd44039559344fcdde947944d81e037998b6191fd5f57a69b4b8ab809b465a27",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "c03e9e9cf6734128fdebc5b996e7d45b6b16f2b8cbb44b9b4b888ef74616374d",
+    "/environmental_data/illustrative": "6da323596ec322566a8774b51bc5149d1e39950e1cf67d53c636208e5d0d1fb7",
+    "/technical_performance/illustrative": "fd7bfe013303962556de65f0f85d18b72976a3ea4b59697a6a84843560b6ba66"
+  },
+  "g:EST.MUR.ACE-EL.GS002": {
+    "/technical_performance/total_thickness_mm/value": "5ed7c947f545196998b5931ff392d3fc12015e901fc8d65ff0bf8c81afd79205",
+    "/technical_performance/module_height_mm/value": "9adc8125c7fe37b9b2d1e74a83bd66d71c9380a428fa803e81b6425ec9433a45",
+    "/overview": "0b60f07f23ca51bdfe0fef3fc6f00e802ffc3546ee62eb66ed7b762e49eb4cbd",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "ff7eb3f9a33f69c30c2cfb08a1af0a6021671cf37ae443709f4ebbffbb11df29",
+    "/environmental_data/illustrative": "54c4ba2d191be9e71b316e98e5679e87ec9ccbc26f0e3d8ff8e19eac2e10428a",
+    "/technical_performance/illustrative": "22a2836641fa879fceae8be18af9da5b07d330949d7f8895effad4d5b687ec40"
+  },
+  "g:EST.MUR.FAB-ARM.GS001": {
+    "/technical_performance/module_height_mm/value": "9dd25b78a9e2effc60513214e8429fde035fe6a450e807a688310f079f0897d8",
+    "/technical_performance/surface_mass/value": "a8a1bee45c4119846023d9cfd5f40060d5d7e656c4da1dd88ad1eb6bfc0b3ae4",
+    "/overview": "f351dea7cbe60930ad1a77e48a6dda2f3f6f8616fd0bae965c3559d0add45018",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "69bf49fa8afed523abf2f15b2203936c873fe27871acdb3cc1bba5a39bbea93e",
+    "/environmental_data/illustrative": "51608283b585a109e4de1664909ce5bef6278a8dfc443d19c037f5b451e3079f",
+    "/technical_performance/illustrative": "44dde546310d4739bd3da106f665cc707b8175e51c17cb61422431df8382d64b"
+  },
+  "g:EST.MUR.FAB-ARM.GS002": {
+    "/technical_performance/module_height_mm/value": "372222215517c74621e65e3034551fd03760d244789d2cbdeeaa071bfc552fa2",
+    "/technical_performance/surface_mass/value": "a6c93dd46afbc0bfa268794cb96dfc40aff9b36960c3e4f57ab2e48e9c9814e2",
+    "/overview": "06b5faddd88a7aeb20733b9e5f93401ad2ba442224655d99ffe910fee156c3c7",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "eee2d6668e42b14185c6a71d20094392f471b0c5846a771827989706bd50dd67",
+    "/environmental_data/illustrative": "f21e42ce2d066cbecfffa66c5ad07595fcf4602553d235cb79c6477a3e30acd1",
+    "/technical_performance/illustrative": "8c2fab0c5024ba36ace80b3a94ab26b16db670bbbebd8f4df185245b503e4083"
+  },
+  "g:EST.MUR.FAB-ARM.GS003": {
+    "/technical_performance/module_height_mm/value": "c12fb74088652da6f651bb46362417fc29f5d2c698ae6695dbd580757240a116",
+    "/overview": "26a419a30e4780280cde4caad4bf9d25c0237b203e6a614912d54e3e862d4e37",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "29c36aa5e6db6253495ade424792b8c7713d774102d92bb104969e2f14ada6ff",
+    "/environmental_data/illustrative": "18d8c8c883396720e5d7050402ffbafb0484822bf744a11b7fbb3d2fdc7d16e1",
+    "/technical_performance/illustrative": "db9d8790c81fe2158826d5b555ef7617bf4e5ce9005de738e9eb4e2c434548fe"
+  },
+  "g:EST.MUR.FAB-ARM.GS004": {
+    "/technical_performance/module_height_mm/value": "d03c6fb75fb74c2318f76f0aa8bc5ca4b09e3ba70401824366261051d7810879",
+    "/overview": "a1f41a5e0831f2ed3f5f19b58292ba0834158327048f1f43bd31f6300683fbb9",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "c288bde1ed35b3363760a84a5d43853df18a8a0f375dc1a3b2178151a7b9c659",
+    "/environmental_data/illustrative": "70f98f5759117550e4e81478dcd67ad16f7f8f7506dc32aaa4a16698bcd707f6",
+    "/technical_performance/illustrative": "8747d5169057e9ea947b483ba79721d47dc243745806f11e1c2a2fa7e6e21c6b"
+  },
+  "g:EST.MUR.FAB-ARM.GS005": {
+    "/technical_performance/module_height_mm/value": "aa7d7b1a848b59b730c82d03d83d1933e0dc2d9800df46b17047126632b2bbfa",
+    "/overview": "ad597c0f5f21fd67c97cce87da6895861c5248e60a7815ac2c9d852e31411616",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "f50409d4083a2e259f7ebd5792b07f54e95b7d0f5630f59269626f024bbaf606",
+    "/environmental_data/illustrative": "1141e11abe796c195bc2cca5c41323fe9d120b6c37b4f26aa1663278f583e036",
+    "/technical_performance/illustrative": "fb562ee89022e180801e8c79ec338446ea9ff02b3f9fd292871611437c113a58"
+  },
+  "g:EST.MUR.HOR-IS.GS001": {
+    "/technical_performance/module_height_mm/value": "dfd75f0945d4f16dfd2f122d170315bf8acbf75891be54d3704fac6b09880d7f",
+    "/overview": "b2f76a6be71a1498ed9c03319ba657cef42c4c9eb097954d2b4b2d449492c188",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "f15b8cb190fa6c51a218cdf7bf9a0df6d98aeff0e5dbdb0156b9c8de6dfa73a2",
+    "/environmental_data/illustrative": "10bc53e0aa51f981dba54004b62e34c014c441e916902e8276754624c4688d88",
+    "/technical_performance/illustrative": "69a7a6d8c1bf694af9d022fb4938875b081c7e00d02c9fbb9510d824914a30bd"
+  },
+  "g:EST.MUR.HOR-IS.GS002": {
+    "/technical_performance/module_height_mm/value": "e5082daaf1efcfa33dff604faa3cfec9a983e8031939a6a8671b05d459b2e043",
+    "/overview": "e3ffccb7d549a7ccfaf9bb610d47f2254df19e7f8a5e93bf7257083edc3165c7",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "50f1d9b215f100baa1faf0d9347a20751c060c283cf7a6e4b8844f416cd5deb3",
+    "/environmental_data/illustrative": "f451ac991a813b3313b02e4ee5cbd33cf41fc24620d22c6158ef83911c5fe12f",
+    "/technical_performance/illustrative": "55e10a9b1850d66557d3d7b7ec99838507bc1596f7c6ae1a6be3ebb446b092af"
+  },
+  "g:EST.MUR.HOR-IS.GS003": {
+    "/technical_performance/module_height_mm/value": "d939bffe594461873dfec61777d0bccce67cc878a84e1a5ed6b099ea2656fde6",
+    "/overview": "e0c2c0f3f2efe1b94cf4a917b1e8d612ab6b09bd7e04a83a69604892df0e2c50",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "05700047c8bb51b41c173ff241b94f7307a661720762bbe5710a2309e53eb822",
+    "/environmental_data/illustrative": "c36d57236bbb204768f73b7114fb1fb7f1b208dc6d812d28305df234012f5e41",
+    "/technical_performance/illustrative": "b0c28450e7aea2cab3e0745429476d78442353f9601038cd78f84222e275169c"
+  },
+  "g:EST.MUR.HOR-PRE.GS001": {
+    "/technical_performance/module_height_mm/value": "243c7f5a10914c85c893a1b97b6cc4ed77cc379821813875608b9ba7459ddb02",
+    "/overview": "ec959249bc0d98029a4cafdb8ac386aa22a436274d12a0ad75942b0aedfa3e45",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "d0b62eac66a58d23b3473a11799b8bfd52bc58322f283c8fbb2c9f9daa8fbc88",
+    "/environmental_data/illustrative": "25c44da32536a7c4345c4066245d675ef93d74e2bd2c7c6ea93588029c8ccea8",
+    "/technical_performance/illustrative": "6cccbc9ad6566d920d582d01ee09aa5eb2f4648c57b1d1f862cd6465bffc86f4"
+  },
+  "g:EST.MUR.HOR-PRE.GS002": {
+    "/technical_performance/module_height_mm/value": "80fbcd91e6b278c2eefc22dbb23d2f5d390642b6e9105376ce4d566b33c8fd34",
+    "/overview": "e23f074e6e8856880cbd3aff1d1656f142d54ac524990cbfb0b33d4e587e95e8",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "98346206e67c885a4366614cafb2a9e69a3c4aaad98cfb960f7214a33a5cea31",
+    "/environmental_data/illustrative": "2badfa5883c4afd35f90abfb41773a38a8fb3d9c7d4615e651a888fa76b8ced1",
+    "/technical_performance/illustrative": "a15bde66cb30d3057ec2ca80bc3b1ec0ef632d6e4d80334eb7256dbdc3803c28"
+  },
+  "g:EST.MUR.MAD-CLT.GS001": {
+    "/technical_performance/module_height_mm/value": "cc939bf33b379ebf6c61eeb9482f00183ec0923a7881138733c0f97d22280c1c",
+    "/overview": "3624ee0ab92fcc35196f530193d9edb5ea6507c57fc4b36da6f9bed104d824fc",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "9aa109bb9e4078b719b94d281be3b38dd34199c939f1315cad2a5c70f2091e6c",
+    "/environmental_data/illustrative": "11dd019f109f45c7231d3813981d4a618c46ffb0971540001080f5ffee4069f7",
+    "/technical_performance/illustrative": "717cc10701e522c0957ddfeefd1f7facbf157d86af658a3671e3ba722e3e0a8f"
+  },
+  "g:EST.MUR.MAD-CLT.GS002": {
+    "/technical_performance/module_height_mm/value": "6e575e0190f0ee19abaa75f29de75c8e3de7c13bca887f6c8a88d111eb092b9b",
+    "/overview": "bcbad1ec6bddc02d691dd9699867ad1266f63fbe7d12481162ee1093a2033cf2",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "96abcc95f16226567a01fe2aa5d9ba396baec96aa41d0565aba3fbce2808c033",
+    "/environmental_data/illustrative": "9fa1b9ffff30f831e78996073e3eac14c2e5738de863f6af6e9f64ba9d76bf03",
+    "/technical_performance/illustrative": "47a5afba054fcde25334708aa83b5eca8100cc6907bbb2a1a481b4be8435edcb"
+  },
+  "g:EST.MUR.MAD-EL.GS001": {
+    "/technical_performance/total_thickness_mm/value": "4886e5f68717a2aad7e5b10a6430e441d3d36586aafee18418c9cf23f4c779a9",
+    "/technical_performance/module_height_mm/value": "e91cacb9448930c63a7cfe34984ed5f6e614586917e083c9a5f0c47b182faa88",
+    "/overview": "a87f4a48189b1a44a58c76fad855f6833260e30961923c0fb21adb51a133d149",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "0572bbba1f8514a7683378c522bf9a93909c898ae0c5e815ba91e5de2e775326",
+    "/environmental_data/illustrative": "9ee59a26f1b20c5943cbe525427387f61beb1d6e32ea4354b0e81819c4748c0d",
+    "/technical_performance/illustrative": "ba30f55b66f72b09596a0e45292880c03bdb91aa798be3690b60bf90f7a2d223"
+  },
+  "g:EST.MUR.MAD-EL.GS002": {
+    "/technical_performance/total_thickness_mm/value": "79e7cf4f5f9e568860b730da9a6fe3b7f50a79a1ce1f47c1c1a74c79e3dbb5e0",
+    "/technical_performance/module_height_mm/value": "5c1df4dfdb0cbac187a69dd6c59287ed934a2c36f47f9621b31f8c740ac716b9",
+    "/overview": "e81b51946aa2da370e414256ce896bdfb12c768b0fe8a85b3c533032cb7ba031",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "53343b0ba068d6911384185b0ee2b6895974ccd676c778886fc95e6b0b6b4390",
+    "/environmental_data/illustrative": "99fe2a444ef1cb0885e8aa0a644149a37fa5eb06777d7f4d0e79614d3779ee15",
+    "/technical_performance/illustrative": "457e0ef306c876fa4f62cf6afc58085d57a0d71a4d414c96391ceb1a894ece73"
+  },
+  "g:EST.MUR.MAD-EL.GS003": {
+    "/technical_performance/total_thickness_mm/value": "d7355d5f1b604f74126761065064eeeeffc0f6cef51dbc3df93c7433664b3a3b",
+    "/technical_performance/module_height_mm/value": "beea9842f47b868146605530f72d89468c32d15b487b4b73694e8afc669e5dc0",
+    "/overview": "5180faa61b9697a2c2cca2d5228895bd9f5d5e71b09ef9c16bf48e0873d6eeec",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "4a4a556084be0ef6b6c4faa8ca3784a28a9bd680a3e05a826482ad90caf5c3b9",
+    "/environmental_data/illustrative": "5e9287823ade9498e8f023ba89303f5a3e7444e178a206e44447131dd796357a",
+    "/technical_performance/illustrative": "5983f9424f4af6417a396d19a3aa6b882b5bcec927f3c68c508ec132786f4dfc"
+  },
+  "g:EST.MUR.MAD-EL.GS004": {
+    "/technical_performance/total_thickness_mm/value": "10dfbe574b25fa9f01a226ab3e1a1b95664bbcd0d1cb8a9f030501b510090404",
+    "/technical_performance/module_height_mm/value": "c89e1ab98856360e2932746975a5e4e2b33a83a7de5d43c16e3599daed94ff5b",
+    "/overview": "5428835f3853ea85f36247d6fee9d8f941eec1566fd19e162b7ca56838d0c68b",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "9529f85f435f7ea00cc1de1175ff7c7edfe831f78ea2b7b846a3b7b6a07d4c79",
+    "/environmental_data/illustrative": "a64da0c4efbc295ca3b0f0d7c94f9116b94d219db2410336ece59623c9f8079c",
+    "/technical_performance/illustrative": "66c8e895e00ee140528c162f8da2fd86b36e512d3cea2eba5e83563979006217"
+  },
+  "g:EST.MUR.MAD-EL.GS005": {
+    "/technical_performance/module_height_mm/value": "0bdd1ffe496c8e4379ebdbc1dc3bfb9df7c359ca121226e4d7666d84bd15ed71",
+    "/overview": "c82917a57c3519836cbaf87332baf306f44abb85e08fda98d5cde57b56c0e3d6",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "0bffc95b9886f392160566ee3fe9e8dd005fd50972b1c3778314bbec768b73ab",
+    "/environmental_data/illustrative": "2eb65aaf85873593560900a09091ccb823bc4e98ce369d64de1c5a958eb81262",
+    "/technical_performance/illustrative": "42364f700c1d624a49206f184f6d2274bb425d0e3b2d066f2b354e5980869a08"
+  },
+  "g:INS.GEN.BIO.GS001": {
+    "/technical_performance/nominal_power_kw/value": "eaea5ac5c3e5fb660931186971c2d1f1f815d646669786b14934d3745479aa77",
+    "/technical_performance/module_width_mm/value": "ff842109778f91a78d88918634049d23c6bd462150eb192ea7c2cd89c92bccd9",
+    "/technical_performance/module_height_mm/value": "940f3cb83e92197e481687ec09afd3d0562fbf687b5dd9caad8fceb6b43be466",
+    "/overview": "caa14ff2514e2e4f6f479767f4f460eef18e1a67e7b30f23008c2cc4dde8248b",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "85ab728444285843cbc3a628b835de697c5243d2a61b7654ba1fed3ee43ce6da",
+    "/environmental_data/illustrative": "8659a1e5338a27e8ead428d3d1d01e2080a256291c745291b256f1596b740b8c",
+    "/technical_performance/illustrative": "13b977ba87117a9fe38a0fa284286def703e6c5b8a9195bac84de97a7e6772f6"
+  },
+  "g:INS.GEN.CAL-GAS.GS001": {
+    "/technical_performance/nominal_power_kw/value": "69e780f33bac0f49136d8098d2e83bfc6f0bb344113947d6766cf85f8e4845c7",
+    "/technical_performance/module_width_mm/value": "3451e2865ec0c489b27343e9069ab83bd1dd787ce65ae3f61bc7b82496a306b9",
+    "/technical_performance/module_height_mm/value": "0aec4d0a26c42027e515a991fb0711c26c196a484ad73c6339501db23dd603d8",
+    "/overview": "6cba383d0112ffff07bc7328477b77ab1f5236121d9b88b9ab3488e93f1f4fe4",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "8749a2319f5c97e447e38d58b9c8b8d00473a1b8a7863b21909de131cb6f3f4b",
+    "/environmental_data/illustrative": "045719aa3532770a8e41cb135ec5ba7198a1ad26af1b5b04eccced5a55a9895a",
+    "/technical_performance/illustrative": "d3a20e356f9657ec2114aad820540edafa816ea37b5677b8dd5b8df89fb0062d"
+  },
+  "g:INS.GEN.CC-GAS.GS001": {
+    "/technical_performance/nominal_power_kw/value": "53904c84d6709d8b0b7488012ad31599d8bf78124faeb934195fddd8d2fdae32",
+    "/technical_performance/module_width_mm/value": "5b7e6981fa03f11631ced6da38e18c05de97d1a64c6694e1ee2529b6fdd982df",
+    "/technical_performance/module_height_mm/value": "19a06998fa172886907aa53afd0e346e9fa7e8c68a94574fa8a622f6fb5fb3a3",
+    "/overview": "b358157dbf5272e2f2ce66e11b57e01616636aee84ad5e1528fc16b14be79262",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "971982ee73a5fdd9441d0f1c42119be1e89fc7e0f8cd02d4b5c3a15cdfe5505f",
+    "/environmental_data/illustrative": "bb1fe102cc623f6628bb590e38ac9ace74160458388c71760b13a5830d1c2336",
+    "/technical_performance/illustrative": "865d0393a04bbefaef9498aaff5ec1876b2bdff62851f2267d4a9823ed48c0ce"
+  },
+  "g:INS.GEN.ENF-EL.GS001": {
+    "/technical_performance/nominal_power_kw/value": "2e26ff94fa8aae13c40a117bd10684e48690b9e98442a9acbfe853841d49ac32",
+    "/technical_performance/module_width_mm/value": "76de2e24da79d862354730de95152b436bbbb4372af62ddd16ed882154454c2b",
+    "/technical_performance/module_height_mm/value": "3fd22d8a5d59b0cf818990c379aed22d2ea186a3b4924d6fbf85aefce020b364",
+    "/overview": "ae2ca91468dfcb71e8daf38cefeb4ea8cea455231136caccd7d497e035c37a7c",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "2b109778ad18beafd4b2722b32a9df684c3119c4189a9414aa245cadf366d695",
+    "/environmental_data/illustrative": "71e08faa02e62adfa1a10f7e28fe821489b4c393df4a6c78ea0ddbf70447a765",
+    "/technical_performance/illustrative": "89a721598a22401f4b31fc33018cde1c4c3042280f7aad0463728a07adf35b11"
+  },
+  "g:INS.GEN.JOULE.GS001": {
+    "/technical_performance/nominal_power_kw/value": "e42b2eac44d29e244eccc60c1cbb52243f0c7dfe94af4430ddfa12c1d43a684a",
+    "/technical_performance/module_width_mm/value": "0c3d2537e781fd70cfd8d61de57645419ef59d935fbc4afd066a2d5708f35c12",
+    "/technical_performance/module_height_mm/value": "a6208aa79a9bfe4508c291cfda5f0818037278104444e287bbf70c0430ace138",
+    "/overview": "ad0a3b2c9dc27cf5552c07941420d7546fce1e02e97e9f30402113088bee25e1",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "845b39e9fe7989871c8b914c7e1243d2f69abe26fab9ee8a7a63562fafdbd534",
+    "/environmental_data/illustrative": "4061ca00c8870f0bfc18e908f9f026513f4495444913bb5eb32c9235bb4fd084",
+    "/technical_performance/illustrative": "ea1a1af7cc5ce9050ae3856dee1b07c910112707adfef2d3b326e317d9a25d85"
+  },
+  "g:INS.GEN.PDC-AA-EL.GS001": {
+    "/technical_performance/nominal_power_kw/value": "7df5e2a007c522c2858c4b836ea3ac72b6b0535fbe2209307003e468f7db8ab3",
+    "/technical_performance/module_width_mm/value": "dd9de32332ab92f436828d0651c37418bf45123057183bfe10918fcc136a8ff9",
+    "/technical_performance/module_height_mm/value": "1c047a42c32593d783cd8033350e0b370affe5ff721f3b8bc98d73cd5a0bb473",
+    "/overview": "1158d3505be002b1c3911731f529602d2a332aaecf7f3efde7ef434b3ea04244",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "15b430e22dcc383abd2830b41f4d9f320ba589d0e977a0f45b0426e60a1efc1e",
+    "/environmental_data/illustrative": "13be0f0d5070c5c533c5e8897462dfde8577d024164cdfb2dc2e2185538c09fa",
+    "/technical_performance/illustrative": "0d62c6d2a3648d780879f170fbb1f3655012697dbb0a785b1ebbe4780e830c8e"
+  },
+  "g:INS.GEN.PDC-AW-EL.GS001": {
+    "/technical_performance/nominal_power_kw/value": "2844650514fd8dab034c716bace97ecf51cd5db046819fae81116cc796343e99",
+    "/technical_performance/module_width_mm/value": "3b14b75df0aad7f83e0fa931a922c46cd1c8c7436c2575b0b92742f180055c0b",
+    "/technical_performance/module_height_mm/value": "c2b76b9b0c5222dbf0860f7a84131dc2612bfb8e4c6bb41abb55886a4731f42e",
+    "/overview": "7ff97625f59b164f2a8cd513efbb059115739b12bceb1e6a14f57bc84060f80e",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "474bfddeb1a79a7a2259ce8dd080d1aa5bffb0bf6505cc8df96086a5e2ed21fb",
+    "/environmental_data/illustrative": "f2209c75e5a1dcfcc2ea47e9abe5ac1659c4aaffe11fa6b4154a3d8d83d4f147",
+    "/technical_performance/illustrative": "95e42dda83e6874d61161f966f97f0ce5204673c524e37b24b2563675640f0b3"
+  },
+  "g:INS.GEN.PDC-AW-GAS.GS001": {
+    "/technical_performance/nominal_power_kw/value": "c02a87b566e653db888d05dc45e0291c9a6b5d3697ef63c95035ad226586623d",
+    "/technical_performance/module_width_mm/value": "a7147a6e2cffab27c299be6957b763b15cd945f0d558161c4a3963e4d01d4e70",
+    "/technical_performance/module_height_mm/value": "d4fd558223f61d09273533f69e7cbeb0fc11f98575629731d0f59d23f13f6627",
+    "/overview": "9234dd5f01771a0ee65d8c9512b2a4f56d333073d4554ab13a19917c6476f5ec",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "f6fcd480b2dc3ee04dfa778dbc63c6303cb4534536152d8de70355e3bce39958",
+    "/environmental_data/illustrative": "302e4afe2fb848b924940442c0144f75a389f72c65a65e68f4468a45e6c179fc",
+    "/technical_performance/illustrative": "45c93be69da2ab9d125e5aff8d01f7e77498704e63abdc62d35ab83771147b81"
+  },
+  "g:INS.GEN.SOL-TERM.GS001": {
+    "/technical_performance/nominal_power_kw/value": "542550a8f622a7a76c02b24b088b161afcd854beb2277f3a194c0a1ce678d02e",
+    "/technical_performance/module_width_mm/value": "01b99809194504588701a7ac334c0eea11ed0d5fb690cf9f37b1e79356836f32",
+    "/technical_performance/module_height_mm/value": "05e7ed3e445aa5e0a5c5dce4458ac50db8f599744985d37d9308cd93cbfc17e4",
+    "/overview": "4e872a9e5f75516d69a8221825dd18ef6fb468b68529bacce65fd57669ac8009",
+    "/composition_scenario": "298222aeca13f0c32fe1f6ffd037a3c7650230a8b61f13805501eee5b52afc2b",
+    "/economic_data/illustrative": "77089661d670c22a56b9271fc07667c9f98027e1725045e93ba929d0326f8b31",
+    "/environmental_data/illustrative": "613118d5988a0b332bad396d4dd32b9df1696495b02b7e6d4c4840d2de0df622",
+    "/technical_performance/illustrative": "93a48ea95e73a740e47bb871912954a63c94bc9d52edcbc351baefc053e08322"
+  },
+  "g:INS.TER.FC.GS001": {
+    "/technical_performance/nominal_power_kw/value": "d9d8b73e7fa3813fae560964e8385264962717722f793f97bd6c3baebe6941d6",
+    "/technical_performance/module_width_mm/value": "5ddac92b189ae79d755f025ac50e44e111b188babf5e3fbacd07a2cdb53d7566",
+    "/technical_performance/module_height_mm/value": "3fae92d91e43633eed34fc10f936190fb0b22515b58fb7c26421235e48271a9d",
+    "/overview": "e83dbd4f745911a2f3a38a493adc2f3eb763b6c4394258fb888a55b4332375bf",
+    "/composition_scenario": "1a4b434d3c40fd60c6246a3808bf9676436cc92dbf7243e94af29d1ed863b476",
+    "/economic_data/illustrative": "a9ebd8fc40b7fa32471ee9e8b56e738abee74090dbe6683ee2ce8fa5f86aaa86",
+    "/environmental_data/illustrative": "b32339638386af88306ae950b0861e2b8923d456a2450a93a0eb6402dfe5e87b",
+    "/technical_performance/illustrative": "1604eadc321c57869785daccc5eb9467963e9af797110338b140d36d637d3358"
+  },
+  "g:INS.TER.RAD.GS001": {
+    "/technical_performance/nominal_power_kw/value": "6d4c0e0282146163299d70f3f8f0ce159da9a1bcd72f223848d88b057f8e4fe2",
+    "/technical_performance/module_width_mm/value": "238c1d2c7432ef1d42c51c7c40aa5ddfb0e154181ff1aa5dcb7b3688d2f06ab0",
+    "/technical_performance/module_height_mm/value": "e5d80d4a37d176b435b8679469155888b7f8e338947fd4247a1156d1e8da7b74",
+    "/overview": "b7c0183ebcead79c9cc2d42166b9310134e75f08ea9b62eb9dc50444aaaf9cbc",
+    "/composition_scenario": "1a4b434d3c40fd60c6246a3808bf9676436cc92dbf7243e94af29d1ed863b476",
+    "/economic_data/illustrative": "7b460604250a80816ea82fb4f4a72d3290dfc9f0ca8a2764674fc26bd1288912",
+    "/environmental_data/illustrative": "67ce5847d591a4faa786fcf927885402aab55216bf6cf5b595739e246be635a6",
+    "/technical_performance/illustrative": "789886dc153ee8538072329b39a0cfc152c2b57db0df2f23ba69636dc8f99cd5"
+  },
+  "g:INS.TER.SPL.GS001": {
+    "/technical_performance/nominal_power_kw/value": "44cd6d5103656c41b7df80adf84138472d4bbc91abfb97830a55569501a3315e",
+    "/technical_performance/module_width_mm/value": "9e6049639bb8b4f49afad383d7e5208684cd6e29fd7fe9ff9a8267c3cd820030",
+    "/technical_performance/module_height_mm/value": "f541f270274baeb79ba79c7cc9947fbdc201d76b759f9b26398caebae0477778",
+    "/overview": "96f730a5a836f01bc711552a7ebdb495d01eb60b7d82ac4db64cd46ececc3838",
+    "/composition_scenario": "1a4b434d3c40fd60c6246a3808bf9676436cc92dbf7243e94af29d1ed863b476",
+    "/economic_data/illustrative": "0fc56783e1163258827ae181cb7673102da2ff0a1684df21992c2703bfcb2099",
+    "/environmental_data/illustrative": "84684c7e67ace392fc1cc1117025b02d4c816d7527756a6ec8aa6076be3f483d",
+    "/technical_performance/illustrative": "2cbdb4e81b6803f14d832eafb5097a5347abc98d68b8bea1b925636cf4790c07"
+  },
+  "g:INS.TER.SR.GS001": {
+    "/technical_performance/nominal_power_kw/value": "7759f94c149fcf23ab85fcfa460f3681525f458ba02bd5266e5cca038368d7cc",
+    "/technical_performance/module_width_mm/value": "3ac7bf284b0c53655edfcd65cf5e3693ba1abac561f3c164fc1926eb62819eae",
+    "/technical_performance/module_height_mm/value": "c8fcfddf6b6f50f3c8360b026f879ed467ae064d5b20b12e9d2b3f67d33df88a",
+    "/overview": "78fe1cd6c22969694e9c4f010898d6eff7740d9d10c78667502fcd861e5aabeb",
+    "/composition_scenario": "1a4b434d3c40fd60c6246a3808bf9676436cc92dbf7243e94af29d1ed863b476",
+    "/economic_data/illustrative": "ec6d36386d828c400fee19164a0142067dfacab2b1899796c1117ad1e8148113",
+    "/environmental_data/illustrative": "e61696a2eb8ccb18283fc2720209a4a7998be8d393fb04c000bd3643d5ae6ce7",
+    "/technical_performance/illustrative": "49d0a8f485fc61d2037a63ff93530b95d523242f38d3dbc673f3351b9cf70aad"
+  },
+  "g:INT.PAR.ES-PLC.GS001": {
+    "/technical_performance/total_thickness_mm/value": "1be4d31d4559b688795546327eaf3fd83252f836bfb67f0cbc323d124c22de38",
+    "/technical_performance/module_height_mm/value": "751d31a8ca2dbf7d21752ddca69e8fde4af657f85e4f369c36cd04453f334593",
+    "/technical_performance/surface_mass/value": "62fc86613cc50e647f0f6f3c887032008ecab67ac1f49ba9414e81d118852d7f",
+    "/technical_performance/rw_db/value": "64b32af5edaec2707ce827773fc96654e3f3a60763465757b99a4787c273a7e1",
+    "/overview": "a19489086366ae5857e15da5e2b19642870a74b19bd2c7595acc5370d41dcde2",
+    "/composition_scenario": "fb07138a7f190641424240724d2eb28eee5956312584a088894960b59e5ebd2b",
+    "/economic_data/illustrative": "3d0e3ef9fa1374f975dfe05f47d381d363f457ca365f981c3e7ed482657bfc1d",
+    "/environmental_data/illustrative": "52c092a25a956260cd2a98a7b4ad3115012ce8c8e880519f431729324e581a4b",
+    "/technical_performance/illustrative": "8048a43afd5985329b245dd28afa9d5f83405becd1f8a6f37292a998a7e7af4e"
+  },
+  "g:INT.PAR.ES-PLC.GS002": {
+    "/technical_performance/total_thickness_mm/value": "426574abb2f8b13f1925195ed4847284000aeac1adda9429821f852ee85a00de",
+    "/technical_performance/module_height_mm/value": "5a43723d9342dd564240ff78016c2e747bf9d2278c835bbdd5fce3dec97b9505",
+    "/technical_performance/surface_mass/value": "fd5f48d32c8d55604fd194872b86a8763bec0d2611524e43f09ea0916a5f9eb5",
+    "/technical_performance/rw_db/value": "392341b24ba79b546af89389b05203758c3d651888d825a3362d1a92439ea817",
+    "/overview": "175de148731428033f335c955c02625a0ef48473e018014424e2f7f909b88689",
+    "/composition_scenario": "dafb4f2310f12ba8b4ec0300ab75195bbc43e67566f2b8fe6ec0811eb40cf9b7",
+    "/economic_data/illustrative": "82972bf5fd9a943a15c9fc44fd48ae612d168c8ce9d4bc1b78b8cc030ab19439",
+    "/environmental_data/illustrative": "34f3ba19ebdfd1e1dffdb62d4a965e965dc3386d75852aa4c9abf69623a0d46a",
+    "/technical_performance/illustrative": "f9904597ac05896f653ddd8b214e76e0ea362b57d1dd3f3672199c8c62dbddba"
+  },
+  "g:INT.PAR.ES-PLC.GS003": {
+    "/technical_performance/total_thickness_mm/value": "dea694c5cafd57e0e42e30058a40e28a4bfbc47d7169c4a53420d62297139bee",
+    "/technical_performance/module_height_mm/value": "2f2bf2ca9d3ee2e02e3d66be4bf1699fdb8f176c9009210be0dca53e3c112fe7",
+    "/technical_performance/surface_mass/value": "6506b0b99c3caae24d753190a1c9bc3da96a60ead83706ce4a22e875508954c2",
+    "/technical_performance/rw_db/value": "cfb45562b226af74e3be0948c6cd5293481aeb09daf6f5379a74fa9697eb3533",
+    "/overview": "5e93be8926749f51bd6550b9cb53bdd9573754ea40577a123670b32e12c815da",
+    "/composition_scenario": "0201a59bea9ad4da457c947f5690808b21701eb8ca48e484231b9b8c0c1a939e",
+    "/economic_data/illustrative": "3102c5b06d9b87fc12f7896121f5b5ca889090af2aee4dd7658c247c760dccb2",
+    "/environmental_data/illustrative": "9378cd0aef4060384ce292dadd19855141f5fd80da426685597d6290eca8582f",
+    "/technical_performance/illustrative": "0e75324474cb93de96a3c16bc887fc9ec4c182f11aad183838c65408c0b9c587"
+  },
+  "g:INT.PAR.FAB-1H.GS001": {
+    "/technical_performance/total_thickness_mm/value": "b5ea666a2f0e9e9ac4e2aae9be179198cac9416badf131ef2f919bd0c159b112",
+    "/technical_performance/module_height_mm/value": "343cd5b84d87e4ee86af59d7640cd38e0ed48f4d96fe2ca0489dfbf1c76b63ce",
+    "/technical_performance/surface_mass/value": "edd6784e4e90d949fda04e7e47edac69e0406fdceec3fb455b7435b2e8d99bfa",
+    "/technical_performance/rw_db/value": "e776f2a74a205e71f2dbc4a6fb7d514a005c7a8a6609b7a833a1274da0de782f",
+    "/overview": "1704a375dfdbbca5f645612dcce5a0935697f92ea468bfb7ea240b765bc8d9b7",
+    "/composition_scenario": "096be78d0133b111efa6be9401f67cc94f3c66416b39bef63a8e22fb0ea84baa",
+    "/economic_data/illustrative": "76d52b533fda9cdcdbb31bd72c9621614985b56c4e83f5cdcea171ab2dc54e4f",
+    "/environmental_data/illustrative": "e87fa18f7e0dee62e65d22cb1b15ddb837aa9adb1587e91e3d94fdf5592307a9",
+    "/technical_performance/illustrative": "1e3ed087c3ab13b5d96d26328b5f47907973a554fbfa2bc1993e90e4cad2243b"
+  },
+  "g:INT.SUE.BN-PF.GS001": {
+    "/technical_performance/total_thickness_mm/value": "85ff993c24d85fee5a9caeba7ead512294aa2a655d9ce8e4be7b641c81a3b4ad",
+    "/technical_performance/surface_mass/value": "102a3119efb962c4f77011b53d5feeb07c6470e56d0a11b973785e8995f6a313",
+    "/technical_performance/thermal_resistance/value": "eecee3b031a15ed931d11a472da0eed155de5b0c794533794d956648993a1ae2",
+    "/overview": "96e9ef20f5603f08530cd7e957004aff809c42292e242c6544848b6b6f1e6f66",
+    "/composition_scenario": "a451aba797ff7696446160b4ed80334ddc1a9a63a4c591d8a70a39c443eafcbc",
+    "/economic_data/illustrative": "cc78aabca00b3367fd651fe102a6760e3c35367334aef5563d1613ca0bd827f9",
+    "/environmental_data/illustrative": "5151e953d03a248b46f2c51217bc67badccc9521872d969536da89f35862023a",
+    "/technical_performance/illustrative": "2add30da35da628d027a605905ed14c9aa1e9c39d014d9ebac3737f0a201bb95"
+  },
+  "g:INT.SUE.RA-PA.GS001": {
+    "/technical_performance/total_thickness_mm/value": "7a73287cf135fc5bef25d7fcde30505623f49af6052932bf5870195ec8a0424b",
+    "/technical_performance/surface_mass/value": "e984c187edb457bfe594010709543625b338f2dca35601f5ee0904a27c46b052",
+    "/technical_performance/thermal_resistance/value": "006bb50da46c84d51bbb3eec3259931fdb927bcf1ceef71f370a16b697456afd",
+    "/overview": "5752f0208a61d065ace88c6960cb62f096eabdee567f18fe27d624ca5f45ee6c",
+    "/composition_scenario": "3bbfc1932ac0059c397ae656badcc443cbe04449115b6c4d8907d06465348c8c",
+    "/economic_data/illustrative": "c28ae16ea4a52199ff35c877ad3c51231c3bdeee46d79bf4328f1a7eed05e2a9",
+    "/environmental_data/illustrative": "16ca1f8326f40dc6ac1ec8675329d91630c7aeae18fd0c4182ad2de17464a7a3",
+    "/technical_performance/illustrative": "1f1e08f14179880fbac73073239915f0a3311a29b93eee67d7b2075f646c698d"
+  },
+  "g:INT.SUE.RFH-PA.GS001": {
+    "/technical_performance/total_thickness_mm/value": "257cd7debe8822a277a299e66613e73f80823398de6ce7212c7a0ce9c9ca1559",
+    "/technical_performance/surface_mass/value": "1f3bf9c2fe145273782f1aeb9eea32f22b72bf456dc6df3165b6086c74bcd11f",
+    "/technical_performance/thermal_resistance/value": "fd08f28767c7aa82b1e53f486a3bd8719bba5cc56bd10d91a796b290b745ff30",
+    "/overview": "6de2e8ed8ae2e050109e2a5de68d00c7ef68a81d437a3f92e5f8faaf6f28d2a0",
+    "/composition_scenario": "87c396757a10d10c0847fb961274d1afdbad3798b0a3e9a4cf1d09ec62fe5393",
+    "/economic_data/illustrative": "82639c964335308ba80c0907acf03f4aa53c0ea93f0ae230a9caab5fcd605555",
+    "/environmental_data/illustrative": "cdcbb421fa9a780a94ec3560dd57e34ccad961bc1902b3a8ab82ed394343f360",
+    "/technical_performance/illustrative": "8902e5e5e1006c9ad755bdfd1a2f49c3f376e05cf89575d2e783372a0223e7c1"
+  },
+  "g:INT.SUE.RFS-PA.GS001": {
+    "/technical_performance/total_thickness_mm/value": "a9d585580d0713eddf828c166511ab4a1d960296b6d09fff8f5d7f6847f78138",
+    "/technical_performance/surface_mass/value": "14e2923afd138ff984a1874f0d3f95dff2f79a9e67e7afd2163ea90987f65b5b",
+    "/technical_performance/thermal_resistance/value": "8d4375c6b0632f9681a8b53b6adc5b0fbdf7fa3d29c2eb7a8eb626f1189d2ed9",
+    "/overview": "9cc1776576400a6a0730fe7ccf44946f083c7decafa62afbca75ac1edeb83a88",
+    "/composition_scenario": "1d6c42e69790b6c124850dc5b0fbef3a610dec63c274cccc9787f6b41ab01fd7",
+    "/economic_data/illustrative": "2a100e2305b9d17d8c4ce8ace5f9766ada7ea2a7a3dc68abc34e76adba305411",
+    "/environmental_data/illustrative": "33eb0d1725f286bd14f563ba829c8299c991cab06afd742255db46cb0d134b86",
+    "/technical_performance/illustrative": "2f58156217a964b71ac8a93435c1b548161ecc65071299c82b9ab1cfb0ee61b0"
+  },
+  "g:INT.TRA.ANC.GS001": {
+    "/technical_performance/total_thickness_mm/value": "44178b26dca303ad1158916d63c38ea91b9fdb91aee54bfde0ea0def49f525e6",
+    "/technical_performance/surface_mass/value": "33aefb039f4fc78f1d369407c0e0d4dce4bd9590fe9d9829a7aab4c573691126",
+    "/technical_performance/thermal_resistance/value": "12434ab6c8f9ce9b21c0eb22b5ee471bacc998e24bc79285c8fc798b5e8bf697",
+    "/technical_performance/rw_db/value": "9690247308c840a5d2126563dab2bb1ffa28141091e1744843ed7a2f5bbf7b05",
+    "/overview": "d0510048bfb8f1c58b9f441e5b4df30fdef26fc3c542c1a320cc17735156b2a8",
+    "/composition_scenario": "73607fb462c79852386ef252cadebcb23ea6ae45d195cb4e37dfcc881eb3d961",
+    "/economic_data/illustrative": "9963304ccedf088e9424c883e07fc25c03f721533cbfd452ed14cd0492c297f5",
+    "/environmental_data/illustrative": "e7c3a6bc222673e759b47a6e335781b35878f0abd02b88f30528057b394e02f7",
+    "/technical_performance/illustrative": "c5aa43995cc7e5a1893f46513acdec74b4f1563c28772a48f9087fa2cb967e42"
+  },
+  "g:INT.TRA.AUT.GS001": {
+    "/technical_performance/total_thickness_mm/value": "36f79511f0fb2d9e2b78d58c3b2116752084de70ebaf11de1a5a4fd0cd08e671",
+    "/technical_performance/surface_mass/value": "f76e2f5b9d7527059f0dc49950bf329ddde671cc6045b7f6765acb80d4a24f62",
+    "/technical_performance/thermal_resistance/value": "74e6d20d849f34da3da5b23fa0ac7c4356e7d713714f27ddca01a21a44e70399",
+    "/technical_performance/rw_db/value": "ed99e1063216a27f94977fd4d9ec9d307520de08073f3c1f0c1fdc1cb613b61c",
+    "/overview": "b40ff040035804050a77b59a05f220e5945c16bc233e9269c1914e9895af5f9f",
+    "/composition_scenario": "5bb0e09081123f6666ee303f086f623f9934aa2d058cbe3882bc78ef80e2460f",
+    "/economic_data/illustrative": "bccf5367f18a849b81bd7a68b84021ff7f24b193e7e3b9064d5a37fd572b940c",
+    "/environmental_data/illustrative": "0faeaeeccac6a7015eeb7b71321aa9b8b7aee2f439ab3ba5519836ee65ed4343",
+    "/technical_performance/illustrative": "28f8c093f9f077db2b9d6420aa0a66d28b74b5b77e44a5db1566b4e8d87e0b54"
+  },
+  "g:INT.TRA.DIR.GS001": {
+    "/technical_performance/total_thickness_mm/value": "acbb4857057f6f7a72e3ca0ceb18d90be587531c3139a14dc97325e590b637cb",
+    "/technical_performance/surface_mass/value": "d3d3cbdc9bd003ee7acc5b2b8f6961aae65e5d645a4392ef31ee37cfbc836610",
+    "/technical_performance/thermal_resistance/value": "7ae4f53e730d365d50bbdba95f982dce061b13dee57ec114cc20db5f9eb3d7b1",
+    "/technical_performance/rw_db/value": "31947c04c0430f76dad64e68a3fe36c86436c11f267a79de0ebb344ff2e54d89",
+    "/overview": "7fcfbf3ac19cf7c49570d1c0cbade495ced8b257a5e5689090be0e961e14defc",
+    "/composition_scenario": "203ab1e9be264a60a02bd8d154d1c71bb575ca79463a26b9fb62c29e75c1363c",
+    "/economic_data/illustrative": "d5c57dd06e5ef05febfaa0a57bfc43aa2d7fd0526ce1a11f80a80915837aa6ec",
+    "/environmental_data/illustrative": "7eade7fa952663ee09b84b8b24dc1ce897ee9a798e86dc75e4a442a882c58b40",
+    "/technical_performance/illustrative": "542325ea5800cc160dd0c698a716b2665c90ecf2a89bcc5a034a3f74af855e6f"
+  },
+  "g:MOD.BAN.MOD.GS001": {
+    "/technical_performance/module_width_mm/value": "f6df3a838eb35eaa796177780e5daed85f54b8354df3ea2c6af876a8d92e572f",
+    "/technical_performance/module_height_mm/value": "3dccf0de9cbea7ef82b23afa51a6537827a75d67ffd4e2a00476778886dc7497",
+    "/technical_performance/reference_length_mm/value": "275486b8ad956aa7c623043b3cfe8e0a56a63505778d6161e71e64ed4203cee7",
+    "/technical_performance/module_area_m2/value": "ee8dca99db05fb447e364c1d61365bfd89a4adfc4217a02d50a6058394f31ea9",
+    "/overview": "db97c9115b1ba9cc03c1e5101dc42047d51883885974289c5d941e53acd15123",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "63d9df8bbea452688abba196a0dc7fd6d9a3aad8400a2af0a173dba4be4ce431",
+    "/environmental_data/illustrative": "22b2442dac7f15f6d7f2caeef4e27a952d3867810315c580c44fd54f5ac28b49",
+    "/technical_performance/illustrative": "3fc14d14b8d8142cc9b720e2c42bbd363696691e542434a19a246fe2e12610ac"
+  },
+  "g:MOD.BAN.POD.GS001": {
+    "/technical_performance/module_width_mm/value": "5ce1daec2ba1673ca73c017cc9753173c4d737520a3d8cb461eb9fecabe013e2",
+    "/technical_performance/module_height_mm/value": "0abbf110c1205674979efab823269beed4cf4f16655f07251401db979114e737",
+    "/technical_performance/reference_length_mm/value": "915ea8aa66aa9dc0aac60a7e65c6db3855ad25074ad222101ea8011445ff4e38",
+    "/technical_performance/module_area_m2/value": "34ed5ff6c48aeb6ea68b4afed111c0f40cb927df95ac83919b842cd5387d294c",
+    "/overview": "d8a42f3d464ee4dfe7d5f82aa72a9033858a039c78b60bc1abf93f767b234336",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "9ec2368df1acda714305d9d897b820348aac5949bdfd5778e3bf37f18b756a7a",
+    "/environmental_data/illustrative": "e6fc50b98a82339d41b88543c29c3168b5a9bc9e9c3a98838abf1d4a9bbdef16",
+    "/technical_performance/illustrative": "68e26e7aa53955b02c7378325337743872974c8206791e07674f4dc3eb88f174"
+  },
+  "g:MOD.BAN.POD.GS002": {
+    "/technical_performance/module_width_mm/value": "ccaeb96e42710c2aca342a3c1707248e34ff8472689753f269bf5e55c8b18c6c",
+    "/technical_performance/module_height_mm/value": "cb6e3b6f80fff53f79af793997b2902708f39c4ab3df2a29fe268c78d9a1e5b5",
+    "/technical_performance/reference_length_mm/value": "a8dc2d9d1d2ba06789cbd4669a07838249b9c6895feb920b74e92c18538490b7",
+    "/technical_performance/module_area_m2/value": "932fd4c531cb455c90889874351de9b5dd93ea6cf510a0275e7466898278c4f8",
+    "/overview": "b4d10dc9c71cb26ba379dac2746b1fd989f94c0cb385d12f4516ec1f978012cc",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "e731520b0a82787fea9588de32f1df941296b6d13e11998bf5f26b317c9544bf",
+    "/environmental_data/illustrative": "a2a626012fd02c27f955082864c43a3473ce3c22fbf49bd37fa94959c9b96bdf",
+    "/technical_performance/illustrative": "e5c942dc4a3c9de095b6f102a69fb58eb8b7142d5227c927540ec18d6986344b"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBC": {
+    "/technical_performance/surface_mass/value": "24b6025a2e6d19ce2cbeb2594384aa00a793a94c01ff7dea5beb64ea3696b464",
+    "/technical_performance/thermal_resistance/value": "5478a04ebe19c8bafd411e418de16e893417ffe23848789008a79d7e8b332560",
+    "/overview": "da83141d7f8736d5d36d25f125c9b5c6846d4894e17f31317efa3bb672251900",
+    "/composition_scenario": "544b3c062cfc338f7261c4745971d22c5fd001821d6623ca66955c013ce6f8c7",
+    "/economic_data/illustrative": "fbd09d16c49e74832f3483ecdd3d486bba028128cbca8b5fb0fa71386d0c62a9",
+    "/environmental_data/illustrative": "b95c882c81a2704968ad9d09ddbf3c6af4827027f0671f28cd67601239280f98",
+    "/technical_performance/illustrative": "a284099b5528f094d623f15f9fcdbee7d0e4fd1618c2d51f407011834702773b"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBCA": {
+    "/technical_performance/surface_mass/value": "a17816a192cbe4c4a68c5eb4bc35ffc9da112b64f5f3d3135ee44c99cece2ea4",
+    "/technical_performance/thermal_resistance/value": "163deb9760315b9b36d4c8cface2c87f30d0ee65e37f8aaea563f5ac10b72beb",
+    "/overview": "f586407b3ac20c3a612ac0d37343977716265ec5ec5ba97a9d33434cf4886f4d",
+    "/composition_scenario": "76e45eb2cb9168f79bc24579cfed02139d1003975b288cc63329acdda69959bb",
+    "/economic_data/illustrative": "5eda90593807725fe9d86fe07d73a3ba6dca5da600bdbf0dbe7c6af056f80654",
+    "/environmental_data/illustrative": "dac2c5523246dad5925fc4908509171581b5815189959cb1c624eb95d9b7e056",
+    "/technical_performance/illustrative": "a4c04206cf150130331d9b8ad596535cc7123e080824e3d3a0a11078e0880c38"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TAFBCT": {
+    "/technical_performance/surface_mass/value": "2aac225d18f032f2a4e8443c00bb842ab5a2ccb30a427bc24988c04781c77941",
+    "/technical_performance/thermal_resistance/value": "5e703c7d66ee48a4a6bba6e3634a069e935938709bc8c7ef767d82171c754692",
+    "/overview": "4ea3cf6b47bb2b1dec836beef2cfdd3da7a9af4178e006d430d6a4a21663c9fd",
+    "/composition_scenario": "eeb6c9ed5bb255bcb5a5316fb1d693d81d069b2f249d74cfe9b9443f35de2d3d",
+    "/economic_data/illustrative": "e7e6fad762713c08a7264b91ff74507b9451a4878ba8ebb28c2489a16e64e055",
+    "/environmental_data/illustrative": "a561ca5d03b11774b9f0a3a876f94d2c9d980d82e640b2c270f89b0312dd8601",
+    "/technical_performance/illustrative": "4ae7ab5ab6a766f6d0d139fd5a83631107069f5f7c9ec02ef136f0f75773e2a5"
+  },
+  "p:MFR.THERMOCHIP.ROOF-PLANA.TFBCY": {
+    "/technical_performance/surface_mass/value": "ca484cafac4db30b9ed7a94781b5da5d39d48f44f6b58333f0b299997245a5bc",
+    "/technical_performance/thermal_resistance/value": "c6f66270ea03e4cd5c5b7868f6edbb4f22f5ee6192a0e01466ae37df0ad242e5",
+    "/overview": "d642dff56708cf2c1e1a5cb67aaf25984d0f5408ad9c500b29e85bcad1512204",
+    "/composition_scenario": "b89ab5568883b53e022bf7e05add119a76c5b9666e7cbfd525460887a25abf91",
+    "/economic_data/illustrative": "16fa5043ca7cc3cf90a38743671a6548a34e761e9ab0afe7c57ebfb1c4f60d6b",
+    "/environmental_data/illustrative": "946a6aee5d9c07959be34c383168b5f896cbe20d6ab506908374823df6f6f7b4",
+    "/technical_performance/illustrative": "46ec9609e722688065404ecc13e805fb59a508ffbc73f643fe17d049557f9eac"
+  },
+  "p:MFR.BUTECH.FV.KRION": {
+    "/overview": "cb4483d9ea58686f04a42c75e29b2f675310c2e668f3835b30abb7471b8739e0",
+    "/composition_scenario": "204776475201fe4f6836c4054237f4b2e73c73824bbc757c88f383f143b97d54",
+    "/economic_data/illustrative": "ea6b285918e151ac9750fbeb75e3b2d238f0068c650c0329c831e24a5a190750",
+    "/environmental_data/illustrative": "a59b06b629d60eb6c3c3cd8729bce685cba3944ad333bf24f8c99c4d85a78a70",
+    "/technical_performance/illustrative": "377d82bc5d62d054d9ec25d6c021169acaa72d1c093c063a1836bab3269ae907"
+  },
+  "p:MFR.BUTECH.FV.PORCELANICO": {
+    "/overview": "2e796c66cbac894e4f2355282ccba48e494408594d147f8c3e67849576b60923",
+    "/composition_scenario": "6b2c4e44c35129647dcd59e7dde2381b5e4945f08c86d07b543e33b08ebef0ad",
+    "/economic_data/illustrative": "d4d628def0179e83b953b1a8baba315597172b235c878f7a350c6df761ea8796",
+    "/environmental_data/illustrative": "c0ec0cbf002a59c1b69267ee34165173d1f16d28436b8ee0376916f156595103",
+    "/technical_performance/illustrative": "9594d3cc0803fae3bded6fb918159835fcf284d4b28f0baeea0bc27e55376a8e"
+  },
+  "p:MFR.BUTECH.FV.XLIGHT.XTONE": {
+    "/overview": "861cbf42c0487182712d92cab3e7c812aa0355d46089ce8cc79b7fd2ed74e0ac",
+    "/composition_scenario": "53d718661b7141a542207c3c7fd1cb869d47c8b9b54483cc4a6a96810fb0cdb8",
+    "/economic_data/illustrative": "79772b142e6f9e4e6ffe5dac923c1f0d391ba753420d08c989945cf27e1d4fe2",
+    "/environmental_data/illustrative": "cb1b0b2e7413bf3c125b90af3084a868dbab412081b06a2dd3c3fd5146d8970e",
+    "/technical_performance/illustrative": "03f4741b696ec025889d3a4899bc3771aacc5024d83971f0537b23326a6de23b"
+  },
+  "p:MFR.BUTECH.MODFACADES": {
+    "/overview": "e24bd4859c61d73d520fcd887c01da2149a5d5d147ad24a235a682e46a3be194",
+    "/composition_scenario": "63478298765b9a2aa033ecddf25104d2af3088194ef9051745cca032f557784a",
+    "/economic_data/illustrative": "e7b2843aec2baba7ed47326a0c211c21b9c9ffdc05b192c2be613c7e9dad067f",
+    "/environmental_data/illustrative": "ac7cbcb0cbec7cbec8b7a05fbc39dc9c253bedeebb0c9c7bc8cb4c3e7379535d",
+    "/technical_performance/illustrative": "3fda78510c671693cc37c4ac15d5c66dbe24ed958570a2b57043c4717ec452f9"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.ESTANDAR": {
+    "/overview": "0442ab66c62553c7617f0ccc9fd8de721da875340d08efaf2accdf9a62ca2466",
+    "/composition_scenario": "9a05b02f77d4720bcd2e9f79f65f9a852059563efee3987fe9e1c18ee6365483",
+    "/economic_data/illustrative": "78e4ef1166306eefbc3a64d127916450c4dda5215937abbfd12a303ff6998e63",
+    "/environmental_data/illustrative": "d6c380a856e87520163035f344e949c1ac74d22b116b3e691228bb39cd72ba13",
+    "/technical_performance/illustrative": "570b230d2ea6eb013fae02f5caccf7b8bdbd2d7a3aad8ceb9b999d9520bbc115"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.SATE": {
+    "/overview": "a5336d1d6ca8a99ada46e674439f7038dec7deff5b292618a8c4092fa1eb42b5",
+    "/composition_scenario": "79ffd280911359982a56985bd031c48e9305e4068ff39ce9085be2d5a656bd9d",
+    "/economic_data/illustrative": "fbfec5511d6debc531f405d519b299fa840319e0eb08443ddc08ddd10162c067",
+    "/environmental_data/illustrative": "6e3ba69111f311c45d0e84fbd18f3a412a2e5f0a3d098ac0094af26262ea3c7e",
+    "/technical_performance/illustrative": "273cce15aa021537d06da1ec697dbcc80278388b6164d72f4733eacb9e0ebb7a"
+  },
+  "p:MFR.CIDARK.P3.FACHADA.VENTILADA": {
+    "/overview": "fd216c483e10679c0bff35c7458d76925d983f872038f7dda33d672b7bf3b8fd",
+    "/composition_scenario": "67c670fd8ab1066313368c59e5b1dc10d658fd50732b65d003a5e6c38371a67b",
+    "/economic_data/illustrative": "995d55de321812fb8c9cb19913295d483640939ede150e9992e23a4a38a2b6f4",
+    "/environmental_data/illustrative": "7e78eacc6f8d671f7ab3d4aa60e86c72b4f295ca44b0727afa49dc021f335630",
+    "/technical_performance/illustrative": "baf19a375449b8120e9e67b48340e2bda30968d8252003e0c1937b86c704dc64"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-AUTOPORTANTE": {
+    "/overview": "59c435d06c2e31cf48642bb6c9826a563209fe4d6a13cc50721a063bf465792b",
+    "/composition_scenario": "cce85a5b63c9ab9f441fd41a5a78ab51315ecb1f02e1e2b1505c54f55e68493d",
+    "/economic_data/illustrative": "42a2fe2440405bf63df02f76467d76e99d262cd52498c25758a2e49e0ade7d17",
+    "/environmental_data/illustrative": "1e65fb6a738436af4ce724b26e1cc54496f900d744b8bac615b430af13ab2665",
+    "/technical_performance/illustrative": "d5dc93c6a097cf9ad34cf5025769e998cb89afadd681f90e5982675116a6975d"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-ENTRAMADO-LIGERO": {
+    "/overview": "2c06a551698e6fdfb10caa42c141801b60ed849df0735f0b574602e7159e8ddc",
+    "/composition_scenario": "cb2b19fa90709f56ed15fb6d25c0b557408702996365f521721b56b2222498fb",
+    "/economic_data/illustrative": "d85819eb703e47ef6582ae07fa2eb4c082598ecf4614d30c22087df6ba4bc823",
+    "/environmental_data/illustrative": "662506a5a1111b2998fa80745c96a69cef1adc236e62c4caa9e9e5ae5963f923",
+    "/technical_performance/illustrative": "e3c768edbd9ede1fce31e8173bddac29f3b4c40338fc04dcb51c29a83f5e51da"
+  },
+  "p:MFR.LIGNUMTECH.FACHADA-ESTRUCTURAL": {
+    "/overview": "f4ad1ed2821c1be808293eda68ca8788eab70bd81fdf7828c564b08a1e769883",
+    "/composition_scenario": "c7010b0676a311eab57ed55fb19623a86020da174259c3fc9f55f5f9576feaf2",
+    "/economic_data/illustrative": "dc13f69da949d6ed02de6559911d476b70a6db6eeced902335f3670aa037f363",
+    "/environmental_data/illustrative": "d1db46a2267106515b3a289f0d6b0b75a7130368e98611cd8d6d624984f54bc1",
+    "/technical_performance/illustrative": "b49b044a3bdf1d188640f17d0eb4d09de2d992bfd4644cae73ab55c0e908c53e"
+  },
+  "p:MFR.PREINCO.GRC-LAMINA-RIGIDIZADA": {
+    "/overview": "5d571084ae35e6710e4d41e03b8b354b637ab88a453588861857439f4683999f",
+    "/composition_scenario": "9f81a6372ea21567254853e4ca7ed0fc53c4ec2b4758117314082773fdca374a",
+    "/economic_data/illustrative": "7e1608dedbaa39e3c5ce0f10580c50b43e4c882306d1623febfc7d93a0e29de5",
+    "/environmental_data/illustrative": "e6e7a9a709dcf27b8505e164aa5b92005e3afd44e3b03ce2bfe9dbef31e0deec",
+    "/technical_performance/illustrative": "1e19da7c70fca4fb1998a81d562b4bdfa01fc91547eef7482bf523f971e9c106"
+  },
+  "p:MFR.PREINCO.GRC-SANDWICH": {
+    "/overview": "b6e5f06e82a78fbb5fabda26e78451603098f8fa8af2b5f1b178d6db3fec924a",
+    "/composition_scenario": "f04d0397d21104924707ea75cae5e90a727389813dc42f4fbfecb9cb9a4221c3",
+    "/economic_data/illustrative": "7a35b0ce3d2c71f6fd57a296352b7ff97f3d1eefa9a09c3677d76a5aa98e2338",
+    "/environmental_data/illustrative": "ed130ee9cd765708e09a8086086dc90a879728529fdc3e70abb741f20fb10e64",
+    "/technical_performance/illustrative": "65754f9819df99038a853249f5ea198f492ccf116461b0af83e300b129e9cfc8"
+  },
+  "p:MFR.PREINCO.GRC-STUD-FRAME": {
+    "/overview": "dfd33951af745245a69a8c595d6b89767c282d561c9e79cdbcab979ca34c5088",
+    "/composition_scenario": "c7464f3a95067dd6b3655a1872e31f12ded5b67dc12ddb8e0ecb5410e9caafda",
+    "/economic_data/illustrative": "a116818fdcea651b7cc6a6d18af4c2f452567bc4b2a50d2f095af37047610f9f",
+    "/environmental_data/illustrative": "a7d01ed5d66ca0d09061422004c97cfded58dd4f76f85b5a2d3ee28a2e05cee1",
+    "/technical_performance/illustrative": "c267dca3a2a901d64f64301efd933d406be27cb1555d135b2bc6f2aad3da1304"
+  },
+  "p:MFR.PREINCO.HORMIGON-ARMADO-PORTANTE": {
+    "/overview": "beaf7c7dba8b2eef444dee3e3f96f1536f616c2d76fca61eddd2185f67bb5e39",
+    "/composition_scenario": "36838a6ba75468c3c9442d3e9abc11ce34697073b80321ac2325baf02fbad7a9",
+    "/economic_data/illustrative": "0c77ce0ca9eec5071f4af555a6f7b8e7de2bbc397fa8c054873b76fe4e296fa3",
+    "/environmental_data/illustrative": "1b551f2fd822337ba214a8b37cc3294f7dda0121edd8f80ecc206683242b52f2",
+    "/technical_performance/illustrative": "6a0941310860eb7e801ef0495f0c5df2efce6c4e36834a061364fd59f42f6afc"
+  },
+  "p:MFR.AMBS.COFRADAL-200-DECIBEL": {
+    "/technical_performance/surface_mass/value": "f406f1808791526cb097083d5d13ec0522181c5e226cb638934f86fa08e88add",
+    "/overview": "bc511f8ae6242ab9a4061e4833855c885c7c4082de3adc0a5327e81b22ed5921",
+    "/composition_scenario": "79b8f5a0c0dcf35a8dc7833e8b68bad0540cc95ef49ebeea37895c42cc813752",
+    "/economic_data/illustrative": "0358cdaa94b1661d3afcd73477a7b11da0421ab5cb8296f5752e757560e2a6d8",
+    "/environmental_data/illustrative": "f7037b4be300ec9eb20d8dd70864c495f06cc5aab5ce9cad18882a6d97186415",
+    "/technical_performance/illustrative": "82b8d091f138fa71b4a0e2c7d49156177e249e0db30df0814a55fcfb81590335"
+  },
+  "p:MFR.AMBS.COFRADAL-200-STANDARD": {
+    "/technical_performance/surface_mass/value": "1608de62f61b4235df7bfbf2e5f4343b112ede55beeefb910353d6ea666dc47b",
+    "/overview": "b5bb57cd8a303b7d87e1b755a1d3954eb37f1a5b4320a0f565027a512fb60e76",
+    "/composition_scenario": "b9a00741e9122f9f544eb57837a959e4600d30275ac4582a5abd03ffb7c6b0a4",
+    "/economic_data/illustrative": "bd6250b50b392abc774b6e6f3fabbe338a39648a8aff1e7454e8a669e7a2d179",
+    "/environmental_data/illustrative": "92962560e5ca293d390da0832ec52286989678f53da312007f917992e13febb4",
+    "/technical_performance/illustrative": "41d2d92a961f2c64d9046d46abfabc1be8ffafde3b66473721a86491db0c0ff6"
+  },
+  "p:MFR.AMBS.COFRADAL-260-DECIBEL": {
+    "/technical_performance/surface_mass/value": "079de8c31a9d07aa3f93be82e41470a2705d467fcbfa0c793b9c90674c50b103",
+    "/overview": "d41ab6450859254911f037e1cb696868492186f20f9069b0cf01cb0974f62d0b",
+    "/composition_scenario": "537be06d4945bf0a135819324b0ad496f5255b8bb03ad28bc88c47a933fc1be4",
+    "/economic_data/illustrative": "9561959ed157f8c0dc005aa58ba75eaf9ad65d2b85bbdc4b003b4c176577129f",
+    "/environmental_data/illustrative": "b594a34ad6dc3e998bb94144f3ceb29f6be006866ef12cb6962503a44abf0e1f",
+    "/technical_performance/illustrative": "82c586b380c555c33288ff5955dc95f817324dc200cce22939417f52db4d8f3e"
+  },
+  "p:MFR.AMBS.COFRADAL-260-STANDARD": {
+    "/technical_performance/surface_mass/value": "338fc23c164a443ac2788eded939384784586ac164f0defb3102c9c6e14513c8",
+    "/overview": "29095ca64088ebdcc715346510c4b9f5b931510f5724802fed5cc062f2a76363",
+    "/composition_scenario": "5d34259c36f46eff3b4f25f9fad2b5af256ba4aa18648837a09533be53336ae3",
+    "/economic_data/illustrative": "2a782caa519eaa252c2157e8caa8d2d2df00b6f00d1c201709da986e8414f56f",
+    "/environmental_data/illustrative": "6932528af4bd34970c384bfad161e28e62f8129fb9477497d0528eb2f9f74b43",
+    "/technical_performance/illustrative": "f2160e392cfa7beba266346c53f917d123a380e4aa074d7cd61a56693a12a249"
+  },
+  "p:MFR.AMBS.CP220-750-E113-H300": {
+    "/technical_performance/surface_mass/value": "0a1681f5c499b36d97534433f531c75a0badd8d9ece707622ea2644293b971ea",
+    "/overview": "cf38e1380dfdf47f68e393652ce7dc8377d308e9b9a44968e040076bcdcd202f",
+    "/composition_scenario": "95432a9079e9c00a0c98cdf735cd6f2bd3dd84733c47931e7fcee2dc8c16acfe",
+    "/economic_data/illustrative": "f74f5cd9050051bcdb768d5c0bb410549993e23f1f55b296def37e32b532cd29",
+    "/environmental_data/illustrative": "8d88ee6d5ccea538d66ed986ba13db34fc8ab51159c07ca856e841af2579ad18",
+    "/technical_performance/illustrative": "3b856092127269e4ae6ca796307ef6826b6c0c8a2c6566a9cfb82c930f4b7e6f"
+  },
+  "p:MFR.AMBS.CP220-750-E113-H340": {
+    "/technical_performance/surface_mass/value": "25b08136d1696eb94bb0317571ffca4d27cedbd0529bae211b2568da3ee3c2e7",
+    "/overview": "048a063a52cd3f4ad22784e9b07863fb489ab22d8522036eafef54570c49163e",
+    "/composition_scenario": "6e338a6feefe7690395dfcb368b3c9341c8b3e833223341e54b673d69de8879b",
+    "/economic_data/illustrative": "e5c98bb040c5b95a85dd72d14fc7247551d03bac52a911846c8c6c360215cfe4",
+    "/environmental_data/illustrative": "c104762daf3efd1df246c9fe5a1b00a1e36fa6085772dbdf38d8b9b413d57b0f",
+    "/technical_performance/illustrative": "816868cc4f4dc382c60875933a40966249a5feb135acbc6d600996431216768d"
+  },
+  "p:MFR.AMBS.CP220-750-E125-H300": {
+    "/technical_performance/surface_mass/value": "b2c1107c13dba0827989b282cc4b1416c31ac1a031c8952ee6b6400516dafd1b",
+    "/overview": "9f258b724e39e6675da826435f28350296cc14c486b8f0a380cdac7a237c11c1",
+    "/composition_scenario": "fe517fd309734c39c036de86c67bc0cc975be717d68a3361b3149107c3a339d1",
+    "/economic_data/illustrative": "cdee2172940cd10a40518e2374cd8e79c16d3449631141b89c45fea4972aac61",
+    "/environmental_data/illustrative": "9d2e2789881741037e888f1da8f1958f588f8b25ca8085997115fd52b2709771",
+    "/technical_performance/illustrative": "edfd26f57dce71c3c68f212a3ff2a3450bb16ebd614f09bc0e39216930d7a0d3"
+  },
+  "p:MFR.AMBS.CP220-750-E125-H340": {
+    "/technical_performance/surface_mass/value": "7e4b5bc08fe395f0466c22e8d5f6e37a2669832178fd46185d07a6d14f2c1370",
+    "/overview": "5be4382cddf9199c29b6095cf7825fcf64afb2d76ce4176fedc946249fcb020d",
+    "/composition_scenario": "1dea8d0fc025271e591cd1f7fc222521c4105ece62cc78694d2a13a82d41a2ad",
+    "/economic_data/illustrative": "a0d521b35a647fc4e406f40a4eb662fbcbd657e81dde6c60e08b72b32e34fa7f",
+    "/environmental_data/illustrative": "f2c2699a93d289bc831c4fd51929141bffa5c041d286419438e3bba6ce130664",
+    "/technical_performance/illustrative": "ef04bb98de1c47905c146e1b4aa8c042b5ae74e662c955363bd97090ba90f02d"
+  },
+  "p:MFR.AMBS.CP45-1000-E080-H100": {
+    "/technical_performance/surface_mass/value": "e66179af07d2456789a5f32fabdc2912f38452c0af721b0be09641e041041fc7",
+    "/overview": "ba017ca0d15ef08ace4169220c66275bb2e42b4db742f7997d5dabe1ffd240ac",
+    "/composition_scenario": "873574e7c8503b209d6b52438f47338d9e80c19de8d62696a23940aa106703e4",
+    "/economic_data/illustrative": "4639ec924c52a2d97fa4b7efe392f5d9876bfb50138e9ce5722c27434db73707",
+    "/environmental_data/illustrative": "cfba783b01beec3619511e61d694836074e9658123805f18fc6eee4abca16b38",
+    "/technical_performance/illustrative": "9ada71896e856d6e8ab0d8cbea1e3833fa8e1627bbb2c7aeb21db03a96e7b298"
+  },
+  "p:MFR.AMBS.CP45-1000-E080-H140": {
+    "/technical_performance/surface_mass/value": "dddf076ea02bf16c16e90f071a0eb8927ca9c440df1847c560f5af8456159182",
+    "/overview": "19f260046861304b1400693d53d89bc3c734629e3a5850b715af03473a46d74f",
+    "/composition_scenario": "5eac8dd394865cc9ac8bf751ecc3d44bb864955c9cfa1db72efc3fa9147fbb2a",
+    "/economic_data/illustrative": "d97442f7379071641f389a09aecc8f7358d1831168081e546218b496d412e42e",
+    "/environmental_data/illustrative": "90ac1ce8b770b225ab99a27739a52b9e3c786c2cc0ec84deab9ca61f3c1a919c",
+    "/technical_performance/illustrative": "a22f1a87dd15738e4809e616901bf371a5d69c08082336484ec44baabf631b34"
+  },
+  "p:MFR.AMBS.CP60P-1035-E075-H120": {
+    "/technical_performance/surface_mass/value": "2ec3f8a0964c2a44838bf978c98384730e167e6a84a1e17d2998771a3b442b08",
+    "/overview": "ac30fcead300152326a83f11543ee356e74c1a9e0ee72ec51df4449ad6cecf33",
+    "/composition_scenario": "8cdc9eeea088c3bc23bd6b897135d35c3c6c801af738a3d82ab3ed937bd89869",
+    "/economic_data/illustrative": "8fb2baa69382a155624c7f67cffd9871dba2e8e9d3de9ebf633c1ac11e38f0d4",
+    "/environmental_data/illustrative": "50fd4c8f78ffc9e3a94ba5783ea1bc2c2eb57375e1f2a726f29c257ec9a475b0",
+    "/technical_performance/illustrative": "b1ac0f4bebb220b946862fca6685af89fbae689cfa54967e3a110640aec3a459"
+  },
+  "p:MFR.AMBS.CP60P-1035-E075-H160": {
+    "/technical_performance/surface_mass/value": "4d7737719756d4a162fafb5673e0ebff04c493f646d4648fb52bc70e4ce5631f",
+    "/overview": "ca3cba1879d5b3145d86af4286a3b03cc98b246ca32b9db26740dba086d45175",
+    "/composition_scenario": "02a2ecde41d7f081ee7ade468eea6f2a130ce106dcece24b15bb48888fee6336",
+    "/economic_data/illustrative": "00017d4191b060e52655e806e05ce5fc1a8f4d386033e686b452d5ca08bf0eb3",
+    "/environmental_data/illustrative": "bdb11d7ff7b85a82791f098eb8ab2553e6412e539fbed5420809e65de93da6f7",
+    "/technical_performance/illustrative": "bf14bbf212784fdb5c3b82ffc97f9c4823bc373c73ed362557cde7e2f1e0f51f"
+  },
+  "p:MFR.AMBS.CP60P-1035-E088-H120": {
+    "/technical_performance/surface_mass/value": "47e3cf327b28eee0aef0b6b61ba3ecb46c7d81e932c87809fd9d179e66bd18a5",
+    "/overview": "a521745c5de2ac4b6c0600290455e35e1de077b3434c015370676dafdc274759",
+    "/composition_scenario": "0218a1443ecbf470f347ff817cce3c7b2e8e98e5d1c636f2774e1c1d45997d0b",
+    "/economic_data/illustrative": "337b1b50222234d684fdbf389f5c0744a80ddf76b53d949aa4545277c5889764",
+    "/environmental_data/illustrative": "47d42eb16c1f0babffc0b21a57189afd9d422c9e72cf299e3837f69d6deb2961",
+    "/technical_performance/illustrative": "9fbf81f55ff1a76e4bc964aeeb59d29ff09f293ac2ff8246b1fa113cc5fe4374"
+  },
+  "p:MFR.AMBS.CP60P-1035-E088-H160": {
+    "/technical_performance/surface_mass/value": "a94f32ba68008309ec4818a217dd2f09043ba4c111ad0c40a37d2e3aa0af6355",
+    "/overview": "e88db79466ed3435d7e38043fe6edd225d61c23489e19be9c764551fc2e575ff",
+    "/composition_scenario": "7633524adc103fc647f669d655ed029bbcda0b913a6379d15dd0379862ef524b",
+    "/economic_data/illustrative": "5a2fc68b3c11309deb698c5906c2f2eb97854b807bc3a5df7c6f050d5b67636d",
+    "/environmental_data/illustrative": "3be81a5b68ea74e04c45b789b03eeb037725b0159d0d2f3db3efb3d2f8c94989",
+    "/technical_performance/illustrative": "b599186dd36ee71fdec51bfdf38fcaf727fa34991c8a7a339bd9f1d64bcafa12"
+  },
+  "p:MFR.AMBS.CP60P-1035-E100-H120": {
+    "/technical_performance/surface_mass/value": "97ed454a5d6884863e489bc60be2d87e447d4de3fd824e467a85a238f548f068",
+    "/overview": "d172dc43b7123ae51b9408914aad01cf1d89a5ce474edb6c28c84a13f7553cd2",
+    "/composition_scenario": "8a24d74598c0df9a317bc521c542b89fb79f2a9b2acd1e37f225894144720a4e",
+    "/economic_data/illustrative": "ca28bd23efa388ceced45c8bc83c5d2f657f49130ab08a3f4ef131573de70155",
+    "/environmental_data/illustrative": "ca49f744003fd2d8e1d954537da2745c4ab5972bb169d9b6acbc386e9aa3acc3",
+    "/technical_performance/illustrative": "5dc7ef4b7fcb919225d3bbb7384c498bcd75ebaff21e92c3b0887b82e1ef68d7"
+  },
+  "p:MFR.AMBS.CP60P-1035-E100-H160": {
+    "/technical_performance/surface_mass/value": "eb79865b7a10e49d4277cf1e391f38d691d2c421c6b18b1a0e7eabebe1f7ee67",
+    "/overview": "62dce46b19f25aee0a0da70a671fce1ae2ce9834773a3ab1fd0a74dfc0d51b7b",
+    "/composition_scenario": "4dac5f047e8a1ca5d810b407a57d544851abeb7984f4f0794e4be85d20d4e972",
+    "/economic_data/illustrative": "a540e4a785f725f7aeaf8fee2f170557a94d919faf7d4e493ddda84be6787ed5",
+    "/environmental_data/illustrative": "bdac3b8458ef5d0aa5cc20f78e40d9423e14aed4c3100d9e5577d06d05d52201",
+    "/technical_performance/illustrative": "4cb34fce88df088abf0c998ddc8376f4a5f88534ba014c4fc42df13bd5812f5f"
+  },
+  "p:MFR.AMBS.CP60P-828-E075-H120": {
+    "/technical_performance/surface_mass/value": "72c451244c8a62ff1a71a8a887adef21d0a6a8ac887fdfe8e68fec142f6a0fed",
+    "/overview": "82521016f64afbaf47c901103871a0a5e53ea3728223e24aeecc3ec8a3c75ae0",
+    "/composition_scenario": "0c0f902d326576601b68bf033cf4a1d12afff30c1aae5e7c1f632ad78b107577",
+    "/economic_data/illustrative": "fec8b7f4119bfcf985f8d30b25c2befce7bad494588bf56d758fb564330afaff",
+    "/environmental_data/illustrative": "ce4a547b7b3f40347bff94b7ccabf3f3e9515f77d051727a8ef7f8e33e89ad4f",
+    "/technical_performance/illustrative": "3e36805e59548708e899253b825a569da682ea6fcf58c717a6492a2a28f31028"
+  },
+  "p:MFR.AMBS.CP60P-828-E100-H160": {
+    "/technical_performance/surface_mass/value": "1c6fe6f671fcb3fa28344d6e2850a401f0227ef66089c32bc14269594243af08",
+    "/overview": "de943480419b95febd480cd61fd1dc745cb0187dc99a529223f737e0f31fb02f",
+    "/composition_scenario": "034e4a3b32201e92fbbd9a9386dda8cf7b53f65e2274ebeaf588a68f0eb4a12b",
+    "/economic_data/illustrative": "76caa2ebe9271169edd7d626eb5d5e2e2ac6cc219188e1d0252999acc2b0ce77",
+    "/environmental_data/illustrative": "5c49ad78f94b427f12e0de20d1372121113670c1e652ad298267a58e0a40a3f7",
+    "/technical_performance/illustrative": "de13d04961181743bd7dbb9c4aed8826e545439e529671d2247cbae42328a750"
+  },
+  "p:MFR.AMBS.CP80-1000-E088-H160": {
+    "/technical_performance/surface_mass/value": "d3a42f1130fe97f9f9b28bd3b7308dae66e5946638e94abdf1b50842c2422d86",
+    "/overview": "54ce3e9e2f7fb1c87d0fd1a7888c0175a286a0c6171200731d544a7f2dd1697b",
+    "/composition_scenario": "cfe74fdd31575751cfc402e5852960770fed398c7a4fa9e7482cae654f5cbba7",
+    "/economic_data/illustrative": "c11e4aa854054531991af88a93373c2489b3f11fae7021e7bfe29a8065ab9d5f",
+    "/environmental_data/illustrative": "db16ae97f014797adecfd062395970b1556f492a840b1edf8ba3bbd111dde2e6",
+    "/technical_performance/illustrative": "1c8819505cc7b8cd37b64a9b0f7d9d5a12c72e9679c3374e55171dd7fda3344b"
+  },
+  "p:MFR.AMBS.CP80-1000-E100-H160": {
+    "/technical_performance/surface_mass/value": "6fe35e3c520c7d949e0a53668de68df49e630748968800d580e2ed4bd1c22459",
+    "/overview": "2a76f16ec3b08ae7a3a1504c978ee09de3327c9c6ed7b5b81dd9ea3431273b91",
+    "/composition_scenario": "7dd7940126843662b9b762a3aa50f48227900e524670dbd88252c8d9f436184c",
+    "/economic_data/illustrative": "2921cdcf74d0d04abaf381c7d5daa0b8d8cb15608c0ad4ac550427750e336c3a",
+    "/environmental_data/illustrative": "c09ed9b3b4d6d2d2242dd7c1a5c1a51059e4298f63f42b584df783000d2861dd",
+    "/technical_performance/illustrative": "cb3f8ab5ac9dcffe7af235f1c65d93b74afb22d25a3308240236c76f40f7f6a3"
+  },
+  "p:MFR.AMBS.CP80-1000-E113-H160": {
+    "/technical_performance/surface_mass/value": "1912dcaea2855f74f2926b3149c59918553561d00dc0d854ec15f73766660476",
+    "/overview": "2631aa14b46fcbd17bdb5db335f64fe0eca8e64aa7670e8f2efd444fef519caf",
+    "/composition_scenario": "f9ab94aa5ae26a32069e8662f4f3e211ec2f1f82f8886251da205928037c9b88",
+    "/economic_data/illustrative": "63fd84320d825e381f92953146801d6ac279f2c9587348a704f57a0d99cc6795",
+    "/environmental_data/illustrative": "44e9ac6b8287f6dd9a9796093bcab8fb1b2e7ed35b2ae83173342bfc5e6fd647",
+    "/technical_performance/illustrative": "b4d41e603cc8020323a5f1969ad83c6e24cd636f55a2029ab54249ee0181f58f"
+  },
+  "p:MFR.AMBS.CP80-1000-E125-H160": {
+    "/technical_performance/surface_mass/value": "b43c93c68ff8e78cbb153899083b534d45501619c4f835e25bdca7b61423d65a",
+    "/overview": "335dda8f0b173628807724b61fa02eafaac84ee1520db825dbb0a88f2f4a8d5e",
+    "/composition_scenario": "38783d294e9f6fe9fd80c6d2494ce2cacffa7cccefe1e836eec25e885ff1f943",
+    "/economic_data/illustrative": "5a8f661ea7609394ea51f84a8a962ecee099758af1f39ad3ba164f3913951dc8",
+    "/environmental_data/illustrative": "902037bf5a29a35ed36b0111c2481e3f169b0bfb49db8996de9f23aa27400ba0",
+    "/technical_performance/illustrative": "ff652fe9c5427b1e39b3a606d86a956868037b47db5ce1292e49a43865eb4d95"
+  },
+  "p:MFR.AMBS.CS40-900-E075-H120": {
+    "/technical_performance/surface_mass/value": "12939f1f470625d22df24b6a183e7506fb8b4346785c77318cad402ff5fb0e90",
+    "/overview": "686e84be2429e4246c0b666d08d187ff545cccb07ed3266a81f6087d8fe609e4",
+    "/composition_scenario": "77cd486b9bb56aa1ec698efc866d055acf3def5a87e0a1ac5bc36a60e92e4692",
+    "/economic_data/illustrative": "45fcbd5b5402a7d40882211cccca7816adb44896503b16a78c1cf6ed1430875d",
+    "/environmental_data/illustrative": "4c941c1b3e1d9424d171ec612b2b0220bc0a591e34ee448fdcb499cc9564a7ef",
+    "/technical_performance/illustrative": "59c0acf6dffa8fc8edcffec83a60f2f110c4037b6da6795ca6afb63708c85ce3"
+  },
+  "p:MFR.AMBS.CS40-900-E088-H120": {
+    "/technical_performance/surface_mass/value": "3a5c6cdb4b920f7763e4dc8acfea9b0d5708c72a79d6a6919b11e8808c205647",
+    "/overview": "bbbdfacab0482b36bb74a3257443283bf22b2b48f6cbf835996d71a88f3c3852",
+    "/composition_scenario": "6ca1a8cbbd84dd85a4f3b6452dc1a0382647e86348c7ea2168925eeb68f6000e",
+    "/economic_data/illustrative": "51e3ec0ea0fed2c890bfd982a6397fd7bc31967fe9de98a8888fb5382604b5f0",
+    "/environmental_data/illustrative": "77c650fdbf0528bceff06b556d7af7c5ea5eb42a1ae1877cf3f66d9a48ad3e14",
+    "/technical_performance/illustrative": "c122b6f0be0183af1c7edc46d089df1b46472e1e0b06e1d687f0eb2bfadd010d"
+  },
+  "p:MFR.AMBS.CS40-900-E088-H160": {
+    "/technical_performance/surface_mass/value": "b5739122cac87e9fc5c1c1aafed56a872a499c891c47b6c56f4bec0f96fab378",
+    "/overview": "f121a4d3d65e627f84278b44df8534558da52c02f1ebbf06e5701db56ba96b51",
+    "/composition_scenario": "643600f4afa4a486dd0982f93027ee2a617512ca7677e430dd0f41ffcf0a3608",
+    "/economic_data/illustrative": "b20b90339fcf189d26a643a0daea1604650a12c2344cb24eb8ef416863788f75",
+    "/environmental_data/illustrative": "cc600e6b7e73412cce16fff542bbca30182ca62e672b13e7e7211cbe154c24c9",
+    "/technical_performance/illustrative": "4441ff23044994e61318c20b7002a52967f595e3d7f9f050c660307c9f6e6489"
+  },
+  "p:MFR.AMBS.CS40-900-E100-H120": {
+    "/technical_performance/surface_mass/value": "20d9fad4478ab5fbf04f9c949680491babf378b5cacf93b528d53caa55ef9f69",
+    "/overview": "a0adc6035bd04a7d795e46f4e0c5dbef2c15dad66dd05901a0e674d107160e92",
+    "/composition_scenario": "ad3e31bcaf6ad45a57274334b9fe5c55ba82ff8e6b5115fdeb10b2cb6e56ac96",
+    "/economic_data/illustrative": "a91bfd405a497c6298a0af4b95d26987c169c55c1402f85cc827edcf664c2878",
+    "/environmental_data/illustrative": "afe40aed6da8826587dc2c5b228158b147233bcd4fdc735a090524377bc310fe",
+    "/technical_performance/illustrative": "cbc75a6455f37355a5ceb7231f7c36d805c41cd869ee099a113187c1439078fb"
+  },
+  "p:MFR.EGOIN.CLT-060": {
+    "/overview": "8fb703e1bb82325d39c4992318a2c4e4de142655d1907c6926a31acdb0bc2e4f",
+    "/composition_scenario": "7fbb00c151b7714f8612de5151664377b09543cc0a061767ae078f7f3b83dbb6",
+    "/economic_data/illustrative": "6264b4d89c14ee8d84a1312dbc0d0daf340a1fa0c1a274bed8dc6b94284f7120",
+    "/environmental_data/illustrative": "08dd077bf2f815757026c337d11f77379d265ec907fa1f52f9c9276994779cf2",
+    "/technical_performance/illustrative": "98136939b53d7703b70bb96c2b6d206f23fec97e4b073fe4534c12e0778a3513"
+  },
+  "p:MFR.EGOIN.CLT-075": {
+    "/technical_performance/surface_mass/value": "bf1bab6142d7caf3505f9280feac11e8315a181e305265c3c6d995d811c1ddad",
+    "/overview": "217dd0a22a301e162e2d273470b3fa77e465c65221103dd69f2b21807d05bf56",
+    "/composition_scenario": "c986b337903483ff61369a6bab1a7f3cf2548f7ebf9db6cfb8aaefd823a45980",
+    "/economic_data/illustrative": "dd25b8548589262ad0e93b0f7682b651671b5f1a8c6e33f615f17381b1375387",
+    "/environmental_data/illustrative": "28f1faa33872c7248ae1ab2d1d45c28db9c5546218d49cb6f997f19c7d91a2f6",
+    "/technical_performance/illustrative": "4273df5ac620948ee149df6e95d2e924d4561deb38a6135c8f5544e74876d5d1"
+  },
+  "p:MFR.EGOIN.CLT-080": {
+    "/overview": "a8f91a0ce3a6eed86b7563783f4ed7f0ba9ad2032ceccf9bf5f76da6fea2e44d",
+    "/composition_scenario": "5441c14002480df3a8f94e5edfd713fa9ef04294084d4de5fdb0610c2795a170",
+    "/economic_data/illustrative": "da0df6cdd1834a46cb31cf0305aff065aa85b27762d58354282c1092dc3aab6f",
+    "/environmental_data/illustrative": "5f811c683ef54d3eb54ef52dcf30e01ee48bcfd3009c873630d6ce140ac64b21",
+    "/technical_performance/illustrative": "315f9ee794a2d67401c29761bbde1e8862d54630bbba01ebb835da450b4132c4"
+  },
+  "p:MFR.EGOIN.CLT-090": {
+    "/overview": "b15c1a1da4fda8bf748ec8d826d7327f00a3e0999161ce6ac1722c8235b13dd9",
+    "/composition_scenario": "493043a2c802030c163de51eb32e4b6adaea3cbaa442d9604f63aa95282e5aed",
+    "/economic_data/illustrative": "9a4188c5bd39dddbc9b46f24e6ff20bccc43a9d5925a4d113b5fbe4c4d48dd4d",
+    "/environmental_data/illustrative": "71f2d3f8a09cf993d1686f5dd4bd9d8690cb4cf30660d3112672010393b82a6c",
+    "/technical_performance/illustrative": "9e16ae94a9351dbf0c1ad93360d42ffd4c71332b801bc5163e8ff97e8d93e62e"
+  },
+  "p:MFR.EGOIN.CLT-100": {
+    "/overview": "b8951fd1c288fa622f366d41508eb1d1f79f6059c333ed381493b77d997a44d5",
+    "/composition_scenario": "05feff8a275cffabd16e0a7c49e61707a7580231896e3930490c12c59c58cc2b",
+    "/economic_data/illustrative": "a950f3bd00eda44561dc3590038f45e7b6c494c146da77f2341c87af2f936a9a",
+    "/environmental_data/illustrative": "6a427ec3854d4bdff8a16427208db9c86fdcee713c03be82c9f69ce94b32f5e4",
+    "/technical_performance/illustrative": "a88d57bbc91e9b329ef3008173c86f29da70c4cea90dc9979dd1fca8b7dbf600"
+  },
+  "p:MFR.EGOIN.CLT-120": {
+    "/overview": "29f7d872b90c1390a8745a0d980313fc79d36d9f7b6062ef23af0afa20cf6f6e",
+    "/composition_scenario": "f21412b5584897c62845130f2fc8b018fe28c2cf3b24e1f1b664e2d9ed0dd00b",
+    "/economic_data/illustrative": "6e0116d009a7383fb5721f6a1cff1c87bdbf47c1933c066c4faf41fe4836c232",
+    "/environmental_data/illustrative": "3e9384a9b904f3e35b12a360a8279d992fe765f15c1d0ad49003dd4cb8c92d9e",
+    "/technical_performance/illustrative": "46e341e70f0203cd9d696f202b77affba810d7a27de89a3cc1fb6213c76b6d5f"
+  },
+  "p:MFR.EGOIN.CLT-125": {
+    "/technical_performance/surface_mass/value": "0ad16513f929020c24a4514c1582d5722df399c9117a51d071638296fbad653b",
+    "/overview": "32502f05dab256d044da73e3ef2ee7e82e67d88ec7abd43198d3ef25b507ce6d",
+    "/composition_scenario": "8f61decdb7cf069f110171da294330055e04b293b07de408022f5874d2778e69",
+    "/economic_data/illustrative": "4914116ca89600c530eac562ca606b2a97cb0136ff8ced76d8c915b378310d87",
+    "/environmental_data/illustrative": "bd1bd9a712bbf0b00e0b68636f2f1b71a1d3697bbef5e485218ad8d8037fa23b",
+    "/technical_performance/illustrative": "810d6b7a37926dc7c1ca8c5eb84281e3ba89950f97289ab15744726e43aad779"
+  },
+  "p:MFR.EGOIN.CLT-150": {
+    "/overview": "6e04a651e5b6505d55194b6e6a1e078d4115dc069006a148cefd52781a5212e5",
+    "/composition_scenario": "2669a186e6a2e9176789119ffe9f83b754727ef7474ec20c687ee2c174d7817c",
+    "/economic_data/illustrative": "2e4b604892baae4d6d2f6caa001c916a6e9246f641f1ab66472b12afca4187b7",
+    "/environmental_data/illustrative": "55f23c9ed02e9128fdf0d61ad0ecbfc90f78edbc19340a7f988bfc13f893ddb8",
+    "/technical_performance/illustrative": "c2b2f861e99b3eae59d695cb4c04bbb133da900e7f8f01544ecebe6be3ba8d77"
+  },
+  "p:MFR.EGOIN.CLT-200": {
+    "/overview": "60e589ba33af7cadaad5e9f949498da3b587557425af95caaca577848ca591cc",
+    "/composition_scenario": "fa46b97396dcfe64f0475a88f6af137f7ee04df68295c2aa8e0b0c1d634e10ae",
+    "/economic_data/illustrative": "831eb90d31e321769aedec602258b98919048178665bc4c682c39a0a4aeddd98",
+    "/environmental_data/illustrative": "b5e5fcb4099aee9b6b9cdb7d76773ab2093dec329ea16ac26c481d9e52b39f43",
+    "/technical_performance/illustrative": "59cb7f75b18f1d0519de8314d24b07fb6528922a266f4c431d1e59a5a38a06bf"
+  },
+  "p:MFR.EGOIN.CLT-280": {
+    "/overview": "6a7651f7916e92b6c8d3ee0675c4fa8a404797c04af733b25dd126402eecf775",
+    "/composition_scenario": "5b328d3b2bb29969df0716f950953e039467e105ef318e38bd97ad1ef6e1a371",
+    "/economic_data/illustrative": "d3027027aeab9327dd6f8be67041e6edc746ecab03fc1aeef21ad6352b995402",
+    "/environmental_data/illustrative": "06f0a2e2ec87ae5636835d800657f3eaadaf185c949d04dbc6e2e79137d40b7a",
+    "/technical_performance/illustrative": "07b274646a636a400f67079b461e85019ebd7f2c1b23484068c79b882b384a51"
+  },
+  "p:MFR.EGOIN.LIGHT-150A": {
+    "/overview": "34f6edfdbc61e9a88a836a07d1f211c36bc631f5259726c92cee7d64d583fb67",
+    "/composition_scenario": "258f436caa9afe98faafbe72da42b9d48bb19d2f2ea160d337933e4962e3cd02",
+    "/economic_data/illustrative": "a7c3e0b42b422c5f83373eaef85f8ff696ebae95ecfae0de6fb34d7940870351",
+    "/environmental_data/illustrative": "92cfe2742cfee3e3cc2bff718295bb3949af90c8eaa91a6804644b87e4a214ae",
+    "/technical_performance/illustrative": "f5545d52c8c4d98c4ffcbe8c3fae7f1c9157551d55d3e1f11253df973bce6e65"
+  },
+  "p:MFR.EGOIN.LIGHT-180A": {
+    "/overview": "ebdabd738846786b897c32b93b0e731cfc3cff2da2e4edfd1ca015aef4a07197",
+    "/composition_scenario": "262f5f916434fa59f1307a966cb17d12edea348846b1e6373e61c2dbc352c364",
+    "/economic_data/illustrative": "d0d05223d556fd13dc9b0b78441aa14e24193cd730476ad2a8430d349f95da8a",
+    "/environmental_data/illustrative": "bcfaf515c4fb1d42b2b326a9062eed2d25255f47f2868c5676b6f11711a8a020",
+    "/technical_performance/illustrative": "300615342a0674fd3402b787049a084e3d406a1acf254ac570ba3bee2af5a766"
+  },
+  "p:MFR.EGOIN.LIGHT-200A": {
+    "/overview": "56ef6c8a794163c365a34b695f46deb500bf323fcd93440f355985c1189926a6",
+    "/composition_scenario": "c378d6ae9b6efda0951a4b71173393b92fa6d6ebb072808fb9bfd9e7c0bc108f",
+    "/economic_data/illustrative": "ace9979827546714d3436c5ee845679ce4a498de98cf929d739351ce86e10061",
+    "/environmental_data/illustrative": "b9c46f6bbf0292c35eb489b512018254c62126509272ffb5a0b96ef4e2931f65",
+    "/technical_performance/illustrative": "68c63a944bbf34540e0d926a11b1056b6aed6d04c8aac21ac3f2b08f6de2b610"
+  },
+  "p:MFR.EGOIN.LIGHT-280A": {
+    "/overview": "5dff540f996f7d70f0216a9ea7958ac24cb4a27daea99ee736d8b180bdddb826",
+    "/composition_scenario": "453f7144537892ab428afa363b3cf6bc6b04027db5162908bb20289252baddaf",
+    "/economic_data/illustrative": "b6391cbb4fd937eeeca492608655ae2d950a15b1705d74409c3bfba733f3f202",
+    "/environmental_data/illustrative": "a46c0d7966e9ac92a1a01d51b8b78e157f1a7fbefca3f7901eee39d68c87e182",
+    "/technical_performance/illustrative": "addfbfc1ec27b6cd1522905ab87dcc72f2a7c5a4d4971b3448497f2cb42bfa51"
+  },
+  "p:MFR.EGOIN.MIX-240-LR": {
+    "/overview": "cdb490ac31ba981652042e1c4e89a7668c0013f9fb813fb86d05462ce130d1d5",
+    "/composition_scenario": "3d2f41b4e9684ce1975881b0030bb73253f0a8ef30cad47b5954195cc94f5b00",
+    "/economic_data/illustrative": "0c3f148992219492ab076dde2a2d038c10464720a72a2b3847436c7d3b6dc1de",
+    "/environmental_data/illustrative": "6d1cf292d6929b9a2d29d106b52dcd205b86e2e2047cac39f65385fbb621aef9",
+    "/technical_performance/illustrative": "7d1a158bd8f91011b1ba1a3e2af0eaddfa2ebf4eeb5ab67d512929bf0f8848f6"
+  },
+  "p:MFR.EGOIN.MIX-300-LR": {
+    "/overview": "d24a196c5e257653b1c617e4e25d4a3b3510773f837b7f5e1e8a19a5d815b08b",
+    "/composition_scenario": "87420eae360a57c63890756b98ec4242ea7d2e66457dc23cb180579927c89b4f",
+    "/economic_data/illustrative": "ab33e5aca27fa0be98ffe599a18d1b8bf01c54c01767e7c3e47764560c101f85",
+    "/environmental_data/illustrative": "a1091880dabe5948472068874b27f92819f15275c296840e7067e7bf41624385",
+    "/technical_performance/illustrative": "88af77f53bdff3831449b77a91f64867dc51846dc152c6ec016e8fb8f0b1675e"
+  },
+  "p:MFR.EGOIN.MIX-340-LR": {
+    "/overview": "bd51c525b2e3b5a0a7cc7c281a5fb4c3bbfbdeb98ab0b0504687cd34794dadf3",
+    "/composition_scenario": "230fd50233f28e2792e458b6164617d27dbc1baf32eb51d69c621d4bea794bea",
+    "/economic_data/illustrative": "55e63281ddaab401565bf7c385e447540b023a8b2519352770095eb5be6d2878",
+    "/environmental_data/illustrative": "16f1352986ea17b55b462d04ebe852aea99f994d1bbcf2373866236aedfd4727",
+    "/technical_performance/illustrative": "4e581f53edf7350e74c4d0792ed31cc61c21ebc3a3b7fdb6617ecf224851e418"
+  },
+  "p:MFR.EGOIN.MIX-360-LR": {
+    "/overview": "d7b4b193fe74ef04094171fa5c18e59634fc5a3864ba0c039421d06dc8f090ec",
+    "/composition_scenario": "d3193d5cde18201c07af19a3ab289629be94171a2d3e55247da6b1c89bcb9499",
+    "/economic_data/illustrative": "ea6cc33cd71f9c502e60f8ce65fe7383480ba853571c7dabd8d3ffd3c6f14809",
+    "/environmental_data/illustrative": "197a3217d0e1c2939910d90795d3c0f814d44b8342b81ee64eb002b83d88f316",
+    "/technical_performance/illustrative": "6da5d2c53c5d14418429a98d7286c23c43bdd71eb2771b49741e1969519f248b"
+  },
+  "p:MFR.EGOIN.MIX-400-LR": {
+    "/overview": "a4d755d5a14fb09bf62b15441d0d6048f7ec938ee79a0d37d5caf9fd1fe66648",
+    "/composition_scenario": "b783b1db88aaa16c73eb54b56b7dba1900ab758a334699c3f9bb6c53623c7767",
+    "/economic_data/illustrative": "d254850d22a2016d19ab7645d5241174877cdcbaad0b73c9c7534cfb70c9d4ca",
+    "/environmental_data/illustrative": "24e65552c15865d77fc15eab861d3b8fd78b3a667d2e108bd67fef939121ca70",
+    "/technical_performance/illustrative": "2e51b90d40ddf169eb74c645c963155e48a5bb88c4552eb15cb7eccbdbc52908"
+  },
+  "p:MFR.EGOIN.TT-060": {
+    "/technical_performance/surface_mass/value": "254e62de9f543cc3a52aa2ff22110ee4ff1d5e428c74d44a8f6c03a106fb792c",
+    "/overview": "a6d0083345d4f3846d72a74aa1f8a37c2ae67f4481e8b4469ad7a8eeb8caa7d2",
+    "/composition_scenario": "04563de331fe0f764538cde9f72589848040cc4501fdaba53c3b5877c1b4160b",
+    "/economic_data/illustrative": "11cd848546a411fa44e804b4f6524d673091c0c64c882156279cadabc15f89a6",
+    "/environmental_data/illustrative": "23d1c2b3aa702f533f301de41c44b44bd309f2a8af187b723607f5ef9e439d7a",
+    "/technical_performance/illustrative": "2b09b11f70811b93698eaeeb00c2f4850dd202aae6769ffaa1cf109bc8222c51"
+  },
+  "p:MFR.EGOIN.TT-075": {
+    "/technical_performance/surface_mass/value": "6086dded237e5e72372acef2cdedbeb81e9fb620423e1ee7875c8ecde292cc01",
+    "/overview": "d0130155c248776c72d62ae9c39d2ddfd76fcf5085c506fad727d7d1feb32961",
+    "/composition_scenario": "755a9f4caf316cefdae53bb50c26ec69e7282bb309640c40294ce44f71346fc1",
+    "/economic_data/illustrative": "6115e325234be908781fd155f91a679ace9e149bbf4f3b699139b3f64a515fe8",
+    "/environmental_data/illustrative": "7d0c24a96ed277db31f4622959495b222b3c68000c45c9e6f701561bf512ebf2",
+    "/technical_performance/illustrative": "dec5f33fe3a44c20218379a2e208675f4c59ec9e1806d6a2e01e151b8e01a5b1"
+  },
+  "p:MFR.EGOIN.TT-100": {
+    "/technical_performance/surface_mass/value": "4687f2caa80da32e0efe5c95648462844a422bc55bdfee38c730c5b757e3e523",
+    "/overview": "82c3b049f2b457c4f67d359c0780788a3fdfbba2d24e2622eeec55d4479a6798",
+    "/composition_scenario": "382429edc2e134c3664f7c5447b9c1b4a36fd79d7e8095dbe4de976aace23298",
+    "/economic_data/illustrative": "539522499fae82a6fb5da39abe1ae134c117df6513c2d508475ac52ccea7637f",
+    "/environmental_data/illustrative": "5695a5d5e53b2a80a9a74078bd38badaaa7429cd626857d6178e2da8ef2b1285",
+    "/technical_performance/illustrative": "75847358b3d659fc77ccc35d3b3ad3015bfc72da7f423c1503bbae44e821e353"
+  },
+  "p:MFR.EGOIN.RIPA-01": {
+    "/technical_performance/surface_mass/value": "185df0b1ce67474809713426ee5aa4d481e9055bfe7e0320daf1a3ebb4d19c05",
+    "/overview": "78b923f2765ba9b11bcdf07dad7730732b87eddc3e13d61f0b06c16860da8297",
+    "/composition_scenario": "9c67aaa825f9e9570c2696cb2698d3c3f54db560bd2a694b38b8b140d9ba7638",
+    "/economic_data/illustrative": "d63e7da83aaf88598d6d94f93d423168e29e2daec83c8d5338f66a762a1409c5",
+    "/environmental_data/illustrative": "9d905bfbaa581965233a7be41d9ae07d59e8792e2442da793999b4e868066d61",
+    "/technical_performance/illustrative": "03bccc69e59b6827597be11d84e28dea695400e016b329e999ceb6bc5df62805"
+  },
+  "p:MFR.EGOIN.RIPA-02": {
+    "/technical_performance/surface_mass/value": "ec03f7a39fa5df3190571f644e56fc5b7d5a7f7a17ab33411191906c3e6ac123",
+    "/overview": "5b187835dcc4471f8d8ecc18df9bf6cb2f7786a01a03b317bac202614b0fa046",
+    "/composition_scenario": "e37769a8388210638832a0e7647e72b0bdc9fbabe4a5cdd4070d7d749d76a1a0",
+    "/economic_data/illustrative": "d6180d15b664b62231974bbd08bbd62348da84a4c3f1909c894a8ba150f63118",
+    "/environmental_data/illustrative": "f890bb60f118d37f7e19464964c70b9fef5786e2e6b0bcd85897964c25c36ba9",
+    "/technical_performance/illustrative": "77cd16396eb6ff1cd3472c0d42bb54ec37cd827f5d56a7bf07f02290e81cc56d"
+  },
+  "p:MFR.EGOIN.RIPA-03": {
+    "/technical_performance/surface_mass/value": "0b16da8fb2ed33acddf035d7e628c481afc4b0bd7cc6a07193273dc3a8fc7097",
+    "/overview": "22ffe1b341888109b096d52949a8cb37607785eb44cea21f331e6b8ab3dd5b43",
+    "/composition_scenario": "419b64f38fa837c0848e6c1411f65abadb1c7c27660fa8cf926e57bf41f39ca0",
+    "/economic_data/illustrative": "4829c45b513ebd19dcbacd413bd125b75978a15b42d626f0da8fd80f2007ea51",
+    "/environmental_data/illustrative": "8dff4e7fa2cf3ef4cfd1ec67b401e0e259666470f6f8f5d08632598d31664931",
+    "/technical_performance/illustrative": "eda269d4fd0420648b6a095c08cc251b1c1171099f0fa01866e21590c24f6e5d"
+  },
+  "p:MFR.EGOIN.RIPA-04": {
+    "/technical_performance/surface_mass/value": "73c2d14f5d438235ea74e16f670c96f453dd399c2fe98a0e2cf64e785f08c7fb",
+    "/overview": "bb7022ad56653d5bd608f5744b75ed2c8f958076d94cc2b39bfd8559fdcc2ec6",
+    "/composition_scenario": "40ebb11f6e3ab7fe1f4e28a3c873fb4567270c0139653a35bbed6dd6123352ed",
+    "/economic_data/illustrative": "55d617f6fa35178eac76b4457afabdd86f87288e8bf9eeb7fac98beda5961a4f",
+    "/environmental_data/illustrative": "08bb451dd3ab32f3aa88a2a5528d216362f0f2cddabba4f91f2edec5ba2b8344",
+    "/technical_performance/illustrative": "444a277f1a0daf4d40139531469b6536c6c0c6a71f31a87d77ae37d61e916732"
+  },
+  "p:MFR.EGOIN.CLT-MURO-075": {
+    "/technical_performance/module_height_mm/value": "c92f713b81a95f82e94e0c6ad22298e32477706d66ee73c747b9fe5140d45209",
+    "/overview": "eb07c92c2318c1ead30eefbf72a6a0e2073ab9473c53888acaeeb977dd05634a",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "d9da86f3fe2a1cc9fc6b9e2dc002422a812cd99cc69e46d33dd2427dbec40206",
+    "/environmental_data/illustrative": "80bb080abdf5f095387c6e58f04f1b2b06ef2ae8e810a017ab8324c04df97907",
+    "/technical_performance/illustrative": "015b21b113d6d844196c711087e3b2bca5ebb6e9c0d7845aeda037313cfb2ad6"
+  },
+  "p:MFR.EGOIN.CLT-MURO-090": {
+    "/technical_performance/module_height_mm/value": "1a8d2905882b2f422a03d316c96513309289be55f41e1badafc3c2792780fea8",
+    "/overview": "8b265bfd007a69a20c9f5db26bb61e279008cc097403f76e9fbfb7519edd506a",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "b6bffce3ed5e7ff5a7a9b7994c5db4668e4e309d7e5dcb2d26fe4b0bbcf9a990",
+    "/environmental_data/illustrative": "5d2606a590ee8eb1c9b55af7f3f5fda53420548062aad0068c500395236c2ce8",
+    "/technical_performance/illustrative": "607c0d06d1c530236ac895630112c0f6f9c5a8ac561f3cabca74446ca1d5fe4a"
+  },
+  "p:MFR.EGOIN.CLT-MURO-120": {
+    "/technical_performance/module_height_mm/value": "835d5cd923c3a1d4e703d42055f022905270cf6fecac8925b4dba2ebcea7c71a",
+    "/overview": "47b520db7b8e4dddf27f109e00d3c0bab89cce8ee0c1289543cf2d51f899c92f",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "49b15895d5425df98e41698b34742f22a29bbee19185ca7810af4f5b6d68ed2e",
+    "/environmental_data/illustrative": "04e70a8be72e843438e0fb01151e70c46cce3e2543772c9082f294e077258219",
+    "/technical_performance/illustrative": "c7238750a64f0856f2561aa8cbe53e782e55560d47c230fe085d11c12fcf23b7"
+  },
+  "p:MFR.EGOIN.CLT-MURO-125": {
+    "/technical_performance/module_height_mm/value": "ce2817ce2b0c95569af8102de68340618efe43ea659f0ba7eb2b499d367535aa",
+    "/overview": "5f84d05f0f13da1f0929955553711fd252f2483d3136de71ff24008d249bfd69",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "18e5175c749d1b9bcd0426f558dc61df36cc4346360f9f073eec027542fd6042",
+    "/environmental_data/illustrative": "4e23bc52cc6c49127413e525f7d26632c1f5c4afdcb66f6bac90be7b729cc117",
+    "/technical_performance/illustrative": "6271253e68f33e68ece8fc8d5c661d7a3e55455cfdbe73f756000ec07ac3a521"
+  },
+  "p:MFR.EGOIN.CLT-MURO-150": {
+    "/technical_performance/module_height_mm/value": "706526167ece32da84ff97814215b5b50fda6e7643cb6a7fecf0cbc802b4aaaa",
+    "/overview": "9480139bae09d9317c824e21f33d2675abb9b591ea20e6fc9cc0258e84fadfb5",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "53bb57b221873b9ff65d117c9ee7fda4c714e16c9a34ec0d0f70980906787a5a",
+    "/environmental_data/illustrative": "2da0ee0ffc1ccc44c6eafd82f1e63d89243fd2cb1ebee225160cf84fa35070db",
+    "/technical_performance/illustrative": "c7bbd8444996e6f28cc5b8454d9d525cd73475294d08b02912e948cce064a00e"
+  },
+  "p:MFR.VN.DM-180-H50": {
+    "/technical_performance/module_height_mm/value": "0aa1677d4d312a9adb4d19ef15df7ad7f2c140363183ee9ca1ef31e74d01d340",
+    "/technical_performance/surface_mass/value": "30e8a10e8c3122b1215ce1bc5ec2211b220bb8ffffb004fab1a09c59e36cfcbb",
+    "/overview": "5d36819f612e30b6297624ae305a798044525286d2e1ed4e124d78b2573108d3",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "eeab1d0ecd86cd88f34523df184420bb3cefdcebcee60eec9bcffdf42575441c",
+    "/environmental_data/illustrative": "ec9de74a868ba97619cfba3123a601a679bcbb91d02a471c36366aeb11f776dd",
+    "/technical_performance/illustrative": "98e93d52b12a7cd45b9996339a20806a05c32c0f97505f7d03f885ff2cff24c2"
+  },
+  "p:MFR.VN.DM-200-H50": {
+    "/technical_performance/module_height_mm/value": "e7f4e4c30f033c08cce082c6edf9fce7a72fd5ef3e05c908b0218019472461ba",
+    "/technical_performance/surface_mass/value": "663eb3c027fa945a6c3ba1c8db3f177da90d0060d197f4b6d6ef03ee602b6577",
+    "/overview": "71a5e41279ffaf8ecfb7ec56d7056b20f1f82c39d32f4d20dfc9578c40abdbad",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "d687edd9ead2105e20e56a0ae0dacb37ecf384f689f50f7662bf4a9a43dba5af",
+    "/environmental_data/illustrative": "f953b9f14a95ba2ece18d5bcfb5cd8bfe6052b02a152c2139c207aa29381bfe0",
+    "/technical_performance/illustrative": "431dd0d6aa2076a0df9b3ca326b7f705f1ba81f72c756182f2ddbe5d6aa587c8"
+  },
+  "p:MFR.VN.DM-250-H50": {
+    "/technical_performance/module_height_mm/value": "6894f1f824e296afcab71557e6350b8ead685c3ce718fff957394be9886efc29",
+    "/technical_performance/surface_mass/value": "d38a171262479dd0705f92b83911b3f4eae7d6e74c82a4f59912bccd5bf67380",
+    "/overview": "3823a65ac79e993dc5057275ef16556d2489071289f43093fe0981d32e686b55",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "4f30e5090a35751c1d0b443e9f3edf8e8b153a1c334a82606c04bbfb6f3b3e01",
+    "/environmental_data/illustrative": "860e0c3f5482bcab5bd1e27cee46005aaf191fa2142271f4c05e91792acb7bc4",
+    "/technical_performance/illustrative": "2446c99b4596189287bfe81b101828b27e9400138d0cdcd0d6481bbeda2f9339"
+  },
+  "p:MFR.VN.DM-300-H50": {
+    "/technical_performance/module_height_mm/value": "cf80da2fe8e1de00a6794002ba1a71e335b55617513d40c9dc343ea9c5d4817e",
+    "/technical_performance/surface_mass/value": "46b355c7eb93c39924d0b362b5ab09bc43905b7645a5b9ccd40b312f8e614f6a",
+    "/overview": "e82b9d61921a51df5169830045d1055f1f1cae6e34659f6e3fc5a6bbeb7d6a87",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "22df48e93fe4d577ad37e0fead6b28df157b46d106f036c857c136a893a92e2a",
+    "/environmental_data/illustrative": "71debd3765bccd924d4e293510518a00aa6726740ff0ca82c952ee1729335c77",
+    "/technical_performance/illustrative": "8061bf7aaeefec6d87f37e2d2ad8a66c1bf793eda5c168a7d1216d10677680d1"
+  },
+  "p:MFR.VN.DM-400-H50": {
+    "/technical_performance/module_height_mm/value": "5038ee3f37ad92d21536d7ba265d7b72872eeb7c5e9e46581abc85ead7dcd0fe",
+    "/technical_performance/surface_mass/value": "02cf550462511c7aff3e11dcaa9aa5f3972584625b5b896c8f9fa06b4a054d58",
+    "/overview": "ca9466025cdd138a6969f4a680e69851cd195a085c6602be174c3d446ee46936",
+    "/composition_scenario": "70fccfe7175d615ac52814909be749bdcde3d6f0d396387a438173efcca21f7c",
+    "/economic_data/illustrative": "37462d2eabcb66a1cc2777c5ea10f9d9be837ddb166cafae2358cf0a59af9874",
+    "/environmental_data/illustrative": "ff606be01e0cc3d24bd7ef9f56c86b242d2c1ea16af1f205234cfa6948c1b80c",
+    "/technical_performance/illustrative": "ae8d3b785a1201a85ec00410cb81fba258d2801a9a10f62983f4ecb373f23595"
+  },
+  "p:MFR.LIGNUMTECH.BAN.MOCHETA1S": {
+    "/technical_performance/reference_length_mm/value": "4357db3abe99d699fc304cd2986f6dae1db70b8805fe17adc899c09f85dfa405",
+    "/technical_performance/module_area_m2/value": "762a79f87d2986fafcd5299f7782bb08f592185ac561749ac161c64c71f692a5",
+    "/overview": "d1c50f875a118db22a1ed6e5288af6321dcccf702c5992cf25501321ce3c3854",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "f62599dcaa9983b06ba07603a37190dda665d69db1569104bb5d4174c76ef30d",
+    "/environmental_data/illustrative": "8020f29babf33fc135845ef4514e30c070d7935f218d941bb5da8b0be1d6ac81",
+    "/technical_performance/illustrative": "975aa80ca87a5e79ecaf589cbe30b7dac41f9d8817a19b10be3f20a4f3b52958"
+  },
+  "p:MFR.LIGNUMTECH.BAN.PMR": {
+    "/technical_performance/reference_length_mm/value": "9f0dead94291776459bc3e6c320add34964d00ce0bd130de8ad1fb07bc119ed2",
+    "/technical_performance/module_area_m2/value": "c3220e4405768f0fc60a068c2ff589fbfb2d3f1a6179c97f1a1390d3e092e1a7",
+    "/overview": "18473fd64d3bd8d0b963996daa2f456bb93e3e7ee756663925022aa1efa91d03",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "460eac11716a4ed28f7ecc4ba6c1136a5a301bb27cc19a7cb1166934cf52282e",
+    "/environmental_data/illustrative": "87dd0c9a27ecacce13239c7042349a2939c62ee9ea605334236edd8396fce80a",
+    "/technical_performance/illustrative": "94f256bc262fa17f7f3fe4986c8c3f690c758b98c0b4c26b5ba7a67ba26e66df"
+  },
+  "p:MFR.LIGNUMTECH.BAN.DOBLESENO": {
+    "/technical_performance/reference_length_mm/value": "52747872203743352d34ebd0f6530c35efb5169626da69a2dd552253e3248a2b",
+    "/technical_performance/module_area_m2/value": "482df9b4adbe0b36500b856c57fc4e8f04d9e2228eb7ac89ec93ab80272bc306",
+    "/overview": "b36140424fa3c15cef199215f24b85e12f7ce6e7c5bc5de8525d5d8491e8f5d8",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "0f6cca1b364b0e3cc074e2a8da203edb19dadbb9e0f8add8af05a626740b7775",
+    "/environmental_data/illustrative": "1c9a81d2c63eb662c0f5b0ab0f6baafa00c4613eec0a9f06976b53c5925ddbb8",
+    "/technical_performance/illustrative": "114994f2c08b7cbec2d8ce4d132d01c9ed3eccbdede7cfd693273e7786ab61d2"
+  },
+  "p:MFR.LIGNUMTECH.BAN.UFM": {
+    "/technical_performance/reference_length_mm/value": "ec429418d05cdb612b82091690beecad3fcbfc31553e1e48aedf2858242c2a14",
+    "/technical_performance/module_area_m2/value": "908c7925d2f5d4a0b1a1144cd3709a27924d7870c7b322fe5e95a35b14f056ec",
+    "/overview": "5b0895d2f85bf5712078680b3399d561aba3e9115e9395b8d12829d47e8bebee",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "0b10eaa69c0339305fb7e8647c81dbfc47e9838ebf65f99c69bc98f8c29ea17f",
+    "/environmental_data/illustrative": "7f799d921011413828c347df9c5b9243cb01a69c40a10f71c3a69a45f07d3dc0",
+    "/technical_performance/illustrative": "b0a40477e0e496ac71212140a7c36b0f9f19cee7b48675bd1ae63486285c565f"
+  },
+  "p:MFR.LIGNUMTECH.BAN.COCINABANO": {
+    "/technical_performance/reference_length_mm/value": "3a9bbd5d1cf2f86899d47dbdc63badce2a3f792f5dacad4fc685c2f85a45ccec",
+    "/technical_performance/module_area_m2/value": "57201cadc90961ff8a6f65638b3058813c3d658d035807720a137f4240325274",
+    "/overview": "34db3868e729d3f3799e6e2d7eded2dbaf5927baff99fdec5953197b7da2dc73",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "7c0985b51b523328fcc54fffe2924eb69d1069d2f7e08b559a8bf936c7021b66",
+    "/environmental_data/illustrative": "f420b8b98247dce1d261b464a5255f7a54c675206c9dfe7dbac1da5f27c8da0c",
+    "/technical_performance/illustrative": "f9598f6434e4c12279bd22755a0375cfc7e73e8c465a319f606bdc7f8dbf3054"
+  },
+  "p:MFR.PORCELANOSA.MONOBATH.STD": {
+    "/technical_performance/reference_length_mm/value": "981a8929b2863026a5fb153b211c2783ba6f950d2ada013d7143d8d779b2e93b",
+    "/technical_performance/module_area_m2/value": "7759f94c149fcf23ab85fcfa460f3681525f458ba02bd5266e5cca038368d7cc",
+    "/overview": "7b44467666ec04d3b77c0deab6838e697fcd0d6713b44c3664a45f17d05b13ab",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "60e8e9943917c7aa3751954709600dadfdbe779b7e2b961b8950c3f395fbd58d",
+    "/environmental_data/illustrative": "27163a143df144179e87c84c14ec00e6abc8342df8fdb134436d0d2c8ec8e172",
+    "/technical_performance/illustrative": "89a6d666227fef823c80961696426554154bb0225a773b0b633e7bce2090d8c6"
+  },
+  "p:MFR.PORCELANOSA.MONOBATH.SR": {
+    "/technical_performance/reference_length_mm/value": "0fbf9daee6f40409576079badeda4e1b1efbf88db78821096a0f2d7547a77029",
+    "/technical_performance/module_area_m2/value": "4c00c7e9b2257f0f495dbd2cd2c41138199ffe61ae0c7af6b3ac627383690f78",
+    "/overview": "ffaeb5929e4534a8e3c0494c31e1e39aeab3a089e4f7d16ab1c7719b42208daa",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "2c1291f58b62f366c826f0f5c4022b14f79adece60963ab564eb1296588fd4c0",
+    "/environmental_data/illustrative": "14f4b40063022beb11f0bd226b90fbafeb2ac72e178c4e0563d9694b5d216daa",
+    "/technical_performance/illustrative": "96e3e12af1f64b640559a4c412d8023a9293b4a0b9ce2f06f2864f88a7725255"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.LW": {
+    "/technical_performance/reference_length_mm/value": "ae33295420e4ff383ae71cef01c1c06c433607c2bb1f5abc065e085ed1ce3e92",
+    "/technical_performance/module_area_m2/value": "d938e632f616a0763a7c5c7fbaf35b7462daa218dc3aedeae79fba38ae34cbaa",
+    "/overview": "4b0e06b19bf2caeb537fb882fc08cfaa32743a4634719a998f5c497f27d1a8dc",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "e8f90f7d6edeb5cb9e4d894ac147019619f4a3bfecb3b2b2416d0ed789d1c3b5",
+    "/environmental_data/illustrative": "2be066945b58b1136dbac4a5d64d0911ed2ad5d03e9a1084294e3c554a2c1d22",
+    "/technical_performance/illustrative": "cdf8054bae3b29ef28b0d0a1284e2dd13c5e7acdc9e10a5e2117d84aa350e5b7"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.STD": {
+    "/technical_performance/reference_length_mm/value": "9cb2895a8c3104aa6c406ea2a318ba88bfbe6ec4d3aad5cb1996f5636d53e754",
+    "/technical_performance/module_area_m2/value": "627a6b00e3f3c174a2cf9ce0e2c202bd6776190b57e3ca94fc90f7ed37b03a8a",
+    "/overview": "112e0cc1ea074e361234ce375bffce3be6f96553bc04cb94b4612d58f7ca848a",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "cc00e65b7d9ba356e41c2274a0aabffe504b82e10a19417936a6819e3173ead8",
+    "/environmental_data/illustrative": "3e9e94d4bcb0684b962495fb30daa3f51c6e7bf1800d45a07164d7257a7026ed",
+    "/technical_performance/illustrative": "006e997f6046686f4a5ed8bc65d223ca27f417a2c4f0823ec42443c2356b3a0e"
+  },
+  "p:MFR.STERCHELEGROUP.CBL.WALKIN": {
+    "/technical_performance/reference_length_mm/value": "623a03c541c4d6b321af9e6c000f0f73be1d056f506639fad7ff2c81a1be93eb",
+    "/technical_performance/module_area_m2/value": "5b3cd402d446621af0041c6b97738377713d6e89067047bacc6e02a8cb499f4a",
+    "/overview": "9b28f6e2bc9d7c00787770c295275cbefc15796aa91acbbfee55cb5d67ee2d5d",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "cfe19c777f3d337894b6140f881f087b33ff4c439c8fbd1ef46bdf984be09523",
+    "/environmental_data/illustrative": "0617284d8e02a077037a8125072d08549c14683450a03fa9c5278b5a7f5a40d9",
+    "/technical_performance/illustrative": "1ff816eda3d447fe472289709e65c31ae46dc46faac94d571165cde528542910"
+  },
+  "p:MFR.STERCHELEGROUP.CBM.STD": {
+    "/technical_performance/reference_length_mm/value": "adc449194219e078fe30786764c572de2710df8b51f8bfe10ba843fb698e61d2",
+    "/technical_performance/module_area_m2/value": "7759f94c149fcf23ab85fcfa460f3681525f458ba02bd5266e5cca038368d7cc",
+    "/overview": "e1d63356e87dd26964f2617078c1ef8e6894688a05e151c7eca86e2ca1790866",
+    "/composition_scenario": "11a05bb4813260067783cc2dc14c1d52942e6ab8592083c47ef9de1ffbf84aad",
+    "/economic_data/illustrative": "9352cb3dab93c89ea4e861fb8c4dfdbf0f999911d71db9c772f204a6ead2319b",
+    "/environmental_data/illustrative": "b8deaa5fbf3d9054a83afc1342191b946a208761fdf090be00b988a17dd66fd4",
+    "/technical_performance/illustrative": "ead5d3cfc5e49a75e57075ba8c498e7c883ba7fab2a0573ecf5f548f88a43a13"
+  }
+}

@@ -1,0 +1,1176 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-EGOIN",
+    "name": "Egoin S.A.",
+    "website": "https://egoin.com/",
+    "description": "Fabricante de soluciones industrializadas estructurales de madera.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5FZ29pbiBTLkEuPC90ZXh0Pjwvc3ZnPg==",
+    "address": "Natxitua-Ea (Bizkaia), España",
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "source_scope": "Prontuario técnico EGO CLT 2019; ETA 11/0464 (2017); guía general de uniones Maderia 2011",
+      "generation_date": "2026-10-05"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "EST.MUR.MAD-CLT.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "EST.MUR",
+      "code": "MFR.EGOIN.CLT-MURO-090",
+      "commercial_reference": "EGO-CLT-MURO-090",
+      "name_es": "Egoin EGO CLT · muro estructural 90 mm",
+      "description": "Panel EGO CLT de 90 mm para uso como muro estructural, con 3 capas de tablas C24 alternadas a 90°.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "EST.MUR",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "SHEAR",
+          "ecob_bim_class": "Muros estructurales",
+          "gubimclass_code": "20.20.10.30",
+          "gubimclass_description": "Muros estructurales",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": "ETA 11/0464 / AVCP System 1",
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": null,
+          "environmental_claim": null,
+          "compliance_certificate": "ETA 11/0464 de 20.04.2017",
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Panel estructural de madera contralaminada (CLT)",
+          "structural_role": "Muro portante / muro de arriostramiento a verificar por proyecto",
+          "primary_material": "Madera contralaminada EGO CLT (Pinus radiata C24 de referencia)",
+          "thickness_mm": 90,
+          "reference_model_length_mm": 5000,
+          "reference_model_height_mm": 2950,
+          "layer_count": 3,
+          "layer_thicknesses_mm": [
+            30,
+            30,
+            30
+          ],
+          "outer_layer_fibre_orientation": "Vertical en la configuración de pared de referencia",
+          "wood_species_reference": "Pinus radiata",
+          "wood_species_eta_options": [
+            "Pinus radiata C24",
+            "Picea abies C24"
+          ],
+          "wood_resistance_class": "C24",
+          "prontuario_reference_density_pinus_kg_m3": 520,
+          "eta_min_mean_density_pinus_kg_m3": 550,
+          "eta_min_mean_density_picea_kg_m3": 420,
+          "surface_mass_kg_m2_reference": 47.0,
+          "surface_mass_basis": "tabulated_prontuario",
+          "wood_volume_l_m2": 90,
+          "reaction_to_fire": "D-s2,d0",
+          "fire_rating": "project_specific",
+          "fire_design_chart_labels": [
+            "R0",
+            "R30"
+          ],
+          "fire_design_chart_reference": "Cuadro 1.9.6.2",
+          "fire_design_chart_note": "Etiquetas R del prontuario para panel desnudo y bajo las hipótesis de la tabla; no constituyen una clase R universal del producto.",
+          "wall_chart_source_heading": "90 mm paredes externas (el índice del prontuario la denomina interna)",
+          "prontuario_charring_rate_mm_min": 0.7,
+          "eta_wall_charring_rate_exposed_first_25_mm_mm_min": 0.65,
+          "eta_wall_charring_rate_exposed_after_25_mm_mm_min": 0.7,
+          "thermal_conductivity_w_mk": 0.13,
+          "specific_heat_j_kgk": 1600,
+          "water_vapour_resistance_factor_dry": 50,
+          "water_vapour_resistance_factor_wet": 20,
+          "air_permeability_class": "Clase 4 según EN 12207",
+          "service_classes": [
+            "1",
+            "2"
+          ],
+          "expected_working_life_years": 50,
+          "panel_moisture_percent": "10–16",
+          "eta_max_length_mm": 17500,
+          "eta_max_width_mm": 3800,
+          "eta_thickness_range_mm": "60–380",
+          "prontuario_standard_widths_mm": [
+            2200,
+            2450,
+            2700,
+            2950
+          ],
+          "prontuario_standard_lengths_mm": [
+            9000,
+            10000,
+            11000,
+            12000,
+            13000,
+            14000,
+            15000,
+            16000
+          ],
+          "wall_table_reference_wind_load_kn_m2": 1.0,
+          "wall_table_buckling_checked": true,
+          "mechanical_reference": {
+            "E0_mean_mpa": 11600,
+            "E90_mean_mpa": 370,
+            "G_mean_mpa": 690,
+            "G_rolling_mean_mpa": 50,
+            "fm_k_mpa": 24,
+            "ft_0_k_mpa": 14,
+            "fc_0_k_mpa": 21,
+            "fv_0_k_mpa": 5.0
+          },
+          "adhesive_standard": "EN 15425",
+          "surface": "Cepillada",
+          "factory_scope": "Fabricación, prensado, corte y mecanizado CNC de paneles CLT según proyecto",
+          "delivery_state": "Panel 2D estructural mecanizado bajo pedido",
+          "mounting_system": "Izado y fijación mecánica; uniones dimensionadas según proyecto",
+          "connection_design_reference": "Prontuario Egoin: escuadras, tirafondos, juntas longitudinales/T y encuentros pared-forjado; dimensionado específico del proyecto.",
+          "load_bearing": true,
+          "acoustic_rating_db": 50
+        },
+        "key_features": [
+          "3 capas CLT de 30/30/30 mm",
+          "Capas adyacentes orientadas a 90°",
+          "Panel estructural 2D prefabricado y mecanizable CNC"
+        ],
+        "generation_provenance": {
+          "generation_date": "2026-10-05",
+          "geometry_type": "Parametric reference wall geometry",
+          "source_dimensions": "manufacturer layer thickness; reference panel length/height selected from documented manufacturing formats",
+          "source_document_paths": [
+            "0-PRONTUARIO-TECNICO(1).pdf",
+            "EGOIN_ETA-CLT(1).pdf",
+            "Guia-calculo_uniones_estructuras.pdf"
+          ]
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "EST.MUR",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA",
+          "code": "EST.MUR.MAD-CLT",
+          "relation": "catalogue_archetype"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4 ADD2 TC1",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Muros estructurales",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "20.20.10.30",
+          "description": "Muros estructurales",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ESTRUCTURALES"
+          ],
+          "labels": [
+            "Estructurales"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_prontuario",
+          "title": "0-PRONTUARIO-TECNICO(1).pdf",
+          "file_name": "0-PRONTUARIO-TECNICO(1).pdf",
+          "pages": "PDF 9-11, 30-34 y 62-68",
+          "access": "documentación aportada por usuario",
+          "source_date": "2019-01",
+          "note": "Producto, composiciones, tablas específicas de pared y detalles de unión."
+        },
+        {
+          "type": "eta",
+          "title": "EGOIN_ETA-CLT(1).pdf",
+          "file_name": "EGOIN_ETA-CLT(1).pdf",
+          "pages": "PDF 3-11 y 16-18",
+          "access": "documentación aportada por usuario",
+          "source_date": "2017-04-20",
+          "note": "Prestaciones y condiciones cubiertas por ETA 11/0464."
+        },
+        {
+          "type": "general_design_reference",
+          "title": "Guia-calculo_uniones_estructuras.pdf",
+          "file_name": "Guia-calculo_uniones_estructuras.pdf",
+          "pages": "PDF 7-13 y capítulos de fijaciones",
+          "access": "documentación aportada por usuario",
+          "source_date": "2011",
+          "note": "Referencia general de diseño de uniones; no es documentación de producto EGOIN ni certifica esta variante."
+        }
+      ],
+      "attributes": {
+        "source_family": "EGO CLT",
+        "application": "structural_wall",
+        "IFC_geometry_solid_count": 3,
+        "surface_mass_value_basis": "tabulated_prontuario"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PENDING_PROJECT_VERIFICATION",
+        "notes": "La tabla de predimensionamiento no sustituye el cálculo estructural, de fuego, acústico ni de uniones para la obra concreta."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_PROVIDED"
+        },
+        "indicators": {},
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 35.473
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.461
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.73
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.596
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 43.26,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 21.15
+            },
+            {
+              "module": "A4",
+              "value": 0.47
+            }
+          ],
+          "total": 21.62,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 235.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "price_basis": "No declarado en las fuentes aportadas",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 142.06
+            },
+            {
+              "label": "Mano de obra",
+              "value": 69.31
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 32.92
+            },
+            {
+              "label": "Transporte",
+              "value": 19.94
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 264.23,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 47.0,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 22.56
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.856,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 27.39
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.24,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.88
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 4.7,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.66
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.76,
+              "subtotal": 3.76
+            }
+          ],
+          "total": 78.93
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ESTRUCTURALES",
+              "label": "Estructurales"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "factory_scope": "Fabricación, prensado, corte y mecanizado CNC de paneles CLT según proyecto",
+        "delivery_state": "Panel 2D estructural mecanizado bajo pedido",
+        "mounting_interface": "Izado y fijación mecánica; uniones dimensionadas según proyecto",
+        "traceability": "Variante VIVA por espesor y composición; lote real pendiente de pedido"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "SHEAR"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.10.30"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Panel EGO CLT de 90 mm para uso como muro estructural, con 3 capas de tablas C24 alternadas a 90°."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcLabel",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA Marketplace · derivado de fuentes Egoin"
+            },
+            {
+              "name": "ObjetoTitular",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "TipoBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin EGO CLT · muro estructural 90 mm"
+            },
+            {
+              "name": "Version",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA-2026.10 DRAFT"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin EGO CLT · muro estructural 90 mm"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "EGO-CLT-MURO-090"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Panel EGO CLT de 90 mm para uso como muro estructural, con 3 capas de tablas C24 alternadas a 90°."
+            },
+            {
+              "name": "Producto01_CertificadoConformidad",
+              "ifc_type": "IfcLabel",
+              "value": "ETA 11/0464 (2017), dentro del alcance y condiciones de la ETA"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "VIVASubsystem",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR"
+            },
+            {
+              "name": "VIVAArchetype",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.MAD-CLT"
+            },
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.10.30"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 90.0
+            },
+            {
+              "name": "LongitudReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            },
+            {
+              "name": "AlturaReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 2950.0
+            },
+            {
+              "name": "MasaSuperficialReferencia_(kg_m2)",
+              "ifc_type": "IfcReal",
+              "value": 47.0
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_EgoinTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductCode",
+              "ifc_type": "IfcLabel",
+              "value": "MFR.EGOIN.CLT-MURO-090"
+            },
+            {
+              "name": "Family",
+              "ifc_type": "IfcLabel",
+              "value": "EGO CLT wall"
+            },
+            {
+              "name": "TotalThickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 90.0
+            },
+            {
+              "name": "LayerCount",
+              "ifc_type": "IfcInteger",
+              "value": 3
+            },
+            {
+              "name": "ReferenceLength_mm",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            },
+            {
+              "name": "ReferenceHeight_mm",
+              "ifc_type": "IfcReal",
+              "value": 2950.0
+            },
+            {
+              "name": "ReferenceDensityProntuario_kg_m3",
+              "ifc_type": "IfcReal",
+              "value": 520.0
+            },
+            {
+              "name": "SurfaceMassReference_kg_m2",
+              "ifc_type": "IfcReal",
+              "value": 47.0
+            },
+            {
+              "name": "ThermalConductivity_W_mK",
+              "ifc_type": "IfcReal",
+              "value": 0.13
+            },
+            {
+              "name": "SpecificHeat_J_kgK",
+              "ifc_type": "IfcReal",
+              "value": 1600.0
+            },
+            {
+              "name": "ServiceClasses",
+              "ifc_type": "IfcLabel",
+              "value": "1, 2"
+            },
+            {
+              "name": "ExpectedWorkingLife_years",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "ReactionToFire",
+              "ifc_type": "IfcLabel",
+              "value": "D-s2,d0"
+            },
+            {
+              "name": "FireChartLabels",
+              "ifc_type": "IfcLabel",
+              "value": "R0, R30"
+            },
+            {
+              "name": "ReferenceGeometryOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ETAReference",
+              "ifc_type": "IfcLabel",
+              "value": "ETA 11/0464 (2017)"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_StructuralReference",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ResistanceClass",
+              "ifc_type": "IfcLabel",
+              "value": "C24"
+            },
+            {
+              "name": "E0Mean_MPa",
+              "ifc_type": "IfcReal",
+              "value": 11600.0
+            },
+            {
+              "name": "E90Mean_MPa",
+              "ifc_type": "IfcReal",
+              "value": 370.0
+            },
+            {
+              "name": "GMean_MPa",
+              "ifc_type": "IfcReal",
+              "value": 690.0
+            },
+            {
+              "name": "RollingShearGMean_MPa",
+              "ifc_type": "IfcReal",
+              "value": 50.0
+            },
+            {
+              "name": "FmK_MPa",
+              "ifc_type": "IfcReal",
+              "value": 24.0
+            },
+            {
+              "name": "Ft0K_MPa",
+              "ifc_type": "IfcReal",
+              "value": 14.0
+            },
+            {
+              "name": "Fc0K_MPa",
+              "ifc_type": "IfcReal",
+              "value": 21.0
+            },
+            {
+              "name": "Fv0K_MPa",
+              "ifc_type": "IfcReal",
+              "value": 5.0
+            },
+            {
+              "name": "WallTableReferenceWind_kN_m2",
+              "ifc_type": "IfcReal",
+              "value": 1.0
+            },
+            {
+              "name": "BucklingCheckedInProntuarioTables",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.EGOIN.CLT-MURO-090"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-EGOIN"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Egoin S.A."
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "EGO-CLT-MURO-090"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "EST.MUR"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "acoustic_rating_db",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "adhesive_standard",
+              "ifc_type": "IfcLabel",
+              "value": "EN 15425"
+            },
+            {
+              "name": "air_permeability_class",
+              "ifc_type": "IfcLabel",
+              "value": "Clase 4 según EN 12207"
+            },
+            {
+              "name": "connection_design_reference",
+              "ifc_type": "IfcLabel",
+              "value": "Prontuario Egoin: escuadras, tirafondos, juntas longitudinales/T y encuentros pared-forjado; dimensionado específico del proyecto."
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Panel 2D estructural mecanizado bajo pedido"
+            },
+            {
+              "name": "eta_max_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 17500
+            },
+            {
+              "name": "eta_max_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3800
+            },
+            {
+              "name": "eta_min_mean_density_picea_kg_m3",
+              "ifc_type": "IfcInteger",
+              "value": 420
+            },
+            {
+              "name": "eta_min_mean_density_pinus_kg_m3",
+              "ifc_type": "IfcInteger",
+              "value": 550
+            },
+            {
+              "name": "eta_thickness_range_mm",
+              "ifc_type": "IfcLabel",
+              "value": "60–380"
+            },
+            {
+              "name": "eta_wall_charring_rate_exposed_after_25_mm_mm_min",
+              "ifc_type": "IfcReal",
+              "value": 0.7
+            },
+            {
+              "name": "eta_wall_charring_rate_exposed_first_25_mm_mm_min",
+              "ifc_type": "IfcReal",
+              "value": 0.65
+            },
+            {
+              "name": "expected_working_life_years",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Fabricación, prensado, corte y mecanizado CNC de paneles CLT según proyecto"
+            },
+            {
+              "name": "fire_design_chart_note",
+              "ifc_type": "IfcLabel",
+              "value": "Etiquetas R del prontuario para panel desnudo y bajo las hipótesis de la tabla; no constituyen una clase R universal del producto."
+            },
+            {
+              "name": "fire_design_chart_reference",
+              "ifc_type": "IfcLabel",
+              "value": "Cuadro 1.9.6.2"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "layer_count",
+              "ifc_type": "IfcInteger",
+              "value": 3
+            },
+            {
+              "name": "load_bearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Izado y fijación mecánica; uniones dimensionadas según proyecto"
+            },
+            {
+              "name": "outer_layer_fibre_orientation",
+              "ifc_type": "IfcLabel",
+              "value": "Vertical en la configuración de pared de referencia"
+            },
+            {
+              "name": "panel_moisture_percent",
+              "ifc_type": "IfcLabel",
+              "value": "10–16"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Madera contralaminada EGO CLT (Pinus radiata C24 de referencia)"
+            },
+            {
+              "name": "prontuario_charring_rate_mm_min",
+              "ifc_type": "IfcReal",
+              "value": 0.7
+            },
+            {
+              "name": "prontuario_reference_density_pinus_kg_m3",
+              "ifc_type": "IfcInteger",
+              "value": 520
+            },
+            {
+              "name": "reaction_to_fire",
+              "ifc_type": "IfcLabel",
+              "value": "D-s2,d0"
+            },
+            {
+              "name": "reference_model_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2950
+            },
+            {
+              "name": "reference_model_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 5000
+            },
+            {
+              "name": "specific_heat_j_kgk",
+              "ifc_type": "IfcInteger",
+              "value": 1600
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Muro portante / muro de arriostramiento a verificar por proyecto"
+            },
+            {
+              "name": "surface",
+              "ifc_type": "IfcLabel",
+              "value": "Cepillada"
+            },
+            {
+              "name": "surface_mass_basis",
+              "ifc_type": "IfcLabel",
+              "value": "tabulated_prontuario"
+            },
+            {
+              "name": "surface_mass_kg_m2_reference",
+              "ifc_type": "IfcReal",
+              "value": 47.0
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Panel estructural de madera contralaminada (CLT)"
+            },
+            {
+              "name": "thermal_conductivity_w_mk",
+              "ifc_type": "IfcReal",
+              "value": 0.13
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 90
+            },
+            {
+              "name": "wall_chart_source_heading",
+              "ifc_type": "IfcLabel",
+              "value": "90 mm paredes externas (el índice del prontuario la denomina interna)"
+            },
+            {
+              "name": "wall_table_buckling_checked",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "wall_table_reference_wind_load_kn_m2",
+              "ifc_type": "IfcReal",
+              "value": 1.0
+            },
+            {
+              "name": "water_vapour_resistance_factor_dry",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "water_vapour_resistance_factor_wet",
+              "ifc_type": "IfcInteger",
+              "value": 20
+            },
+            {
+              "name": "wood_resistance_class",
+              "ifc_type": "IfcLabel",
+              "value": "C24"
+            },
+            {
+              "name": "wood_species_reference",
+              "ifc_type": "IfcLabel",
+              "value": "Pinus radiata"
+            },
+            {
+              "name": "wood_volume_l_m2",
+              "ifc_type": "IfcInteger",
+              "value": 90
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Lámina CLT 1",
+          "role": "structure",
+          "material": "Pinus radiata C24 (referencia BIM)",
+          "thickness_mm": 30,
+          "fiber_orientation": "vertical",
+          "fiber_direction_deg_relative_to_wall_horizontal": 90
+        },
+        {
+          "sequence": 2,
+          "name_es": "Lámina CLT 2",
+          "role": "structure",
+          "material": "Pinus radiata C24 (referencia BIM)",
+          "thickness_mm": 30,
+          "fiber_orientation": "horizontal",
+          "fiber_direction_deg_relative_to_wall_horizontal": 0
+        },
+        {
+          "sequence": 3,
+          "name_es": "Lámina CLT 3",
+          "role": "structure",
+          "material": "Pinus radiata C24 (referencia BIM)",
+          "thickness_mm": 30,
+          "fiber_orientation": "vertical",
+          "fiber_direction_deg_relative_to_wall_horizontal": 90
+        }
+      ],
+      "evidence": [
+        {
+          "type": "technical_document",
+          "title": "0-PRONTUARIO-TECNICO(1).pdf",
+          "status": "SOURCE_REVIEWED",
+          "file_name": "0-PRONTUARIO-TECNICO(1).pdf",
+          "pages": "PDF 9-11, 30-34 y 62-68"
+        },
+        {
+          "type": "technical_document",
+          "title": "EGOIN_ETA-CLT(1).pdf",
+          "status": "SOURCE_REVIEWED",
+          "file_name": "EGOIN_ETA-CLT(1).pdf",
+          "pages": "PDF 3-11 y 16-18"
+        },
+        {
+          "type": "design_reference",
+          "title": "Guia-calculo_uniones_estructuras.pdf",
+          "status": "SUPPLEMENTARY_REFERENCE_ONLY",
+          "file_name": "Guia-calculo_uniones_estructuras.pdf",
+          "pages": "PDF 7-13 y capítulos de fijaciones"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "EXTERNAL_VALIDATION_PENDING"
+      },
+      "data_quality_notes": [
+        "Modelo BIM DRAFT: la geometría representa una muestra de 5.000 x 2.950 mm; Egoin fabrica paneles según proyecto y dentro de sus límites de fabricación/transporte.",
+        "El prontuario presenta una inconsistencia editorial entre el índice y los encabezados de las tablas de paredes (especialmente 90 mm y el cuadro 1.9.6.4). Por ello no se fija el atributo interior/exterior como propiedad normativa del producto.",
+        "Las etiquetas R0/R30/R45/R60/R90/R110 proceden de curvas de predimensionamiento dependientes de carga y altura. No se trasladan al campo fire_rating como clasificación universal.",
+        "El prontuario usa 520 kg/m³ como densidad de referencia de Pinus radiata, mientras que la ETA indica una densidad media mínima de 550 kg/m³ para Pinus radiata y 420 kg/m³ para Picea abies. Ambos valores se conservan con su procedencia.",
+        "La guía Maderia de uniones se usa únicamente como referencia general de diseño; no es evidencia de prestaciones del producto Egoin.",
+        "No se ha aportado EPD/DAP ni precio específico para estas variantes; los campos ambiental y económico quedan sin inventar datos.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.acoustic_rating_db",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.load_bearing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "assets": [
+        {
+          "id": "MFR.EGOIN.CLT-MURO-090.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/EST_MUR__EST.MUR.MAD-CLT__EGOIN__EGO-CLT-MURO-090.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Panel estructural de madera contralaminada (CLT)",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Madera contralaminada EGO CLT (Pinus radiata C24 de referencia)",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Panel 2D estructural mecanizado bajo pedido",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 90,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1363.73,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 47.0,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "Muro portante / muro de arriostramiento a verificar por proyecto",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 200.02
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 244.51
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Egoin EGO CLT · muro estructural 90 mm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1222 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.FOR",
+      "name_es": "Forjados"
+    },
+    "archetype": {
+      "code": "EST.FOR.MAD-CLT",
+      "name_es": "Forjado de paneles de madera contralaminada"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.FOR.MAD-CLT.GS001",
+      "name_es": "Forjado de panel contralaminado de madera de 95 mm y 3 capas",
+      "description": "Forjado estructural de panel contralaminado de madera de pino de 95 mm de espesor, formado por tres capas de tablas encoladas con adhesivo de poliuretano libre de COV, con capas sucesivas perpendiculares entre sí, acabado para revestir, clase de servicio 1 y 2, trabajado en taller y montado mediante herrajes y fijaciones mecánicas.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EMF060",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-MAD-005",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "cross_laminated_timber",
+        "total_thickness_mm": 95,
+        "layers": 3,
+        "timber_species": "pine",
+        "density_kg_m3": 500,
+        "service_classes": [
+          "1",
+          "2"
+        ],
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "workshop_processed": true,
+        "construction_type": "cross_laminated_timber_panel_slab",
+        "structural_system": "solid_cross_laminated_timber_panel",
+        "structural_element_thickness_mm": 95,
+        "total_depth_mm": 95,
+        "structural_topping": {
+          "present": false,
+          "thickness_mm": 0
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "material": "cross_laminated_timber",
+          "species": "pine",
+          "layers": 3,
+          "service_classes": [
+            "1",
+            "2"
+          ],
+          "density_kg_m3": 500
+        },
+        "connection_assembly_method": "mechanical steel fittings and fixings",
+        "fire_performance": {
+          "product_reaction_to_fire": "B-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory/workshop-processed CLT structural panels",
+        "factory_completion_level": "high for the primary structural panel; site mechanical assembly required",
+        "assembly_method": "placement of CLT panels and mechanical fixing with steel fittings",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "source_references": [
+          "legacy catalogue str-slb-mad(2).json: STR-SLB-MAD-005",
+          "CYPE Generador de Precios EMF060 (legacy exact classification)"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -62.51,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.81255,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-005 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 78.88,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.474133,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-005 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.818078,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.818078,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-MAD-005 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 64.53,
+            "assessed_cost_eur_m2": 78.88,
+            "counted_industrialized_components": [
+              "CLT panel",
+              "mechanical fittings/joints"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CLT",
+          "name_es": "Panel contralaminado de madera",
+          "role": "structure",
+          "properties": {
+            "material_family": "cross_laminated_timber",
+            "thickness_mm": 95,
+            "layers": 3,
+            "density_kg_m3": 500
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Herrajes y fijaciones",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "steel_fixings"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 47.5,
+        "system_type": {
+          "value": "cross_laminated_timber_panel_slab",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cross_laminated_timber",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory/workshop-processed CLT structural panels",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 95,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5582.12,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1014.4,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 47.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "solid_cross_laminated_timber_panel",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 32.64
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 229.6
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -62.51,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 15.629
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.525
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 0.762
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.144
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 19.06,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 22.8
+            },
+            {
+              "module": "A4",
+              "value": 0.475
+            }
+          ],
+          "total": 23.275,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 237.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 78.88,
+        "bc3": {
+          "root_code": "EMF060",
+          "decomposition": [
+            {
+              "code": "mt07mee600bh",
+              "description": "Panel CLT de pino de 95 mm, tres capas, acabado para revestir",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 60.03,
+              "amount": 60.03,
+              "composition_key": "CLT",
+              "industrialized": true
+            },
+            {
+              "code": "mt07mee602",
+              "description": "Herrajes, juntas y elementos de fijación mecánica para panel CLT",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.203,
+              "unit_price": 18.1,
+              "amount": 3.67,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.406,
+              "unit_price": 16.94,
+              "amount": 6.88,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Medios auxiliares",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 75.08,
+              "amount": 1.5,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 3.0,
+              "unit_price": 76.58,
+              "amount": 2.3,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 144.11
+            },
+            {
+              "label": "Mano de obra",
+              "value": 52.05
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 38.62
+            },
+            {
+              "label": "Transporte",
+              "value": 18.84
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 1.32
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 254.94,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 47.5,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 20.43
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.585,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 18.72
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.164,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 6.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 4.75,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.67
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.4,
+              "subtotal": 3.4
+            }
+          ],
+          "total": 71.34
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 64.53,
+        "assessed_cost": 78.88,
+        "ratio": 0.818
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.81255,
+        "economic_performance": 0.474133,
+        "industrialization_performance": 0.818078
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MAD-CLT.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MAD-CLT.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MAD-CLT.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de panel contralaminado de madera de 95 mm y 3 capas"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado estructural de panel contralaminado de madera de pino de 95 mm de espesor, formado por tres capas de tablas encoladas con adhesivo de poliuretano libre de COV, con capas sucesivas perpendiculares entre sí, acabado para revestir, clase de servicio 1 y 2, trabajado en taller y montado mediante herrajes y fijaciones mecánicas."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 78.88
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -62.51
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.818
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 95
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": 500
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de panel contralaminado de madera de 95 mm y 3 capas. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 32.4
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 43.8
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 139.6
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 13.8
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.MAD-CLT.GS002",
+      "name_es": "Forjado de panel contralaminado de madera de 125 mm y 5 capas",
+      "description": "Forjado estructural de panel contralaminado de madera de pino de 125 mm de espesor, formado por cinco capas de tablas encoladas con adhesivo de poliuretano libre de COV, con capas sucesivas perpendiculares entre sí, acabado para revestir, clase de servicio 1 y 2, trabajado en taller y montado mediante herrajes y fijaciones mecánicas.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "EMF060",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFM",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-M",
+          "code": "DB-SE-M",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-MAD-006",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "cross_laminated_timber",
+        "total_thickness_mm": 125,
+        "layers": 5,
+        "timber_species": "pine",
+        "density_kg_m3": 500,
+        "service_classes": [
+          "1",
+          "2"
+        ],
+        "reaction_to_fire": "B-s2,d0",
+        "thermal_conductivity_w_mk": 0.13,
+        "workshop_processed": true,
+        "construction_type": "cross_laminated_timber_panel_slab",
+        "structural_system": "solid_cross_laminated_timber_panel",
+        "structural_element_thickness_mm": 125,
+        "total_depth_mm": 125,
+        "structural_topping": {
+          "present": false,
+          "thickness_mm": 0
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "timber_or_clt_specification": {
+          "material": "cross_laminated_timber",
+          "species": "pine",
+          "layers": 5,
+          "service_classes": [
+            "1",
+            "2"
+          ],
+          "density_kg_m3": 500
+        },
+        "connection_assembly_method": "mechanical steel fittings and fixings",
+        "fire_performance": {
+          "product_reaction_to_fire": "B-s2,d0",
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory/workshop-processed CLT structural panels",
+        "factory_completion_level": "high for the primary structural panel; site mechanical assembly required",
+        "assembly_method": "placement of CLT panels and mechanical fixing with steel fittings",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "source_references": [
+          "legacy catalogue str-slb-mad(2).json: STR-SLB-MAD-006",
+          "CYPE Generador de Precios EMF060 (legacy exact classification)"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": -82.25,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.91125,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-006 GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 99.99,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.3334,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-MAD-006 economic_data"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.846385,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.846385,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-SLB-MAD-006 industrialization_data cost values",
+            "industrialized_cost_eur_m2": 84.63,
+            "assessed_cost_eur_m2": 99.99,
+            "counted_industrialized_components": [
+              "CLT panel",
+              "mechanical fittings/joints"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "CLT",
+          "name_es": "Panel contralaminado de madera",
+          "role": "structure",
+          "properties": {
+            "material_family": "cross_laminated_timber",
+            "thickness_mm": 125,
+            "layers": 5,
+            "density_kg_m3": 500
+          }
+        },
+        {
+          "key": "FIX",
+          "name_es": "Herrajes y fijaciones",
+          "role": "structural_connection",
+          "properties": {
+            "material_family": "steel_fixings"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 62.5,
+        "system_type": {
+          "value": "cross_laminated_timber_panel_slab",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "cross_laminated_timber",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory/workshop-processed CLT structural panels",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 125,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 6130.95,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1894.79,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 62.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "solid_cross_laminated_timber_panel",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 169.65
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 239.7
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": -82.25,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 31.201
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.044
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.522
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.283
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 38.05,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 30.0
+            },
+            {
+              "module": "A4",
+              "value": 0.625
+            }
+          ],
+          "total": 30.625,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 312.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 99.99,
+        "bc3": {
+          "root_code": "EMF060",
+          "decomposition": [
+            {
+              "code": "mt07mee600dn",
+              "description": "Panel CLT de pino de 125 mm, cinco capas, acabado para revestir",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 80.13,
+              "amount": 80.13,
+              "composition_key": "CLT",
+              "industrialized": true
+            },
+            {
+              "code": "mt07mee602",
+              "description": "Herrajes, juntas y elementos de fijación mecánica para panel CLT",
+              "unit": "ud",
+              "quantity": 1.0,
+              "unit_price": 4.5,
+              "amount": 4.5,
+              "composition_key": "FIX",
+              "industrialized": true
+            },
+            {
+              "code": "mo048",
+              "description": "Oficial 1ª montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.203,
+              "unit_price": 18.1,
+              "amount": 3.67,
+              "industrialized": false
+            },
+            {
+              "code": "mo095",
+              "description": "Ayudante montador de estructura de madera",
+              "unit": "h",
+              "quantity": 0.406,
+              "unit_price": 16.94,
+              "amount": 6.88,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Medios auxiliares",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 95.18,
+              "amount": 1.9,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 3.0,
+              "unit_price": 97.08,
+              "amount": 2.91,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 190.88
+            },
+            {
+              "label": "Mano de obra",
+              "value": 65.78
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 51.93
+            },
+            {
+              "label": "Transporte",
+              "value": 25.91
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 334.5,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 62.5,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 26.88
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.644,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 20.61
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.18,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 6.66
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 6.25,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.88
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.85,
+              "subtotal": 3.85
+            }
+          ],
+          "total": 80.93
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 84.63,
+        "assessed_cost": 99.99,
+        "ratio": 0.846
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.91125,
+        "economic_performance": 0.3334,
+        "industrialization_performance": 0.846385
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.MAD-CLT.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.MAD-CLT.GS002.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.MAD-CLT.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de panel contralaminado de madera de 125 mm y 5 capas"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado estructural de panel contralaminado de madera de pino de 125 mm de espesor, formado por cinco capas de tablas encoladas con adhesivo de poliuretano libre de COV, con capas sucesivas perpendiculares entre sí, acabado para revestir, clase de servicio 1 y 2, trabajado en taller y montado mediante herrajes y fijaciones mecánicas."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 99.99
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": -82.25
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.846
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "cross_laminated_timber"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 125
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": 500
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de panel contralaminado de madera de 125 mm y 5 capas. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 38.5
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 46.6
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 139.1
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.5
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.VIG",
+      "name_es": "Vigas"
+    },
+    "archetype": {
+      "code": "EST.VIG.MLE",
+      "name_es": "Viga de madera laminada encolada",
+      "description": "Viga de madera laminada encolada. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

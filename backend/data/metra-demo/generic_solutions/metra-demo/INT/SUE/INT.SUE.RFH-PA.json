@@ -1,0 +1,506 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.SUE",
+      "name_es": "Suelos interiores"
+    },
+    "archetype": {
+      "code": "INT.SUE.RFH-PA",
+      "name_es": "Suelo con recrecido flotante húmedo y pavimento adherido",
+      "description": "Suelo con recrecido flotante húmedo y pavimento adherido. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {
+    "normalization": "VIVA-NORM-INTERIOR-POC-1.0",
+    "industrialization": "VIVA-IDI-SOLUTION-POC-1.0"
+  },
+  "generic_solutions": [
+    {
+      "code": "INT.SUE.RFH-PA.GS001",
+      "name_es": "Recrecido flotante húmedo + pavimento adherido · referencia PoC",
+      "description": "Recrecido flotante húmedo + pavimento adherido · referencia PoC",
+      "functional_unit": "m2",
+      "status": "ACTIVE",
+      "classifications": [
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "40.20.20.20",
+          "relation": "functional_reference"
+        },
+        {
+          "scheme": "VIVA-RES",
+          "version": "1.0.0",
+          "code": "INT.SUE.RFH-PA",
+          "relation": "classified_as",
+          "component": "archetype"
+        }
+      ],
+      "source_references": [
+        {
+          "source": "VIVA_Motor_PEM_v1_2.xlsx / 05_PRECIOS_OTROS · finishing floor PoC benchmarks",
+          "status": "simulated_source_workbook"
+        }
+      ],
+      "properties": {
+        "catalogue_scope": "calculation_support_poc",
+        "normalization_inputs": {
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 48.0,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 20,
+            "worst_reference_bound": 100,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - unit_cost) / (100 - 20), 0, 1)",
+            "calculation_result": 0.65,
+            "assessment_status": "assessed",
+            "value_basis": "simulated_source_workbook",
+            "source_reference": "VIVA_Motor_PEM_v1_2.xlsx / 05_PRECIOS_OTROS · finishing floor PoC benchmarks"
+          },
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 24.0,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0,
+            "worst_reference_bound": 50,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((50 - GWP_A1_A3) / (50 - 0), 0, 1)",
+            "calculation_result": 0.52,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption; replace with verified EPD/catalogue evidence"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.25,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.25,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "function": "Acabado",
+          "material": "Pavimento",
+          "name": "Pavimento",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": 12.7,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Regularización",
+          "material": "Mortero",
+          "name": "Mortero",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": 33.1,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Separación",
+          "material": "Lámina",
+          "name": "Lámina",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": 5.5,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Soporte",
+          "material": "Soporte",
+          "name": "Soporte",
+          "order": 4,
+          "pattern": "linear",
+          "thickness_mm": 73.8,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Suelo con recrecido flotante húmedo y pavimento adherido",
+          "unit": "unit",
+          "source_type": "CALCULATED"
+        },
+        "primary_material": {
+          "value": null,
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 125.1,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 114.77,
+          "unit": "kg/m²"
+        },
+        "thermal_resistance": {
+          "value": 2.58,
+          "unit": "m²·K/W"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "surface_finish": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 268.48
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 125.1
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_per_fu": 24.0,
+        "assessment_modules": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "value_status": "provisional_poc_assumption",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 51.209
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.996
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.498
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.747
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 62.45,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.SUE",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 33.0
+            },
+            {
+              "module": "A4",
+              "value": 0.55
+            }
+          ],
+          "total": 33.55,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 495
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 48.0,
+        "price_basis": "simulated_source_workbook",
+        "bc3": {
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 60.57
+            },
+            {
+              "label": "Mano de obra",
+              "value": 29.16
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 17.49
+            },
+            {
+              "label": "Transporte",
+              "value": 7.67
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 114.89,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.SUE",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 55,
+              "unit": "kg",
+              "rate": 0.9,
+              "subtotal": 49.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.78,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 24.96
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.218,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.07
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.04,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 1.96
+            },
+            {
+              "label": "Transporte",
+              "quantity": 5.5,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.77
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 4.26,
+              "subtotal": 4.26
+            }
+          ],
+          "total": 89.52
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 12.0,
+        "assessed_cost": 48.0,
+        "ratio": 0.25,
+        "value_status": "provisional_poc_assumption"
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.52,
+        "economic_performance": 0.65,
+        "industrialization_performance": 0.25
+      },
+      "assets": [
+        {
+          "id": "INT.SUE.RFH-PA.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/INT.SUE.RFH-PA.GS001.ifc"
+        }
+      ],
+      "data_quality_notes": [
+        "Registro habilitado para evaluación end-to-end del PoC; los campos marcados provisional_poc no constituyen EPD, certificación ni precio oficial.",
+        "UNKNOWN != ZERO: estos valores provisionales son explícitos y deben sustituirse cuando exista evidencia de producto/proyecto validada.",
+        "Precio de referencia simulado mapeado al arquetipo de suelo; GWP e industrialización son hipótesis de soporte PoC."
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_CompartimentacionAcabadosInteriores",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "INT.SUE.RFH-PA.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Recrecido flotante húmedo + pavimento adherido · referencia PoC"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Recrecido flotante húmedo + pavimento adherido · referencia PoC"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 48.0
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 24.0
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Pavimento",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaPavimento",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "MaterialAcabado",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoImpacto_Lnw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ClaseDeslizamiento",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en INT.SUE. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de suelo interior; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia suelo interior.",
+        "functional_unit": "m2",
+        "short": "Recrecido flotante húmedo + pavimento adherido · referencia PoC. Esquema de demostración para la familia «Suelo interior»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Pavimento",
+            "name": "Pavimento",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 12.7
+          },
+          {
+            "function": "Regularización",
+            "material": "Mortero",
+            "name": "Mortero",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 33.1
+          },
+          {
+            "function": "Separación",
+            "material": "Lámina",
+            "name": "Lámina",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 5.5
+          },
+          {
+            "function": "Soporte",
+            "material": "Soporte",
+            "name": "Soporte",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 73.8
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

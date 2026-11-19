@@ -1,0 +1,212 @@
+
+# ============================================================
+# METRA - BIM Technical Marketplace
+# .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. VARIABLES DE ENTORNO Y CREDENCIALES
+# ------------------------------------------------------------
+
+.env
+**/.env
+.env.*
+**/.env.*
+
+# Permitir archivos de configuración de ejemplo
+!.env.example
+!**/.env.example
+!**/.env.*.example
+
+# Secretos y certificados privados
+secrets/
+**/secrets/
+**/.secrets/
+.envrc
+*.secret
+*.secrets
+*.pem
+*.key
+*.p12
+*.pfx
+asset-rights.json
+asset-rights.*.json
+!asset-rights.example.json
+
+
+# ------------------------------------------------------------
+# 2. DOCUMENTACIÓN INTERNA
+# ------------------------------------------------------------
+
+docs/
+AGENTS.md
+
+
+# ------------------------------------------------------------
+# 3. FRONTEND - ANGULAR / NODE.JS
+# ------------------------------------------------------------
+
+node_modules/
+**/node_modules/
+
+frontend/dist/
+frontend/.angular/
+**/.angular/
+
+frontend/coverage/
+frontend/out-tsc/
+frontend/playwright-report/
+frontend/test-results/
+
+.npm/
+.npmrc.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+*.tsbuildinfo
+
+
+# ------------------------------------------------------------
+# 4. BACKEND - PYTHON / FLASK
+# ------------------------------------------------------------
+
+__pycache__/
+**/__pycache__/
+
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+**/.venv/
+**/venv/
+
+.pytest_cache/
+**/.pytest_cache/
+
+.ruff_cache/
+**/.ruff_cache/
+
+.mypy_cache/
+**/.mypy_cache/
+
+*.egg-info/
+**/*.egg-info/
+
+.coverage
+.coverage.*
+htmlcov/
+
+.tox/
+.nox/
+
+
+# ------------------------------------------------------------
+# 5. BASES DE DATOS Y COPIAS DE SEGURIDAD
+# ------------------------------------------------------------
+
+backups/
+**/backups/
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+*.dump
+*.backup
+*.sql.gz
+*.bak
+
+
+# ------------------------------------------------------------
+# 6. DOCKER - ARCHIVOS LOCALES
+# ------------------------------------------------------------
+
+docker-compose.override.yml
+compose.override.yaml
+
+# No ignorar Dockerfile ni configuraciones Compose oficiales
+
+
+# ------------------------------------------------------------
+# 7. ARCHIVOS TEMPORALES Y LOGS
+# ------------------------------------------------------------
+
+*.log
+logs/
+**/logs/
+
+tmp/
+temp/
+**/tmp/
+**/temp/
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+.cache/
+**/.cache/
+
+
+# ------------------------------------------------------------
+# 8. EDITORES Y SISTEMA OPERATIVO
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+*.sublime-workspace
+
+*~
+
+
+# ------------------------------------------------------------
+# 9. ARCHIVOS DE DISTRIBUCIÓN LOCALES
+# ------------------------------------------------------------
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+
+# ------------------------------------------------------------
+# 10. ARCHIVOS ESENCIALES QUE DEBEN CONSERVARSE
+# ------------------------------------------------------------
+
+# Código fuente y dependencias reproducibles
+!README.md
+!package-lock.json
+!frontend/package-lock.json
+
+# Configuraciones de contenedores oficiales
+!Dockerfile
+!**/Dockerfile
+!compose.yaml
+!compose.yml
+!docker-compose.yml
+!docker-compose.yaml
+
+# IMPORTANTE:
+# No ignorar globalmente:
+# *.ifc
+# *.json
+# *.xml
+# *.wasm
+# *.mjs
+#
+# METRA necesita estos archivos para el catálogo técnico,
+# los Data Templates, el visor BIM y las pruebas.

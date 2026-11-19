@@ -1,0 +1,9 @@
+services:
+  catalogue-init:
+    environment:
+      METRA_ASSET_RIGHTS_FILE: /run/metra/rights.json
+    volumes:
+      - type: bind
+        source: ${METRA_RIGHTS_SOURCE:?Configura METRA_RIGHTS_SOURCE}
+        target: /run/metra/rights.json
+        read_only: true

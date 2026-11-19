@@ -1,0 +1,1465 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.PAR",
+      "name_es": "Particiones interiores verticales"
+    },
+    "archetype": {
+      "code": "INT.PAR.ES-PLC",
+      "name_es": "Partición de entramado sencillo y placas",
+      "description": "Partición de entramado sencillo y placas. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {
+    "normalization": "VIVA-NORM-INTERIOR-POC-1.0",
+    "industrialization": "VIVA-IDI-SOLUTION-POC-1.0"
+  },
+  "generic_solutions": [
+    {
+      "code": "INT.PAR.ES-PLC.GS001",
+      "name_es": "Tabique PYL 78/400 [15+48+15], placas estándar",
+      "description": "Tabique PYL 78/400 [15+48+15], placas estándar",
+      "functional_unit": "m2",
+      "status": "ACTIVE",
+      "classifications": [
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "40.10.10.60",
+          "relation": "functional_reference"
+        },
+        {
+          "scheme": "VIVA-RES",
+          "version": "1.0.0",
+          "code": "INT.PAR.ES-PLC",
+          "relation": "classified_as",
+          "component": "archetype"
+        }
+      ],
+      "source_references": [
+        {
+          "source": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json",
+          "status": "sourced_legacy_catalogue"
+        }
+      ],
+      "properties": {
+        "catalogue_scope": "calculation_support_poc",
+        "normalization_inputs": {
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 26.99,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 20,
+            "worst_reference_bound": 150,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / (150 - 20), 0, 1)",
+            "calculation_result": 0.946231,
+            "assessment_status": "assessed",
+            "value_basis": "sourced_legacy_catalogue",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 12.8,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0,
+            "worst_reference_bound": 60,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((60 - GWP_A1_A3) / (60 - 0), 0, 1)",
+            "calculation_result": 0.786667,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption; replace with verified EPD/catalogue evidence"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.628,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.628,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": 12.7,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Separación",
+          "material": "Estructura y aislamiento",
+          "name": "Estructura y aislamiento",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": 49.4,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": 14.4,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Partición de entramado sencillo y placas",
+          "unit": "unit",
+          "source_type": "CALCULATED"
+        },
+        "primary_material": {
+          "value": null,
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 76.5,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1342.85,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 103.17,
+          "unit": "kg/m²"
+        },
+        "rw_db": {
+          "value": 31.43,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "airborne_sound_insulation": {
+            "unit": "dB",
+            "value": 44.27
+          },
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 67.97
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 76.5
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_per_fu": 12.8,
+        "assessment_modules": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "value_status": "provisional_poc_assumption",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 52.062
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.079
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.54
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.809
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 63.49,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 14.19
+            },
+            {
+              "module": "A4",
+              "value": 0.33
+            }
+          ],
+          "total": 14.52,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 264
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 26.99,
+        "price_basis": "sourced_legacy_catalogue",
+        "bc3": {
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 42.43
+            },
+            {
+              "label": "Mano de obra",
+              "value": 15.56
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 10.83
+            },
+            {
+              "label": "Transporte",
+              "value": 5.09
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.05
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 73.96,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 33,
+              "unit": "kg",
+              "rate": 0.86,
+              "subtotal": 28.38
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.82,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 26.24
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.23,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.51
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.04,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 1.96
+            },
+            {
+              "label": "Transporte",
+              "quantity": 3.3,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.46
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.28,
+              "subtotal": 3.28
+            }
+          ],
+          "total": 68.83
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 16.9497,
+        "assessed_cost": 26.99,
+        "ratio": 0.628,
+        "value_status": "sourced"
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.786667,
+        "economic_performance": 0.946231,
+        "industrialization_performance": 0.628
+      },
+      "assets": [
+        {
+          "id": "INT.PAR.ES-PLC.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/INT.PAR.ES-PLC.GS001.ifc"
+        }
+      ],
+      "data_quality_notes": [
+        "Registro habilitado para evaluación end-to-end del PoC; los campos marcados provisional_poc no constituyen EPD, certificación ni precio oficial.",
+        "UNKNOWN != ZERO: estos valores provisionales son explícitos y deben sustituirse cuando exista evidencia de producto/proyecto validada.",
+        "Coste e industrialización migrados del catálogo v2; GWP A1-A3 es una hipótesis provisional PoC."
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_CompartimentacionAcabadosInteriores",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "INT.PAR.ES-PLC.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Tabique PYL 78/400 [15+48+15], placas estándar"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Tabique PYL 78/400 [15+48+15], placas estándar"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 26.99
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 12.8
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.628
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ParticionVertical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaParticion",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en INT.PAR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de partición interior; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia partición interior.",
+        "functional_unit": "m2",
+        "short": "Tabique PYL 78/400 [15+48+15], placas estándar. Esquema de demostración para la familia «Partición interior»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 12.7
+          },
+          {
+            "function": "Separación",
+            "material": "Estructura y aislamiento",
+            "name": "Estructura y aislamiento",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 49.4
+          },
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 14.4
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "INT.PAR.ES-PLC.GS002",
+      "name_es": "Tabique PYL 78/400 [15 H1+48+15 H1], placas hidrófugas",
+      "description": "Tabique PYL 78/400 [15 H1+48+15 H1], placas hidrófugas",
+      "functional_unit": "m2",
+      "status": "ACTIVE",
+      "classifications": [
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "40.10.10.60",
+          "relation": "functional_reference"
+        },
+        {
+          "scheme": "VIVA-RES",
+          "version": "1.0.0",
+          "code": "INT.PAR.ES-PLC",
+          "relation": "classified_as",
+          "component": "archetype"
+        }
+      ],
+      "source_references": [
+        {
+          "source": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json",
+          "status": "sourced_legacy_catalogue"
+        }
+      ],
+      "properties": {
+        "catalogue_scope": "calculation_support_poc",
+        "normalization_inputs": {
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 33.34,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 20,
+            "worst_reference_bound": 150,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / (150 - 20), 0, 1)",
+            "calculation_result": 0.897385,
+            "assessment_status": "assessed",
+            "value_basis": "sourced_legacy_catalogue",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 14.6,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0,
+            "worst_reference_bound": 60,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((60 - GWP_A1_A3) / (60 - 0), 0, 1)",
+            "calculation_result": 0.756667,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption; replace with verified EPD/catalogue evidence"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.69,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.69,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": 13.4,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Separación",
+          "material": "Estructura y aislamiento",
+          "name": "Estructura y aislamiento",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": 49.1,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": 13.2,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Partición de entramado sencillo y placas",
+          "unit": "unit",
+          "source_type": "CALCULATED"
+        },
+        "primary_material": {
+          "value": null,
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 75.7,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1964.56,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 99.05,
+          "unit": "kg/m²"
+        },
+        "rw_db": {
+          "value": 32.2,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "airborne_sound_insulation": {
+            "unit": "dB",
+            "value": 43.05
+          },
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 38.9
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 75.7
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_per_fu": 14.6,
+        "assessment_modules": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "value_status": "provisional_poc_assumption",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 48.864
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.767
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.384
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.575
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 59.59,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 14.19
+            },
+            {
+              "module": "A4",
+              "value": 0.33
+            }
+          ],
+          "total": 14.52,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 264
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 33.34,
+        "price_basis": "sourced_legacy_catalogue",
+        "bc3": {
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 30.69
+            },
+            {
+              "label": "Mano de obra",
+              "value": 12.75
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 7.65
+            },
+            {
+              "label": "Transporte",
+              "value": 4.2
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 55.29,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 33,
+              "unit": "kg",
+              "rate": 0.86,
+              "subtotal": 28.38
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.82,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 26.24
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.23,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.51
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.04,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 1.96
+            },
+            {
+              "label": "Transporte",
+              "quantity": 3.3,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.46
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.28,
+              "subtotal": 3.28
+            }
+          ],
+          "total": 68.83
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 23.0046,
+        "assessed_cost": 33.34,
+        "ratio": 0.69,
+        "value_status": "sourced"
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.756667,
+        "economic_performance": 0.897385,
+        "industrialization_performance": 0.69
+      },
+      "assets": [
+        {
+          "id": "INT.PAR.ES-PLC.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/INT.PAR.ES-PLC.GS002.ifc"
+        }
+      ],
+      "data_quality_notes": [
+        "Registro habilitado para evaluación end-to-end del PoC; los campos marcados provisional_poc no constituyen EPD, certificación ni precio oficial.",
+        "UNKNOWN != ZERO: estos valores provisionales son explícitos y deben sustituirse cuando exista evidencia de producto/proyecto validada.",
+        "Coste e industrialización migrados del catálogo v2; GWP A1-A3 es una hipótesis provisional PoC."
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_CompartimentacionAcabadosInteriores",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "INT.PAR.ES-PLC.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Tabique PYL 78/400 [15 H1+48+15 H1], placas hidrófugas"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Tabique PYL 78/400 [15 H1+48+15 H1], placas hidrófugas"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 33.34
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 14.6
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.69
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ParticionVertical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaParticion",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en INT.PAR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de partición interior; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia partición interior.",
+        "functional_unit": "m2",
+        "short": "Tabique PYL 78/400 [15 H1+48+15 H1], placas hidrófugas. Esquema de demostración para la familia «Partición interior»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 13.4
+          },
+          {
+            "function": "Separación",
+            "material": "Estructura y aislamiento",
+            "name": "Estructura y aislamiento",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 49.1
+          },
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 13.2
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "INT.PAR.ES-PLC.GS003",
+      "name_es": "Tabique PYL 98/400, doble placa estándar",
+      "description": "Tabique PYL 98/400, doble placa estándar",
+      "functional_unit": "m2",
+      "status": "ACTIVE",
+      "classifications": [
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "code": "40.10.10.60",
+          "relation": "functional_reference"
+        },
+        {
+          "scheme": "VIVA-RES",
+          "version": "1.0.0",
+          "code": "INT.PAR.ES-PLC",
+          "relation": "classified_as",
+          "component": "archetype"
+        }
+      ],
+      "source_references": [
+        {
+          "source": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json",
+          "status": "sourced_legacy_catalogue"
+        }
+      ],
+      "properties": {
+        "catalogue_scope": "calculation_support_poc",
+        "normalization_inputs": {
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 38.3,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 20,
+            "worst_reference_bound": 150,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / (150 - 20), 0, 1)",
+            "calculation_result": 0.859231,
+            "assessment_status": "assessed",
+            "value_basis": "sourced_legacy_catalogue",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 17.8,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0,
+            "worst_reference_bound": 60,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((60 - GWP_A1_A3) / (60 - 0), 0, 1)",
+            "calculation_result": 0.703333,
+            "assessment_status": "provisional_poc",
+            "value_basis": "provisional_poc_assumption",
+            "source_reference": "VIVA Fase 3 provisional calculation-support assumption; replace with verified EPD/catalogue evidence"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.661,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.661,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "backend-fase3/data/import/generic_solutions/v2/prt-wal-pyl.json"
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": 13.4,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Separación",
+          "material": "Estructura y aislamiento",
+          "name": "Estructura y aislamiento",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": 48.3,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Acabado",
+          "material": "Placa interior",
+          "name": "Placa interior",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": 12.9,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Partición de entramado sencillo y placas",
+          "unit": "unit",
+          "source_type": "CALCULATED"
+        },
+        "primary_material": {
+          "value": null,
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": null,
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 74.6,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1578.1,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 77.19,
+          "unit": "kg/m²"
+        },
+        "rw_db": {
+          "value": 34.33,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "airborne_sound_insulation": {
+            "unit": "dB",
+            "value": 31.69
+          },
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 25.16
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 74.6
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_per_fu": 17.8,
+        "assessment_modules": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "value_status": "provisional_poc_assumption",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 77.547
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.566
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.783
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.674
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 94.57,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 14.19
+            },
+            {
+              "module": "A4",
+              "value": 0.33
+            }
+          ],
+          "total": 14.52,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 264
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 38.3,
+        "price_basis": "sourced_legacy_catalogue",
+        "bc3": {
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 43.31
+            },
+            {
+              "label": "Mano de obra",
+              "value": 16.37
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 10.41
+            },
+            {
+              "label": "Transporte",
+              "value": 4.04
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 74.13,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "INT.PAR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 33,
+              "unit": "kg",
+              "rate": 0.86,
+              "subtotal": 28.38
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.82,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 26.24
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.23,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 8.51
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.04,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 1.96
+            },
+            {
+              "label": "Transporte",
+              "quantity": 3.3,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.46
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 3.28,
+              "subtotal": 3.28
+            }
+          ],
+          "total": 68.83
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 25.3163,
+        "assessed_cost": 38.3,
+        "ratio": 0.661,
+        "value_status": "sourced"
+      },
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.703333,
+        "economic_performance": 0.859231,
+        "industrialization_performance": 0.661
+      },
+      "assets": [
+        {
+          "id": "INT.PAR.ES-PLC.GS003.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/INT.PAR.ES-PLC.GS003.ifc"
+        }
+      ],
+      "data_quality_notes": [
+        "Registro habilitado para evaluación end-to-end del PoC; los campos marcados provisional_poc no constituyen EPD, certificación ni precio oficial.",
+        "UNKNOWN != ZERO: estos valores provisionales son explícitos y deben sustituirse cuando exista evidencia de producto/proyecto validada.",
+        "Coste e industrialización migrados del catálogo v2; GWP A1-A3 es una hipótesis provisional PoC."
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_CompartimentacionAcabadosInteriores",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "INT.PAR.ES-PLC.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Tabique PYL 98/400, doble placa estándar"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Tabique PYL 98/400, doble placa estándar"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 38.3
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 17.8
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.661
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ParticionVertical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaParticion",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": null
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en INT.PAR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de partición interior; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia partición interior.",
+        "functional_unit": "m2",
+        "short": "Tabique PYL 98/400, doble placa estándar. Esquema de demostración para la familia «Partición interior»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 13.4
+          },
+          {
+            "function": "Separación",
+            "material": "Estructura y aislamiento",
+            "name": "Estructura y aislamiento",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 48.3
+          },
+          {
+            "function": "Acabado",
+            "material": "Placa interior",
+            "name": "Placa interior",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 12.9
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ],
+  "generation_provenance": {
+    "version": "viva-configurable-data-support/1.0",
+    "purpose": "complete calculation support for VIVA Fase 3",
+    "provisional_fields": [
+      "GWP A1-A3"
+    ]
+  }
+}

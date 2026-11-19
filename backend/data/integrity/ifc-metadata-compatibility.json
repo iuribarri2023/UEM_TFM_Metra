@@ -1,0 +1,50 @@
+{
+  "manufacturer_solutions/metra-demo/ENV/FAC/assets/ifc/ENV_FAC__ENV.FAC.FV-EL.GS001__LIGNUMTECH__FACHADA-AUTOPORTANTE.ifc": [
+    "bf7a26c3e25ec752d4a212462d261c3e59cf0a9b056fc1159a45ccef1c44033f",
+    "4c53a2e3c455ee3101d2493477079f0dfc772c797c7a14dbef25c601f6524b6f"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-DOBLE-SENO.ifc": [
+    "8deac9ff24b79d90fb748a3075e3c66f88d5468472aaf23f4f070cd41a516bb3",
+    "8d15eb7ba622bdfb257fa7fd9b59df8f6fb618b726f1ddc04f0ab2e58c6a00b5"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-MOCHETA-1S.ifc": [
+    "1194cd9dca2770d98d8a1e4c8c5c1de7ebd745d635e9913f0cd24a05b0e99e43",
+    "2b82ebc1724454b6a964e011d8ca96437bf34282e7edc14fd7adee08b20a3879"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-PMR-CTE.ifc": [
+    "8cb6bc2e18765fa5e6867ebcd11f5bc17bdc795bb5043dc9baa2fb22254715b5",
+    "530d3bf8d2f7abd3e852315896801ac6d75471154b3983f97b9277e85b53edc7"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-UFM.ifc": [
+    "fb3e09ed143d13594b010925041d29eaa369ecd9c951e8f2a975c423beef04fa",
+    "13f6344db77581ea01c6230b4589ae8f04541a4e1df5d5db018ba72033b7a2d6"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__MOD-COCINA-BANO.ifc": [
+    "5445dc4b95db22f9c9f6aa6e22690c458c25d1b44f712fa3457d9bc817c73406",
+    "97a441c4839d86fc415df202f99624b04b56ab30db34ffaa0add67660b349258"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-SR.ifc": [
+    "e3135ead534bfec131a0fd5728a20cbc3ddddf48592d9f8ecd36fba24b2b70d2",
+    "22fab5bfdac20a820d4875c4fd4a9803667909e641e4bb230c3bd9e6dfdcdfef"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__PORCELANOSA__MONOBATH-STD.ifc": [
+    "a5ce73b41954dde55f8ac38bf5c24fca7bd976cf82e1f9f3d5a44d82ba8b97dd",
+    "9796fb90b158eac89fcd27d9de53be2e453fdd8c3d7a877dafb9fd2b08c75507"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-LW.ifc": [
+    "526124e52a71736b3617ff60f6f8070f2b4378ce6fe95f2f0f4ca3e1bc333ae3",
+    "20d7edf5c1fcc0a983c6d4b5fafda021b1be00fd8a5767bfc11b8a797ba24710"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-STD.ifc": [
+    "67a36140923b90d43d3f640d7a56806cc55cf39e74e00a4fd75e59d4d7dff30a",
+    "78d4727e37b248fffe2925d8f96b3faa4969fe6e24f0b15d4bf76aa0b20d4801"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBL-WALKIN.ifc": [
+    "04c8ad60727159efbd3b9c88ce8b80645c5073ddf3fe7f8ad2099cddc93debbe",
+    "f00016fe4b6f7a28c9c614f4858d62748747e575498eb259132b76d3ba7bd394"
+  ],
+  "manufacturer_solutions/metra-demo/MOD/BAN/assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__STERCHELEGROUP__CBM-STD.ifc": [
+    "62b09f563685299f3e872945c18e35ae0f7d03066a79d56b41a6f9581219b810",
+    "eda06c8798ec75fe55dd20a85466b655cee7d978e1774bbbaf1fa13d67c6722c"
+  ]
+}

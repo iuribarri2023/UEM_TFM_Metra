@@ -1,0 +1,1142 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-VIGUETAS-NAVARRAS",
+    "name": "Viguetas Navarras S.L.",
+    "website": "https://www.viguetasnavarras.com/",
+    "description": "Fabricante de elementos prefabricados e industrializados de hormigón, incluyendo sistemas de doble muro.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5WaWd1ZXRhcyBOYXZhcnJhcyBTLkwuPC90ZXh0Pjwvc3ZnPg==",
+    "address": "Navarra, España",
+    "contact_name": null,
+    "contact_email": "vna@viguetasnavarras.com",
+    "contact_phone": "+34 948 331 111",
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "source_scope": "Manual Doble Muro VN Version D (28/10/2021), documentación oficial Viguetas Navarras consultada online y catálogo VIVA v3",
+      "generation_date": "2026-10-05"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "EST.MUR.HOR-PRE.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "EST.MUR",
+      "code": "MFR.VN.DM-180-H50",
+      "commercial_reference": "DOBLE-MURO-VN-180-H50",
+      "name_es": "Viguetas Navarras Doble Muro VN · 180 mm · hojas 50 mm",
+      "description": "Sistema Doble Muro VN de 180 mm de espesor total, representado con dos hojas prefabricadas de hormigón armado de 50 mm y núcleo central de 80 mm destinado a hormigonado in situ. Configuración estructural de referencia VIVA; armaduras y hormigón de relleno se dimensionan por proyecto.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "EST.MUR",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "SOLIDWALL",
+          "ecob_bim_class": "Muros estructurales",
+          "gubimclass_code": "20.20.10.30",
+          "gubimclass_description": "Muros estructurales",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": "UNE-EN 14992:2008+A1:2012 (prescripción oficial del fabricante)",
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": "https://www.viguetasnavarras.com/productos/doble-muro/",
+          "environmental_claim": null,
+          "compliance_certificate": "Marcado CE del elemento prefabricado según EN 14992 en la prescripción oficial",
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Doble muro prefabricado de hormigón armado con núcleo hormigonado in situ",
+          "structural_role": "Muro portante estructural de referencia; capacidad final y armaduras según proyecto",
+          "primary_material": "Hormigón armado prefabricado + hormigón armado vertido in situ",
+          "total_thickness_mm": 180,
+          "precast_leaf_thickness_mm": 50,
+          "documented_leaf_thickness_options_mm": [
+            50,
+            70
+          ],
+          "in_situ_core_thickness_mm": 80,
+          "reference_model_length_mm": 5000,
+          "reference_model_height_mm": 3000,
+          "manual_max_length_mm": 12200,
+          "current_official_max_length_mm": 12300,
+          "max_height_mm": 3200,
+          "precast_leaf_concrete_class": "C40/50",
+          "in_situ_core_concrete_min_fck_28d_mpa": 20,
+          "in_situ_core_concrete_note": "El manual 2021 exige resistencia característica mínima a 28 días de 20 MPa; la prescripción oficial de ejemplo de 300 mm especifica HA25/L/12,5/I.",
+          "precast_concrete_volume_m3_m2": 0.1,
+          "in_situ_fill_volume_m3_m2": 0.08,
+          "completed_concrete_volume_m3_m2": 0.18,
+          "lattice_truss": "Armadura de celosía entre hojas; geometría no explicitada en la fuente y no modelada como barra individual en el IFC de referencia",
+          "minimum_reinforcement_each_leaf_each_direction_cm2_per_m": 1.2,
+          "reinforcement_spacing_min_mm": 50,
+          "reinforcement_spacing_max_mm": 330,
+          "reinforcement_bar_max_diameter_mm": 16,
+          "standards_listed_in_manual": [
+            "EHE",
+            "Eurocódigos",
+            "EN 14992:2007+A1:2012 Elementos para Muros",
+            "EN 15258:2008 Elementos de Muros de Contención"
+          ],
+          "ce_marking_reference": "UNE-EN 14992:2008+A1:2012 en la prescripción oficial del ejemplo de 30 cm",
+          "wall_applications": [
+            "interior",
+            "exterior"
+          ],
+          "is_facade_panel": false,
+          "factory_components": [
+            "2 hojas prefabricadas de hormigón armado",
+            "armaduras de hojas",
+            "celosías de separación/rigidización",
+            "insertos, huecos y pasatubos según proyecto"
+          ],
+          "site_operations": [
+            "colocación con grúa",
+            "apuntalamiento provisional",
+            "armaduras de unión y esperas",
+            "hormigonado del núcleo",
+            "tratamiento de juntas"
+          ],
+          "lifting_hook_count_by_project": "2 a 4",
+          "temporary_bracing_required": true,
+          "max_concreting_rate_m_per_h": 0.5,
+          "max_concrete_free_fall_height_m": 3.0,
+          "transport_options": [
+            "RACK en camión Langendorf",
+            "BOX",
+            "transporte horizontal en condiciones indicadas por fabricante"
+          ],
+          "surface_finish": "Según proyecto; el ejemplo oficial de prescripción de 30 cm especifica caras exteriores lisas",
+          "openings_and_embeds": "Huecos, cajas eléctricas, tubos, pasatubos y otros elementos pueden incorporarse en fábrica según proyecto",
+          "delivery_state": "Elemento 2D semi-prefabricado con núcleo vacío; se completa estructuralmente mediante hormigonado in situ",
+          "geometry_model_scope": "IFC representa el muro final completado en tres sólidos (hoja + núcleo + hoja). Celosías y armaduras se describen mediante propiedades, no como barras individualizadas.",
+          "generic_solution_exact_match": null,
+          "thickness_mm": 180,
+          "load_bearing": true,
+          "fire_rating": "project_specific",
+          "acoustic_rating_db": 50
+        },
+        "key_features": [
+          "180 mm de espesor total con dos hojas prefabricadas de 50 mm",
+          "Núcleo central de 80 mm a hormigonar in situ",
+          "Sistema 2D semi-prefabricado: las hojas actúan como encofrado permanente del núcleo",
+          "Integración en fábrica de huecos, cajas, tubos e insertos según proyecto"
+        ],
+        "generation_provenance": {
+          "generation_date": "2026-10-05",
+          "geometry_type": "Parametric three-layer reference wall geometry",
+          "source_dimensions": "Total thickness and 50 mm leaf option from manufacturer documentation; 5.000 x 3.000 mm selected as BIM reference size within documented maxima",
+          "source_document_paths": [
+            "78c72a2cff.pdf"
+          ],
+          "external_sources": [
+            "https://www.viguetasnavarras.com/productos/doble-muro/",
+            "https://www.viguetasnavarras.com/wp-content/uploads/2023/09/VN-Guia-Doble-Muro.pdf",
+            "https://www.viguetasnavarras.com/wp-content/uploads/2021/10/PRESCRIPCION-PROYECTO-DOBLE-MURO.pdf"
+          ]
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "EST.MUR",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA",
+          "code": "EST.MUR.HOR-PRE",
+          "relation": "catalogue_archetype"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4 ADD2 TC1",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Muros estructurales",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "20.20.10.30",
+          "description": "Muros estructurales",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE-EN",
+          "code": "EN 14992",
+          "relation": "manufacturer_declared_standard_for_wall_elements"
+        },
+        {
+          "scheme": "UNE-EN",
+          "code": "EN 15258",
+          "relation": "manufacturer_listed_for_retaining_wall_elements"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "function",
+          "codes": [
+            "ESTRUCTURALES"
+          ],
+          "labels": [
+            "Estructurales"
+          ],
+          "relation": "industrialized_component_classification"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "2D",
+          "label": "Bidimensional (2D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_manual",
+          "title": "Manual de instrucciones Doble Muro VN - Version D 28/10/2021",
+          "file_name": "78c72a2cff.pdf",
+          "pages": "PDF 3-5, 8, 16-24",
+          "access": "documentación aportada por usuario",
+          "source_date": "2021-10-28",
+          "note": "Descripción del sistema, espesores, materiales, dimensiones, armaduras, montaje, hormigonado y juntas."
+        },
+        {
+          "type": "manufacturer_web",
+          "title": "Doble Muro - Viguetas Navarras",
+          "url": "https://www.viguetasnavarras.com/productos/doble-muro/",
+          "access": "sitio web oficial consultado 2026-10-05",
+          "note": "Rango público actual, dimensiones máximas y opciones de producto."
+        },
+        {
+          "type": "manufacturer_manual",
+          "title": "VN Guia Doble Muro - Version E 13/06/2022",
+          "url": "https://www.viguetasnavarras.com/wp-content/uploads/2023/09/VN-Guia-Doble-Muro.pdf",
+          "access": "sitio web oficial consultado 2026-10-05",
+          "source_date": "2022-06-13",
+          "note": "Actualización pública de espesores y dimensión máxima de fabricación."
+        },
+        {
+          "type": "manufacturer_specification",
+          "title": "Prescripción proyecto Doble Muro - ejemplo 30 cm tipo VN",
+          "url": "https://www.viguetasnavarras.com/wp-content/uploads/2021/10/PRESCRIPCION-PROYECTO-DOBLE-MURO.pdf",
+          "access": "sitio web oficial consultado 2026-10-05",
+          "note": "Configuración de referencia de 300 mm con hojas de 50 mm, celosías B-500-T y núcleo HA25 en el ejemplo de prescripción."
+        }
+      ],
+      "attributes": {
+        "source_family": "Doble Muro VN",
+        "application": "structural_wall",
+        "construction_type": "semi_precast_double_wall_concrete",
+        "IFC_geometry_solid_count": 3,
+        "reference_configuration": "180 mm total / 50+80+50 mm"
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PENDING_PROJECT_VERIFICATION",
+        "notes": "El manual de 2021 cita EHE, Eurocódigos, EN 14992 y EN 15258. La adecuación estructural, exposición, fuego, estanqueidad, juntas y normativa aplicable debe verificarse para el proyecto concreto."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_PROVIDED_IN_CONSULTED_SOURCES"
+        },
+        "indicators": {},
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 77.424
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.554
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.777
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.665
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 94.42,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 69.75
+            },
+            {
+              "module": "A4",
+              "value": 1.55
+            }
+          ],
+          "total": 71.3,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 775.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "m2",
+        "unit_cost": null,
+        "price_basis": "No declarado por el fabricante en las fuentes utilizadas",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 164.84
+            },
+            {
+              "label": "Mano de obra",
+              "value": 56.27
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 43.42
+            },
+            {
+              "label": "Transporte",
+              "value": 16.45
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 280.98,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 155.0,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 74.4
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.3,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 41.6
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.364,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 13.47
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 15.5,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 2.17
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 7.37,
+              "subtotal": 7.37
+            }
+          ],
+          "total": 154.69
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "une_41610": {
+          "classification_applicable": true,
+          "function_classes": [
+            {
+              "code": "ESTRUCTURALES",
+              "label": "Estructurales"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          }
+        },
+        "prefabrication_level": "semi-prefabricated / permanent-formwork structural system",
+        "factory_scope": "Dos hojas de hormigón armado, armaduras, celosías e insertos/huecos definidos en proyecto",
+        "delivery_state": "Doble panel vertical con cámara central vacía",
+        "site_scope": "Izado, aplomado, apuntalamiento, uniones, hormigonado de núcleo y tratamiento de juntas",
+        "transport": "RACK/Langendorf, BOX o transporte en plano según manual",
+        "traceability": "Cada muro se identifica en planos/etiquetas de ejecución; peso y geometría reales son específicos de proyecto"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "SOLIDWALL"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.10.30"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Sistema Doble Muro VN de 180 mm de espesor total, representado con dos hojas prefabricadas de hormigón armado de 50 mm y núcleo central de 80 mm destinado a hormigonado in situ. Configuración estructural de referencia VIVA; armaduras y hormigón de relleno se dimensionan por proyecto."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcLabel",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA Marketplace · derivado de fuentes Viguetas Navarras"
+            },
+            {
+              "name": "ObjetoTitular",
+              "ifc_type": "IfcLabel",
+              "value": "Viguetas Navarras S.L."
+            },
+            {
+              "name": "TipoBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Viguetas Navarras Doble Muro VN · 180 mm · hojas 50 mm"
+            },
+            {
+              "name": "Version",
+              "ifc_type": "IfcLabel",
+              "value": "VIVA-2026.10 DRAFT"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_Products",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Producto01_Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Viguetas Navarras S.L."
+            },
+            {
+              "name": "Producto01_Nombre",
+              "ifc_type": "IfcLabel",
+              "value": "Viguetas Navarras Doble Muro VN · 180 mm · hojas 50 mm"
+            },
+            {
+              "name": "Producto01_Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "DOBLE-MURO-VN-180-H50"
+            },
+            {
+              "name": "Producto01_Descripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Sistema Doble Muro VN de 180 mm de espesor total, representado con dos hojas prefabricadas de hormigón armado de 50 mm y núcleo central de 80 mm destinado a hormigonado in situ. Configuración estructural de referencia VIVA; armaduras y hormigón de relleno se dimensionan por proyecto."
+            },
+            {
+              "name": "Producto01_CertificadoConformidad",
+              "ifc_type": "IfcLabel",
+              "value": "Marcado CE / UNE-EN 14992:2008+A1:2012 según prescripción oficial del fabricante"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Classification",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "VIVASubsystem",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR"
+            },
+            {
+              "name": "VIVAArchetype",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.HOR-PRE"
+            },
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "20.20.10.30"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Muros estructurales"
+            },
+            {
+              "name": "GuBIMClassVIVAVersion",
+              "ifc_type": "IfcLabel",
+              "value": "v5"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "EspesorTotal_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 180.0
+            },
+            {
+              "name": "EspesorHojaPrefabricada_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 50.0
+            },
+            {
+              "name": "EspesorNucleoInSitu_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 80.0
+            },
+            {
+              "name": "LongitudReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 5000.0
+            },
+            {
+              "name": "AlturaReferencia_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 3000.0
+            },
+            {
+              "name": "VolumenPrefabricado_(m3_m2)",
+              "ifc_type": "IfcReal",
+              "value": 0.1
+            },
+            {
+              "name": "VolumenNucleoInSitu_(m3_m2)",
+              "ifc_type": "IfcReal",
+              "value": 0.08
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ViguetasNavarrasTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ProductCode",
+              "ifc_type": "IfcLabel",
+              "value": "MFR.VN.DM-180-H50"
+            },
+            {
+              "name": "Family",
+              "ifc_type": "IfcLabel",
+              "value": "Doble Muro VN"
+            },
+            {
+              "name": "TotalThickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 180.0
+            },
+            {
+              "name": "PrecastLeafThickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 50.0
+            },
+            {
+              "name": "CoreThickness_mm",
+              "ifc_type": "IfcReal",
+              "value": 80.0
+            },
+            {
+              "name": "PrecastConcreteClass",
+              "ifc_type": "IfcLabel",
+              "value": "C40/50"
+            },
+            {
+              "name": "CoreConcreteMinimumFck28d_MPa",
+              "ifc_type": "IfcReal",
+              "value": 20.0
+            },
+            {
+              "name": "ManualMaxLength_mm",
+              "ifc_type": "IfcReal",
+              "value": 12200.0
+            },
+            {
+              "name": "CurrentOfficialMaxLength_mm",
+              "ifc_type": "IfcReal",
+              "value": 12300.0
+            },
+            {
+              "name": "MaxHeight_mm",
+              "ifc_type": "IfcReal",
+              "value": 3200.0
+            },
+            {
+              "name": "MinimumReinforcement_cm2_m_eachDirectionEachLeaf",
+              "ifc_type": "IfcReal",
+              "value": 1.2
+            },
+            {
+              "name": "ReinforcementSpacingMin_mm",
+              "ifc_type": "IfcReal",
+              "value": 50.0
+            },
+            {
+              "name": "ReinforcementSpacingMax_mm",
+              "ifc_type": "IfcReal",
+              "value": 330.0
+            },
+            {
+              "name": "RebarMaxDiameter_mm",
+              "ifc_type": "IfcReal",
+              "value": 16.0
+            },
+            {
+              "name": "MaxConcretingRate_m_h",
+              "ifc_type": "IfcReal",
+              "value": 0.5
+            },
+            {
+              "name": "MaxConcreteFreeFall_m",
+              "ifc_type": "IfcReal",
+              "value": 3.0
+            },
+            {
+              "name": "LiftingHooks",
+              "ifc_type": "IfcLabel",
+              "value": "2 a 4 según plano de ejecución"
+            },
+            {
+              "name": "ReferenceGeometryOnly",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Industrialization",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Industrialized2D",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "FactoryScope",
+              "ifc_type": "IfcLabel",
+              "value": "Dos hojas prefabricadas armadas unidas por celosías, con insertos/huecos según proyecto"
+            },
+            {
+              "name": "SiteCompletion",
+              "ifc_type": "IfcLabel",
+              "value": "Hormigonado estructural del núcleo y ejecución de juntas/uniones"
+            },
+            {
+              "name": "TemporaryBracingRequired",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "Transport",
+              "ifc_type": "IfcLabel",
+              "value": "RACK/Langendorf, BOX o transporte en plano según instrucciones del fabricante"
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.VN.DM-180-H50"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-VIGUETAS-NAVARRAS"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Viguetas Navarras S.L."
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "DOBLE-MURO-VN-180-H50"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "EST.MUR"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "acoustic_rating_db",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "ce_marking_reference",
+              "ifc_type": "IfcLabel",
+              "value": "UNE-EN 14992:2008+A1:2012 en la prescripción oficial del ejemplo de 30 cm"
+            },
+            {
+              "name": "completed_concrete_volume_m3_m2",
+              "ifc_type": "IfcReal",
+              "value": 0.18
+            },
+            {
+              "name": "current_official_max_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 12300
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Elemento 2D semi-prefabricado con núcleo vacío; se completa estructuralmente mediante hormigonado in situ"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "geometry_model_scope",
+              "ifc_type": "IfcLabel",
+              "value": "IFC representa el muro final completado en tres sólidos (hoja + núcleo + hoja). Celosías y armaduras se describen mediante propiedades, no como barras individualizadas."
+            },
+            {
+              "name": "in_situ_core_concrete_min_fck_28d_mpa",
+              "ifc_type": "IfcInteger",
+              "value": 20
+            },
+            {
+              "name": "in_situ_core_concrete_note",
+              "ifc_type": "IfcLabel",
+              "value": "El manual 2021 exige resistencia característica mínima a 28 días de 20 MPa; la prescripción oficial de ejemplo de 300 mm especifica HA25/L/12,5/I."
+            },
+            {
+              "name": "in_situ_core_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 80
+            },
+            {
+              "name": "in_situ_fill_volume_m3_m2",
+              "ifc_type": "IfcReal",
+              "value": 0.08
+            },
+            {
+              "name": "is_facade_panel",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "lattice_truss",
+              "ifc_type": "IfcLabel",
+              "value": "Armadura de celosía entre hojas; geometría no explicitada en la fuente y no modelada como barra individual en el IFC de referencia"
+            },
+            {
+              "name": "lifting_hook_count_by_project",
+              "ifc_type": "IfcLabel",
+              "value": "2 a 4"
+            },
+            {
+              "name": "load_bearing",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "manual_max_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 12200
+            },
+            {
+              "name": "max_concrete_free_fall_height_m",
+              "ifc_type": "IfcReal",
+              "value": 3.0
+            },
+            {
+              "name": "max_concreting_rate_m_per_h",
+              "ifc_type": "IfcReal",
+              "value": 0.5
+            },
+            {
+              "name": "max_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3200
+            },
+            {
+              "name": "minimum_reinforcement_each_leaf_each_direction_cm2_per_m",
+              "ifc_type": "IfcReal",
+              "value": 1.2
+            },
+            {
+              "name": "openings_and_embeds",
+              "ifc_type": "IfcLabel",
+              "value": "Huecos, cajas eléctricas, tubos, pasatubos y otros elementos pueden incorporarse en fábrica según proyecto"
+            },
+            {
+              "name": "precast_concrete_volume_m3_m2",
+              "ifc_type": "IfcReal",
+              "value": 0.1
+            },
+            {
+              "name": "precast_leaf_concrete_class",
+              "ifc_type": "IfcLabel",
+              "value": "C40/50"
+            },
+            {
+              "name": "precast_leaf_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "Hormigón armado prefabricado + hormigón armado vertido in situ"
+            },
+            {
+              "name": "reference_model_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "reference_model_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 5000
+            },
+            {
+              "name": "reinforcement_bar_max_diameter_mm",
+              "ifc_type": "IfcInteger",
+              "value": 16
+            },
+            {
+              "name": "reinforcement_spacing_max_mm",
+              "ifc_type": "IfcInteger",
+              "value": 330
+            },
+            {
+              "name": "reinforcement_spacing_min_mm",
+              "ifc_type": "IfcInteger",
+              "value": 50
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "Muro portante estructural de referencia; capacidad final y armaduras según proyecto"
+            },
+            {
+              "name": "surface_finish",
+              "ifc_type": "IfcLabel",
+              "value": "Según proyecto; el ejemplo oficial de prescripción de 30 cm especifica caras exteriores lisas"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Doble muro prefabricado de hormigón armado con núcleo hormigonado in situ"
+            },
+            {
+              "name": "temporary_bracing_required",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 180
+            },
+            {
+              "name": "total_thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 180
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "name_es": "Hoja prefabricada 1",
+          "role": "structure_and_permanent_formwork",
+          "material": "Hormigón armado prefabricado C40/50",
+          "thickness_mm": 50,
+          "installation": "factory"
+        },
+        {
+          "sequence": 2,
+          "name_es": "Núcleo estructural hormigonado in situ",
+          "role": "structure",
+          "material": "Hormigón armado vertido in situ según proyecto",
+          "thickness_mm": 80,
+          "installation": "site"
+        },
+        {
+          "sequence": 3,
+          "name_es": "Hoja prefabricada 2",
+          "role": "structure_and_permanent_formwork",
+          "material": "Hormigón armado prefabricado C40/50",
+          "thickness_mm": 50,
+          "installation": "factory"
+        },
+        {
+          "sequence": 4,
+          "name_es": "Celosías entre hojas",
+          "role": "connector_and_spacing",
+          "material": "Acero; B-500-T documentado en la prescripción oficial del ejemplo de 300 mm",
+          "thickness_mm": null,
+          "installation": "factory",
+          "note": "Cuantía/geometría según proyecto; no modelada barra a barra."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "technical_document",
+          "title": "Manual de instrucciones Doble Muro VN - Version D",
+          "status": "SOURCE_REVIEWED",
+          "file_name": "78c72a2cff.pdf",
+          "pages": "PDF 3-5, 8, 16-24"
+        },
+        {
+          "type": "manufacturer_web",
+          "title": "Doble Muro - Viguetas Navarras",
+          "status": "SOURCE_REVIEWED",
+          "url": "https://www.viguetasnavarras.com/productos/doble-muro/"
+        },
+        {
+          "type": "manufacturer_specification",
+          "title": "Prescripción proyecto Doble Muro - ejemplo 30 cm tipo VN",
+          "status": "SUPPLEMENTARY_MANUFACTURER_SOURCE",
+          "url": "https://www.viguetasnavarras.com/wp-content/uploads/2021/10/PRESCRIPCION-PROYECTO-DOBLE-MURO.pdf"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "POC_FAKE"
+      },
+      "data_quality_notes": [
+        "Producto configurado por proyecto: el espesor total es una opción de catálogo, pero dimensiones, armaduras, huecos, insertos y refuerzos se determinan para la obra concreta.",
+        "La documentación aportada (2021) publica 170–500 mm; la guía oficial Version E (2022) publica 180–500 mm; la página pública actual consultada en 2026 resume un rango de 18–40 cm. Esta muestra usa 180, 200, 250, 300 y 400 mm por ser representativos y coherentes con el rango público actual.",
+        "La documentación aportada indica longitud máxima 12.200 mm; la guía oficial posterior y la página actual publican 12.300 mm. Ambos valores se conservan con su procedencia; el IFC usa 5.000 mm como longitud de referencia.",
+        "El manual permite hojas prefabricadas de 50 o 70 mm. Para limitar la variedad, todos los IFC de esta entrega utilizan hojas de 50 mm; no se afirma que sea la única configuración disponible.",
+        "El manual 2021 exige para el relleno una resistencia característica mínima a 28 días de 20 MPa. La prescripción oficial de ejemplo de 300 mm emplea HA25/L/12,5/I; este valor no se generaliza a todos los espesores.",
+        "No se ha localizado en las fuentes consultadas una EPD/DAP específica de Doble Muro VN. El catálogo no incorpora factores ambientales genéricos como si fueran prestaciones declaradas por Viguetas Navarras.",
+        "El IFC representa el estado final completado (hoja + núcleo + hoja). Las celosías, barras, esperas, cajas y herrajes se mantienen como información semántica al ser variables de proyecto.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "technical_data.properties.acoustic_rating_db",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.load_bearing",
+            "technical_data.properties.thickness_mm"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "ifc-doble-muro-vn-180-h50",
+          "type": "bim_model",
+          "format": "IFC",
+          "role": "primary",
+          "uri": "assets/ifc/EST_MUR__EST.MUR.HOR-PRE__VIGUETASNAVARRAS__DOBLE-MURO-VN-180-H50.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Doble muro prefabricado de hormigón armado con núcleo hormigonado in situ",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "Hormigón armado prefabricado + hormigón armado vertido in situ",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Elemento 2D semi-prefabricado con núcleo vacío; se completa estructuralmente mediante hormigonado in situ",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 180,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 917.43,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 355.54,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "Muro portante estructural de referencia; capacidad final y armaduras según proyecto",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 203.38
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 355.54
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Viguetas Navarras Doble Muro VN · 180 mm · hojas 50 mm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

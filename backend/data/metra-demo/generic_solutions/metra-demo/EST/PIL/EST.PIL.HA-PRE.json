@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.PIL",
+      "name_es": "Pilares"
+    },
+    "archetype": {
+      "code": "EST.PIL.HA-PRE",
+      "name_es": "Pilar prefabricado de hormigón armado",
+      "description": "Pilar prefabricado de hormigón armado. Los detalles de composición y prestaciones se definen en generic_solutions."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

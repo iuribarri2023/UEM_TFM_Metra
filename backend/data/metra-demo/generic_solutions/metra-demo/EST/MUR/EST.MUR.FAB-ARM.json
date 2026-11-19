@@ -1,0 +1,3107 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.MUR",
+      "name_es": "Muros estructurales"
+    },
+    "archetype": {
+      "code": "EST.MUR.FAB-ARM",
+      "name_es": "Muro estructural de fábrica armada"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.MUR.FAB-ARM.GS001",
+      "name_es": "Fábrica cerámica armada de 11,5 cm con ladrillo perforado",
+      "description": "Fábrica armada para revestir de 11,5 cm de espesor, realizada con ladrillo cerámico perforado de 24x11,5x9 cm, mortero de cemento M-5 y armadura prefabricada en celosía de acero B500T galvanizado dispuesta cada dos hiladas.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMC.2c.R",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-F",
+          "code": "DB-SE-F",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-CER-03",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_ceramic_masonry",
+        "masonry_type": "perforated_ceramic_brick",
+        "total_thickness_mm": 115,
+        "brick_length_mm": 240,
+        "brick_width_mm": 115,
+        "brick_height_mm": 90,
+        "reinforced": true,
+        "source_references": [
+          "legacy catalogue str-wal-cer.json: STR-WAL-CER-03"
+        ],
+        "construction_type": "reinforced_masonry_wall",
+        "structural_system": "reinforced_clay_masonry",
+        "structural_element_thickness_mm": 115,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "masonry units bedded in mortar with structural reinforcement; site-assembled wet construction",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+        "factory_completion_level": "industrialized components; wall completed by site masonry",
+        "assembly_method": "course-by-course masonry with mortar and reinforcement",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mortar-bonded masonry is not treated as reversibly assembled"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the exact legacy record.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in the exact legacy record.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "masonry_specification": {
+          "unit_type": "perforated_ceramic_brick",
+          "brick_dimensions_mm": "240x115x90",
+          "reinforced": true
+        },
+        "environmental_proxy_calculation": {
+          "assessment_status": "proxy_lower_bound",
+          "brick_component": {
+            "mass_kg_m2": 63.93816,
+            "factor_kgco2e_kg": 0.209,
+            "gwp_a1_a3_kgco2e_m2": 13.363075,
+            "source": "HISPALYT GlobalEPD 008-017 sector EPD; exact brick product not identified"
+          },
+          "mortar_component": {
+            "volume_m3_m2": 0.15,
+            "factor_kgco2e_m3": 314.7,
+            "gwp_a1_a3_kgco2e_m2": 47.205,
+            "source": "OEKOBAUDAT generic cement mortar; German geographic proxy"
+          },
+          "reinforcement_component": {
+            "minimum_mass_kg_m2": 0.863153,
+            "factor_kgco2e_kg": 0.474,
+            "gwp_a1_a3_kgco2e_m2": 0.409134,
+            "source": "OEKOBAUDAT reinforcing steel coils/bars; minimum mass calculated from two longitudinal wires only"
+          },
+          "limitation": "Lower-bound A1-A3 proxy. Diagonal lattice wire, coatings and ancillary materials are not quantified because their exact mass is absent from the legacy record."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 60.97721,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.195114,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "transparent lower-bound component proxy: HISPALYT GlobalEPD 008-017 clay units + OEKOBAUDAT cement mortar + OEKOBAUDAT reinforcing steel; exact masonry-system EPD unavailable"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 87.03,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.4198,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-CER-03 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.208893,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.208893,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-CER-03 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 18.18,
+            "assessed_cost_eur_m2": 87.03,
+            "counted_industrialized_components": [
+              "Ladrillo perforado no visto 24x11,5x9 cm: 5.61 EUR/m2",
+              "Armadura prefabricada RND.5/Z-200, ancho 200 mm, diámetro 5 mm: 12.57 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "CER",
+          "name_es": "Fábrica de ladrillo cerámico perforado",
+          "role": "structure",
+          "properties": {
+            "material_family": "perforated_ceramic_brick",
+            "thickness_mm": 115,
+            "brick_length_mm": 240,
+            "brick_width_mm": 115,
+            "brick_height_mm": 90
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura prefabricada de tendel",
+          "role": "masonry_reinforcement",
+          "properties": {
+            "material_family": "galvanized_reinforcing_steel",
+            "steel_grade": "B500T",
+            "wire_diameter_mm": 5,
+            "reinforcement_width_mm": 80,
+            "courses_spacing": 2
+          }
+        },
+        {
+          "key": "MOR",
+          "name_es": "Mortero de cemento M-5",
+          "role": "masonry_mortar",
+          "properties": {
+            "material_family": "cement_mortar",
+            "mortar_class": "M-5"
+          }
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "reinforced_masonry_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_ceramic_masonry",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 115,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2092.83,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 286.28,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "reinforced_clay_masonry",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 173.03
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 286.28
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 60.97721,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 52.341
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.106
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.553
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.83
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 63.83,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 44.563
+            },
+            {
+              "module": "A4",
+              "value": 0.99
+            }
+          ],
+          "total": 45.553,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 495.14
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 87.03,
+        "bc3": {
+          "root_code": "EEMC.2c.R",
+          "decomposition": [
+            {
+              "code": "MOOA.8a",
+              "description": "Oficial 1ª construcción",
+              "unit": "h",
+              "quantity": 2.3,
+              "unit_price": 18.88,
+              "amount": 43.42,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA11a",
+              "description": "Peón especializado construcción",
+              "unit": "h",
+              "quantity": 1.1,
+              "unit_price": 13.79,
+              "amount": 15.17,
+              "industrialized": false
+            },
+            {
+              "code": "PFFC.2c",
+              "description": "Ladrillo perforado no visto 24x11,5x9 cm",
+              "unit": "ud",
+              "quantity": 33.0,
+              "unit_price": 0.17,
+              "amount": 5.61,
+              "composition_key": "CER",
+              "industrialized": true
+            },
+            {
+              "code": "PEAA10fb",
+              "description": "Armadura prefabricada RND.5/Z-200, ancho 200 mm, diámetro 5 mm",
+              "unit": "m",
+              "quantity": 2.8,
+              "unit_price": 4.49,
+              "amount": 12.57,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "PBPM.1da",
+              "description": "Mortero de cemento M-5 confeccionado manualmente",
+              "unit": "m3",
+              "quantity": 0.15,
+              "unit_price": 68.4,
+              "amount": 10.26,
+              "composition_key": "MOR",
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 0.0,
+              "unit_price": 87.0,
+              "amount": 0.0,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 159.73
+            },
+            {
+              "label": "Mano de obra",
+              "value": 70.25
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 32.73
+            },
+            {
+              "label": "Transporte",
+              "value": 16.44
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.77
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 279.92,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 99.028,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 47.53
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.111,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 35.55
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.311,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.51
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 9.9028,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.39
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 5.58,
+              "subtotal": 5.58
+            }
+          ],
+          "total": 117.24
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 18.18,
+        "assessed_cost": 87.03,
+        "ratio": 0.208893
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.195114,
+        "economic_performance": 0.4198,
+        "industrialization_performance": 0.208893,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.FAB-ARM.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.FAB-ARM.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Fábrica cerámica armada de 11,5 cm con ladrillo perforado"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Fábrica armada para revestir de 11,5 cm de espesor, realizada con ladrillo cerámico perforado de 24x11,5x9 cm, mortero de cemento M-5 y armadura prefabricada en celosía de acero B500T galvanizado dispuesta cada dos hiladas."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 87.03
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 60.97721
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.208893
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "perforated_ceramic_brick"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "perforated_ceramic_brick"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 115
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Fábrica cerámica armada de 11,5 cm con ladrillo perforado. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.FAB-ARM.GS002",
+      "name_es": "Muro de carga cerámico armado de 11,5 cm con mortero industrial M-7,5",
+      "description": "Muro de carga de 11,5 cm de fábrica armada de ladrillo cerámico perforado tipo panal de 24x11,5x9 cm y resistencia a compresión de 5 N/mm², recibido con mortero industrial M-7,5 y reforzado con armadura prefabricada de tendel de acero galvanizado con recubrimiento epoxi.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "2026",
+          "code": "FEA010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMC",
+          "relation": "equivalent"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-F",
+          "code": "DB-SE-F",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-CER-05",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_ceramic_masonry",
+        "masonry_type": "perforated_ceramic_brick",
+        "total_thickness_mm": 115,
+        "brick_length_mm": 240,
+        "brick_width_mm": 115,
+        "brick_height_mm": 90,
+        "reinforced": true,
+        "source_references": [
+          "legacy catalogue str-wal-cer.json: STR-WAL-CER-05"
+        ],
+        "construction_type": "reinforced_masonry_wall",
+        "structural_system": "reinforced_clay_masonry",
+        "structural_element_thickness_mm": 115,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "masonry units bedded in mortar with structural reinforcement; site-assembled wet construction",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+        "factory_completion_level": "industrialized components; wall completed by site masonry",
+        "assembly_method": "course-by-course masonry with mortar and reinforcement",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mortar-bonded masonry is not treated as reversibly assembled"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the exact legacy record.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in the exact legacy record.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "masonry_specification": {
+          "unit_type": "perforated_ceramic_brick",
+          "brick_dimensions_mm": "240x115x90",
+          "reinforced": true
+        },
+        "environmental_proxy_calculation": {
+          "assessment_status": "proxy_lower_bound",
+          "brick_component": {
+            "mass_kg_m2": 81.37584,
+            "factor_kgco2e_kg": 0.209,
+            "gwp_a1_a3_kgco2e_m2": 17.007551,
+            "source": "HISPALYT GlobalEPD 008-017 sector EPD; exact brick product not identified"
+          },
+          "mortar_component": {
+            "volume_m3_m2": 0.033,
+            "factor_kgco2e_m3": 314.7,
+            "gwp_a1_a3_kgco2e_m2": 10.3851,
+            "source": "OEKOBAUDAT generic cement mortar; German geographic proxy"
+          },
+          "reinforcement_component": {
+            "minimum_mass_kg_m2": 0.41358,
+            "factor_kgco2e_kg": 0.474,
+            "gwp_a1_a3_kgco2e_m2": 0.196037,
+            "source": "OEKOBAUDAT reinforcing steel coils/bars; minimum mass calculated from two longitudinal wires only"
+          },
+          "limitation": "Lower-bound A1-A3 proxy. Diagonal lattice wire, coatings and ancillary materials are not quantified because their exact mass is absent from the legacy record."
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 27.588687,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.362057,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "transparent lower-bound component proxy: HISPALYT GlobalEPD 008-017 clay units + OEKOBAUDAT cement mortar + OEKOBAUDAT reinforcing steel; exact masonry-system EPD unavailable"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 54.7,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.635333,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-CER-05 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.457038,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.457038,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-CER-05 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 25.0,
+            "assessed_cost_eur_m2": 54.7,
+            "counted_industrialized_components": [
+              "Ladrillo cerámico perforado 24x11,5x9 cm, densidad 780 kg/m³ y resistencia 5 N/mm²: 15.54 EUR/m2",
+              "Armadura de tendel prefabricada de acero galvanizado con recubrimiento epoxi, diámetro 3,7 mm y ancho 75 mm: 5.9 EUR/m2",
+              "Mortero industrial de cemento M-7,5 suministrado a granel: 3.56 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "CER",
+          "name_es": "Fábrica de ladrillo cerámico perforado",
+          "role": "structure",
+          "properties": {
+            "material_family": "perforated_ceramic_brick",
+            "thickness_mm": 115,
+            "compressive_strength_n_mm2": 5
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura prefabricada de tendel",
+          "role": "masonry_reinforcement",
+          "properties": {
+            "material_family": "galvanized_steel",
+            "wire_diameter_mm": 3.7,
+            "reinforcement_width_mm": 75,
+            "yield_m_per_m2": 2.45,
+            "epoxy_coated": true
+          }
+        },
+        {
+          "key": "MOR",
+          "name_es": "Mortero industrial M-7,5",
+          "role": "masonry_mortar",
+          "properties": {
+            "material_family": "industrial_cement_mortar",
+            "mortar_class": "M-7.5"
+          }
+        }
+      ],
+      "technical_performance": {
+        "masonry_unit_compressive_strength_n_mm2": 5,
+        "system_type": {
+          "value": "reinforced_masonry_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_ceramic_masonry",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 115,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2011.42,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 339.16,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "reinforced_clay_masonry",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 150.91
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 339.16
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 27.588687,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 91.627
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 8.939
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.47
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.704
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 111.74,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 44.563
+            },
+            {
+              "module": "A4",
+              "value": 0.99
+            }
+          ],
+          "total": 45.553,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 495.14
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 54.7,
+        "bc3": {
+          "root_code": "FEA010",
+          "decomposition": [
+            {
+              "code": "mt04lpv010b",
+              "description": "Ladrillo cerámico perforado 24x11,5x9 cm, densidad 780 kg/m³ y resistencia 5 N/mm²",
+              "unit": "ud",
+              "quantity": 42.0,
+              "unit_price": 0.37,
+              "amount": 15.54,
+              "composition_key": "CER",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aag010ebe",
+              "description": "Armadura de tendel prefabricada de acero galvanizado con recubrimiento epoxi, diámetro 3,7 mm y ancho 75 mm",
+              "unit": "m",
+              "quantity": 2.45,
+              "unit_price": 2.41,
+              "amount": 5.9,
+              "composition_key": "ARM",
+              "industrialized": true
+            },
+            {
+              "code": "mt08aaa010a",
+              "description": "Agua",
+              "unit": "m3",
+              "quantity": 0.012,
+              "unit_price": 1.5,
+              "amount": 0.02,
+              "industrialized": false
+            },
+            {
+              "code": "mt09mif010db",
+              "description": "Mortero industrial de cemento M-7,5 suministrado a granel",
+              "unit": "t",
+              "quantity": 0.066,
+              "unit_price": 53.9,
+              "amount": 3.56,
+              "composition_key": "MOR",
+              "industrialized": true
+            },
+            {
+              "code": "mq06mms010",
+              "description": "Mezclador continuo con silo para mortero industrial",
+              "unit": "h",
+              "quantity": 0.259,
+              "unit_price": 1.94,
+              "amount": 0.5,
+              "industrialized": false
+            },
+            {
+              "code": "mo021",
+              "description": "Oficial 1ª construcción en trabajos de albañilería",
+              "unit": "h",
+              "quantity": 0.472,
+              "unit_price": 24.83,
+              "amount": 11.72,
+              "industrialized": false
+            },
+            {
+              "code": "mo114",
+              "description": "Peón ordinario construcción en trabajos de albañilería",
+              "unit": "h",
+              "quantity": 0.472,
+              "unit_price": 23.32,
+              "amount": 11.01,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.107,
+              "unit_price": 25.84,
+              "amount": 2.76,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.107,
+              "unit_price": 24.53,
+              "amount": 2.62,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 53.63,
+              "amount": 1.07,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 93.7
+            },
+            {
+              "label": "Mano de obra",
+              "value": 45.33
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 22.48
+            },
+            {
+              "label": "Transporte",
+              "value": 8.94
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 170.45,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 99.028,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 47.53
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.111,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 35.55
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.311,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.51
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 9.9028,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 1.39
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 5.58,
+              "subtotal": 5.58
+            }
+          ],
+          "total": 117.24
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 25.0,
+        "assessed_cost": 54.7,
+        "ratio": 0.457038
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.362057,
+        "economic_performance": 0.635333,
+        "industrialization_performance": 0.457038,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.FAB-ARM.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS002.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.FAB-ARM.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro de carga cerámico armado de 11,5 cm con mortero industrial M-7,5"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro de carga de 11,5 cm de fábrica armada de ladrillo cerámico perforado tipo panal de 24x11,5x9 cm y resistencia a compresión de 5 N/mm², recibido con mortero industrial M-7,5 y reforzado con armadura prefabricada de tendel de acero galvanizado con recubrimiento epoxi."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 54.7
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 27.588687
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.457038
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "perforated_ceramic_brick"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "perforated_ceramic_brick"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 115
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro de carga cerámico armado de 11,5 cm con mortero industrial M-7,5. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.FAB-ARM.GS003",
+      "name_es": "Muro estructural de bloque de hormigón armado de 20 cm",
+      "description": "Muro estructural de bloques huecos de hormigón de áridos densos de 40x20x20 cm, recibidos con mortero de cemento, armado con 2Ø10 B400S en senos alternos y armadura horizontal prefabricada de tendel cada cuatro hiladas, con relleno de todos los senos mediante hormigón HA-25.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMB.1cbbb",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-F",
+          "code": "DB-SE-F",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-004",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete_block_masonry",
+        "total_thickness_mm": 200,
+        "block_length_mm": 400,
+        "block_height_mm": 200,
+        "block_width_mm": 200,
+        "block_strength_n_mm2": 4,
+        "block_mass_kg": 16.5,
+        "blocks_per_m2": 13,
+        "filled_cells": "all",
+        "reinforced": true,
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-004"
+        ],
+        "construction_type": "reinforced_masonry_wall",
+        "structural_system": "reinforced_concrete_block_masonry",
+        "structural_element_thickness_mm": 200,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "masonry units bedded in mortar with structural reinforcement; site-assembled wet construction",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+        "factory_completion_level": "industrialized components; wall completed by site masonry",
+        "assembly_method": "course-by-course masonry with mortar and reinforcement and concrete-filled cells",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mortar-bonded masonry is not treated as reversibly assembled"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the exact legacy record.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in the exact legacy record.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "masonry_specification": {
+          "unit_type": "dense_aggregate_concrete_block",
+          "block_dimensions_mm": "400x200x200",
+          "block_strength_n_mm2": 4,
+          "filled_cells": "all",
+          "reinforced": true
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 40.34,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.2983,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-004 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 28.93,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.807133,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-004 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.433114,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.433114,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-HOR-004 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 12.53,
+            "assessed_cost_eur_m2": 28.93,
+            "counted_industrialized_components": [
+              "Bloque de hormigón AD-HEA 200 R4/I: 8.22 EUR/m2",
+              "Mortero de cemento industrial: 0.94 EUR/m2",
+              "Armadura prefabricada RND.4/E-150, ancho 150 mm, Ø4: 3.37 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "BLO",
+          "name_es": "Bloque hueco de hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "dense_aggregate_concrete_block",
+            "dimensions_mm": "400x200x200",
+            "compressive_strength_n_mm2": 4,
+            "mass_kg_unit": 16.5
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura vertical",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "steel_grade": "B400S",
+            "bar_configuration": "2Ø10 en senos alternos"
+          }
+        },
+        {
+          "key": "TEN",
+          "name_es": "Armadura horizontal de tendel",
+          "role": "masonry_reinforcement",
+          "properties": {
+            "material_family": "galvanized_reinforcing_steel",
+            "type": "RND.4/E-150",
+            "courses_spacing": 4
+          }
+        },
+        {
+          "key": "REL",
+          "name_es": "Hormigón de relleno de senos",
+          "role": "core_fill",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25"
+          }
+        },
+        {
+          "key": "MOR",
+          "name_es": "Mortero de asiento",
+          "role": "masonry_mortar",
+          "properties": {
+            "material_family": "cement_mortar"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 502.7,
+        "system_type": {
+          "value": "reinforced_masonry_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1683.05,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 502.7,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 239.14
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 351.44
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 40.34,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 55.137
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 5.379
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.69
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.034
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 67.24,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 226.215
+            },
+            {
+              "module": "A4",
+              "value": 5.027
+            }
+          ],
+          "total": 231.242,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2513.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 28.93,
+        "bc3": {
+          "root_code": "EEMB.1cbbb",
+          "decomposition": [
+            {
+              "code": "MOOA.8a",
+              "description": "Oficial 1ª construcción",
+              "unit": "h",
+              "quantity": 0.356,
+              "unit_price": 15.77,
+              "amount": 5.61,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA11a",
+              "description": "Peón especializado construcción",
+              "unit": "h",
+              "quantity": 0.179,
+              "unit_price": 13.63,
+              "amount": 2.44,
+              "industrialized": false
+            },
+            {
+              "code": "PFFH21aae",
+              "description": "Bloque de hormigón AD-HEA 200 R4/I",
+              "unit": "ud",
+              "quantity": 13.0,
+              "unit_price": 0.632,
+              "amount": 8.22,
+              "composition_key": "BLO",
+              "industrialized": true
+            },
+            {
+              "code": "PBPM.3d",
+              "description": "Mortero de cemento industrial",
+              "unit": "m3",
+              "quantity": 0.022,
+              "unit_price": 42.948,
+              "amount": 0.94,
+              "composition_key": "MOR",
+              "industrialized": true
+            },
+            {
+              "code": "PBPC.3abba",
+              "description": "Hormigón HA-25 de relleno de senos",
+              "unit": "m3",
+              "quantity": 0.1,
+              "unit_price": 58.654,
+              "amount": 5.87,
+              "composition_key": "REL",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA.3ac",
+              "description": "Acero corrugado B400S Ø10",
+              "unit": "kg",
+              "quantity": 3.702,
+              "unit_price": 0.366,
+              "amount": 1.35,
+              "composition_key": "ARM",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA11ca",
+              "description": "Armadura prefabricada RND.4/E-150, ancho 150 mm, Ø4",
+              "unit": "m",
+              "quantity": 1.505,
+              "unit_price": 2.238,
+              "amount": 3.37,
+              "composition_key": "TEN",
+              "industrialized": true
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 27.8,
+              "amount": 0.56,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 28.36,
+              "amount": 0.57,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 144.25
+            },
+            {
+              "label": "Mano de obra",
+              "value": 53.1
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 29.56
+            },
+            {
+              "label": "Transporte",
+              "value": 18.4
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 245.31,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 502.7,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 241.3
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.962,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 62.78
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.549,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 20.31
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 50.27,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 7.04
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 17.36,
+              "subtotal": 17.36
+            }
+          ],
+          "total": 364.47
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 12.53,
+        "assessed_cost": 28.93,
+        "ratio": 0.433114
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.2983,
+        "economic_performance": 0.807133,
+        "industrialization_performance": 0.433114,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.FAB-ARM.GS003.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS003.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.FAB-ARM.GS003"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de bloque de hormigón armado de 20 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de bloques huecos de hormigón de áridos densos de 40x20x20 cm, recibidos con mortero de cemento, armado con 2Ø10 B400S en senos alternos y armadura horizontal prefabricada de tendel cada cuatro hiladas, con relleno de todos los senos mediante hormigón HA-25."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 28.93
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 40.34
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.433114
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de bloque de hormigón armado de 20 cm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.FAB-ARM.GS004",
+      "name_es": "Muro estructural de bloque de hormigón de 25 cm con armadura de tendel",
+      "description": "Muro estructural de bloques de hormigón de 40x20x25 cm recibidos con mortero de cemento M-5, con armadura horizontal de tendel de 15 cm formada por celosía de 2Ø4 de acero galvanizado con recubrimiento epoxi cada cuatro hiladas y relleno de todos los senos con hormigón HA-25/F/20/XC1.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMB.2ca",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-F",
+          "code": "DB-SE-F",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-005",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete_block_masonry",
+        "total_thickness_mm": 250,
+        "block_length_mm": 400,
+        "block_height_mm": 200,
+        "block_width_mm": 250,
+        "block_strength_n_mm2": 4,
+        "block_mass_kg": 16.5,
+        "blocks_per_m2": 13,
+        "filled_cells": "all",
+        "reinforced": true,
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-005"
+        ],
+        "construction_type": "reinforced_masonry_wall",
+        "structural_system": "reinforced_concrete_block_masonry",
+        "structural_element_thickness_mm": 250,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "masonry units bedded in mortar with structural reinforcement; site-assembled wet construction",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+        "factory_completion_level": "industrialized components; wall completed by site masonry",
+        "assembly_method": "course-by-course masonry with mortar and reinforcement and concrete-filled cells",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mortar-bonded masonry is not treated as reversibly assembled"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the exact legacy record.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in the exact legacy record.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric.",
+          "industrialization_performance": "Proxy required because exact legacy EEMB.2ca record has no BC3 decomposition; ratio is the arithmetic mean of adjacent reinforced concrete-block legacy variants STR-WAL-HOR-004 and STR-WAL-HOR-006, not inferred from material alone."
+        },
+        "masonry_specification": {
+          "unit_type": "dense_aggregate_concrete_block",
+          "block_dimensions_mm": "400x200x250",
+          "block_strength_n_mm2": 4,
+          "filled_cells": "all",
+          "reinforced": true
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 45.03,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.27485,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-005 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 53.93,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.640467,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-005 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.4645,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.4645,
+            "assessment_status": "proxy",
+            "value_basis": "proxy",
+            "source_reference": "explicit adjacent-variant proxy from STR-WAL-HOR-004 and STR-WAL-HOR-006",
+            "industrialized_cost_eur_m2": 25.050485,
+            "assessed_cost_eur_m2": 53.93,
+            "counted_industrialized_components": [
+              "proxy only; exact industrialized component costs unavailable"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "BLO",
+          "name_es": "Bloque hueco de hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "dense_aggregate_concrete_block",
+            "dimensions_mm": "400x200x250",
+            "compressive_strength_n_mm2": 4,
+            "mass_kg_unit": 16.5
+          }
+        },
+        {
+          "key": "TEN",
+          "name_es": "Armadura horizontal de tendel",
+          "role": "masonry_reinforcement",
+          "properties": {
+            "material_family": "galvanized_reinforcing_steel",
+            "type": "RND.4/E-150",
+            "courses_spacing": 4
+          }
+        },
+        {
+          "key": "REL",
+          "name_es": "Hormigón de relleno de senos",
+          "role": "core_fill",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/F/20/XC1"
+          }
+        },
+        {
+          "key": "MOR",
+          "name_es": "Mortero de cemento M-5",
+          "role": "masonry_mortar",
+          "properties": {
+            "material_family": "cement_mortar",
+            "mortar_class": "M-5"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 582.0,
+        "system_type": {
+          "value": "reinforced_masonry_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 250,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1546.62,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 582.0,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 108.53
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 354.49
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 45.03,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 35.153
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.43
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.715
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.572
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 42.87,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 261.9
+            },
+            {
+              "module": "A4",
+              "value": 5.82
+            }
+          ],
+          "total": 267.72,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2910.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 53.93,
+        "bc3": {
+          "root_code": "EEMB.2ca",
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 157.09
+            },
+            {
+              "label": "Mano de obra",
+              "value": 75.48
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 34.76
+            },
+            {
+              "label": "Transporte",
+              "value": 18.73
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 286.06,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 582.0,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 279.36
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 2.066,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 66.11
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.578,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 21.39
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 58.2,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 8.15
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 19.53,
+              "subtotal": 19.53
+            }
+          ],
+          "total": 410.22
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 25.050485,
+        "assessed_cost": 53.93,
+        "ratio": 0.4645
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.27485,
+        "economic_performance": 0.640467,
+        "industrialization_performance": 0.4645,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.FAB-ARM.GS004.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS004.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.FAB-ARM.GS004"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de bloque de hormigón de 25 cm con armadura de tendel"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de bloques de hormigón de 40x20x25 cm recibidos con mortero de cemento M-5, con armadura horizontal de tendel de 15 cm formada por celosía de 2Ø4 de acero galvanizado con recubrimiento epoxi cada cuatro hiladas y relleno de todos los senos con hormigón HA-25/F/20/XC1."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 53.93
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 45.03
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.4645
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de bloque de hormigón de 25 cm con armadura de tendel. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.MUR.FAB-ARM.GS005",
+      "name_es": "Muro estructural de bloque de hormigón armado de 30 cm",
+      "description": "Muro estructural de bloques de hormigón de 40x20x30 cm recibidos con mortero, armado con Ø8 B500S en senos alternos y armadura horizontal prefabricada en celosía cada dos hiladas, con relleno de todos los senos mediante hormigón HA-25.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEMB.1daac",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "DB-SE-F",
+          "code": "DB-SE-F",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-WAL-HOR-006",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "reinforced_concrete_block_masonry",
+        "total_thickness_mm": 300,
+        "block_length_mm": 400,
+        "block_height_mm": 200,
+        "block_width_mm": 300,
+        "block_strength_n_mm2": 4,
+        "block_mass_kg": 23.5,
+        "blocks_per_m2": 13,
+        "filled_cells": "all",
+        "reinforced": true,
+        "source_references": [
+          "legacy catalogue str-wal-hor.json: STR-WAL-HOR-006"
+        ],
+        "construction_type": "reinforced_masonry_wall",
+        "structural_system": "reinforced_concrete_block_masonry",
+        "structural_element_thickness_mm": 300,
+        "structural_topping": {
+          "present": false,
+          "assessment_status": "not_applicable"
+        },
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "connection_assembly_method": "masonry units bedded in mortar with structural reinforcement; site-assembled wet construction",
+        "fire_performance": {
+          "assembly_fire_resistance": {
+            "assessment_status": "not_assessed"
+          }
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+        "factory_completion_level": "industrialized components; wall completed by site masonry",
+        "assembly_method": "course-by-course masonry with mortar and reinforcement and concrete-filled cells",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed",
+          "note": "mortar-bonded masonry is not treated as reversibly assembled"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "assessment_notes": {
+          "fire_performance": "No assembly fire-resistance period is stated in the exact legacy record.",
+          "acoustic_performance": "No quantitative acoustic performance is stated in the exact legacy record.",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        },
+        "masonry_specification": {
+          "unit_type": "dense_aggregate_concrete_block",
+          "block_dimensions_mm": "400x200x300",
+          "block_strength_n_mm2": 4,
+          "filled_cells": "all",
+          "reinforced": true
+        },
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 59.13,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.20435,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-006 environmental_data GWP A1-A3"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 54.03,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.6398,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-WAL-HOR-006 economic_data unit_cost"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.496206,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.496206,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "legacy:STR-WAL-HOR-006 industrialization_data cost decomposition",
+            "industrialized_cost_eur_m2": 26.81,
+            "assessed_cost_eur_m2": 54.03,
+            "counted_industrialized_components": [
+              "Bloque AD-HEA 300 R4/I: 14.01 EUR/m2",
+              "Mortero de cemento industrial: 2.29 EUR/m2",
+              "Armadura prefabricada RND.5/E-250, ancho 250 mm, Ø5: 10.51 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        }
+      },
+      "composition": [
+        {
+          "key": "BLO",
+          "name_es": "Bloque hueco de hormigón estructural",
+          "role": "structure",
+          "properties": {
+            "material_family": "dense_aggregate_concrete_block",
+            "dimensions_mm": "400x200x300",
+            "compressive_strength_n_mm2": 4,
+            "mass_kg_unit": 23.5
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura vertical",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "bar_configuration": "Ø8 en senos alternos"
+          }
+        },
+        {
+          "key": "TEN",
+          "name_es": "Armadura horizontal de tendel",
+          "role": "masonry_reinforcement",
+          "properties": {
+            "material_family": "galvanized_reinforcing_steel",
+            "type": "RND.5/E-250",
+            "courses_spacing": 2
+          }
+        },
+        {
+          "key": "REL",
+          "name_es": "Hormigón de relleno de senos",
+          "role": "core_fill",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25"
+          }
+        },
+        {
+          "key": "MOR",
+          "name_es": "Mortero de asiento",
+          "role": "masonry_mortar",
+          "properties": {
+            "material_family": "cement_mortar"
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 757.6,
+        "system_type": {
+          "value": "reinforced_masonry_wall",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-made masonry units and reinforcement with mortar/core-fill materials; wall assembled on site",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 300,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 1106.39,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 757.6,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "reinforced_concrete_block_masonry",
+          "unit": "unit"
+        },
+        "density_kg_m3": {
+          "value": null,
+          "unit": "kg/m³"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 211.65
+          },
+          "surface_mass": {
+            "unit": "kg/m²",
+            "value": 319.99
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 59.13,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 41.459
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.045
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.022
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.034
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 50.56,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 340.92
+            },
+            {
+              "module": "A4",
+              "value": 7.576
+            }
+          ],
+          "total": 348.496,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 3788.0
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 54.03,
+        "bc3": {
+          "root_code": "EEMB.1daac",
+          "decomposition": [
+            {
+              "code": "MOOA.8a",
+              "description": "Oficial 1ª construcción",
+              "unit": "h",
+              "quantity": 0.6,
+              "unit_price": 15.77,
+              "amount": 9.46,
+              "industrialized": false
+            },
+            {
+              "code": "MOOA11a",
+              "description": "Peón especializado construcción",
+              "unit": "h",
+              "quantity": 0.3,
+              "unit_price": 13.63,
+              "amount": 4.09,
+              "industrialized": false
+            },
+            {
+              "code": "PFFH21aag",
+              "description": "Bloque AD-HEA 300 R4/I",
+              "unit": "ud",
+              "quantity": 13.0,
+              "unit_price": 1.078,
+              "amount": 14.01,
+              "composition_key": "BLO",
+              "industrialized": true
+            },
+            {
+              "code": "PBPM.3d",
+              "description": "Mortero de cemento industrial",
+              "unit": "m3",
+              "quantity": 0.033,
+              "unit_price": 69.358,
+              "amount": 2.29,
+              "composition_key": "MOR",
+              "industrialized": true
+            },
+            {
+              "code": "PBPC.3abba",
+              "description": "Hormigón HA-25 de relleno de senos",
+              "unit": "m3",
+              "quantity": 0.16,
+              "unit_price": 64.55,
+              "amount": 10.33,
+              "composition_key": "REL",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA.3ab",
+              "description": "Acero corrugado B400S Ø8",
+              "unit": "kg",
+              "quantity": 1.185,
+              "unit_price": 0.626,
+              "amount": 0.74,
+              "composition_key": "ARM",
+              "industrialized": false
+            },
+            {
+              "code": "PEAA11eb",
+              "description": "Armadura prefabricada RND.5/E-250, ancho 250 mm, Ø5",
+              "unit": "m",
+              "quantity": 3.005,
+              "unit_price": 3.496,
+              "amount": 10.51,
+              "composition_key": "TEN",
+              "industrialized": true
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 51.43,
+              "amount": 1.03,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes indirectos",
+              "unit": "%",
+              "quantity": 3.0,
+              "unit_price": 52.46,
+              "amount": 1.57,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 87.57
+            },
+            {
+              "label": "Mano de obra",
+              "value": 31.14
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 16.41
+            },
+            {
+              "label": "Transporte",
+              "value": 8.25
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 2.38
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 145.75,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.MUR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 757.6,
+              "unit": "kg",
+              "rate": 0.48,
+              "subtotal": 363.65
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 2.265,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 72.48
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.634,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 23.46
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.32,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 15.68
+            },
+            {
+              "label": "Transporte",
+              "quantity": 75.76,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 10.61
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 24.29,
+              "subtotal": 24.29
+            }
+          ],
+          "total": 510.17
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 26.81,
+        "assessed_cost": 54.03,
+        "ratio": 0.496206
+      },
+      "viva_metrics": {
+        "environmental_performance": 0.20435,
+        "economic_performance": 0.6398,
+        "industrialization_performance": 0.496206,
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        }
+      },
+      "assets": [
+        {
+          "id": "EST.MUR.FAB-ARM.GS005.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.MUR.FAB-ARM.GS005.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.MUR.FAB-ARM.GS005"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Muro estructural de bloque de hormigón armado de 30 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Muro estructural de bloques de hormigón de 40x20x30 cm recibidos con mortero, armado con Ø8 B500S en senos alternos y armadura horizontal prefabricada en celosía cada dos hiladas, con relleno de todos los senos mediante hormigón HA-25."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 54.03
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 59.13
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.496206
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_MuroEstructural",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "dense_aggregate_concrete_block"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.MUR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de muro estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia muro estructural.",
+        "functional_unit": "m2",
+        "short": "Muro estructural de bloque de hormigón armado de 30 cm. Esquema de demostración para la familia «Muro estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Elemento resistente",
+            "name": "Elemento resistente",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Anclaje",
+            "material": "Uniones",
+            "name": "Uniones",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Protección",
+            "name": "Protección",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

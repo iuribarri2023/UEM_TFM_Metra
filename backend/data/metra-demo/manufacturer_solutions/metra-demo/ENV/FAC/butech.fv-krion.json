@@ -1,0 +1,813 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-BUTECH",
+    "name": "Butech",
+    "website": "https://www.butech.net/",
+    "description": "Empresa del Grupo PORCELANOSA especializada en soluciones técnicas de fachada y sistemas de aplicación.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5CdXRlY2g8L3RleHQ+PC9zdmc+",
+    "address": null,
+    "contact_name": null,
+    "contact_email": null,
+    "contact_phone": null,
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "parent_group": "PORCELANOSA Grupo"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "ENV.FAC.FV-FAB.GS006",
+      "generic_solution_codes": [],
+      "subsystem_code": "ENV.FAC",
+      "code": "MFR.BUTECH.FV.KRION",
+      "commercial_reference": "FV-KRION",
+      "name_es": "FV KRION",
+      "description": "Sistema de fachada ventilada Butech con revestimiento final de solid surface KRION y subestructura de aluminio.",
+      "functional_unit": "m2",
+      "technical_data": {
+        "template_code": "ENV.FAC",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcWall",
+          "ifc_export_type": "USERDEFINED",
+          "ecob_bim_class": "Muros de fachada",
+          "gubimclass_code": "30.10.10.20",
+          "gubimclass_description": "Fachadas prefabricadas",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "dop_url": null,
+          "product_url": null,
+          "environmental_claim": null,
+          "compliance_certificate": null,
+          "compliance_certificate_url": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Fachada ventilada",
+          "structural_role": "No portante",
+          "primary_material": "KRION solid surface + aluminio AW 6005A + acero inoxidable AISI 304",
+          "thickness_mm": 171,
+          "u_value_w_m2k": 0.32,
+          "rw_db": 45,
+          "fire_rating": "project_specific",
+          "is_external": true,
+          "module_width_mm": 2400,
+          "module_height_mm": 3000,
+          "mass_kg_m2": 62,
+          "integrated_window": false,
+          "exterior_finish": "KRION solid surface",
+          "insulation": "Lana mineral; espesor por proyecto",
+          "waterproofing": "Lamina impermeabilizante segun detalle constructivo",
+          "factory_scope": "Sistema de fachada ventilada suministrado por componentes / placas y subestructura",
+          "delivery_state": "Componentes de revestimiento, subestructura y fijacion para montaje en obra",
+          "mounting_system": "Anclajes mecanicos a soporte + separadores/montantes de aluminio + fijacion mecanica/quimica del revestimiento",
+          "ifc_generation_revision": "BUTECH-v1.0",
+          "ifc_geometry_method": "IFC4 SweptSolid, product-only decomposition, explicit material styles and type Psets",
+          "ifc_root_entity": "IfcWall",
+          "geometry_status": "Representative product BIM; not shop drawing"
+        },
+        "performance": {
+          "Composition": "Aproximadamente dos terceras partes ATH y bajo porcentaje de resinas acrilicas",
+          "Certificates": "AT-2.2-14-1624_v3; AT-2.2-21-1814_v2; ETA-17/0387; ETA 16-0979; IAPMO No403 (referencias en catalogo)"
+        }
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "ENV.FAC",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcWall",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "eCOB",
+          "version": "v.1_2021",
+          "code": "Muros de fachada",
+          "relation": "classified_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "30.10.10.20",
+          "description": "Fachadas prefabricadas",
+          "relation": "primary"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_catalogue",
+          "file_name": "ESP_Cat.Fachadas-2025_DIG.pdf",
+          "scope": "Technical basis for product family and geometry"
+        }
+      ],
+      "attributes": {},
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "MANUFACTURER_CATALOGUE_DATA; project-specific verification required"
+      },
+      "environmental_data": {
+        "status": "NOT_PROVIDED_IN_SUPPLIED_DOCUMENTS",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 67.896
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 6.624
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.312
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.968
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 82.8,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 44.02
+            },
+            {
+              "module": "A4",
+              "value": 0.62
+            }
+          ],
+          "total": 44.64,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 558
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "status": "NOT_PROVIDED_IN_SUPPLIED_DOCUMENTS",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 94.04
+            },
+            {
+              "label": "Mano de obra",
+              "value": 44.73
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 25.8
+            },
+            {
+              "label": "Transporte",
+              "value": 11.0
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 175.57,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "ENV.FAC",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 62,
+              "unit": "kg",
+              "rate": 0.83,
+              "subtotal": 51.46
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.153,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 36.9
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.323,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 11.95
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.2,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 9.8
+            },
+            {
+              "label": "Transporte",
+              "quantity": 6.2,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 0.87
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 5.55,
+              "subtotal": 5.55
+            }
+          ],
+          "total": 116.53
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": false,
+        "classification_standard": null,
+        "note": "Classified here as ventilated facade system, not as industrialized 2D module",
+        "une_41610": {
+          "function_classes": [
+            {
+              "code": "ENVOLVENTE",
+              "label": "Elementos de envolvente"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "2D",
+            "label": "Bidimensional (2D)"
+          },
+          "classification_applicable": false
+        },
+        "factory_scope": "Sistema de fachada ventilada suministrado por componentes / placas y subestructura",
+        "delivery_state": "Componentes de revestimiento, subestructura y fijacion para montaje en obra",
+        "mounting_interface": "Anclajes mecanicos a soporte + separadores/montantes de aluminio + fijacion mecanica/quimica del revestimiento"
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "USERDEFINED"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Muros de fachada"
+            },
+            {
+              "name": "GuBIMClassVIVACodigo",
+              "ifc_type": "IfcLabel",
+              "value": "30.10.10.20"
+            },
+            {
+              "name": "GuBIMClassVIVADescripcion",
+              "ifc_type": "IfcLabel",
+              "value": "Fachadas prefabricadas"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Butech"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_PSet_BaseQuantities",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Espesor_(mm)",
+              "ifc_type": "IfcReal",
+              "value": 171
+            }
+          ]
+        },
+        {
+          "name": "Pset_WallCommon",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IsExternal",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "LoadBearing",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "Reference",
+              "ifc_type": "IfcLabel",
+              "value": "FV-KRION"
+            },
+            {
+              "name": "FireRating",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Envolvente",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "ENV.FAC.FV-FAB.GS006"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Fachada ventilada con revestimiento solid surface"
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Butech"
+            },
+            {
+              "name": "Modelo",
+              "ifc_type": "IfcLabel",
+              "value": "FV-KRION"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Fachada",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaFachada",
+              "ifc_type": "IfcLabel",
+              "value": "Fachada ventilada"
+            },
+            {
+              "name": "MaterialExterior",
+              "ifc_type": "IfcLabel",
+              "value": "KRION solid surface"
+            },
+            {
+              "name": "EspesorTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 171
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        },
+        {
+          "name": "BUTECH_Pset_SourceAndScope",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SourceDocuments",
+              "ifc_type": "IfcLabel",
+              "value": "ESP_Cat.Fachadas-2025_DIG.pdf"
+            },
+            {
+              "name": "GeometryStatus",
+              "ifc_type": "IfcLabel",
+              "value": "REPRESENTATIVE_PRODUCT_BIM"
+            },
+            {
+              "name": "NoBuildingContext",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ProductOnlyPhysicalElements",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "ModelledVariant",
+              "ifc_type": "IfcLabel",
+              "value": "Muestra opaca 2.4 x 3.0 m; placas KRION; soporte del edificio omitido"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.BUTECH.FV.KRION"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-BUTECH"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Butech"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "FV-KRION"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "ENV.FAC"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Componentes de revestimiento, subestructura y fijacion para montaje en obra"
+            },
+            {
+              "name": "exterior_finish",
+              "ifc_type": "IfcLabel",
+              "value": "KRION solid surface"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Sistema de fachada ventilada suministrado por componentes / placas y subestructura"
+            },
+            {
+              "name": "fire_rating",
+              "ifc_type": "IfcLabel",
+              "value": "project_specific"
+            },
+            {
+              "name": "geometry_status",
+              "ifc_type": "IfcLabel",
+              "value": "Representative product BIM; not shop drawing"
+            },
+            {
+              "name": "ifc_generation_revision",
+              "ifc_type": "IfcLabel",
+              "value": "BUTECH-v1.0"
+            },
+            {
+              "name": "ifc_geometry_method",
+              "ifc_type": "IfcLabel",
+              "value": "IFC4 SweptSolid, product-only decomposition, explicit material styles and type Psets"
+            },
+            {
+              "name": "ifc_root_entity",
+              "ifc_type": "IfcLabel",
+              "value": "IfcWall"
+            },
+            {
+              "name": "insulation",
+              "ifc_type": "IfcLabel",
+              "value": "Lana mineral; espesor por proyecto"
+            },
+            {
+              "name": "integrated_window",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            },
+            {
+              "name": "is_external",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "mass_kg_m2",
+              "ifc_type": "IfcInteger",
+              "value": 62
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 3000
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2400
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Anclajes mecanicos a soporte + separadores/montantes de aluminio + fijacion mecanica/quimica del revestimiento"
+            },
+            {
+              "name": "primary_material",
+              "ifc_type": "IfcLabel",
+              "value": "KRION solid surface + aluminio AW 6005A + acero inoxidable AISI 304"
+            },
+            {
+              "name": "rw_db",
+              "ifc_type": "IfcInteger",
+              "value": 45
+            },
+            {
+              "name": "structural_role",
+              "ifc_type": "IfcLabel",
+              "value": "No portante"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Fachada ventilada"
+            },
+            {
+              "name": "thickness_mm",
+              "ifc_type": "IfcInteger",
+              "value": 171
+            },
+            {
+              "name": "u_value_w_m2k",
+              "ifc_type": "IfcReal",
+              "value": 0.32
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "Lamina impermeabilizante segun detalle constructivo"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "function": "Acabado",
+          "material": "Revestimiento exterior",
+          "name": "Revestimiento exterior",
+          "order": 1,
+          "pattern": "dense",
+          "thickness_mm": 13.2,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Soporte",
+          "material": "Capa de soporte",
+          "name": "Capa de soporte",
+          "order": 2,
+          "pattern": "diagonal",
+          "thickness_mm": 81.6,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Aislamiento",
+          "material": "Aislamiento térmico",
+          "name": "Aislamiento térmico",
+          "order": 3,
+          "pattern": "dots",
+          "thickness_mm": 66.5,
+          "source_type": "ESTIMATED"
+        },
+        {
+          "function": "Acabado",
+          "material": "Trasdosado interior",
+          "name": "Trasdosado interior",
+          "order": 4,
+          "pattern": "linear",
+          "thickness_mm": 14.9,
+          "source_type": "ESTIMATED"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "manufacturer_catalogue",
+          "file_name": "ESP_Cat.Fachadas-2025_DIG.pdf",
+          "scope": "Technical basis for product family and geometry"
+        }
+      ],
+      "ids_validation": {
+        "status": "PENDING_EXTERNAL_IDS_VALIDATION"
+      },
+      "data_quality_notes": [
+        {
+          "issue": "KRION cladding thickness is not fixed in the supplied catalogue.",
+          "action": "The IFC uses 12 mm as representative geometry only; project-specific product thickness remains authoritative."
+        },
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.delivery_state",
+            "industrialization_data.factory_scope",
+            "industrialization_data.mounting_interface",
+            "industrialization_data.une_41610.classification_applicable",
+            "industrialization_data.une_41610.function_classes",
+            "industrialization_data.une_41610.predominant_geometry",
+            "technical_data.properties.fire_rating",
+            "technical_data.properties.mass_kg_m2",
+            "technical_data.properties.rw_db",
+            "technical_data.properties.u_value_w_m2k"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.BUTECH.FV.KRION.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/ENV_FAC__ENV.FAC.FV-FAB.GS007__BUTECH__FV-KRION.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Fachada ventilada",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "KRION solid surface + aluminio AW 6005A + acero inoxidable AISI 304",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Componentes de revestimiento, subestructura y fijacion para montaje en obra",
+          "unit": "unit"
+        },
+        "total_thickness_mm": {
+          "value": 171,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 2400,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 3000,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 62,
+          "unit": "kg/m²"
+        },
+        "thermal_transmittance": {
+          "value": 0.32,
+          "unit": "W/(m²·K)"
+        },
+        "rw_db": {
+          "value": 45,
+          "unit": "dB"
+        },
+        "ra_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "ratr_dba": {
+          "value": null,
+          "unit": "dBA"
+        },
+        "waterproofing": {
+          "value": "Lamina impermeabilizante segun detalle constructivo",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 99.54
+          },
+          "thermal_transmittance": {
+            "unit": "W/(m²·K)",
+            "value": 0.54
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 176.2
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en ENV.FAC. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de cerramiento de fachada; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia cerramiento de fachada.",
+        "functional_unit": "m2",
+        "short": "FV KRION. Esquema de demostración para la familia «Cerramiento de fachada»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Revestimiento exterior",
+            "name": "Revestimiento exterior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 13.2
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de soporte",
+            "name": "Capa de soporte",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 81.6
+          },
+          {
+            "function": "Aislamiento",
+            "material": "Aislamiento térmico",
+            "name": "Aislamiento térmico",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 66.5
+          },
+          {
+            "function": "Acabado",
+            "material": "Trasdosado interior",
+            "name": "Trasdosado interior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 14.9
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

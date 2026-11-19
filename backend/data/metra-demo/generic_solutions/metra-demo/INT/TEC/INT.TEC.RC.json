@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "INT",
+      "name_es": "Interiores: compartimentación y acabados"
+    },
+    "subsystem": {
+      "code": "INT.TEC",
+      "name_es": "Techos interiores"
+    },
+    "archetype": {
+      "code": "INT.TEC.RC",
+      "name_es": "Techo con revestimiento continuo aplicado",
+      "description": "Acabado aplicado al soporte; no es un falso techo suspendido."
+    }
+  },
+  "profiles": {},
+  "generic_solutions": []
+}

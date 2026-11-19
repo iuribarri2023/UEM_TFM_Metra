@@ -1,0 +1,1242 @@
+{
+  "schema_version": "3.0",
+  "catalogue": {
+    "system": {
+      "code": "EST",
+      "name_es": "Estructura"
+    },
+    "subsystem": {
+      "code": "EST.FOR",
+      "name_es": "Forjados"
+    },
+    "archetype": {
+      "code": "EST.FOR.HOR-ALV",
+      "name_es": "Forjado de placas alveolares de hormigón"
+    }
+  },
+  "profiles": {
+    "property_dictionary": "viva-property-dictionary-v2",
+    "regulatory": "viva-regulatory-v2",
+    "energy": "viva-energy-v2",
+    "normalization": "viva-normalization-v2",
+    "industrialization": "viva-industrialization-v2"
+  },
+  "generic_solutions": [
+    {
+      "code": "EST.FOR.HOR-ALV.GS001",
+      "name_es": "Forjado de placa alveolar pretensada 20+5 cm",
+      "description": "Forjado unidireccional horizontal ejecutado con placas alveolares pretensadas de hormigón de 20 cm de canto y capa de compresión de 5 cm, hormigonado mediante bomba con HA-30, mallazo ME 15x30 Ø5-5 B500T y una cuantía media de 8,85 kg/m² de acero B500S en vigas, zunchos y negativos, incluido apuntalado y desapuntalado.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "FIVE-BDC",
+          "version": "BDC26",
+          "code": "EEFH.5bbbgbb",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "Código Estructural / DB-SE",
+          "code": "DB-SE",
+          "relation": "conceptual"
+        },
+        {
+          "scheme": "VIVA-legacy-solution",
+          "version": "schema_version_2.0",
+          "code": "STR-SLB-HOR-004",
+          "relation": "exact"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "structural_material": "precast_prestressed_concrete",
+        "slab_system": "hollow_core_slab",
+        "precast_depth_mm": 200,
+        "compression_layer_thickness_mm": 50,
+        "total_depth_mm": 250,
+        "concrete_class": "HA-30",
+        "reinforcement_grade": "B500S",
+        "reinforcement_kg_m2": 8.85,
+        "prefabricated": true,
+        "construction_type": "precast_prestressed_concrete_hollow_core_slab",
+        "structural_system": "one_way_hollow_core_slab",
+        "structural_element_thickness_mm": 200,
+        "supporting_system": {
+          "assessment_status": "not_assessed"
+        },
+        "structural_topping": {
+          "present": true,
+          "thickness_mm": 50,
+          "material": "reinforced_concrete"
+        },
+        "prestressing_information": "prestressed hollow-core concrete plate",
+        "connection_assembly_method": "precast plates completed on site with reinforcement and 50 mm concrete compression layer",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "prefabricated hollow-core plates plus site-applied reinforcement and concrete topping",
+        "factory_completion_level": "primary structural plate prefabricated; slab completed on site",
+        "assembly_method": "lifting/placement of plates followed by reinforcement and in-situ topping",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "assessment_status": "not_assessed"
+        },
+        "source_references": [
+          "legacy catalogue str-slb-hor(2).json: STR-SLB-HOR-004",
+          "FIVE-BDC BDC26: EEFH.5bbbgbb"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 63.47,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.18265,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-HOR-004 (GWP A1-A3)"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 90.17,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.398867,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "legacy:STR-SLB-HOR-004 / FIVE-BDC EEFH.5bbbgbb"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.666561,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.666561,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "proxy from current CYPE EPF010 industrialization share; legacy EEFH.5bbbgbb has no BC3 decomposition in the supplied catalogue",
+            "industrialized_cost_eur_m2": 60.103773,
+            "assessed_cost_eur_m2": 90.17,
+            "counted_industrialized_components": [
+              "proxy only; no legacy component-cost decomposition available"
+            ],
+            "proxy_basis_industrialized_cost_eur_m2": 62.87,
+            "proxy_basis_assessed_cost_eur_m2": 94.32,
+            "proxy_basis_ratio": 0.666561,
+            "proxy_basis_counted_components": [
+              "prefabricated prestressed hollow-core plate",
+              "shop-worked galvanized S275JR support piece"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "industrialization_performance": "proxy required because the supplied legacy record contains an empty industrialization_data object and an empty BC3 decomposition",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "PAL",
+          "name_es": "Placa alveolar pretensada",
+          "role": "primary_structure",
+          "properties": {
+            "material_family": "precast_prestressed_concrete",
+            "thickness_mm": 200,
+            "surface_mass_kg_m2": 286
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura B500S",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "reinforcement_kg_m2": 8.85
+          }
+        },
+        {
+          "key": "MAL",
+          "name_es": "Mallazo B500T",
+          "role": "distribution_reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "mesh": "ME 15x30 Ø5-5 B500T"
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Capa de compresión de hormigón",
+          "role": "compression_layer",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-30",
+            "thickness_mm": 50
+          }
+        }
+      ],
+      "technical_performance": {
+        "surface_mass_kg_m2": 416.5,
+        "system_type": {
+          "value": "precast_prestressed_concrete_hollow_core_slab",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "precast_prestressed_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "prefabricated hollow-core plates plus site-applied reinforcement and concrete topping",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 250,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5718.28,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1757.87,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 416.5,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "one_way_hollow_core_slab",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 252.82
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 255.9
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 63.47,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 40.311
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 3.933
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 1.966
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 2.95
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 49.16,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 199.92
+            },
+            {
+              "module": "A4",
+              "value": 4.165
+            }
+          ],
+          "total": 204.085,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 2082.5
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 90.17,
+        "bc3": {
+          "root_code": "EEFH.5bbbgbb",
+          "decomposition": []
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 138.99
+            },
+            {
+              "label": "Mano de obra",
+              "value": 64.78
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 31.33
+            },
+            {
+              "label": "Transporte",
+              "value": 19.79
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 0.0
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 254.89,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 416.5,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 179.1
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 1.25,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 40.0
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.35,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 12.95
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 41.65,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 5.83
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 13.0,
+              "subtotal": 13.0
+            }
+          ],
+          "total": 272.93
+        }
+      },
+      "industrialization_data": {},
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.18265,
+        "economic_performance": 0.398867,
+        "industrialization_performance": 0.666561
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.HOR-ALV.GS001.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.HOR-ALV.GS001.ifc"
+        }
+      ],
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.HOR-ALV.GS001"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de placa alveolar pretensada 20+5 cm"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Forjado unidireccional horizontal ejecutado con placas alveolares pretensadas de hormigón de 20 cm de canto y capa de compresión de 5 cm, hormigonado mediante bomba con HA-30, mallazo ME 15x30 Ø5-5 B500T y una cuantía media de 8,85 kg/m² de acero B500S en vigas, zunchos y negativos, incluido apuntalado y desapuntalado."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 90.17
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 63.47
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": null
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "precast_prestressed_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "precast_prestressed_concrete"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 200
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": 286
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de placa alveolar pretensada 20+5 cm. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 35.5
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 44.7
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 160.5
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.2
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    },
+    {
+      "code": "EST.FOR.HOR-ALV.GS002",
+      "name_es": "Forjado de placa alveolar pretensada de 20 cm sin capa de compresión estructural",
+      "description": "Losa de 20 cm realizada con placas alveolares prefabricadas de hormigón pretensado de 20 cm de canto y 120 cm de anchura, momento flector último de 17 kN·m/m, apoyadas directamente sobre vigas de canto o muros de carga; juntas y enlaces con apoyos rellenos con HA-25/F/20/XC2, armadura B 500 S en negativos de cuantía aproximada 4 kg/m² y piezas de apoyo S275JR galvanizadas. Sin capa de compresión estructural.",
+      "functional_unit": "m2",
+      "classifications": [
+        {
+          "scheme": "CYPE-Generator",
+          "version": "current indexed Spain source (2026)",
+          "code": "EPF010",
+          "relation": "exact"
+        },
+        {
+          "scheme": "UNE-EN",
+          "version": "EN 1168",
+          "code": "EN 1168",
+          "relation": "exact"
+        },
+        {
+          "scheme": "CTE",
+          "version": "Código Estructural / DB-SE",
+          "code": "DB-SE",
+          "relation": "conceptual"
+        }
+      ],
+      "properties": {
+        "load_bearing": true,
+        "construction_type": "precast_prestressed_concrete_hollow_core_slab",
+        "structural_material": "precast_prestressed_concrete",
+        "slab_system": "hollow_core_slab",
+        "structural_system": "one_way_hollow_core_slab",
+        "total_depth_mm": 200,
+        "structural_element_thickness_mm": 200,
+        "precast_depth_mm": 200,
+        "plate_width_mm": 1200,
+        "concrete_class": "HA-25/F/20/XC2",
+        "reinforcement_grade": "B500S",
+        "reinforcement_kg_m2_approx": 4.0,
+        "support_steel_grade": "S275JR",
+        "support_steel_kg_m2": 1.0,
+        "supporting_system": "direct support on downstand beams or load-bearing walls",
+        "structural_topping": {
+          "present": false,
+          "thickness_mm": 0
+        },
+        "prestressing_information": "factory-prestressed hollow-core concrete plate; prestressing steel grade not stated in the source",
+        "connection_assembly_method": "crane placement; negative reinforcement; joint and support-link concrete",
+        "fire_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "acoustic_performance": {
+          "assessment_status": "not_assessed"
+        },
+        "manufacturing_location": {
+          "assessment_status": "not_assessed"
+        },
+        "delivery_form": "factory-prefabricated hollow-core plates delivered as structural units",
+        "factory_completion_level": "primary structural element factory-prefabricated",
+        "assembly_method": "crane-mounted plates with site reinforcement and joint concrete",
+        "disassembly_strategy": {
+          "assessment_status": "not_assessed"
+        },
+        "span_or_applicability": {
+          "span_m": {
+            "assessment_status": "not_assessed"
+          },
+          "max_clear_storey_height_m": 3.0
+        },
+        "technical_value_assessment": {
+          "hollow_core_plate_surface_mass_kg_m2": "proxy from UK sector EPD for 200-225 mm hollow-core products; not a full assembled-slab mass"
+        },
+        "source_references": [
+          "CYPE Generador de Precios EPF010 (current indexed Spain source): 20 cm, 120 cm, Mu 17 kN·m/m, direct support, HA-25/F/20/XC2, B500S approx. 4 kg/m2, 94.32 EUR/m2",
+          "MPA UK Sector EPD Hollowcore slabs EPD-IES-0022253:003 (proxy for plate GWP and plate mass)"
+        ],
+        "normalization_inputs": {
+          "environmental_performance": {
+            "indicator": "GWP_A1_A3",
+            "source_value": 43.5,
+            "unit": "kg CO2e/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": -100.0,
+            "worst_reference_bound": 100.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((100 - GWP_A1_A3) / 200, 0, 1)",
+            "calculation_result": 0.2825,
+            "assessment_status": "assessed_with_proxy",
+            "value_basis": "proxy",
+            "source_reference": "MPA UK Sector EPD 'Hollowcore slabs', EPD-IES-0022253:003; A1-A3 GWP-total per m2 of 200-225 mm hollow-core product; used as a product-only proxy and does not include this solution's joint concrete, support piece or negative reinforcement"
+          },
+          "economic_performance": {
+            "indicator": "unit_construction_cost",
+            "source_value": 94.32,
+            "unit": "EUR/m2",
+            "functional_unit": "m2",
+            "best_reference_bound": 0.0,
+            "worst_reference_bound": 150.0,
+            "direction_of_preference": "lower_is_better",
+            "formula": "clamp((150 - unit_cost) / 150, 0, 1)",
+            "calculation_result": 0.3712,
+            "assessment_status": "assessed",
+            "value_basis": "sourced",
+            "source_reference": "CYPE Generador de Precios, EPF010, current indexed Spain price"
+          },
+          "industrialization_performance": {
+            "indicator": "industrialized_share_of_assessed_construction_cost",
+            "source_value": 0.666561,
+            "unit": "dimensionless",
+            "functional_unit": "m2",
+            "best_reference_bound": 1.0,
+            "worst_reference_bound": 0.0,
+            "direction_of_preference": "higher_is_better",
+            "formula": "industrialized_cost / assessed_cost",
+            "calculation_result": 0.666561,
+            "assessment_status": "assessed",
+            "value_basis": "calculated",
+            "source_reference": "CYPE EPF010 cost decomposition; only components explicitly described as prefabricated or shop-worked are counted as industrialized",
+            "industrialized_cost_eur_m2": 62.87,
+            "assessed_cost_eur_m2": 94.32,
+            "counted_industrialized_components": [
+              "prefabricated prestressed hollow-core plate: 57.60 EUR/m2",
+              "shop-worked galvanized S275JR support piece: 5.27 EUR/m2"
+            ]
+          },
+          "energy_performance": {
+            "indicator": "operational_energy_applicability",
+            "source_value": null,
+            "unit": null,
+            "functional_unit": "m2",
+            "direction_of_preference": "not_applicable",
+            "formula": null,
+            "calculation_result": null,
+            "assessment_status": "not_applicable",
+            "value_basis": "not_applicable",
+            "source_reference": "VIVA Fase 3 scope: operational energy is scored only for ENV.FAC, ENV.CUB and ENV.VEN."
+          }
+        },
+        "assessment_notes": {
+          "environmental_performance": "explicit product-only proxy; no full-solution A1-A3 value was available from the exact CYPE work item",
+          "surface_mass": "305.37 kg/m2 is the sector-EPD hollow-core product mass, not the assembled solution mass",
+          "energy_performance": "Not applicable in the current VIVA Fase 3 operational-energy optimization scope; only ENV.FAC, ENV.CUB and ENV.VEN are scored for this metric."
+        }
+      },
+      "composition": [
+        {
+          "key": "PAL",
+          "name_es": "Placa alveolar prefabricada de hormigón pretensado",
+          "role": "primary_structure",
+          "properties": {
+            "material_family": "precast_prestressed_concrete",
+            "thickness_mm": 200,
+            "width_mm": 1200,
+            "ultimate_bending_moment_knm_m": 17.0,
+            "product_standard": "UNE-EN 1168"
+          }
+        },
+        {
+          "key": "SUP",
+          "name_es": "Pieza de apoyo de acero galvanizado S275JR",
+          "role": "support_component",
+          "properties": {
+            "material_family": "galvanized_structural_steel",
+            "steel_grade": "S275JR",
+            "mass_kg_m2": 1.0,
+            "shop_worked": true
+          }
+        },
+        {
+          "key": "ARM",
+          "name_es": "Armadura B500S en zona de negativos",
+          "role": "reinforcement",
+          "properties": {
+            "material_family": "reinforcing_steel",
+            "steel_grade": "B500S",
+            "reinforcement_kg_m2_approx": 4.0,
+            "procurement_quantity_kg_m2": 4.08
+          }
+        },
+        {
+          "key": "HOR",
+          "name_es": "Hormigón de relleno de juntas y enlaces con apoyos",
+          "role": "joint_concrete",
+          "properties": {
+            "material_family": "ready_mix_concrete",
+            "concrete_class": "HA-25/F/20/XC2",
+            "volume_m3_m2": 0.011
+          }
+        }
+      ],
+      "technical_performance": {
+        "ultimate_bending_moment_knm_m": 17.0,
+        "hollow_core_plate_surface_mass_kg_m2": 305.37,
+        "system_type": {
+          "value": "precast_prestressed_concrete_hollow_core_slab",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "precast_prestressed_concrete",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "factory-prefabricated hollow-core plates delivered as structural units",
+          "unit": "unit"
+        },
+        "depth_mm": {
+          "value": 200,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 5011.22,
+          "unit": "mm"
+        },
+        "module_width_mm": {
+          "value": 1938.67,
+          "unit": "mm"
+        },
+        "surface_mass": {
+          "value": 56.22,
+          "unit": "kg/m²"
+        },
+        "structural_system": {
+          "value": "one_way_hollow_core_slab",
+          "unit": "unit"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/m2",
+            "value": 63.47
+          },
+          "total_thickness_mm": {
+            "unit": "mm",
+            "value": 265.0
+          }
+        }
+      },
+      "energy_data": {},
+      "environmental_data": {
+        "gwp_a1_a3_kgco2e_m2": 43.5,
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./m2",
+              "value": 96.809
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 9.445
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./m2",
+              "value": 4.722
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./m2",
+              "value": 7.084
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 118.06,
+          "unit": "kg CO₂ eq./m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 101.333
+            },
+            {
+              "module": "A4",
+              "value": 2.111
+            }
+          ],
+          "total": 103.444,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 1055.555
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit_cost": 94.32,
+        "bc3": {
+          "root_code": "EPF010",
+          "decomposition": [
+            {
+              "code": "mt07pha020cd1c",
+              "description": "Placa alveolar prefabricada de hormigón pretensado 20 cm, 120 cm, Mu 17 kN·m/m",
+              "unit": "m2",
+              "quantity": 1.0,
+              "unit_price": 57.6,
+              "amount": 57.6,
+              "composition_key": "PAL",
+              "industrialized": true
+            },
+            {
+              "code": "mt07ala250b",
+              "description": "Pieza de apoyo S275JR trabajada en taller y galvanizada",
+              "unit": "kg",
+              "quantity": 1.0,
+              "unit_price": 5.27,
+              "amount": 5.27,
+              "composition_key": "SUP",
+              "industrialized": true
+            },
+            {
+              "code": "mt07aco010g",
+              "description": "Acero B500S suministrado en barras sin elaborar",
+              "unit": "kg",
+              "quantity": 4.08,
+              "unit_price": 1.22,
+              "amount": 4.98,
+              "composition_key": "ARM",
+              "industrialized": false
+            },
+            {
+              "code": "mt08var050",
+              "description": "Alambre galvanizado para atar",
+              "unit": "kg",
+              "quantity": 0.056,
+              "unit_price": 1.5,
+              "amount": 0.08,
+              "industrialized": false
+            },
+            {
+              "code": "mt10haf010ctms",
+              "description": "Hormigón HA-25/F/20/XC2 fabricado en central",
+              "unit": "m3",
+              "quantity": 0.011,
+              "unit_price": 92.2,
+              "amount": 1.01,
+              "composition_key": "HOR",
+              "industrialized": false
+            },
+            {
+              "code": "mq07gte010c",
+              "description": "Grúa autopropulsada 30 t",
+              "unit": "h",
+              "quantity": 0.163,
+              "unit_price": 75.04,
+              "amount": 12.23,
+              "industrialized": false
+            },
+            {
+              "code": "mo046",
+              "description": "Oficial 1ª montador de estructura prefabricada de hormigón",
+              "unit": "h",
+              "quantity": 0.164,
+              "unit_price": 25.84,
+              "amount": 4.24,
+              "industrialized": false
+            },
+            {
+              "code": "mo093",
+              "description": "Ayudante montador de estructura prefabricada de hormigón",
+              "unit": "h",
+              "quantity": 0.164,
+              "unit_price": 24.53,
+              "amount": 4.02,
+              "industrialized": false
+            },
+            {
+              "code": "mo043",
+              "description": "Oficial 1ª ferrallista",
+              "unit": "h",
+              "quantity": 0.057,
+              "unit_price": 25.84,
+              "amount": 1.47,
+              "industrialized": false
+            },
+            {
+              "code": "mo090",
+              "description": "Ayudante ferrallista",
+              "unit": "h",
+              "quantity": 0.053,
+              "unit_price": 24.53,
+              "amount": 1.3,
+              "industrialized": false
+            },
+            {
+              "code": "mo045",
+              "description": "Oficial 1ª estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.002,
+              "unit_price": 25.84,
+              "amount": 0.05,
+              "industrialized": false
+            },
+            {
+              "code": "mo092",
+              "description": "Ayudante estructurista en puesta en obra de hormigón",
+              "unit": "h",
+              "quantity": 0.009,
+              "unit_price": 24.53,
+              "amount": 0.22,
+              "industrialized": false
+            },
+            {
+              "code": "%",
+              "description": "Costes directos complementarios",
+              "unit": "%",
+              "quantity": 2.0,
+              "unit_price": 92.47,
+              "amount": 1.85,
+              "industrialized": false
+            }
+          ]
+        },
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 188.52
+            },
+            {
+              "label": "Mano de obra",
+              "value": 65.53
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 34.42
+            },
+            {
+              "label": "Transporte",
+              "value": 18.13
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 3.73
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 310.33,
+          "unit": "m2"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "m2",
+          "quantity": 1,
+          "subsystem": "EST.FOR",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 211.111,
+              "unit": "kg",
+              "rate": 0.43,
+              "subtotal": 90.78
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 0.986,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 31.55
+            },
+            {
+              "label": "Montaje",
+              "quantity": 0.276,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 10.21
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 0.45,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 22.05
+            },
+            {
+              "label": "Transporte",
+              "quantity": 21.1111,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 2.96
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 7.88,
+              "subtotal": 7.88
+            }
+          ],
+          "total": 165.43
+        }
+      },
+      "industrialization_data": {
+        "industrialized_cost": 62.87,
+        "assessed_cost": 94.32,
+        "ratio": 0.666561
+      },
+      "assets": [
+        {
+          "id": "EST.FOR.HOR-ALV.GS002.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "../../assets/ifc/generic/EST.FOR.HOR-ALV.GS002.ifc"
+        }
+      ],
+      "viva_metrics": {
+        "energy_performance": {
+          "value": null,
+          "scale": 1,
+          "status": "not_applicable",
+          "methodology": "excluded_from_fase3_operational_energy_scope",
+          "note": "Fase 3 scores operational-energy performance only for ENV.FAC, ENV.CUB and ENV.VEN."
+        },
+        "environmental_performance": 0.2825,
+        "economic_performance": 0.3712,
+        "industrialization_performance": 0.666561
+      },
+      "IFC_Psets": [
+        {
+          "name": "VIVA_Pset_Estructura",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "CodigoSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "EST.FOR.HOR-ALV.GS002"
+            },
+            {
+              "name": "NombreSolucionVIVA",
+              "ifc_type": "IfcLabel",
+              "value": "Forjado de placa alveolar pretensada de 20 cm sin capa de compresión estructural"
+            },
+            {
+              "name": "DescripcionSolucionVIVA",
+              "ifc_type": "IfcText",
+              "value": "Losa de 20 cm realizada con placas alveolares prefabricadas de hormigón pretensado de 20 cm de canto y 120 cm de anchura, momento flector último de 17 kN·m/m, apoyadas directamente sobre vigas de canto o muros de carga; juntas y enlaces con apoyos rellenos con HA-25/F/20/XC2, armadura B 500 S en negativos de cuantía aproximada 4 kg/m² y piezas de apoyo S275JR galvanizadas. Sin capa de compresión estructural."
+            },
+            {
+              "name": "UnidadFuncional",
+              "ifc_type": "IfcLabel",
+              "value": "m2"
+            },
+            {
+              "name": "CosteUnitario_EUR_FU",
+              "ifc_type": "IfcReal",
+              "value": 94.32
+            },
+            {
+              "name": "GWPA1A3_kgCO2e_FU",
+              "ifc_type": "IfcReal",
+              "value": 43.5
+            },
+            {
+              "name": "RatioIndustrializacion",
+              "ifc_type": "IfcRatioMeasure",
+              "value": 0.666561
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_Forjado",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "TipologiaEstructural",
+              "ifc_type": "IfcLabel",
+              "value": "precast_prestressed_concrete"
+            },
+            {
+              "name": "MaterialPrincipal",
+              "ifc_type": "IfcLabel",
+              "value": "precast_prestressed_concrete"
+            },
+            {
+              "name": "CantoTotal_mm",
+              "ifc_type": "IfcReal",
+              "value": 200
+            },
+            {
+              "name": "Densidad_kgm3",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "MasaSuperficial_kgm2",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "TransmitanciaTermica_Wm2K",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "AislamientoAcustico_Rw_dB",
+              "ifc_type": "IfcReal",
+              "value": null
+            },
+            {
+              "name": "ResistenciaFuego",
+              "ifc_type": "IfcLabel",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en EST.FOR. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de forjado estructural; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia forjado estructural.",
+        "functional_unit": "m2",
+        "short": "Forjado de placa alveolar pretensada de 20 cm sin capa de compresión estructural. Esquema de demostración para la familia «Forjado estructural»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Acabado",
+            "material": "Acabado superior",
+            "name": "Acabado superior",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": 36.0
+          },
+          {
+            "function": "Soporte",
+            "material": "Capa de reparto",
+            "name": "Capa de reparto",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": 48.0
+          },
+          {
+            "function": "Estructura",
+            "material": "Elemento portante",
+            "name": "Elemento portante",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": 165.6
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabado inferior",
+            "name": "Acabado inferior",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": 15.4
+          }
+        ],
+        "is_proportional": true,
+        "mode": "layers",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}

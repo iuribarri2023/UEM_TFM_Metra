@@ -1,0 +1,881 @@
+{
+  "schema_version": "3.0",
+  "manufacturer": {
+    "code": "MFR-LIGNUMTECH",
+    "name": "Lignum Tech",
+    "website": "https://lignumtech.es/",
+    "description": "Fabricante español de sistemas constructivos industrializados en madera y módulos tridimensionales para edificación.",
+    "status": "ACTIVE",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCAyODAgNjQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iNjQiIHJ4PSI3IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwIi8+PHRleHQgeD0iMTQwIiB5PSIzOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMjAyNjJkIj5MaWdudW0gVGVjaDwvdGV4dD48L3N2Zz4=",
+    "address": "Madrid / planta de producción en Cuenca",
+    "contact_name": null,
+    "contact_email": "info@lignumtech.es",
+    "contact_phone": "+34 917 241 234",
+    "accreditation": {},
+    "metadata": {
+      "country": "ES",
+      "factory": "Cuenca",
+      "source": "Manufacturer dossier"
+    }
+  },
+  "manufacturer_solutions": [
+    {
+      "generic_solution_code": "MOD.BAN.POD.GS001",
+      "generic_solution_codes": [],
+      "subsystem_code": "MOD.BAN",
+      "code": "MFR.LIGNUMTECH.BAN.UFM",
+      "commercial_reference": "BAN-UFM",
+      "name_es": "Lignum Tech · Baño industrializado · unidad funcional mínima de diseño",
+      "description": "Configuración compacta Lignum Tech de unidad funcional mínima con lavabo e inodoro, normalizada a partir del modelo gráfico del catálogo.",
+      "functional_unit": "ud",
+      "technical_data": {
+        "template_code": "MOD.BAN",
+        "template_version": "2.0",
+        "interoperability": {
+          "ifc_class": "IfcElementAssembly",
+          "ifc_export_type": "USERDEFINED",
+          "ecob_bim_class": "Sistemas de elementos",
+          "gubimclass_code": "90.10.10.10",
+          "gubimclass_description": "Módulos de baño",
+          "gubimclass_version": "v5",
+          "object_standard": "eCOB v.1_2021 · VIVA"
+        },
+        "product_declaration": {
+          "ce_marking_reference": null,
+          "dop_reference": null,
+          "product_url": null,
+          "environmental_claim": "El dossier declara criterios de sostenibilidad, medio ambiente y gestión óptima de residuos para los baños industrializados.",
+          "compliance_certificate": null,
+          "ecolabel": null
+        },
+        "properties": {
+          "system_type": "Lignum Tech · baños industrializados",
+          "catalogue_model": "UNIDAD FUNCIONAL MÍNIMA DE DISEÑO",
+          "custom_made": true,
+          "reference_geometry": {
+            "internal_length_mm": 1700,
+            "internal_width_mm": 1850,
+            "internal_height_modeled_mm": 2400,
+            "external_length_modeled_mm": 1919,
+            "external_width_modeled_mm": 2069,
+            "geometry_status": "REFERENCE_RECONSTRUCTION_FROM_CATALOGUE_PLAN_PAGE_41_NOT_MANUFACTURER_DIMENSION"
+          },
+          "construction_visual_evidence": {
+            "page": 42,
+            "observed_features": [
+              "factory-assembled 3D module",
+              "light-gauge metal perimeter framing",
+              "board/sheathing infill",
+              "localized OSB-like panel visible in factory image"
+            ],
+            "status": "VISUAL_INTERPRETATION_NOT_DIMENSIONAL_SPECIFICATION"
+          },
+          "reference_build_up": {
+            "steel_stud_zone_mm": 75.0,
+            "interior_board_mm": 12.5,
+            "external_board_mm": 12.0,
+            "interior_finish_mm": 10.0,
+            "base_mm": 80.0,
+            "ceiling_zone_mm": 80.0,
+            "status": "MODELING_ASSUMPTIONS_FOR_HIGH_LOD_ONLY_NOT_DECLARED_BY_LIGNUMTECH"
+          },
+          "layout_scope": "minimum",
+          "mep_ifc_scope": "EXCLUDED by previously established VIVA bathroom modeling requirement: no water pipes, drainage pipes, ducts, electrical cabling, luminaires, valves or other MEP networks are modeled.",
+          "sanitary_and_furniture_scope": "Reference sanitaryware, shower screens, furniture, mirrors and accessibility aids are modeled to reproduce the catalogue layout and reference-IFC level of detail; exact commercial makes/models are not declared in pages 41-43.",
+          "portfolio_evidence": {
+            "contracted_units": 4549,
+            "executed_units": 2592,
+            "in_development_units": 1957,
+            "source_page": 43
+          },
+          "nominal_dimensions_mm": [
+            1919,
+            2069,
+            2400
+          ],
+          "module_length_mm": 1919,
+          "module_width_mm": 2069,
+          "module_height_mm": 2400,
+          "mass_kg": 1800,
+          "structure_material": "light-gauge steel framing with board/sheathing enclosure",
+          "floor_system": "factory-finished wet-room floor build-up; project-specific finish selection",
+          "wall_finish": "factory-finished wet-room wall lining; project-specific finish selection",
+          "ceiling_finish": "factory-finished bathroom ceiling; project-specific finish selection",
+          "waterproofing": "factory wet-area waterproofing/tanking with site-sealed building interfaces (VIVA PoC assumption)",
+          "sanitary_scope": "Reference sanitaryware, shower screens, furniture, mirrors and accessibility aids are modeled to reproduce the catalogue layout and reference-IFC level of detail; exact commercial makes/models are not declared in pages 41-43.",
+          "mep_scope": "project-specific factory MEP rough-ins and terminal connection points; detailed distribution-network geometry excluded from the representative IFC",
+          "factory_scope": "Fabricación de módulo 3D de baño en fábrica; el dossier muestra proceso de ensamblaje y módulos terminados.",
+          "delivery_state": "Industrialized bathroom module; final finishes and project-specific selections depend on project",
+          "mounting_system": "Project-specific transport/placement and building connections"
+        },
+        "key_features": [
+          "Módulo industrializado fabricado en fábrica",
+          "UNIDAD FUNCIONAL MÍNIMA DE DISEÑO",
+          "Modelo explícitamente mostrado en el catálogo de Lignum Tech",
+          "Geometría IFC de alto detalle con perfilería, cerramientos, sanitarios y mobiliario",
+          "Redes MEP excluidas de la geometría IFC"
+        ]
+      },
+      "classifications": [
+        {
+          "scheme": "VIVA",
+          "code": "MOD.BAN",
+          "relation": "catalogue_subsystem"
+        },
+        {
+          "scheme": "VIVA",
+          "code": "MOD.BAN.POD.GS001",
+          "relation": "generic_solution"
+        },
+        {
+          "scheme": "IFC",
+          "version": "IFC4",
+          "code": "IfcElementAssembly",
+          "relation": "export_as"
+        },
+        {
+          "scheme": "GuBIMClass-VIVA",
+          "version": "v5",
+          "base_version": "GuBIMClass v1.2",
+          "code": "90.10.10.10",
+          "description": "Módulos de baño",
+          "relation": "primary"
+        },
+        {
+          "scheme": "UNE 41610:2026",
+          "dimension": "predominant_geometry",
+          "code": "3D",
+          "label": "Tridimensional (3D)",
+          "relation": "industrialized_component_classification"
+        }
+      ],
+      "source_references": [
+        {
+          "type": "manufacturer_document",
+          "title": "DossierCom_SistemasConstructivosIndustrializados.pdf",
+          "pages": "41",
+          "scope": "Identificación de los cinco modelos de baño/módulo y precios orientativos"
+        },
+        {
+          "type": "manufacturer_document",
+          "title": "DossierCom_SistemasConstructivosIndustrializados.pdf",
+          "pages": "42",
+          "scope": "Evidencia fotográfica del proceso/fabricación y sistema ligero de entramado/paneles"
+        },
+        {
+          "type": "manufacturer_document",
+          "title": "DossierCom_SistemasConstructivosIndustrializados.pdf",
+          "pages": "43",
+          "scope": "Portfolio de baños industrializados y unidades contratadas/ejecutadas/en desarrollo"
+        },
+        {
+          "type": "reference_ifc",
+          "title": "Monobath_Unifamiliar_Detailed_PoC(1).ifc",
+          "scope": "Benchmark de nivel de detalle geométrico/informativo reutilizado del trabajo previo; no aporta datos técnicos de Lignum Tech"
+        }
+      ],
+      "attributes": {
+        "product_family": "Baños industrializados Lignum Tech",
+        "catalogue_model": "UNIDAD FUNCIONAL MÍNIMA DE DISEÑO",
+        "custom_product": true,
+        "reference_configuration": true,
+        "mep_geometry_in_ifc": false,
+        "accessible_variant": false,
+        "combined_kitchen_bath_module": false
+      },
+      "metrics": {},
+      "cte_compliance": {
+        "profile": "CTE España",
+        "status": "PROJECT_DEPENDENT",
+        "notes": "El dossier no aporta valores dimensionales o prestaciones suficientes para verificar automáticamente el cumplimiento normativo. La variante PMR se conserva con la denominación del fabricante y requiere comprobación de proyecto."
+      },
+      "environmental_data": {
+        "epd": {
+          "status": "NOT_IDENTIFIED_IN_PAGES_41_43"
+        },
+        "indicators": {},
+        "manufacturer_statement": "Los baños industrializados mantienen criterios de sostenibilidad y medio ambiente, con gestión de residuos óptima.",
+        "illustrative": {
+          "indicator": "GWP ilustrativo",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "unit": "kg CO₂ eq./ud",
+              "value": 57.925
+            },
+            {
+              "module": "A4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 5.651
+            },
+            {
+              "module": "A5",
+              "unit": "kg CO₂ eq./ud",
+              "value": 2.826
+            },
+            {
+              "module": "C1–C4",
+              "unit": "kg CO₂ eq./ud",
+              "value": 4.238
+            }
+          ],
+          "status": "Escenario sintético sin EPD verificada; módulos ilustrativos, no declaración ambiental oficial.",
+          "total": 70.64,
+          "unit": "kg CO₂ eq./ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "scope": "producción-transporte",
+          "indicator": "GWP",
+          "unit": "kg CO₂e",
+          "modules": [
+            {
+              "module": "A1–A3",
+              "value": 1161.0
+            },
+            {
+              "module": "A4",
+              "value": 13.5
+            }
+          ],
+          "total": 1174.5,
+          "additional": [
+            {
+              "label": "Energía primaria estimada",
+              "module": "A1–A3",
+              "unit": "MJ",
+              "value": 18900
+            }
+          ]
+        }
+      },
+      "economic_data": {
+        "currency": "EUR",
+        "unit": "ud",
+        "indicative_price": 3500,
+        "price_basis": "PRECIO_ORIENTATIVO_CATALOGO_PAGE_41_CONTACT_MANUFACTURER_FOR_PROJECT_QUOTE",
+        "illustrative": {
+          "breakdown": [
+            {
+              "label": "Materiales",
+              "value": 2445.46
+            },
+            {
+              "label": "Mano de obra",
+              "value": 994.32
+            },
+            {
+              "label": "Montaje y maquinaria",
+              "value": 585.35
+            },
+            {
+              "label": "Transporte",
+              "value": 253.91
+            },
+            {
+              "label": "Costes auxiliares",
+              "value": 73.43
+            }
+          ],
+          "currency": "EUR",
+          "status": "Costes exclusivamente sintéticos. No constituyen ofertas ni precios de mercado.",
+          "total": 4352.47,
+          "unit": "ud"
+        },
+        "reference": {
+          "method": "METRA-REF-2026-01",
+          "functional_unit": "ud",
+          "quantity": 1,
+          "subsystem": "MOD.BAN",
+          "currency": "EUR",
+          "scope": "suministro-transporte-montaje",
+          "location": "España · base convencional",
+          "period": "2026-01",
+          "items": [
+            {
+              "label": "Materiales",
+              "quantity": 1350,
+              "unit": "kg",
+              "rate": 1.45,
+              "subtotal": 1957.5
+            },
+            {
+              "label": "Mano de obra",
+              "quantity": 14.0,
+              "unit": "h",
+              "rate": 32,
+              "subtotal": 448.0
+            },
+            {
+              "label": "Montaje",
+              "quantity": 3.92,
+              "unit": "h",
+              "rate": 37,
+              "subtotal": 145.04
+            },
+            {
+              "label": "Maquinaria",
+              "quantity": 2.8,
+              "unit": "h",
+              "rate": 49,
+              "subtotal": 137.2
+            },
+            {
+              "label": "Transporte",
+              "quantity": 135.0,
+              "unit": "t·km",
+              "rate": 0.14,
+              "subtotal": 18.9
+            },
+            {
+              "label": "Auxiliares",
+              "quantity": 1,
+              "unit": "lote",
+              "rate": 135.33,
+              "subtotal": 135.33
+            }
+          ],
+          "total": 2841.97
+        }
+      },
+      "industrialization_data": {
+        "is_industrialized": true,
+        "classification_standard": "UNE 41610:2026",
+        "factory_scope": "Fabricación de módulo 3D de baño en fábrica; el dossier muestra proceso de ensamblaje y módulos terminados.",
+        "delivery_state": "Industrialized bathroom module; final finishes and project-specific selections depend on project",
+        "mounting_interface": "Project-specific transport/placement and building connections",
+        "traceability": "Lignum Tech + catalogue model page 41 + VIVA reference BIM version",
+        "portfolio": {
+          "contracted_units": 4549,
+          "executed_units": 2592,
+          "in_development_units": 1957
+        },
+        "une_41610": {
+          "function_classes": [
+            {
+              "code": "UNIDADES_FUNCIONALES_INTEGRADAS",
+              "label": "Unidades funcionales integradas"
+            }
+          ],
+          "predominant_geometry": {
+            "code": "3D",
+            "label": "Tridimensional (3D)"
+          },
+          "classification_applicable": true
+        }
+      },
+      "viva_metrics": {},
+      "IFC_Psets": [
+        {
+          "name": "Ifc_Export",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "IfcExportAs",
+              "ifc_type": "IfcLabel",
+              "value": "IfcElementAssembly"
+            },
+            {
+              "name": "IfcExportType",
+              "ifc_type": "IfcLabel",
+              "value": "USERDEFINED"
+            }
+          ]
+        },
+        {
+          "name": "Ecob_Pset_General",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ClaseBimEcob",
+              "ifc_type": "IfcLabel",
+              "value": "Sistemas de elementos"
+            },
+            {
+              "name": "CodigoGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "90.10.10.10"
+            },
+            {
+              "name": "DescripcionGubimclass",
+              "ifc_type": "IfcLabel",
+              "value": "Módulos de baño"
+            },
+            {
+              "name": "Descripcion",
+              "ifc_type": "IfcText",
+              "value": "Configuración compacta Lignum Tech de unidad funcional mínima con lavabo e inodoro, normalizada a partir del modelo gráfico del catálogo."
+            },
+            {
+              "name": "EstandarObjeto",
+              "ifc_type": "IfcLabel",
+              "value": "eCOB v.1_2021 · VIVA"
+            },
+            {
+              "name": "FechaEmision",
+              "ifc_type": "IfcDate",
+              "value": "2026-10-05"
+            },
+            {
+              "name": "ObjetoAutor",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_ManufacturerSolution",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "Fabricante",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            },
+            {
+              "name": "FamiliaProducto",
+              "ifc_type": "IfcLabel",
+              "value": "Baños industrializados"
+            },
+            {
+              "name": "ModeloCatalogo",
+              "ifc_type": "IfcLabel",
+              "value": "UNIDAD FUNCIONAL MÍNIMA DE DISEÑO"
+            },
+            {
+              "name": "ReferenciaComercialVIVA",
+              "ifc_type": "IfcIdentifier",
+              "value": "BAN-UFM"
+            },
+            {
+              "name": "PrecioOrientativoEURUnidad",
+              "ifc_type": "IfcReal",
+              "value": 3500
+            },
+            {
+              "name": "InstalacionesModeladas",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_BathroomPod",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "ReferenceWallStudDepth",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.075
+            },
+            {
+              "name": "ReferenceBaseThickness",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.08
+            },
+            {
+              "name": "ReferenceCeilingZone",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 0.08
+            },
+            {
+              "name": "ReferenceGeometryNotManufacturerDeclared",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "MEPGeometryIncludedInThisIFC",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_GeometricConstraints",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "LargoInteriorReferencia",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 1.7
+            },
+            {
+              "name": "AnchoInteriorReferencia",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 1.85
+            },
+            {
+              "name": "AlturaInteriorReferencia",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 2.4
+            },
+            {
+              "name": "LargoExteriorModelado",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 1.919
+            },
+            {
+              "name": "AnchoExteriorModelado",
+              "ifc_type": "IfcLengthMeasure",
+              "value": 2.069
+            },
+            {
+              "name": "DimensionesDeclaradasPorFabricante",
+              "ifc_type": "IfcBoolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedIdentity",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "SolutionCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR.LIGNUMTECH.BAN.UFM"
+            },
+            {
+              "name": "ManufacturerCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MFR-LIGNUMTECH"
+            },
+            {
+              "name": "ManufacturerName",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech"
+            },
+            {
+              "name": "CommercialReference",
+              "ifc_type": "IfcLabel",
+              "value": "BAN-UFM"
+            },
+            {
+              "name": "SubsystemCode",
+              "ifc_type": "IfcIdentifier",
+              "value": "MOD.BAN"
+            },
+            {
+              "name": "TemplateVersion",
+              "ifc_type": "IfcLabel",
+              "value": "2.0"
+            }
+          ]
+        },
+        {
+          "name": "VIVA_Pset_NormalizedTechnical",
+          "applies_to": "IfcTypeObject",
+          "properties": [
+            {
+              "name": "catalogue_model",
+              "ifc_type": "IfcLabel",
+              "value": "UNIDAD FUNCIONAL MÍNIMA DE DISEÑO"
+            },
+            {
+              "name": "ceiling_finish",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished bathroom ceiling; project-specific finish selection"
+            },
+            {
+              "name": "custom_made",
+              "ifc_type": "IfcBoolean",
+              "value": true
+            },
+            {
+              "name": "delivery_state",
+              "ifc_type": "IfcLabel",
+              "value": "Industrialized bathroom module; final finishes and project-specific selections depend on project"
+            },
+            {
+              "name": "factory_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Fabricación de módulo 3D de baño en fábrica; el dossier muestra proceso de ensamblaje y módulos terminados."
+            },
+            {
+              "name": "floor_system",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished wet-room floor build-up; project-specific finish selection"
+            },
+            {
+              "name": "layout_scope",
+              "ifc_type": "IfcLabel",
+              "value": "minimum"
+            },
+            {
+              "name": "mass_kg",
+              "ifc_type": "IfcInteger",
+              "value": 1800
+            },
+            {
+              "name": "mep_ifc_scope",
+              "ifc_type": "IfcLabel",
+              "value": "EXCLUDED by previously established VIVA bathroom modeling requirement: no water pipes, drainage pipes, ducts, electrical cabling, luminaires, valves or other MEP networks are modeled."
+            },
+            {
+              "name": "mep_scope",
+              "ifc_type": "IfcLabel",
+              "value": "project-specific factory MEP rough-ins and terminal connection points; detailed distribution-network geometry excluded from the representative IFC"
+            },
+            {
+              "name": "module_height_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2400
+            },
+            {
+              "name": "module_length_mm",
+              "ifc_type": "IfcInteger",
+              "value": 1919
+            },
+            {
+              "name": "module_width_mm",
+              "ifc_type": "IfcInteger",
+              "value": 2069
+            },
+            {
+              "name": "mounting_system",
+              "ifc_type": "IfcLabel",
+              "value": "Project-specific transport/placement and building connections"
+            },
+            {
+              "name": "sanitary_and_furniture_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Reference sanitaryware, shower screens, furniture, mirrors and accessibility aids are modeled to reproduce the catalogue layout and reference-IFC level of detail; exact commercial makes/models are not declared in pages 41-43."
+            },
+            {
+              "name": "sanitary_scope",
+              "ifc_type": "IfcLabel",
+              "value": "Reference sanitaryware, shower screens, furniture, mirrors and accessibility aids are modeled to reproduce the catalogue layout and reference-IFC level of detail; exact commercial makes/models are not declared in pages 41-43."
+            },
+            {
+              "name": "structure_material",
+              "ifc_type": "IfcLabel",
+              "value": "light-gauge steel framing with board/sheathing enclosure"
+            },
+            {
+              "name": "system_type",
+              "ifc_type": "IfcLabel",
+              "value": "Lignum Tech · baños industrializados"
+            },
+            {
+              "name": "wall_finish",
+              "ifc_type": "IfcLabel",
+              "value": "factory-finished wet-room wall lining; project-specific finish selection"
+            },
+            {
+              "name": "waterproofing",
+              "ifc_type": "IfcLabel",
+              "value": "factory wet-area waterproofing/tanking with site-sealed building interfaces (VIVA PoC assumption)"
+            }
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "sequence": 1,
+          "component": "Pod base",
+          "material": "Reference factory base panel/slab",
+          "thickness_mm": 80,
+          "source_status": "REFERENCE_GEOMETRY_NOT_MANUFACTURER_DECLARED"
+        },
+        {
+          "sequence": 2,
+          "component": "Perimeter structure",
+          "material": "Galvanized steel framing",
+          "thickness_mm": 75,
+          "source_status": "VISUAL_EVIDENCE_PAGE_42_REFERENCE_DIMENSION_MODELED"
+        },
+        {
+          "sequence": 3,
+          "component": "Factory wall board / sheathing",
+          "material": "Board/sheathing",
+          "thickness_mm": 12,
+          "source_status": "VISUAL_EVIDENCE_PAGE_42_REFERENCE_DIMENSION_MODELED"
+        },
+        {
+          "sequence": 4,
+          "component": "Interior lining",
+          "material": "Reference lining board",
+          "thickness_mm": 12.5,
+          "source_status": "REFERENCE_GEOMETRY_NOT_MANUFACTURER_DECLARED"
+        },
+        {
+          "sequence": 5,
+          "component": "Interior finish",
+          "material": "Project-dependent finish",
+          "thickness_mm": 10,
+          "source_status": "REFERENCE_GEOMETRY_PROJECT_DEPENDENT"
+        },
+        {
+          "sequence": 6,
+          "component": "Sanitary equipment / screens / furniture",
+          "material": "Reference project placeholders",
+          "source_status": "CATALOGUE_LAYOUT_PAGE_41_EXACT_MODELS_NOT_DECLARED"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "source": "DossierCom_SistemasConstructivosIndustrializados.pdf p.41",
+          "status": "PRIMARY_MODEL_IDENTITY"
+        },
+        {
+          "id": "E2",
+          "source": "DossierCom_SistemasConstructivosIndustrializados.pdf p.42",
+          "status": "PRIMARY_VISUAL_CONSTRUCTION_EVIDENCE"
+        },
+        {
+          "id": "E3",
+          "source": "DossierCom_SistemasConstructivosIndustrializados.pdf p.43",
+          "status": "PRIMARY_PORTFOLIO_EVIDENCE"
+        },
+        {
+          "id": "E4",
+          "source": "Monobath_Unifamiliar_Detailed_PoC(1).ifc",
+          "status": "REFERENCE_LOD_LOI_ONLY"
+        }
+      ],
+      "ids_validation": {
+        "status": "NOT_RUN",
+        "mode": "POC_FAKE"
+      },
+      "data_quality_notes": [
+        "Pages 41-43 identify five catalogue configurations but do not provide product dimensions, wall/base thicknesses, material grades or declared performance values.",
+        "The IFC plan dimensions and construction thicknesses are therefore explicit VIVA reference geometry chosen to reconstruct the catalogue diagrams at high LOD; they must not be interpreted as manufacturer standard dimensions.",
+        "The factory photograph on page 42 is used only as visual evidence for a light metal-framed, boarded pod construction. Exact profile type, spacing, board specification and build-up are not declared in the selected pages.",
+        "Sanitaryware, shower screens, furniture, kitchen furniture and accessibility aids reproduce the catalogue layout at generic high LOD; exact commercial models are project-dependent and not identified in pages 41-43.",
+        "No MEP network geometry is included, preserving the previously established bathroom modeling requirement.",
+        {
+          "issue": "VIVA_POC_NORMALIZATION",
+          "action": "Review/replace inferred values with manufacturer-approved project data when available.",
+          "assumed_paths": [
+            "industrialization_data.une_41610.classification_applicable",
+            "industrialization_data.une_41610.function_classes",
+            "industrialization_data.une_41610.predominant_geometry",
+            "subsystem_code",
+            "technical_data.properties.ceiling_finish",
+            "technical_data.properties.delivery_state",
+            "technical_data.properties.factory_scope",
+            "technical_data.properties.floor_system",
+            "technical_data.properties.mass_kg",
+            "technical_data.properties.mep_scope",
+            "technical_data.properties.module_height_mm",
+            "technical_data.properties.module_length_mm",
+            "technical_data.properties.module_width_mm",
+            "technical_data.properties.mounting_system",
+            "technical_data.properties.nominal_dimensions_mm",
+            "technical_data.properties.sanitary_scope",
+            "technical_data.properties.structure_material",
+            "technical_data.properties.wall_finish",
+            "technical_data.properties.waterproofing"
+          ]
+        }
+      ],
+      "status": "APPROVED",
+      "commercial_status": "ACTIVE",
+      "valid_from": null,
+      "valid_until": null,
+      "assets": [
+        {
+          "id": "MFR.LIGNUMTECH.BAN.UFM.IFC",
+          "type": "BIM",
+          "format": "IFC",
+          "role": "PRIMARY_IFC",
+          "uri": "assets/ifc/MOD_BAN__MOD.BAN.POD.GS001__LIGNUMTECH__BAN-UFM.ifc"
+        }
+      ],
+      "technical_performance": {
+        "system_type": {
+          "value": "Lignum Tech · baños industrializados",
+          "unit": "unit"
+        },
+        "primary_material": {
+          "value": "light-gauge steel framing with board/sheathing enclosure",
+          "unit": "unit"
+        },
+        "delivery_state": {
+          "value": "Industrialized bathroom module; final finishes and project-specific selections depend on project",
+          "unit": "unit"
+        },
+        "module_width_mm": {
+          "value": 2069,
+          "unit": "mm"
+        },
+        "module_height_mm": {
+          "value": 2400,
+          "unit": "mm"
+        },
+        "reference_length_mm": {
+          "value": 6122.75,
+          "unit": "mm"
+        },
+        "module_area_m2": {
+          "value": 6.09,
+          "unit": "m²"
+        },
+        "fire_resistance": {
+          "value": null,
+          "unit": "unit"
+        },
+        "illustrative": {
+          "illustrative_mass_kg_per_fu": {
+            "unit": "kg/ud",
+            "value": 45.95
+          },
+          "module_area_m2": {
+            "unit": "m²",
+            "value": 6.09
+          }
+        }
+      },
+      "overview": {
+        "applications": "Ejemplo de exploración y contraste técnico en el TFM; verificación de proyecto pendiente.",
+        "expanded": "Solución clasificada en MOD.BAN. La representación y las magnitudes didácticas muestran cómo se organiza una ficha de módulo industrializado; los valores simulados no describen prestaciones reales del fabricante.",
+        "function": "Función constructiva de la familia módulo industrializado.",
+        "functional_unit": "ud",
+        "short": "Lignum Tech · Baño industrializado · unidad funcional mínima de diseño. Esquema de demostración para la familia «Módulo industrializado»."
+      },
+      "composition_scenario": {
+        "elements": [
+          {
+            "function": "Estructura",
+            "material": "Estructura portante",
+            "name": "Estructura portante",
+            "order": 1,
+            "pattern": "dense",
+            "thickness_mm": null
+          },
+          {
+            "function": "Cerramiento",
+            "material": "Envolvente",
+            "name": "Envolvente",
+            "order": 2,
+            "pattern": "diagonal",
+            "thickness_mm": null
+          },
+          {
+            "function": "Equipo",
+            "material": "Instalaciones",
+            "name": "Instalaciones",
+            "order": 3,
+            "pattern": "dots",
+            "thickness_mm": null
+          },
+          {
+            "function": "Acabado",
+            "material": "Acabados",
+            "name": "Acabados",
+            "order": 4,
+            "pattern": "linear",
+            "thickness_mm": null
+          }
+        ],
+        "is_proportional": false,
+        "mode": "components",
+        "status": "Esquema didáctico, no vinculado a GlobalId"
+      }
+    }
+  ]
+}
